@@ -85,7 +85,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, onOpenAgreements }) 
                   onClick={() => { onNavigate('about'); window.scrollTo({ top: 0, behavior: 'smooth' }); }} 
                   className="hover:text-[#D4AF37] transition-colors"
                 >
-                  About Me
+                  About
                 </button>
               </li>
               <li>
