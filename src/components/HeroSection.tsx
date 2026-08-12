@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavPage } from '../types';
-import { CheckCircle2, Sparkles, Shield, Cpu, Layers } from 'lucide-react';
+import { CheckCircle2, Sparkles, Shield, Cpu, Layers, Clock, Award, RotateCcw } from 'lucide-react';
 
 interface HeroSectionProps {
   onNavigate: (page: NavPage, selectedPackage?: string) => void;
@@ -12,7 +12,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onNavigate, onOpenSamp
     <section className="relative overflow-hidden py-6 lg:py-8 bg-[#0F172A]">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-5 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-5 items-stretch">
           
           {/* Main Hero Card Container */}
           <div className="lg:col-span-8 flex flex-col justify-between rounded-lg bg-[#1E293B] p-6 lg:p-7 border-l-4 border-[#D4AF37] border-y border-r border-slate-700/50 shadow-xl">
@@ -90,42 +90,70 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onNavigate, onOpenSamp
 
           </div>
 
-          {/* Right Strategist Image Frame */}
-          <div className="lg:col-span-4 flex flex-col items-center rounded-lg bg-[#1E293B] p-4 border border-slate-700/50 shadow-xl text-center space-y-3">
+          {/* Right Column Frame */}
+          <div className="lg:col-span-4 flex flex-col justify-between rounded-lg bg-[#1E293B] p-4 border border-slate-700/50 shadow-xl text-center space-y-3">
 
-            {/* Portrait Image Container */}
-            <div className="relative w-32 h-32 rounded-lg overflow-hidden grayscale hover:grayscale-0 transition-all duration-500 bg-[#0F172A] border border-slate-700/80 shadow-md shrink-0">
-              <img
-                src="/mikel-portrait.jpg"
-                alt="Mikel - Content Creation Strategist Portrait"
-                className="w-full h-full object-cover object-top"
-              />
+            {/* Portrait & Stats Group */}
+            <div className="flex flex-col items-center space-y-3">
+              {/* Portrait Image Container */}
+              <div className="relative w-32 h-32 rounded-lg overflow-hidden grayscale hover:grayscale-0 transition-all duration-500 bg-[#0F172A] border border-slate-700/80 shadow-md shrink-0">
+                <img
+                  src="/mikel-portrait.jpg"
+                  alt="Mikel - Content Creation Strategist Portrait"
+                  className="w-full h-full object-cover object-top"
+                />
+              </div>
+
+              {/* Name Box */}
+              <div className="bg-[#0F172A]/90 p-2.5 rounded border border-slate-700/60 w-full">
+                <div className="text-white font-bold text-xs uppercase tracking-wide">
+                  Mikel Sims
+                </div>
+                <div className="text-[10px] text-slate-400 mt-0.5 leading-tight">
+                  AI-Assisted Human-Edited Content Creation Manager
+                </div>
+              </div>
+
+              {/* Stat Boxes */}
+              <div className="w-full grid grid-cols-3 gap-1.5 text-center uppercase">
+                <div className="bg-[#0F172A] p-2 rounded border border-slate-800">
+                  <div className="text-white text-xs font-bold">200+</div>
+                  <div className="text-slate-500 text-[8px] leading-tight mt-0.5">Articles Created</div>
+                </div>
+                <div className="bg-[#0F172A] p-2 rounded border border-slate-800">
+                  <div className="text-[#D4AF37] text-xs font-bold">100%</div>
+                  <div className="text-slate-500 text-[8px] leading-tight mt-0.5">Native English</div>
+                </div>
+                <div className="bg-[#0F172A] p-2 rounded border border-slate-800">
+                  <div className="text-emerald-400 text-xs font-bold">20+ Yrs</div>
+                  <div className="text-slate-500 text-[8px] leading-tight mt-0.5">Experience</div>
+                </div>
+              </div>
             </div>
 
-            {/* Name Box */}
-            <div className="bg-[#0F172A]/90 p-2.5 rounded border border-slate-700/60 w-full">
-              <div className="text-white font-bold text-xs uppercase tracking-wide">
-                Mikel Sims
+            {/* Onboarding SLA & Guarantee Card */}
+            <div className="bg-[#0F172A] p-3.5 rounded-lg border border-[#D4AF37]/30 text-left space-y-2.5">
+              <div className="flex items-center space-x-2 border-b border-slate-800 pb-2">
+                <Award className="w-4 h-4 text-[#D4AF37] shrink-0" />
+                <span className="text-xs font-bold uppercase tracking-wide text-white">
+                  Onboarding SLA & Guarantee
+                </span>
               </div>
-              <div className="text-[10px] text-slate-400 mt-0.5 leading-tight">
-                AI-Assisted Human-Edited Content Creation Manager
-              </div>
-            </div>
 
-            {/* Bottom 3 Stat Boxes */}
-            <div className="w-full grid grid-cols-3 gap-1.5 text-center uppercase">
-              <div className="bg-[#0F172A] p-2 rounded border border-slate-800">
-                <div className="text-white text-xs font-bold">200+</div>
-                <div className="text-slate-500 text-[8px] leading-tight mt-0.5">Articles Created</div>
-              </div>
-              <div className="bg-[#0F172A] p-2 rounded border border-slate-800">
-                <div className="text-[#D4AF37] text-xs font-bold">100%</div>
-                <div className="text-slate-500 text-[8px] leading-tight mt-0.5">Native English</div>
-              </div>
-              <div className="bg-[#0F172A] p-2 rounded border border-slate-800">
-                <div className="text-emerald-400 text-xs font-bold">20+ Yrs</div>
-                <div className="text-slate-500 text-[8px] leading-tight mt-0.5">Experience</div>
-              </div>
+              <ul className="space-y-2 text-[11px] text-slate-300">
+                <li className="flex items-start space-x-2">
+                  <Clock className="w-3.5 h-3.5 text-[#D4AF37] shrink-0 mt-0.5" />
+                  <span><strong>Fast Turnaround:</strong> First article batch delivered within 5–7 business days of onboarding.</span>
+                </li>
+                <li className="flex items-start space-x-2">
+                  <RotateCcw className="w-3.5 h-3.5 text-[#D4AF37] shrink-0 mt-0.5" />
+                  <span><strong>Free Revisions:</strong> Unlimited minor edits on every piece until you're completely satisfied.</span>
+                </li>
+                <li className="flex items-start space-x-2">
+                  <Shield className="w-3.5 h-3.5 text-[#D4AF37] shrink-0 mt-0.5" />
+                  <span><strong>Quality Commitment:</strong> 100% human-polished, native English formatting guaranteed.</span>
+                </li>
+              </ul>
             </div>
 
           </div>
