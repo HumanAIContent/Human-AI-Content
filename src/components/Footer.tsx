@@ -23,7 +23,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, onOpenAgreements }) 
             </div>
             
             <p className="text-slate-300 leading-relaxed max-w-md text-xs">
-              A complete, end-to-end content management solution for US and international business owners seeking search visibility, AI engine authority (GEO), and consistent engagement without micromanagement.
+              A complete, end-to-end content management solution for US and international brands, blending the efficiency of AI-assisted content generation with the refinement of human editing. Fresh, authoritative, and reader-ready material published consistently—all through a hassle-free, hands-off service that runs seamlessly in the background, requiring virtually zero oversight from you.
             </p>
 
             <div className="pt-1 flex flex-wrap gap-2 text-[10px] uppercase font-bold">
