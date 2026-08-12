@@ -20,7 +20,7 @@ export const Navbar: React.FC<NavbarProps> = ({ activePage, onNavigate, onOpenAg
   return (
     <header className="sticky top-0 z-50 backdrop-blur-md bg-[#1E293B] border-b border-[#D4AF37]/20">
 <img 
-  src="/Human AI Content Creation-Square.png" 
+  src="/Human-AI-Content-Creation-Square.png" 
   alt="Human AI Content Creation Logo" 
   className="h-8 w-auto object-contain shrink-0" 
 />
