@@ -36,15 +36,7 @@ export const RecentSitesSection: React.FC<RecentSitesSectionProps> = ({ onSelect
               className="group bg-[#1E293B] rounded border border-slate-700/50 hover:border-[#D4AF37]/50 overflow-hidden transition-all duration-300 flex flex-col justify-between shadow-lg"
             >
               
-              {/* Image & Metric Badge */}
-              <div className="relative h-44 overflow-hidden bg-[#0F172A]">
-                <img
-                  src={site.image}
-                  alt={site.name}
-                  className="w-full h-full object-cover group-hover:scale-105 grayscale hover:grayscale-0 transition-all duration-500"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#1E293B] via-transparent to-transparent opacity-80" />
-
+         
 
               {/* Card Body */}
               <div className="p-4 space-y-3 flex-1 flex flex-col justify-between">
