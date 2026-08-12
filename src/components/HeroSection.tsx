@@ -30,15 +30,14 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onNavigate, onOpenSamp
               </h1>
 
               {/* Subheading */}
-              <p className="mb-4 text-xs sm:text-sm leading-relaxed text-slate-300">
+              <p className="mb-8 text-xs sm:text-sm leading-relaxed text-slate-300">
                 Welcome, my name is Mikel. I'm a native Australian content creation expert based in the Philippines with 20+ years of digital marketing expertise. I provide high-performance, AI-assisted, human-edited content creation for select US and global businesses.
                 <br /><br />
                 If you’ve hired freelancers on platforms like Upwork or Fiverr, you know cost savings often come with communication and language pitfalls. As a native English speaker, you’ll never worry about language barriers, awkward phrasing, or heavy rewrites—just quality, hassle-free content.
                 <br /><br />
                 If you're looking for a reliable, virtually hands-off website and social media content creation solution, please check out my services to see if they fit your needs.
               </p>
-              </p>
-            </p>
+              
 
               {/* Value Highlights Grid */}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 mb-5">
