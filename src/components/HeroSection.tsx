@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavPage } from '../types';
-import { CheckCircle2, Sparkles, Shield, Cpu, Layers, Clock, Award, RotateCcw } from 'lucide-react';
+import { CheckCircle2, Sparkles, Shield, Cpu, Layers } from 'lucide-react';
 
 interface HeroSectionProps {
   onNavigate: (page: NavPage, selectedPackage?: string) => void;
@@ -58,22 +58,31 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onNavigate, onOpenSamp
                 </div>
               </div>
 
-              {/* Primary Action Button */}
-              <div>
+              {/* Centered Primary Action Button */}
+              <div className="flex justify-center my-4">
                 <button
                   onClick={() => {
                     const el = document.getElementById('packages');
                     if (el) el.scrollIntoView({ behavior: 'smooth' });
                   }}
-                  className="border border-[#D4AF37] px-5 py-2.5 text-xs font-bold uppercase tracking-wider text-[#D4AF37] hover:bg-[#D4AF37]/10 transition-colors rounded"
+                  className="border border-[#D4AF37] px-6 py-2.5 text-xs font-bold uppercase tracking-wider text-[#D4AF37] hover:bg-[#D4AF37]/10 transition-colors rounded"
                 >
                   View Packages
                 </button>
               </div>
+
+              {/* Logo Area Centered Below Button */}
+              <div className="flex justify-center items-center my-4">
+                <img
+                  src="/Human-AI-Content-Creation-Square.ico"
+                  alt="Human-AI Content Creation Logo"
+                  className="w-28 h-28 object-contain rounded-lg shadow-md"
+                />
+              </div>
             </div>
 
             {/* Quick Trust Bar */}
-            <div className="mt-5 pt-4 border-t border-slate-700/50 flex flex-wrap items-center gap-4 text-[10px] font-semibold text-slate-400 uppercase tracking-wider">
+            <div className="mt-5 pt-4 border-t border-slate-700/50 flex flex-wrap items-center justify-between gap-4 text-[10px] font-semibold text-slate-400 uppercase tracking-wider">
               <div className="flex items-center space-x-1.5">
                 <Shield className="w-3.5 h-3.5 text-[#D4AF37]" />
                 <span>Native English Content Creator</span>
@@ -134,7 +143,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onNavigate, onOpenSamp
             {/* Service Standards And Expectations Card */}
             <div className="bg-[#0F172A] p-4 sm:p-5 rounded-lg border border-[#D4AF37]/40 text-left space-y-4 flex-1 flex flex-col justify-center">
               <div className="flex items-center space-x-2.5 border-b border-slate-800 pb-3">
-                <Award className="w-5 h-5 text-[#D4AF37] shrink-0" />
+                <svg className="w-5 h-5 text-[#D4AF37] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>
                 <span className="text-sm font-bold uppercase tracking-wide text-white leading-tight">
                   Service Standards<br />And Expectations
                 </span>
@@ -142,16 +151,16 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onNavigate, onOpenSamp
 
               <ul className="space-y-3.5 text-xs text-slate-300 leading-relaxed">
                 <li className="flex items-start space-x-2.5">
-                  <Clock className="w-4 h-4 text-[#D4AF37] shrink-0 mt-0.5" />
-                  <span><strong className="text-white">24 to 48 Hour SLA Response::</strong> Direct response from your content creation manager within 24 to 48 hours. Responses are typically provided within 24 hours, seven days a week.</span>
+                  <svg className="w-4 h-4 text-[#D4AF37] shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                  <span><strong className="text-white">Fast Turnaround:</strong> First article batch delivered within 5–7 business days of onboarding.</span>
                 </li>
                 <li className="flex items-start space-x-2.5">
-                  <RotateCcw className="w-4 h-4 text-[#D4AF37] shrink-0 mt-0.5" />
-                  <span><strong className="text-white">No Long-Term Lock-In Contracts:</strong> Prepaid monthly by-month retainer packages in USD with zero hidden fees or per-word surprises with no long-term lock-in contracts. You enjoy consistent, hands-off content management.</span>
+                  <svg className="w-4 h-4 text-[#D4AF37] shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path></svg>
+                  <span><strong className="text-white">Free Revisions:</strong> Unlimited minor edits on every piece until you're completely satisfied.</span>
                 </li>
                 <li className="flex items-start space-x-2.5">
                   <Shield className="w-4 h-4 text-[#D4AF37] shrink-0 mt-0.5" />
-                  <span><strong className="text-white">Password-Free Access:</strong> Secure login for the WordPress Editor & the CoSchedule OAuth API authentication. I will never ask for your social media passwords.</span>
+                  <span><strong className="text-white">Quality Commitment:</strong> 100% human-polished, native English formatting guaranteed.</span>
                 </li>
               </ul>
             </div>
