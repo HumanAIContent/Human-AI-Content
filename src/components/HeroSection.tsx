@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavPage } from '../types';
-import { CheckCircle2, Sparkles, Shield, Cpu, Layers } from 'lucide-react';
+import { CheckCircle2, Sparkles, Shield, Cpu, Layers, FileText } from 'lucide-react';
 
 interface HeroSectionProps {
   onNavigate: (page: NavPage, selectedPackage?: string) => void;
@@ -81,21 +81,25 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onNavigate, onOpenSamp
               </div>
             </div>
 
-            {/* Quick Trust Bar */}
-            <div className="mt-5 pt-4 border-t border-slate-700/50 flex flex-wrap items-center justify-between gap-4 text-[10px] font-semibold text-slate-400 uppercase tracking-wider">
-              <div className="flex items-center space-x-1.5">
-                <Shield className="w-3.5 h-3.5 text-[#D4AF37]" />
-                <span>Native English Content Creator</span>
-              </div>
-              <div className="flex items-center space-x-1.5">
-                <Cpu className="w-3.5 h-3.5 text-[#D4AF37]" />
-                <span>AI Speed + Human Quality</span>
-              </div>
-              <div className="flex items-center space-x-1.5">
-                <Layers className="w-3.5 h-3.5 text-[#D4AF37]" />
-                <span>No direct password access needed</span>
-              </div>
-            </div>
+{/* Quick Trust Bar */}
+<div className="mt-5 pt-4 border-t border-slate-700/50 flex flex-wrap items-center justify-between gap-4 text-[10px] font-semibold text-slate-400 uppercase tracking-wider">
+  <div className="flex items-center space-x-1.5">
+    <Shield className="w-3.5 h-3.5 text-[#D4AF37]" />
+    <span>Native English Content Creator</span>
+  </div>
+  <div className="flex items-center space-x-1.5">
+    <Cpu className="w-3.5 h-3.5 text-[#D4AF37]" />
+    <span>AI Speed + Human Quality</span>
+  </div>
+  <div className="flex items-center space-x-1.5">
+    <FileText className="w-3.5 h-3.5 text-[#D4AF37]" />
+    <span>No Long-Term Lock-In Contracts</span>
+  </div>
+  <div className="flex items-center space-x-1.5">
+    <Layers className="w-3.5 h-3.5 text-[#D4AF37]" />
+    <span>No direct password access needed</span>
+  </div>
+</div>
 
           </div>
 
