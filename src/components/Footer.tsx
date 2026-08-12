@@ -19,7 +19,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, onOpenAgreements }) 
               <div className="w-8 h-8 rounded bg-[#1E293B] border border-[#D4AF37]/50 flex items-center justify-center">
                 <Sparkles className="w-4 h-4 text-[#D4AF37]" />
               </div>
-              <span className="font-extrabold text-base text-white tracking-wider uppercase">HUMAN AI CONTENT CREATION</span>
+              <span className="font-extrabold text-base text-white tracking-wider uppercase">AI-ASSISTED HUMAN-EDITED CONTENT CREATION</span>
             </div>
             
             <p className="text-slate-300 leading-relaxed max-w-md text-xs">
