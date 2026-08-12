@@ -131,12 +131,12 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onNavigate, onOpenSamp
               </div>
             </div>
 
-            {/* Service Standards & Expectations Card */}
+            {/* Service Standards And Expectations Card */}
             <div className="bg-[#0F172A] p-4 sm:p-5 rounded-lg border border-[#D4AF37]/40 text-left space-y-4 flex-1 flex flex-col justify-center">
               <div className="flex items-center space-x-2.5 border-b border-slate-800 pb-3">
                 <Award className="w-5 h-5 text-[#D4AF37] shrink-0" />
-                <span className="text-sm font-bold uppercase tracking-wide text-white">
-                  Service Standards & Expectations
+                <span className="text-sm font-bold uppercase tracking-wide text-white leading-tight">
+                  Service Standards<br />And Expectations
                 </span>
               </div>
 
