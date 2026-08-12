@@ -72,7 +72,10 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onNavigate, onOpenSamp
               </div>
 
               {/* Logo Area Centered Below Button */}
-<div className="flex justify-center items-center mt-8 mb-4">
+<div 
+  className="flex justify-center items-center" 
+  style={{ marginTop: '32px', marginBottom: '16px' }}
+>
   <img
     src="/Human-AI-Content-Creation-Square.png"
     alt="Human-AI Content Creation Logo"
