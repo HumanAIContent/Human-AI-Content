@@ -19,8 +19,11 @@ export const Navbar: React.FC<NavbarProps> = ({ activePage, onNavigate, onOpenAg
 
   return (
     <header className="sticky top-0 z-50 backdrop-blur-md bg-[#1E293B] border-b border-[#D4AF37]/20">
-      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
+<img 
+  src="/Human AI Content Creation-Square" 
+  alt="Logo" 
+  className="w-6 h-6 object-contain shrink-0" 
+/>
           
           {/* Logo / Brand Name */}
           <div 
