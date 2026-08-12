@@ -4,7 +4,6 @@ import { HeroSection } from '../components/HeroSection';
 import { RecentSitesSection } from '../components/RecentSitesSection';
 import { PricingSection } from '../components/PricingSection';
 import { TestimonialsSection } from '../components/TestimonialsSection';
-import { ProcessPipeline } from '../components/ProcessPipeline';
 import { FaqSection } from '../components/FaqSection';
 import { ArrowRight, Sparkles } from 'lucide-react';
 
@@ -22,33 +21,30 @@ export const HomePage: React.FC<HomePageProps> = ({
   return (
     <div className="space-y-0">
       
-      {/* 1. Hero Section (includes top section for picture of male strategist) */}
+      {/* 1. Content Creation Growth-Engine (Hero Section with Manager Photo & 3 Key Value Boxes) */}
       <HeroSection
         onNavigate={onNavigate}
         onOpenSampleArticle={() => onOpenSampleArticle(null)}
       />
 
-      {/* 2. Process Pipeline (5-step deliverable pipeline) */}
-      <ProcessPipeline />
-
-      {/* 3. Recent Client Sites (List 8 sites) */}
-      <RecentSitesSection
-        onSelectSite={(site) => onOpenSampleArticle(site)}
-      />
-
-      {/* 4. Packages & Pricing (4 agreement plans + comparison matrix) */}
+      {/* 2 & 3. Monthly Retainer Pricing & Feature Comparison Matrix */}
       <PricingSection
         onNavigate={onNavigate}
         onOpenAgreements={onOpenAgreements}
       />
 
-      {/* 5. Mock Testimonials (3 testimonials with pictures) */}
+      {/* 4. Client Feedback & Case Results (Testimonials & Global Brands) */}
       <TestimonialsSection />
 
-      {/* 6. FAQs & Onboarding SLA & Guarantee */}
+      {/* 5. Questions & Guarantees (FAQs & Onboarding SLA) */}
       <FaqSection />
 
-      {/* 7. Trial Article / CTA Banner */}
+      {/* 6. Showcase Portfolio • Live Client Sites (Featured Work) */}
+      <RecentSitesSection
+        onSelectSite={(site) => onOpenSampleArticle(site)}
+      />
+
+      {/* 7. Prefer to Verify Quality First? (Trial Banner CTA) */}
       <section className="py-20 bg-[#0B132B] relative border-t border-[#1E2845]">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-gradient-to-r from-[#151D33] via-[#1E2845] to-[#151D33] rounded-3xl p-8 sm:p-12 border border-[#D4AF37]/40 shadow-2xl relative overflow-hidden text-center space-y-6">
