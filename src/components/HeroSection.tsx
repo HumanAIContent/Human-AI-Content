@@ -152,15 +152,15 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onNavigate, onOpenSamp
               <ul className="space-y-3.5 text-xs text-slate-300 leading-relaxed">
                 <li className="flex items-start space-x-2.5">
                   <svg className="w-4 h-4 text-[#D4AF37] shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                  <span><strong className="text-white">Fast Turnaround:</strong> First article batch delivered within 5–7 business days of onboarding.</span>
+                  <span><strong className="text-white">24- to 48-Hour SLA Response:</strong> Direct response from your content creation manager within 24 to 48 hours. Responses are typically provided within 24 hours, seven days a week.</span>
                 </li>
                 <li className="flex items-start space-x-2.5">
                   <svg className="w-4 h-4 text-[#D4AF37] shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path></svg>
-                  <span><strong className="text-white">Free Revisions:</strong> Unlimited minor edits on every piece until you're completely satisfied.</span>
+                  <span><strong className="text-white">No Long-Term Lock-In Contracts:</strong> Prepaid monthly by-month retainer packages in USD with zero hidden fees or per-word surprises with no long-term lock-in contracts. You enjoy consistent, hands-off content management.</span>
                 </li>
                 <li className="flex items-start space-x-2.5">
                   <Shield className="w-4 h-4 text-[#D4AF37] shrink-0 mt-0.5" />
-                  <span><strong className="text-white">Quality Commitment:</strong> 100% human-polished, native English formatting guaranteed.</span>
+                  <span><strong className="text-white">Password-Free Access:</strong> Secure login for the WordPress Editor & the CoSchedule OAuth API authentication. I will never ask for your social media passwords.</span>
                 </li>
               </ul>
             </div>
