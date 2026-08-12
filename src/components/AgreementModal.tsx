@@ -48,7 +48,7 @@ export const AgreementModal: React.FC<AgreementModalProps> = ({ isOpen, onClose 
               activeTab === 'essential' ? 'bg-[#D4AF37] text-[#0F172A]' : 'text-slate-300 hover:text-white bg-[#1E293B]/60'
             }`}
           >
-            Content Essential ($550/mo)
+            Content Essential ($450/mo)
           </button>
           <button
             onClick={() => setActiveTab('visuals')}
@@ -56,7 +56,7 @@ export const AgreementModal: React.FC<AgreementModalProps> = ({ isOpen, onClose 
               activeTab === 'visuals' ? 'bg-[#D4AF37] text-[#0F172A]' : 'text-slate-300 hover:text-white bg-[#1E293B]/60'
             }`}
           >
-            Content + Visual Assets ($799/mo)
+            Content + Visual Assets ($750/mo)
           </button>
           <button
             onClick={() => setActiveTab('social')}
@@ -64,7 +64,7 @@ export const AgreementModal: React.FC<AgreementModalProps> = ({ isOpen, onClose 
               activeTab === 'social' ? 'bg-[#D4AF37] text-[#0F172A]' : 'text-slate-300 hover:text-white bg-[#1E293B]/60'
             }`}
           >
-            Content + Visuals + Social ($985/mo)
+            Content + Visuals + Social ($999/mo)
           </button>
           <button
             onClick={() => setActiveTab('fullservice')}
