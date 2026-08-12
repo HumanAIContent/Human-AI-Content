@@ -1,8 +1,3 @@
-Here is the updated HeroSection.tsx with tighter padding (py-6 lg:py-8), reduced gaps, and compact box spacing so everything sits much closer together.
-
-Replace all code in src/components/HeroSection.tsx with this updated version:
-
-TypeScript
 import React from 'react';
 import { NavPage } from '../types';
 import { CheckCircle2, Sparkles, Shield, Cpu, Layers } from 'lucide-react';
@@ -95,28 +90,28 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onNavigate, onOpenSamp
 
           </div>
 
-          {/* Right Strategist Image Frame */}
-          <div className="lg:col-span-4 flex flex-col justify-between items-center rounded-lg bg-[#1E293B] p-4 border border-slate-700/50 overflow-hidden shadow-xl text-center">
+          {/* Right Strategist Image Frame - Compact Stacked Layout */}
+          <div className="lg:col-span-4 flex flex-col justify-start items-center rounded-lg bg-[#1E293B] p-4 border border-slate-700/50 shadow-xl text-center">
             
-            {/* Status Badge Top Right */}
-            <div className="w-full flex justify-between items-center mb-1">
+            {/* Status Badge Top */}
+            <div className="w-full flex justify-between items-center mb-3">
               <span className="text-[10px] font-bold uppercase tracking-wider text-slate-300">Content Creation Manager</span>
               <span className="bg-[#0F172A] px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider text-[#D4AF37] border border-[#D4AF37]/30">
                 20+ Yrs Exp
               </span>
             </div>
 
-            {/* Compact Image Container */}
-            <div className="relative w-28 h-28 sm:w-32 sm:h-32 my-1 rounded-lg overflow-hidden grayscale hover:grayscale-0 transition-all duration-500 bg-[#0F172A] border border-slate-700/80 shadow-md shrink-0">
+            {/* Compact Square Portrait (Fixed height/width so it won't stretch) */}
+            <div className="relative w-28 h-28 my-2 rounded-lg overflow-hidden grayscale hover:grayscale-0 transition-all duration-500 bg-[#0F172A] border border-slate-700/80 shadow-md shrink-0">
               <img
                 src="/mikel-portrait.jpg"
                 alt="Mikel - Content Creation Strategist Portrait"
-                className="w-full h-full object-cover object-top"
+                className="w-28 h-28 object-cover object-top"
               />
             </div>
 
-            {/* Text Overlay Box */}
-            <div className="bg-[#0F172A]/90 p-2 rounded border border-slate-700/60 w-full my-1.5">
+            {/* Name Box */}
+            <div className="bg-[#0F172A]/90 p-2.5 rounded border border-slate-700/60 w-full mt-2 mb-3">
               <div className="text-white font-bold text-xs uppercase tracking-wide">
                 Mikel Sims
               </div>
@@ -127,15 +122,15 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onNavigate, onOpenSamp
 
             {/* Bottom 3 Stat Boxes */}
             <div className="w-full grid grid-cols-3 gap-1.5 text-center uppercase">
-              <div className="bg-[#0F172A] p-1.5 rounded border border-slate-800">
+              <div className="bg-[#0F172A] p-2 rounded border border-slate-800">
                 <div className="text-white text-xs font-bold">200+</div>
                 <div className="text-slate-500 text-[8px] leading-tight mt-0.5">Articles Created</div>
               </div>
-              <div className="bg-[#0F172A] p-1.5 rounded border border-slate-800">
+              <div className="bg-[#0F172A] p-2 rounded border border-slate-800">
                 <div className="text-[#D4AF37] text-xs font-bold">100%</div>
                 <div className="text-slate-500 text-[8px] leading-tight mt-0.5">Native English</div>
               </div>
-              <div className="bg-[#0F172A] p-1.5 rounded border border-slate-800">
+              <div className="bg-[#0F172A] p-2 rounded border border-slate-800">
                 <div className="text-emerald-400 text-xs font-bold">20+ Yrs</div>
                 <div className="text-slate-500 text-[8px] leading-tight mt-0.5">Experience</div>
               </div>
