@@ -24,19 +24,11 @@ export const Navbar: React.FC<NavbarProps> = ({ activePage, onNavigate, onOpenAg
   onClick={() => handleNavClick('home')}
   className="flex items-center space-x-2 cursor-pointer group"
 >
-  <img 
-    src="/Human-AI-Content-Creation-Square.png" 
-    alt="Human AI Content Creation Logo" 
-    className="h-8 w-auto object-contain shrink-0" 
-  />
-  <div>
-    <div className="flex items-center space-x-1">
-      <span className="font-bold text-[10px] sm:text-xs tracking-tight text-white uppercase">
-        HUMAN <span className="text-[#D4AF37]">AI</span> CONTENT CREATION
-      </span>
-    </div>
-  </div>
-</div>
+<img 
+  src="/Human-AI-Content-Creation-Square.png" 
+  alt="Human AI Content Creation Logo" 
+  className="h-8 w-auto object-contain shrink-0" 
+/>
           
           {/* Logo / Brand Name */}
           <div 
