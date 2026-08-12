@@ -50,12 +50,6 @@ export const RecentSitesSection: React.FC<RecentSitesSectionProps> = ({ onSelect
                   Client Site #{index + 1}
                 </div>
 
-                {/* Key Metric Badge Top Right */}
-                <div className="absolute top-2.5 right-2.5 bg-[#0F172A]/90 px-2.5 py-0.5 border border-[#D4AF37]/40 text-[11px] font-extrabold text-[#D4AF37] flex items-center space-x-1 uppercase">
-                  <TrendingUp className="w-3 h-3 text-emerald-400" />
-                  <span>{site.metrics}</span>
-                </div>
-
                 {/* Domain & Niche overlay */}
                 <div className="absolute bottom-2.5 left-2.5 right-2.5">
                   <div className="text-[10px] font-bold text-[#D4AF37] uppercase tracking-widest">
