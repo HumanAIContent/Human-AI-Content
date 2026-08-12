@@ -37,6 +37,8 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onNavigate, onOpenSamp
                 <br /><br />
                 If you're looking for a reliable, virtually hands-off website and social media content creation solution, please check out my services to see if they fit your needs.
               </p>
+              </p>
+            </p>
 
               {/* Value Highlights Grid */}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 mb-5">
