@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { NavPage } from '../types';
-import { Sparkles, Menu, X, ArrowRight, FileText, CheckCircle2 } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 
 interface NavbarProps {
   activePage: NavPage;
@@ -19,28 +19,28 @@ export const Navbar: React.FC<NavbarProps> = ({ activePage, onNavigate, onOpenAg
 
   return (
     <header className="sticky top-0 z-50 backdrop-blur-md bg-[#1E293B] border-b border-[#D4AF37]/20">
-{/* Logo / Brand Name */}
-<div 
-  onClick={() => handleNavClick('home')}
-  className="flex items-center space-x-2 cursor-pointer group"
->
-<img 
-  src="/Human-AI-Content-Creation-Square.png" 
-  alt="Human AI Content Creation Logo" 
-  className="h-8 w-auto object-contain shrink-0" 
-/>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex items-center justify-between h-16">
           
           {/* Logo / Brand Name */}
           <div 
             onClick={() => handleNavClick('home')}
-            className="flex items-center space-x-1.5 cursor-pointer group"
+            className="flex items-center space-x-3 cursor-pointer group"
           >
-            <div className="w-5 h-5 bg-[#D4AF37] rounded-sm flex items-center justify-center font-bold text-[#0F172A] text-[9px] shrink-0">
-              HA
-            </div>
-            <div>
-              <div className="flex items-center space-x-1">
-                <span className="font-bold text-[10px] sm:text-xs tracking-tight text-white uppercase">HUMAN <span className="text-[#D4AF37]">AI</span> CONTENT CREATION</span>
+            <img 
+              src="/Human-AI-Content-Creation-Square.png" 
+              alt="Human AI Content Creation Logo" 
+              className="h-8 w-auto object-contain shrink-0" 
+            />
+            
+            <div className="flex items-center space-x-1.5">
+              <div className="w-5 h-5 bg-[#D4AF37] rounded-sm flex items-center justify-center font-bold text-[#0F172A] text-[9px] shrink-0">
+                HA
+              </div>
+              <div>
+                <span className="font-bold text-[10px] sm:text-xs tracking-tight text-white uppercase">
+                  HUMAN <span className="text-[#D4AF37]">AI</span> CONTENT CREATION
+                </span>
               </div>
             </div>
           </div>
