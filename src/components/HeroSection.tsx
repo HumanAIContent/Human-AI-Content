@@ -91,7 +91,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onNavigate, onOpenSamp
           </div>
 
           {/* Right Column Frame */}
-          <div className="lg:col-span-4 flex flex-col justify-between rounded-lg bg-[#1E293B] p-4 border border-slate-700/50 shadow-xl text-center space-y-3">
+          <div className="lg:col-span-4 flex flex-col justify-between rounded-lg bg-[#1E293B] p-4 border border-slate-700/50 shadow-xl text-center space-y-4">
 
             {/* Portrait & Stats Group */}
             <div className="flex flex-col items-center space-y-3">
@@ -131,27 +131,27 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onNavigate, onOpenSamp
               </div>
             </div>
 
-            {/* Onboarding SLA & Guarantee Card */}
-            <div className="bg-[#0F172A] p-3.5 rounded-lg border border-[#D4AF37]/30 text-left space-y-2.5">
-              <div className="flex items-center space-x-2 border-b border-slate-800 pb-2">
-                <Award className="w-4 h-4 text-[#D4AF37] shrink-0" />
-                <span className="text-xs font-bold uppercase tracking-wide text-white">
+            {/* Onboarding SLA & Guarantee Card - Scaled Up to Fill Space */}
+            <div className="bg-[#0F172A] p-4 sm:p-5 rounded-lg border border-[#D4AF37]/40 text-left space-y-4 flex-1 flex flex-col justify-center">
+              <div className="flex items-center space-x-2.5 border-b border-slate-800 pb-3">
+                <Award className="w-5 h-5 text-[#D4AF37] shrink-0" />
+                <span className="text-sm font-bold uppercase tracking-wide text-white">
                   Onboarding SLA & Guarantee
                 </span>
               </div>
 
-              <ul className="space-y-2 text-[11px] text-slate-300">
-                <li className="flex items-start space-x-2">
-                  <Clock className="w-3.5 h-3.5 text-[#D4AF37] shrink-0 mt-0.5" />
-                  <span><strong>Fast Turnaround:</strong> First article batch delivered within 5–7 business days of onboarding.</span>
+              <ul className="space-y-3.5 text-xs text-slate-300 leading-relaxed">
+                <li className="flex items-start space-x-2.5">
+                  <Clock className="w-4 h-4 text-[#D4AF37] shrink-0 mt-0.5" />
+                  <span><strong className="text-white">Fast Turnaround:</strong> First article batch delivered within 5–7 business days of onboarding.</span>
                 </li>
-                <li className="flex items-start space-x-2">
-                  <RotateCcw className="w-3.5 h-3.5 text-[#D4AF37] shrink-0 mt-0.5" />
-                  <span><strong>Free Revisions:</strong> Unlimited minor edits on every piece until you're completely satisfied.</span>
+                <li className="flex items-start space-x-2.5">
+                  <RotateCcw className="w-4 h-4 text-[#D4AF37] shrink-0 mt-0.5" />
+                  <span><strong className="text-white">Free Revisions:</strong> Unlimited minor edits on every piece until you're completely satisfied.</span>
                 </li>
-                <li className="flex items-start space-x-2">
-                  <Shield className="w-3.5 h-3.5 text-[#D4AF37] shrink-0 mt-0.5" />
-                  <span><strong>Quality Commitment:</strong> 100% human-polished, native English formatting guaranteed.</span>
+                <li className="flex items-start space-x-2.5">
+                  <Shield className="w-4 h-4 text-[#D4AF37] shrink-0 mt-0.5" />
+                  <span><strong className="text-white">Quality Commitment:</strong> 100% human-polished, native English formatting guaranteed.</span>
                 </li>
               </ul>
             </div>
