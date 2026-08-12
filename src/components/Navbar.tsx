@@ -33,15 +33,10 @@ export const Navbar: React.FC<NavbarProps> = ({ activePage, onNavigate, onOpenAg
               className="h-8 w-auto object-contain shrink-0" 
             />
             
-            <div className="flex items-center space-x-1.5">
-              <div className="w-5 h-5 bg-[#D4AF37] rounded-sm flex items-center justify-center font-bold text-[#0F172A] text-[9px] shrink-0">
-                HA
-              </div>
-              <div>
-                <span className="font-bold text-[10px] sm:text-xs tracking-tight text-white uppercase">
-                  HUMAN <span className="text-[#D4AF37]">AI</span> CONTENT CREATION
-                </span>
-              </div>
+            <div>
+              <span className="font-bold text-[10px] sm:text-xs tracking-tight text-white uppercase">
+                HUMAN <span className="text-[#D4AF37]">AI</span> CONTENT CREATION
+              </span>
             </div>
           </div>
 
@@ -82,7 +77,7 @@ export const Navbar: React.FC<NavbarProps> = ({ activePage, onNavigate, onOpenAg
             <button
               onClick={() => handleNavClick('about')}
               className={`transition-colors py-1 ${
-                activePage === 'about' ? 'text-[#D4AF37] border-b-2 border-[#D4AF37]' : 'text-slate-300 hover:text-[#D4AF37]'
+                activePage === 'about' ? 'text-[#D4AF37] border-b-2 border-[#D4AF37]' : 'text-slate-[#D4AF37] hover:text-[#D4AF37]'
               }`}
             >
               About
