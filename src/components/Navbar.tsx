@@ -57,7 +57,7 @@ export const Navbar: React.FC<NavbarProps> = ({ activePage, onNavigate, onOpenAg
               }}
               className="text-slate-300 hover:text-[#D4AF37] transition-colors py-1"
             >
-              Client Sites
+              Featured Work
             </button>
             <button
               onClick={() => {
@@ -77,7 +77,7 @@ export const Navbar: React.FC<NavbarProps> = ({ activePage, onNavigate, onOpenAg
                 activePage === 'about' ? 'text-[#D4AF37] border-b-2 border-[#D4AF37]' : 'text-slate-300 hover:text-[#D4AF37]'
               }`}
             >
-              About Me
+              About
             </button>
           </nav>
 
