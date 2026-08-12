@@ -35,6 +35,7 @@ export const RecentSitesSection: React.FC<RecentSitesSectionProps> = ({ onSelect
               key={site.id}
               className="group bg-[#1E293B] rounded border border-slate-700/50 hover:border-[#D4AF37]/50 overflow-hidden transition-all duration-300 flex flex-col justify-between shadow-lg"
             >
+              
                 {/* Domain & Niche overlay */}
                 <div className="absolute bottom-2.5 left-2.5 right-2.5">
                   <div className="text-[10px] font-bold text-[#D4AF37] uppercase tracking-widest">
