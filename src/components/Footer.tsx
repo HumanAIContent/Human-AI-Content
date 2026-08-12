@@ -88,15 +88,6 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, onOpenAgreements }) 
                   About
                 </button>
               </li>
-              <li>
-                <button 
-                  onClick={onOpenAgreements} 
-                  className="hover:text-[#D4AF37] transition-colors flex items-center space-x-1 text-[#D4AF37] font-semibold"
-                >
-                  <FileText className="w-3.5 h-3.5" />
-                  <span>Client Agreement Samples</span>
-                </button>
-              </li>
             </ul>
           </div>
 
