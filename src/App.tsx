@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { NavPage, RecentSite } from './types';
 import { Navbar } from './components/Navbar';
 import { Footer } from './components/Footer';
@@ -16,6 +16,21 @@ export default function App() {
   const [isSampleModalOpen, setIsSampleModalOpen] = useState(false);
   const [selectedSiteForSample, setSelectedSiteForSample] = useState<RecentSite | null>(null);
   const [isAgreementModalOpen, setIsAgreementModalOpen] = useState(false);
+
+  // Reset scroll position to top on page switch
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, [activePage]);
+
+  // Handle body scroll locking when modals are active
+  useEffect(() => {
+    const isAnyModalOpen = isSampleModalOpen || isAgreementModalOpen;
+    document.body.style.overflow = isAnyModalOpen ? 'hidden' : 'unset';
+
+    return () => {
+      document.body.style.overflow = 'unset';
+    };
+  }, [isSampleModalOpen, isAgreementModalOpen]);
 
   const handleNavigate = (page: NavPage, selectedPackage?: string) => {
     setActivePage(page);
@@ -40,7 +55,7 @@ export default function App() {
       />
 
       {/* Main Page View */}
-      <main className="flex-1">
+      <main id="main-content" className="flex-1 focus:outline-none" tabIndex={-1}>
         {activePage === 'home' && (
           <HomePage
             onNavigate={handleNavigate}
