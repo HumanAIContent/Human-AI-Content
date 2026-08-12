@@ -45,21 +45,6 @@ export const RecentSitesSection: React.FC<RecentSitesSectionProps> = ({ onSelect
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#1E293B] via-transparent to-transparent opacity-80" />
 
-                {/* Number Badge Top Left */}
-                <div className="absolute top-2.5 left-2.5 bg-[#0F172A]/90 px-2 py-0.5 text-[10px] font-bold text-slate-300 border border-slate-700/60 uppercase">
-                  Client Site #{index + 1}
-                </div>
-
-                {/* Domain & Niche overlay */}
-                <div className="absolute bottom-2.5 left-2.5 right-2.5">
-                  <div className="text-[10px] font-bold text-[#D4AF37] uppercase tracking-widest">
-                    {site.niche}
-                  </div>
-                  <div className="text-white font-extrabold text-base tracking-wide truncate uppercase">
-                    {site.name}
-                  </div>
-                </div>
-              </div>
 
               {/* Card Body */}
               <div className="p-4 space-y-3 flex-1 flex flex-col justify-between">
