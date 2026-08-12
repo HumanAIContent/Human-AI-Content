@@ -63,7 +63,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, onOpenAgreements }) 
                   }}
                   className="hover:text-[#D4AF37] transition-colors"
                 >
-                  Recent Client Sites
+                  Featured Work
                 </button>
               </li>
               <li>
