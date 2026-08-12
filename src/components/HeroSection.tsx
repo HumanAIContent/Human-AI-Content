@@ -12,9 +12,9 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onNavigate, onOpenSamp
     <section className="relative overflow-hidden py-6 lg:py-8 bg-[#0F172A]">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-5 items-stretch">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-5 items-start">
           
-          {/* Main Hero Card Container with Left Gold Accent Border */}
+          {/* Main Hero Card Container */}
           <div className="lg:col-span-8 flex flex-col justify-between rounded-lg bg-[#1E293B] p-6 lg:p-7 border-l-4 border-[#D4AF37] border-y border-r border-slate-700/50 shadow-xl">
             
             <div>
@@ -90,33 +90,25 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onNavigate, onOpenSamp
 
           </div>
 
-          {/* Right Strategist Image Frame - Compact Stacked Layout */}
-          <div className="lg:col-span-4 flex flex-col justify-start items-center rounded-lg bg-[#1E293B] p-4 border border-slate-700/50 shadow-xl text-center">
-            
-            {/* Status Badge Top */}
-            <div className="w-full flex justify-between items-center mb-3">
-              <span className="text-[10px] font-bold uppercase tracking-wider text-slate-300">Content Creation Manager</span>
-              <span className="bg-[#0F172A] px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider text-[#D4AF37] border border-[#D4AF37]/30">
-                20+ Yrs Exp
-              </span>
-            </div>
+          {/* Right Strategist Image Frame */}
+          <div className="lg:col-span-4 flex flex-col items-center rounded-lg bg-[#1E293B] p-4 border border-slate-700/50 shadow-xl text-center space-y-3">
 
-            {/* Compact Square Portrait (Fixed height/width so it won't stretch) */}
-            <div className="relative w-28 h-28 my-2 rounded-lg overflow-hidden grayscale hover:grayscale-0 transition-all duration-500 bg-[#0F172A] border border-slate-700/80 shadow-md shrink-0">
+            {/* Portrait Image Container */}
+            <div className="relative w-32 h-32 rounded-lg overflow-hidden grayscale hover:grayscale-0 transition-all duration-500 bg-[#0F172A] border border-slate-700/80 shadow-md shrink-0">
               <img
                 src="/mikel-portrait.jpg"
                 alt="Mikel - Content Creation Strategist Portrait"
-                className="w-28 h-28 object-cover object-top"
+                className="w-full h-full object-cover object-top"
               />
             </div>
 
             {/* Name Box */}
-            <div className="bg-[#0F172A]/90 p-2.5 rounded border border-slate-700/60 w-full mt-2 mb-3">
+            <div className="bg-[#0F172A]/90 p-2.5 rounded border border-slate-700/60 w-full">
               <div className="text-white font-bold text-xs uppercase tracking-wide">
                 Mikel Sims
               </div>
               <div className="text-[10px] text-slate-400 mt-0.5 leading-tight">
-                AI-Assisted Human-Edited Content Creator
+                AI-Assisted Human-Edited Content Creation Manager
               </div>
             </div>
 
