@@ -66,53 +66,55 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ onNavigate, onOp
                   </div>
                 )}
 
-                {/* Plan Name & Tagline */}
-                <div className="p-6 pb-4">
-                  <h3 className="text-lg font-bold text-[#D4AF37] uppercase tracking-wide">{pkg.name}</h3>
-                  <p className="text-xs text-slate-300 mt-1 min-h-[36px] leading-relaxed">
+                {/* Plan Name & Tagline - Reduced font sizes */}
+                <div className="p-5 pb-3">
+                  <h3 className="text-base font-bold text-[#D4AF37] uppercase tracking-wide">
+                    {pkg.name}
+                  </h3>
+                  <p className="text-[11px] text-slate-300 mt-1 min-h-[32px] leading-relaxed">
                     {pkg.tagline}
                   </p>
                 </div>
 
-                {/* Pricing Display */}
-                <div className="px-6 py-3 border-t border-b border-slate-700/50">
+                {/* Pricing Display - Compact */}
+                <div className="px-5 py-2.5 border-t border-b border-slate-700/50">
                   <div className="flex items-baseline space-x-1.5">
-                    <span className="text-3xl font-extrabold text-white">
+                    <span className="text-2xl font-extrabold text-white">
                       ${pkg.monthlyRetainer.toLocaleString()}
                     </span>
-                    <span className="text-xs font-semibold text-slate-400">USD / mo</span>
+                    <span className="text-[10px] font-semibold text-slate-400">USD / mo</span>
                   </div>
-                  <div className="text-[11px] font-bold text-[#D4AF37] uppercase tracking-wider">
-                    One-Time Setup Fee: ${pkg.setupFee} USD
+                  <div className="text-[10px] font-bold text-[#D4AF37] uppercase tracking-wider">
+                    Setup: ${pkg.setupFee} USD
                   </div>
                 </div>
 
-                {/* CTA Button */}
-                <div className="px-6 py-3">
+                {/* CTA Button - Compact */}
+                <div className="px-5 py-2.5">
                   <button
                     onClick={() => onNavigate('contact', pkg.id)}
-                    className={`w-full py-2.5 px-4 font-bold text-xs uppercase tracking-wider transition-colors flex items-center justify-center space-x-1.5 ${
+                    className={`w-full py-2 px-4 font-bold text-[10px] uppercase tracking-wider transition-colors flex items-center justify-center space-x-1.5 ${
                       isPopular
                         ? 'bg-[#D4AF37] hover:bg-[#C19A2E] text-[#0F172A]'
                         : 'bg-slate-800 hover:bg-[#D4AF37] text-[#D4AF37] hover:text-[#0F172A] border border-[#D4AF37]/30'
                     }`}
                   >
                     <span>Enquire Now</span>
-                    <ArrowRight className="w-3.5 h-3.5" />
+                    <ArrowRight className="w-3 h-3" />
                   </button>
                 </div>
 
                 {/* Features Section - This grows/shrinks */}
-                <div className="px-6 py-3 flex-1 flex flex-col">
-                  <div className="text-[11px] font-bold text-slate-300 uppercase tracking-widest">
+                <div className="px-5 py-2.5 flex-1 flex flex-col">
+                  <div className="text-[10px] font-bold text-slate-300 uppercase tracking-widest">
                     Includes:
                   </div>
                   
                   {!isFullService && (
-                    <ul className="space-y-2 text-xs text-slate-200 mt-2">
+                    <ul className="space-y-1.5 text-[11px] text-slate-200 mt-2">
                       {pkg.deliverables.map((item, idx) => (
                         <li key={idx} className="flex items-start space-x-2 leading-snug">
-                          <Check className="w-3.5 h-3.5 text-[#D4AF37] shrink-0 mt-0.5" />
+                          <Check className="w-3 h-3 text-[#D4AF37] shrink-0 mt-0.5" />
                           <span>{item}</span>
                         </li>
                       ))}
@@ -121,10 +123,10 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ onNavigate, onOp
 
                   {isFullService && (
                     <>
-                      <ul className="space-y-2 text-xs text-slate-200 mt-2">
+                      <ul className="space-y-1.5 text-[11px] text-slate-200 mt-2">
                         {pkg.deliverables.slice(0, 4).map((item, idx) => (
                           <li key={idx} className="flex items-start space-x-2 leading-snug">
-                            <Check className="w-3.5 h-3.5 text-[#D4AF37] shrink-0 mt-0.5" />
+                            <Check className="w-3 h-3 text-[#D4AF37] shrink-0 mt-0.5" />
                             <span>{item}</span>
                           </li>
                         ))}
@@ -132,7 +134,7 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ onNavigate, onOp
 
                       <button
                         onClick={toggleFullServiceDetails}
-                        className="text-[11px] font-bold text-[#D4AF37] hover:text-[#C19A2E] transition-colors flex items-center space-x-1.5 mt-2 group"
+                        className="text-[10px] font-bold text-[#D4AF37] hover:text-[#C19A2E] transition-colors flex items-center space-x-1.5 mt-2 group"
                       >
                         <span>{isExpanded ? 'Show Less' : 'Show More'}</span>
                         {isExpanded ? (
@@ -145,10 +147,10 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ onNavigate, onOp
                       <div className={`overflow-hidden transition-all duration-300 ${
                         isExpanded ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0'
                       }`}>
-                        <ul className="space-y-2 text-xs text-slate-200 pt-2">
+                        <ul className="space-y-1.5 text-[11px] text-slate-200 pt-2">
                           {pkg.deliverables.slice(4).map((item, idx) => (
                             <li key={idx} className="flex items-start space-x-2 leading-snug">
-                              <Check className="w-3.5 h-3.5 text-[#D4AF37] shrink-0 mt-0.5" />
+                              <Check className="w-3 h-3 text-[#D4AF37] shrink-0 mt-0.5" />
                               <span>{item}</span>
                             </li>
                           ))}
@@ -161,7 +163,7 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ onNavigate, onOp
                 </div>
 
                 {/* Footer - Always at bottom */}
-                <div className="p-3 bg-[#0F172A] border-t border-slate-700/50 text-[11px] text-slate-400">
+                <div className="p-2.5 bg-[#0F172A] border-t border-slate-700/50 text-[10px] text-slate-400">
                   <span className="font-bold text-slate-300">Ideal for: </span>
                   {pkg.idealFor}
                 </div>
