@@ -66,7 +66,8 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ onNavigate, onOp
                   </div>
                 )}
 
-                <div className="p-6 space-y-5 flex-1 flex flex-col">
+                {/* Top section: Plan name, pricing, and CTA button */}
+                <div className="p-6 space-y-5">
                   
                   {/* Plan Name & Tagline */}
                   <div>
@@ -76,8 +77,8 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ onNavigate, onOp
                     </p>
                   </div>
 
-                  {/* Pricing Display */}
-                  <div className="border-t border-b border-slate-700/50 py-3 space-y-1">
+                  {/* Pricing Display - Fixed height container */}
+                  <div className="border-t border-b border-slate-700/50 py-3 space-y-1 min-h-[82px]">
                     <div className="flex items-baseline space-x-1.5">
                       <span className="text-3xl font-extrabold text-white">
                         ${pkg.monthlyRetainer.toLocaleString()}
@@ -89,8 +90,8 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ onNavigate, onOp
                     </div>
                   </div>
 
-                  {/* CTA Button: Enquire Now */}
-                  <div>
+                  {/* CTA Button: Enquire Now - Fixed height container */}
+                  <div className="min-h-[44px]">
                     <button
                       onClick={() => onNavigate('contact', pkg.id)}
                       className={`w-full py-2.5 px-4 font-bold text-xs uppercase tracking-wider transition-colors flex items-center justify-center space-x-1.5 ${
@@ -103,71 +104,70 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ onNavigate, onOp
                       <ArrowRight className="w-3.5 h-3.5" />
                     </button>
                   </div>
+                </div>
 
-                  {/* Core Features Included */}
-                  <div className="space-y-2.5 pt-1 flex-1 flex flex-col">
-                    <div className="text-[11px] font-bold text-slate-300 uppercase tracking-widest">
-                      Includes:
-                    </div>
-                    
-                    {/* Show all deliverables for packages 1-3 */}
-                    {!isFullService && (
+                {/* Bottom section: Features - This is where the variable content lives */}
+                <div className="px-6 pb-6 space-y-2.5 flex-1 flex flex-col">
+                  <div className="text-[11px] font-bold text-slate-300 uppercase tracking-widest">
+                    Includes:
+                  </div>
+                  
+                  {/* Show all deliverables for packages 1-3 */}
+                  {!isFullService && (
+                    <ul className="space-y-2 text-xs text-slate-200">
+                      {pkg.deliverables.map((item, idx) => (
+                        <li key={idx} className="flex items-start space-x-2 leading-snug">
+                          <Check className="w-3.5 h-3.5 text-[#D4AF37] shrink-0 mt-0.5" />
+                          <span>{item}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  )}
+
+                  {/* Full-Service package with collapsible details */}
+                  {isFullService && (
+                    <>
+                      {/* Show first 4 items always visible */}
                       <ul className="space-y-2 text-xs text-slate-200">
-                        {pkg.deliverables.map((item, idx) => (
+                        {pkg.deliverables.slice(0, 4).map((item, idx) => (
                           <li key={idx} className="flex items-start space-x-2 leading-snug">
                             <Check className="w-3.5 h-3.5 text-[#D4AF37] shrink-0 mt-0.5" />
                             <span>{item}</span>
                           </li>
                         ))}
                       </ul>
-                    )}
 
-                    {/* Full-Service package with collapsible details */}
-                    {isFullService && (
-                      <>
-                        {/* Show first 4 items always visible (including Meta Titles) */}
-                        <ul className="space-y-2 text-xs text-slate-200">
-                          {pkg.deliverables.slice(0, 4).map((item, idx) => (
+                      {/* "Show More" trigger */}
+                      <button
+                        onClick={toggleFullServiceDetails}
+                        className="text-[11px] font-bold text-[#D4AF37] hover:text-[#C19A2E] transition-colors flex items-center space-x-1.5 mt-1 group"
+                      >
+                        <span>{isExpanded ? 'Show Less' : 'Show More'}</span>
+                        {isExpanded ? (
+                          <ChevronUp className="w-3.5 h-3.5" />
+                        ) : (
+                          <ChevronDown className="w-3.5 h-3.5" />
+                        )}
+                      </button>
+
+                      {/* Collapsible remaining items */}
+                      <div className={`overflow-hidden transition-all duration-300 ${
+                        isExpanded ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0'
+                      }`}>
+                        <ul className="space-y-2 text-xs text-slate-200 pt-2">
+                          {pkg.deliverables.slice(4).map((item, idx) => (
                             <li key={idx} className="flex items-start space-x-2 leading-snug">
                               <Check className="w-3.5 h-3.5 text-[#D4AF37] shrink-0 mt-0.5" />
                               <span>{item}</span>
                             </li>
                           ))}
                         </ul>
+                      </div>
 
-                        {/* "Show More" trigger - displayed inline after the 4th feature */}
-                        <button
-                          onClick={toggleFullServiceDetails}
-                          className="text-[11px] font-bold text-[#D4AF37] hover:text-[#C19A2E] transition-colors flex items-center space-x-1.5 mt-1 group"
-                        >
-                          <span>{isExpanded ? 'Show Less' : 'Show More'}</span>
-                          {isExpanded ? (
-                            <ChevronUp className="w-3.5 h-3.5" />
-                          ) : (
-                            <ChevronDown className="w-3.5 h-3.5" />
-                          )}
-                        </button>
-
-                        {/* Collapsible remaining items */}
-                        <div className={`overflow-hidden transition-all duration-300 ${
-                          isExpanded ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0'
-                        }`}>
-                          <ul className="space-y-2 text-xs text-slate-200 pt-2">
-                            {pkg.deliverables.slice(4).map((item, idx) => (
-                              <li key={idx} className="flex items-start space-x-2 leading-snug">
-                                <Check className="w-3.5 h-3.5 text-[#D4AF37] shrink-0 mt-0.5" />
-                                <span>{item}</span>
-                              </li>
-                            ))}
-                          </ul>
-                        </div>
-
-                        {/* Spacer to maintain card height when collapsed */}
-                        {!isExpanded && <div className="flex-1" />}
-                      </>
-                    )}
-                  </div>
-
+                      {/* Spacer to maintain card height when collapsed */}
+                      {!isExpanded && <div className="flex-1" />}
+                    </>
+                  )}
                 </div>
 
                 {/* Footer Info */}
