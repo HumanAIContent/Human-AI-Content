@@ -16,6 +16,20 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ onNavigate, onOp
     setShowFullServiceDetails(!showFullServiceDetails);
   };
 
+  // Define the new taglines for each package
+  const getTagline = (pkgId: string) => {
+    switch (pkgId) {
+      case 'essential':
+        return 'High-Performance AI-Assisted Human-Edited SEO & GEO Articles—Delivered as Pure Text. Deeply researched, content crafted for brands and agencies that manage their own publishing. Articles are delivered polished and publication-ready for complete in-house control.';
+      case 'visuals':
+        return 'In-depth long-form AI-Assisted Human-Edited articles with dual SEO/GEO optimization, accompanied by custom-branded Canva graphics, infographics, charts, and data tables. All content and custom visual assets are delivered and ready for review and publishing.';
+      case 'social':
+        return 'Social media content creation (CoSchedule) with hands-off scheduling. Custom Canva visuals, paired with AI-assisted, Human-edited, long-form articles. All deliverables are created, formatted, and delivered via a shared Google Drive.';
+      default:
+        return ''; // Full-service uses its own tagline from the data
+    }
+  };
+
   return (
     <section id="packages" className="py-16 bg-[#0F172A] relative border-t border-slate-700/50">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -31,17 +45,11 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ onNavigate, onOp
             Content Management Plans
           </h2>
 
-          {/* UPDATED COPY HERE */}
           <p className="text-slate-300 text-sm sm:text-base leading-relaxed font-normal">
             All-inclusive monthly retainers with zero hidden fees, no per-word surprises, and no long-term lock-in contracts. Every plan includes a structured review and approval workflow—content never goes live without your explicit approval.
           </p>
 
-          <div className="pt-1 flex items-center justify-center space-x-4 text-xs font-bold uppercase tracking-wider text-slate-400">
-            <span className="flex items-center space-x-1">
-              <span className="w-2 h-2 rounded-full bg-emerald-400" />
-              <span>MONTH-TO-MONTH FLEXIBILITY WITH NO LOCK-IN CONTRACTS</span>
-            </span>
-          </div>
+          {/* Removed: MONTH-TO-MONTH FLEXIBILITY WITH NO LOCK-IN CONTRACTS */}
         </div>
 
         {/* 4 Package Cards Grid */}
@@ -50,6 +58,9 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ onNavigate, onOp
             const isPopular = pkg.isPopular;
             const isFullService = pkg.id === 'fullservice';
             const isExpanded = showFullServiceDetails && isFullService;
+            
+            // Use custom tagline for first 3 packages, keep original for full-service
+            const tagline = isFullService ? pkg.tagline : getTagline(pkg.id);
 
             return (
               <div
@@ -76,7 +87,7 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ onNavigate, onOp
                       {pkg.name}
                     </h3>
                     <p className="text-[11px] text-slate-300 mt-1 leading-relaxed text-center">
-                      {pkg.tagline}
+                      {tagline}
                     </p>
                   </div>
 
