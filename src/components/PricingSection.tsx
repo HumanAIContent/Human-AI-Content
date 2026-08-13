@@ -44,7 +44,7 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ onNavigate, onOp
         </div>
 
         {/* 4 Package Cards Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 items-stretch mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
           {PACKAGES.map((pkg) => {
             const isPopular = pkg.isPopular;
             const isFullService = pkg.id === 'fullservice';
@@ -53,7 +53,7 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ onNavigate, onOp
             return (
               <div
                 key={pkg.id}
-                className={`relative rounded flex flex-col h-full ${
+                className={`relative rounded flex flex-col ${
                   isPopular
                     ? 'bg-[#1E293B] border-2 border-[#D4AF37] shadow-xl border-l-4'
                     : 'bg-[#1E293B] border border-slate-700/50 hover:border-[#D4AF37]/50'
@@ -66,55 +66,50 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ onNavigate, onOp
                   </div>
                 )}
 
-                {/* TOP SECTION - Fixed height content that should align across all cards */}
-                <div className="p-6 space-y-5">
-                  
-                  {/* Plan Name & Tagline */}
-                  <div>
-                    <h3 className="text-lg font-bold text-[#D4AF37] uppercase tracking-wide">{pkg.name}</h3>
-                    <p className="text-xs text-slate-300 mt-1 min-h-[36px] leading-relaxed">
-                      {pkg.tagline}
-                    </p>
-                  </div>
+                {/* Plan Name & Tagline */}
+                <div className="p-6 pb-0">
+                  <h3 className="text-lg font-bold text-[#D4AF37] uppercase tracking-wide">{pkg.name}</h3>
+                  <p className="text-xs text-slate-300 mt-1 min-h-[36px] leading-relaxed">
+                    {pkg.tagline}
+                  </p>
+                </div>
 
-                  {/* Pricing Display - Fixed height */}
-                  <div className="border-t border-b border-slate-700/50 py-3 space-y-1 h-[82px] flex flex-col justify-center">
-                    <div className="flex items-baseline space-x-1.5">
-                      <span className="text-3xl font-extrabold text-white">
-                        ${pkg.monthlyRetainer.toLocaleString()}
-                      </span>
-                      <span className="text-xs font-semibold text-slate-400">USD / mo</span>
-                    </div>
-                    <div className="text-[11px] font-bold text-[#D4AF37] uppercase tracking-wider">
-                      One-Time Setup Fee: ${pkg.setupFee} USD
-                    </div>
+                {/* Pricing Display - Fixed height container with borders */}
+                <div className="px-6 py-3 border-t border-b border-slate-700/50 my-3 h-[82px] flex flex-col justify-center">
+                  <div className="flex items-baseline space-x-1.5">
+                    <span className="text-3xl font-extrabold text-white">
+                      ${pkg.monthlyRetainer.toLocaleString()}
+                    </span>
+                    <span className="text-xs font-semibold text-slate-400">USD / mo</span>
                   </div>
-
-                  {/* CTA Button - Fixed height */}
-                  <div className="h-[44px]">
-                    <button
-                      onClick={() => onNavigate('contact', pkg.id)}
-                      className={`w-full py-2.5 px-4 font-bold text-xs uppercase tracking-wider transition-colors flex items-center justify-center space-x-1.5 ${
-                        isPopular
-                          ? 'bg-[#D4AF37] hover:bg-[#C19A2E] text-[#0F172A]'
-                          : 'bg-slate-800 hover:bg-[#D4AF37] text-[#D4AF37] hover:text-[#0F172A] border border-[#D4AF37]/30'
-                      }`}
-                    >
-                      <span>Enquire Now</span>
-                      <ArrowRight className="w-3.5 h-3.5" />
-                    </button>
+                  <div className="text-[11px] font-bold text-[#D4AF37] uppercase tracking-wider">
+                    One-Time Setup Fee: ${pkg.setupFee} USD
                   </div>
                 </div>
 
-                {/* BOTTOM SECTION - Variable content that can grow/shrink */}
-                <div className="px-6 pb-6 flex-1 flex flex-col">
+                {/* CTA Button - Fixed height */}
+                <div className="px-6 h-[44px]">
+                  <button
+                    onClick={() => onNavigate('contact', pkg.id)}
+                    className={`w-full py-2.5 px-4 font-bold text-xs uppercase tracking-wider transition-colors flex items-center justify-center space-x-1.5 ${
+                      isPopular
+                        ? 'bg-[#D4AF37] hover:bg-[#C19A2E] text-[#0F172A]'
+                        : 'bg-slate-800 hover:bg-[#D4AF37] text-[#D4AF37] hover:text-[#0F172A] border border-[#D4AF37]/30'
+                    }`}
+                  >
+                    <span>Enquire Now</span>
+                    <ArrowRight className="w-3.5 h-3.5" />
+                  </button>
+                </div>
+
+                {/* Features Section - This grows/shrinks */}
+                <div className="px-6 py-4 flex-1 flex flex-col">
                   <div className="text-[11px] font-bold text-slate-300 uppercase tracking-widest">
                     Includes:
                   </div>
                   
-                  {/* Show all deliverables for packages 1-3 */}
                   {!isFullService && (
-                    <ul className="space-y-2 text-xs text-slate-200 mt-2.5">
+                    <ul className="space-y-2 text-xs text-slate-200 mt-2">
                       {pkg.deliverables.map((item, idx) => (
                         <li key={idx} className="flex items-start space-x-2 leading-snug">
                           <Check className="w-3.5 h-3.5 text-[#D4AF37] shrink-0 mt-0.5" />
@@ -124,10 +119,9 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ onNavigate, onOp
                     </ul>
                   )}
 
-                  {/* Full-Service package with collapsible details */}
                   {isFullService && (
                     <>
-                      <ul className="space-y-2 text-xs text-slate-200 mt-2.5">
+                      <ul className="space-y-2 text-xs text-slate-200 mt-2">
                         {pkg.deliverables.slice(0, 4).map((item, idx) => (
                           <li key={idx} className="flex items-start space-x-2 leading-snug">
                             <Check className="w-3.5 h-3.5 text-[#D4AF37] shrink-0 mt-0.5" />
@@ -166,7 +160,7 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ onNavigate, onOp
                   )}
                 </div>
 
-                {/* Footer Info - Always at bottom */}
+                {/* Footer - Always at bottom */}
                 <div className="p-3 bg-[#0F172A] border-t border-slate-700/50 text-[11px] text-slate-400 mt-auto">
                   <span className="font-bold text-slate-300">Ideal for: </span>
                   {pkg.idealFor}
