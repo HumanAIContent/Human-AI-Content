@@ -35,7 +35,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onNavigate, onOpenSamp
                 <br /><br />
                 If you’ve hired freelancers on platforms like Upwork or Fiverr, you know cost savings often come with communication and language pitfalls. As a native English speaker, you’ll never worry about language barriers, awkward phrasing, or heavy rewrites—just quality, hassle-free content.
                 <br /><br />
-                Your content should NOT wait on your to-do list. If you are struggling with finding the time to do it and outsourcing has only resulted in more work for you. I'll create everything for you, from start to finish, giving you consistent, professional content without the management headaches.
+                Your content should NOT wait on your to-do list. If you are struggling with finding the time to do it and outsourcing has only resulted in more work for you. I'll create everything, from start to finish, giving you consistent, professional content without the management headaches.
               </p>
               
 
@@ -90,7 +90,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onNavigate, onOpenSamp
   </div>
   <div className="flex items-center space-x-1.5">
     <Cpu className="w-3.5 h-3.5 text-[#D4AF37]" />
-    <span>AI Speed + Human Quality</span>
+    <span>AI Speed + Human Quality Assurance</span>
   </div>
   <div className="flex items-center space-x-1.5">
     <FileText className="w-3.5 h-3.5 text-[#D4AF37]" />
