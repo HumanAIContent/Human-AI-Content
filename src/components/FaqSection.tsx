@@ -39,7 +39,7 @@ export const FaqSection: React.FC = () => {
           </span>
 
           <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
-            Frequently Asked Questions & Onboarding SLA
+            Frequently Asked Questions
           </h2>
 
           <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
