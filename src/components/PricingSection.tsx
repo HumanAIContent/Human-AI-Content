@@ -20,11 +20,11 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ onNavigate, onOp
   const getTagline = (pkgId: string) => {
     switch (pkgId) {
       case 'essential':
-        return 'High-Performance AI-Assisted Human-Edited SEO & GEO Articles—Delivered as Pure Text. Deeply researched, content crafted for brands and agencies that manage their own publishing. Articles are delivered polished and publication-ready for complete in-house control.';
+        return 'High-Performance AI-Assisted Human-Edited SEO & GEO Articles—Delivered as Pure Text. Deeply researched, content crafted for brands and agencies that manage their own publishing. All articles are delivered polished and publication-ready for complete in-house control.';
       case 'visuals':
-        return 'In-depth long-form AI-Assisted Human-Edited articles with dual SEO/GEO optimization, accompanied by custom-branded Canva graphics, infographics, charts, and data tables. All content and custom visual assets are delivered and ready for review and publishing.';
+        return 'Long-form AI-Assisted Human-Edited articles with dual SEO/GEO optimization, accompanied by custom-branded Canva graphics, infographics, charts, and data tables. All content and custom visual assets are delivered and ready for review and publishing.';
       case 'social':
-        return 'Social media content creation (CoSchedule) with hands-off scheduling. Custom Canva visuals, paired with AI-assisted, Human-edited, long-form articles. All deliverables are created, formatted, and delivered via a shared Google Drive.';
+        return 'Long-form AI-Assisted Human-Edited articles with dual SEO/GEO optimization, with custom-branded Canva graphics, infographics, charts, & data tables. All content and custom visual assets delivered & ready for review and publishing.';
       default:
         return ''; // Full-service uses its own tagline from the data
     }
@@ -68,7 +68,7 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ onNavigate, onOp
                 className={`relative rounded overflow-hidden ${
                   isPopular
                     ? 'bg-[#1E293B] border-2 border-[#D4AF37] shadow-xl'
-                    : 'bg-[#1E293B] border border-slate-700/50 hover:border-[#D4AF37]/50'
+                    : 'bg-[#1E293B] border-2 border-[#D4AF37] hover:border-[#D4AF37]/70'
                 }`}
               >
                 {/* Popular Badge Header */}
