@@ -30,13 +30,13 @@ export const RecentSitesSection: React.FC<RecentSitesSectionProps> = ({ onSelect
 
         {/* 8 Sites Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {RECENT_SITES.map((site, index) => (
+          {RECENT_SITES.map((site) => (
             <div
               key={site.id}
               className="group bg-[#1E293B] rounded border border-slate-700/50 hover:border-[#D4AF37]/50 overflow-hidden transition-all duration-300 flex flex-col justify-between shadow-lg"
             >
               
-              {/* Image & Metric Badge */}
+              {/* Image */}
               <div className="relative h-44 overflow-hidden bg-[#0F172A]">
                 <img
                   src={site.image}
@@ -44,17 +44,6 @@ export const RecentSitesSection: React.FC<RecentSitesSectionProps> = ({ onSelect
                   className="w-full h-full object-cover group-hover:scale-105 grayscale hover:grayscale-0 transition-all duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#1E293B] via-transparent to-transparent opacity-80" />
-
-                {/* Number Badge Top Left */}
-                <div className="absolute top-2.5 left-2.5 bg-[#0F172A]/90 px-2 py-0.5 text-[10px] font-bold text-slate-300 border border-slate-700/60 uppercase">
-                  Client Site #{index + 1}
-                </div>
-
-                {/* Key Metric Badge Top Right */}
-                <div className="absolute top-2.5 right-2.5 bg-[#0F172A]/90 px-2.5 py-0.5 border border-[#D4AF37]/40 text-[11px] font-extrabold text-[#D4AF37] flex items-center space-x-1 uppercase">
-                  <TrendingUp className="w-3 h-3 text-emerald-400" />
-                  <span>{site.metrics}</span>
-                </div>
 
                 {/* Domain & Niche overlay */}
                 <div className="absolute bottom-2.5 left-2.5 right-2.5">
