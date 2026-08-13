@@ -82,25 +82,25 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onNavigate, onOpenSamp
               </div>
             </div>
 
-{/* Quick Trust Bar */}
-<div className="mt-5 pt-4 border-t border-slate-700/50 flex flex-wrap items-center justify-between gap-4 text-[10px] font-semibold text-slate-400 uppercase tracking-wider">
-  <div className="flex items-center space-x-1.5">
-    <Shield className="w-3.5 h-3.5 text-[#D4AF37]" />
-    <span>Native English Content Creator</span>
-  </div>
-  <div className="flex items-center space-x-1.5">
-    <Cpu className="w-3.5 h-3.5 text-[#D4AF37]" />
-    <span>AI Speed + Human Quality Assurance</span>
-  </div>
-  <div className="flex items-center space-x-1.5">
-    <FileText className="w-3.5 h-3.5 text-[#D4AF37]" />
-    <span>No Long-Term Lock-In Contracts</span>
-  </div>
-  <div className="flex items-center space-x-1.5">
-    <Layers className="w-3.5 h-3.5 text-[#D4AF37]" />
-    <span>No direct password access needed</span>
-  </div>
-</div>
+            {/* Quick Trust Bar */}
+            <div className="mt-5 pt-4 border-t border-slate-700/50 flex flex-wrap items-center justify-between gap-4 text-[10px] font-semibold text-slate-400 uppercase tracking-wider">
+              <div className="flex items-center space-x-1.5">
+                <Shield className="w-3.5 h-3.5 text-[#D4AF37]" />
+                <span>Native English Content Creator</span>
+              </div>
+              <div className="flex items-center space-x-1.5">
+                <Cpu className="w-3.5 h-3.5 text-[#D4AF37]" />
+                <span>AI Speed + Human Quality Assurance</span>
+              </div>
+              <div className="flex items-center space-x-1.5">
+                <FileText className="w-3.5 h-3.5 text-[#D4AF37]" />
+                <span>No Long-Term Lock-In Contracts</span>
+              </div>
+              <div className="flex items-center space-x-1.5">
+                <Layers className="w-3.5 h-3.5 text-[#D4AF37]" />
+                <span>No direct password access needed</span>
+              </div>
+            </div>
 
           </div>
 
@@ -145,8 +145,8 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onNavigate, onOpenSamp
               </div>
             </div>
 
-            {/* Service Standards And Expectations Card */}
-            <div className="bg-[#0F172A] p-4 sm:p-5 rounded-lg border border-[#D4AF37]/40 text-left space-y-4 flex-1 flex flex-col justify-center">
+            {/* Service Standards And Expectations Card - CHANGED: removed justify-center */}
+            <div className="bg-[#0F172A] p-4 sm:p-5 rounded-lg border border-[#D4AF37]/40 text-left space-y-4 flex-1 flex flex-col">
               <div className="flex items-center space-x-2.5 border-b border-slate-800 pb-3">
                 <svg className="w-5 h-5 text-[#D4AF37] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
