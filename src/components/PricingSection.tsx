@@ -53,7 +53,7 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ onNavigate, onOp
             return (
               <div
                 key={pkg.id}
-                className={`relative rounded flex flex-col ${
+                className={`relative rounded flex flex-col h-full ${
                   isPopular
                     ? 'bg-[#1E293B] border-2 border-[#D4AF37] shadow-xl border-l-4'
                     : 'bg-[#1E293B] border border-slate-700/50 hover:border-[#D4AF37]/50'
@@ -67,15 +67,15 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ onNavigate, onOp
                 )}
 
                 {/* Plan Name & Tagline */}
-                <div className="p-6 pb-0">
+                <div className="p-6 pb-4">
                   <h3 className="text-lg font-bold text-[#D4AF37] uppercase tracking-wide">{pkg.name}</h3>
                   <p className="text-xs text-slate-300 mt-1 min-h-[36px] leading-relaxed">
                     {pkg.tagline}
                   </p>
                 </div>
 
-                {/* Pricing Display - Fixed height container with borders */}
-                <div className="px-6 py-3 border-t border-b border-slate-700/50 my-3 h-[82px] flex flex-col justify-center">
+                {/* Pricing Display */}
+                <div className="px-6 py-3 border-t border-b border-slate-700/50">
                   <div className="flex items-baseline space-x-1.5">
                     <span className="text-3xl font-extrabold text-white">
                       ${pkg.monthlyRetainer.toLocaleString()}
@@ -87,8 +87,8 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ onNavigate, onOp
                   </div>
                 </div>
 
-                {/* CTA Button - Fixed height */}
-                <div className="px-6 h-[44px]">
+                {/* CTA Button */}
+                <div className="px-6 py-3">
                   <button
                     onClick={() => onNavigate('contact', pkg.id)}
                     className={`w-full py-2.5 px-4 font-bold text-xs uppercase tracking-wider transition-colors flex items-center justify-center space-x-1.5 ${
@@ -103,7 +103,7 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ onNavigate, onOp
                 </div>
 
                 {/* Features Section - This grows/shrinks */}
-                <div className="px-6 py-4 flex-1 flex flex-col">
+                <div className="px-6 py-3 flex-1 flex flex-col">
                   <div className="text-[11px] font-bold text-slate-300 uppercase tracking-widest">
                     Includes:
                   </div>
@@ -161,7 +161,7 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ onNavigate, onOp
                 </div>
 
                 {/* Footer - Always at bottom */}
-                <div className="p-3 bg-[#0F172A] border-t border-slate-700/50 text-[11px] text-slate-400 mt-auto">
+                <div className="p-3 bg-[#0F172A] border-t border-slate-700/50 text-[11px] text-slate-400">
                   <span className="font-bold text-slate-300">Ideal for: </span>
                   {pkg.idealFor}
                 </div>
