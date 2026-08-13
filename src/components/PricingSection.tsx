@@ -53,47 +53,47 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ onNavigate, onOp
             return (
               <div
                 key={pkg.id}
-                className={`relative rounded ${
+                className={`relative rounded overflow-hidden ${
                   isPopular
-                    ? 'bg-[#1E293B] border-2 border-[#D4AF37] shadow-xl border-l-4'
+                    ? 'bg-[#1E293B] border-2 border-[#D4AF37] shadow-xl'
                     : 'bg-[#1E293B] border border-slate-700/50 hover:border-[#D4AF37]/50'
                 }`}
               >
                 {/* Popular Badge Header */}
                 {isPopular && (
-                  <div className="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-[#D4AF37] text-[#0F172A] px-3 py-0.5 text-[10px] font-extrabold uppercase tracking-widest shadow whitespace-nowrap">
+                  <div className="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-[#D4AF37] text-[#0F172A] px-3 py-0.5 text-[10px] font-extrabold uppercase tracking-widest shadow whitespace-nowrap z-10">
                     {pkg.badge}
                   </div>
                 )}
 
-                {/* Using grid layout on the card itself for consistent alignment */}
-                <div className="grid grid-rows-[auto_auto_auto_1fr_auto] h-full">
+                {/* Card Content using flex column for sections */}
+                <div className="flex flex-col h-full">
                   
-                  {/* Plan Name & Tagline */}
-                  <div className="p-5 pb-3">
-                    <h3 className="text-base font-bold text-[#D4AF37] uppercase tracking-wide">
+                  {/* SECTION 1: Plan Name & Tagline - Box with subtle background */}
+                  <div className="p-5 pb-3 bg-[#0F172A]/50 border-b border-slate-700/30">
+                    <h3 className="text-base font-bold text-[#D4AF37] uppercase tracking-wide text-center">
                       {pkg.name}
                     </h3>
-                    <p className="text-[11px] text-slate-300 mt-1 leading-relaxed">
+                    <p className="text-[11px] text-slate-300 mt-1 leading-relaxed text-center">
                       {pkg.tagline}
                     </p>
                   </div>
 
-                  {/* Pricing Display */}
-                  <div className="px-5 py-2.5 border-t border-b border-slate-700/50">
-                    <div className="flex items-baseline space-x-1.5">
+                  {/* SECTION 2: Pricing Display - Box with subtle background */}
+                  <div className="px-5 py-3 bg-[#0F172A]/30 border-b border-slate-700/30">
+                    <div className="flex items-baseline justify-center space-x-1.5">
                       <span className="text-2xl font-extrabold text-white">
                         ${pkg.monthlyRetainer.toLocaleString()}
                       </span>
                       <span className="text-[10px] font-semibold text-slate-400">USD / mo</span>
                     </div>
-                    <div className="text-[10px] font-bold text-[#D4AF37] uppercase tracking-wider">
+                    <div className="text-[10px] font-bold text-[#D4AF37] uppercase tracking-wider text-center">
                       Setup: ${pkg.setupFee} USD
                     </div>
                   </div>
 
-                  {/* CTA Button */}
-                  <div className="px-5 py-2.5">
+                  {/* SECTION 3: CTA Button */}
+                  <div className="px-5 py-3 border-b border-slate-700/30">
                     <button
                       onClick={() => onNavigate('contact', pkg.id)}
                       className={`w-full py-2 px-4 font-bold text-[10px] uppercase tracking-wider transition-colors flex items-center justify-center space-x-1.5 ${
@@ -107,14 +107,14 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ onNavigate, onOp
                     </button>
                   </div>
 
-                  {/* Features Section - 1fr takes remaining space */}
-                  <div className="px-5 py-2.5 flex flex-col">
-                    <div className="text-[10px] font-bold text-slate-300 uppercase tracking-widest">
-                      Includes:
+                  {/* SECTION 4: Features - Box with subtle background */}
+                  <div className="px-5 py-3 flex-1 flex flex-col bg-[#0F172A]/30">
+                    <div className="text-[10px] font-bold text-slate-300 uppercase tracking-widest text-center border-b border-slate-700/30 pb-2">
+                      Features Included
                     </div>
                     
                     {!isFullService && (
-                      <ul className="space-y-1.5 text-[11px] text-slate-200 mt-2">
+                      <ul className="space-y-1.5 text-[11px] text-slate-200 mt-3">
                         {pkg.deliverables.map((item, idx) => (
                           <li key={idx} className="flex items-start space-x-2 leading-snug">
                             <Check className="w-3 h-3 text-[#D4AF37] shrink-0 mt-0.5" />
@@ -126,7 +126,7 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ onNavigate, onOp
 
                     {isFullService && (
                       <>
-                        <ul className="space-y-1.5 text-[11px] text-slate-200 mt-2">
+                        <ul className="space-y-1.5 text-[11px] text-slate-200 mt-3">
                           {pkg.deliverables.slice(0, 4).map((item, idx) => (
                             <li key={idx} className="flex items-start space-x-2 leading-snug">
                               <Check className="w-3 h-3 text-[#D4AF37] shrink-0 mt-0.5" />
@@ -137,7 +137,7 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ onNavigate, onOp
 
                         <button
                           onClick={toggleFullServiceDetails}
-                          className="text-[10px] font-bold text-[#D4AF37] hover:text-[#C19A2E] transition-colors flex items-center space-x-1.5 mt-2 group"
+                          className="text-[10px] font-bold text-[#D4AF37] hover:text-[#C19A2E] transition-colors flex items-center space-x-1.5 mt-2 group justify-center"
                         >
                           <span>{isExpanded ? 'Show Less' : 'Show More'}</span>
                           {isExpanded ? (
@@ -165,8 +165,8 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ onNavigate, onOp
                     )}
                   </div>
 
-                  {/* Footer */}
-                  <div className="p-2.5 bg-[#0F172A] border-t border-slate-700/50 text-[10px] text-slate-400">
+                  {/* SECTION 5: Footer - Always at bottom */}
+                  <div className="p-2.5 bg-[#0F172A] border-t border-slate-700/50 text-[10px] text-slate-400 text-center">
                     <span className="font-bold text-slate-300">Ideal for: </span>
                     {pkg.idealFor}
                   </div>
