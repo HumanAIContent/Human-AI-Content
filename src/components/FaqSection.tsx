@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { ShieldCheck, Clock, CreditCard, CheckCircle2, HelpCircle, ChevronDown, ChevronUp, Sparkles } from 'lucide-react';
 
 export const FaqSection: React.FC = () => {
-  const [openFaqIndex, setOpenFaqIndex] = useState<number | null>(null);
+  const [openFaqIndex, setOpenFaqIndex] = useState<number | null>(0);
   const [showAllFaqs, setShowAllFaqs] = useState(false);
 
   const faqs = [
@@ -79,7 +79,7 @@ export const FaqSection: React.FC = () => {
           </h2>
 
           <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
-            Everything you need to know about our content creation workflow, guarantees, and onboarding terms.
+            Everything you need to know about content creation workflow, guarantees, and onboarding terms.
           </p>
         </div>
 
