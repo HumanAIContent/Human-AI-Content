@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { NavPage } from '../types';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, Sparkles, Shield, FileText, HelpCircle } from 'lucide-react';
 
 interface NavbarProps {
   activePage: NavPage;
@@ -9,138 +9,189 @@ interface NavbarProps {
 }
 
 export const Navbar: React.FC<NavbarProps> = ({ activePage, onNavigate, onOpenAgreements }) => {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  // Close mobile menu when window resizes to desktop
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth >= 768) {
+        setIsMenuOpen(false);
+      }
+    };
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  // Prevent body scroll when mobile menu is open
+  useEffect(() => {
+    document.body.style.overflow = isMenuOpen ? 'hidden' : 'unset';
+    return () => {
+      document.body.style.overflow = 'unset';
+    };
+  }, [isMenuOpen]);
 
   const handleNavClick = (page: NavPage, selectedPackage?: string) => {
     onNavigate(page, selectedPackage);
-    setMobileMenuOpen(false);
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    setIsMenuOpen(false);
+  };
+
+  const scrollToSection = (sectionId: string) => {
+    // First navigate to home if not already there
+    if (activePage !== 'home') {
+      onNavigate('home');
+    }
+    // Use setTimeout to allow navigation to complete before scrolling
+    setTimeout(() => {
+      const el = document.getElementById(sectionId);
+      if (el) {
+        el.scrollIntoView({ behavior: 'smooth' });
+      }
+    }, 100);
+    setIsMenuOpen(false);
   };
 
   return (
-    <header className="sticky top-0 z-50 backdrop-blur-md bg-[#1E293B] border-b border-[#D4AF37]/20">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <header className="sticky top-0 z-50 bg-[#0F172A] border-b border-slate-700/50 backdrop-blur-sm">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           
-          {/* Logo / Brand Name */}
-          <div 
+          {/* Logo */}
+          <button
             onClick={() => handleNavClick('home')}
-            className="flex items-center space-x-3 cursor-pointer group"
+            className="flex items-center space-x-2 hover:opacity-80 transition-opacity"
           >
             <img 
               src="/Human-AI-Content-Creation-Square.png" 
-              alt="Human AI Content Creation Logo" 
-              className="h-8 w-auto object-contain shrink-0" 
+              alt="Human AI Content Logo" 
+              className="w-8 h-8 rounded bg-[#1E293B] border border-[#D4AF37]/50 object-contain p-0.5"
             />
-            
-            <div>
-              <span className="font-bold text-[10px] sm:text-xs tracking-tight text-white uppercase">
-                HUMAN <span className="text-[#D4AF37]">AI</span> CONTENT CREATION
-              </span>
-            </div>
-          </div>
+            <span className="font-extrabold text-sm text-white tracking-wider uppercase hidden sm:inline-block">
+              HUMAN AI CONTENT
+            </span>
+          </button>
 
-          {/* Desktop Navigation Links */}
-          <nav className="hidden md:flex items-center space-x-8 text-xs font-bold uppercase tracking-widest">
+          {/* Desktop Navigation */}
+          <nav className="hidden md:flex items-center space-x-6 text-xs font-bold uppercase tracking-wider">
             <button
               onClick={() => handleNavClick('home')}
-              className={`transition-colors py-1 ${
-                activePage === 'home' ? 'text-[#D4AF37] border-b-2 border-[#D4AF37]' : 'text-slate-300 hover:text-[#D4AF37]'
+              className={`hover:text-[#D4AF37] transition-colors ${
+                activePage === 'home' ? 'text-[#D4AF37]' : 'text-slate-300'
               }`}
             >
               Home
             </button>
             <button
               onClick={() => {
-                handleNavClick('home');
-                setTimeout(() => {
-                  const el = document.getElementById('recent-sites');
-                  if (el) el.scrollIntoView({ behavior: 'smooth' });
-                }, 100);
+                scrollToSection('packages');
               }}
-              className="text-slate-300 hover:text-[#D4AF37] transition-colors py-1"
+              className="text-slate-300 hover:text-[#D4AF37] transition-colors"
             >
-              Featured Work
+              Packages
             </button>
             <button
               onClick={() => {
-                handleNavClick('home');
-                setTimeout(() => {
-                  const el = document.getElementById('packages');
-                  if (el) el.scrollIntoView({ behavior: 'smooth' });
-                }, 100);
+                scrollToSection('recent-sites');
               }}
-              className="text-slate-300 hover:text-[#D4AF37] transition-colors py-1"
+              className="text-slate-300 hover:text-[#D4AF37] transition-colors"
             >
-              Pricing
+              Portfolio
+            </button>
+            <button
+              onClick={() => {
+                scrollToSection('faq');
+              }}
+              className="text-slate-300 hover:text-[#D4AF37] transition-colors"
+            >
+              FAQ
             </button>
             <button
               onClick={() => handleNavClick('about')}
-              className={`transition-colors py-1 ${
-                activePage === 'about' ? 'text-[#D4AF37] border-b-2 border-[#D4AF37]' : 'text-slate-[#D4AF37] hover:text-[#D4AF37]'
+              className={`hover:text-[#D4AF37] transition-colors ${
+                activePage === 'about' ? 'text-[#D4AF37]' : 'text-slate-300'
               }`}
             >
               About
             </button>
+            <button
+              onClick={() => handleNavClick('contact')}
+              className={`px-4 py-1.5 bg-[#D4AF37] hover:bg-[#C19A2E] text-[#0F172A] transition-colors rounded ${
+                activePage === 'contact' ? 'bg-[#C19A2E]' : ''
+              }`}
+            >
+              Enquire Now
+            </button>
           </nav>
 
-          {/* Mobile Menu Toggle */}
-          <div className="md:hidden flex items-center">
-            <button
-              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="p-2 rounded text-slate-300 hover:text-white hover:bg-[#0F172A]"
-              aria-label="Toggle Navigation Menu"
-            >
-              {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-            </button>
-          </div>
-
+          {/* Mobile Menu Button */}
+          <button
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            className="md:hidden p-2 text-slate-300 hover:text-[#D4AF37] transition-colors"
+            aria-label="Toggle menu"
+          >
+            {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+          </button>
         </div>
       </div>
 
-      {/* Mobile Dropdown Menu */}
-      {mobileMenuOpen && (
-        <div className="md:hidden bg-[#0F172A] border-b border-[#D4AF37]/20 px-4 pt-3 pb-6 space-y-3 uppercase tracking-wider text-xs font-bold">
-          <button
-            onClick={() => handleNavClick('home')}
-            className={`block w-full text-left py-2 ${
-              activePage === 'home' ? 'text-[#D4AF37]' : 'text-slate-300'
-            }`}
-          >
-            Home
-          </button>
-          <button
-            onClick={() => {
-              handleNavClick('home');
-              setTimeout(() => {
-                const el = document.getElementById('recent-sites');
-                if (el) el.scrollIntoView({ behavior: 'smooth' });
-              }, 100);
-            }}
-            className="block w-full text-left py-2 text-slate-300"
-          >
-            Recent Client Sites
-          </button>
-          <button
-            onClick={() => {
-              handleNavClick('home');
-              setTimeout(() => {
-                const el = document.getElementById('packages');
-                if (el) el.scrollIntoView({ behavior: 'smooth' });
-              }, 100);
-            }}
-            className="block w-full text-left py-2 text-slate-300"
-          >
-            Pricing
-          </button>
-          <button
-            onClick={() => handleNavClick('about')}
-            className={`block w-full text-left py-2 ${
-              activePage === 'about' ? 'text-[#D4AF37]' : 'text-slate-300'
-            }`}
-          >
-            About Me
-          </button>
+      {/* Mobile Menu Overlay */}
+      {isMenuOpen && (
+        <div className="fixed inset-0 bg-[#0F172A] z-40 flex flex-col px-4 pt-4 pb-8 overflow-y-auto">
+          <div className="flex justify-end">
+            <button
+              onClick={() => setIsMenuOpen(false)}
+              className="p-2 text-slate-300 hover:text-[#D4AF37] transition-colors"
+            >
+              <X className="w-6 h-6" />
+            </button>
+          </div>
+          <nav className="flex flex-col space-y-4 text-sm font-bold uppercase tracking-wider mt-4">
+            <button
+              onClick={() => handleNavClick('home')}
+              className={`hover:text-[#D4AF37] transition-colors ${
+                activePage === 'home' ? 'text-[#D4AF37]' : 'text-slate-300'
+              }`}
+            >
+              Home
+            </button>
+            <button
+              onClick={() => {
+                scrollToSection('packages');
+              }}
+              className="text-slate-300 hover:text-[#D4AF37] transition-colors"
+            >
+              Packages
+            </button>
+            <button
+              onClick={() => {
+                scrollToSection('recent-sites');
+              }}
+              className="text-slate-300 hover:text-[#D4AF37] transition-colors"
+            >
+              Portfolio
+            </button>
+            <button
+              onClick={() => {
+                scrollToSection('faq');
+              }}
+              className="text-slate-300 hover:text-[#D4AF37] transition-colors"
+            >
+              FAQ
+            </button>
+            <button
+              onClick={() => handleNavClick('about')}
+              className={`hover:text-[#D4AF37] transition-colors ${
+                activePage === 'about' ? 'text-[#D4AF37]' : 'text-slate-300'
+              }`}
+            >
+              About
+            </button>
+            <button
+              onClick={() => handleNavClick('contact')}
+              className="w-full py-2.5 bg-[#D4AF37] hover:bg-[#C19A2E] text-[#0F172A] transition-colors rounded text-center"
+            >
+              Enquire Now
+            </button>
+          </nav>
         </div>
       )}
     </header>
