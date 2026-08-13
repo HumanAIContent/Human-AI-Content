@@ -28,27 +28,27 @@ export const FaqSection: React.FC = () => {
     },
     {
       q: 'What do I need to complete before content production can officially start?',
-      a: 'Before work begins, you must submit the intake questionnaire, share topic preferences, approve the initial content plan, assign a primary point of contact, and submit brand assets (logos, HEX/RGB colors, fonts). Plan Dependency: While basic tiers require simple brand guidelines, higher-tier plans with direct CMS publishing or multi-channel distribution also require platform access credentials during this phase.'
+      a: 'Before work begins, you must complete the onboarding questionnaire, provide brand assets (logos, HEX/RGB colors, fonts, formatting rules, style guides), approve the initial content plan, and designate a primary point of contact. Plan Dependency: Basic plans require simple brand guidelines and topic preferences. Advanced plans with direct CMS publishing or social media distribution also require WordPress Editor access credentials and CoSchedule social profile connections during this phase.'
     },
     {
       q: 'When does official work commence once onboarding is complete?',
-      a: 'Work officially begins on the first Monday following the completion of your onboarding requirements and receipt of your initial setup and retainer payments. Plan Dependency: This kick-off timeline applies universally across all monthly tiers, ensuring sprint cycles begin simultaneously regardless of plan level.'
+      a: 'Work officially begins on the first Monday following the completion of your onboarding requirements and receipt of your initial setup and retainer payments. Plan Dependency: This kick-off timeline applies universally across all monthly tiers, ensuring work weeks begin simultaneously regardless of plan level.'
     },
     {
       q: 'What is included in the one-time setup process?',
-      a: 'The setup covers building your dedicated Google Drive architecture, integrating brand strategy, and configuring author profiles/SEO defaults. Plan Dependency: Lower-tier plans focus solely on content storage setups, whereas advanced plans expand setups to include CMS configuration and social channel scheduling platform integrations.'
+      a: 'The setup covers building your dedicated Google Drive architecture, ingesting brand voice guidelines, and structuring the initial content plan. Plan Dependency: Content Essential focuses solely on content storage setups. Content + Visuals expands to include visual asset organization. Content + Visuals + Social adds CoSchedule social channel integration. Full-Service includes all of the above plus WordPress environment auditing, SEO plugin configuration, author profile setup, and draft staging protocols.'
     },
     {
       q: 'How are articles optimized for search engines and AI discovery?',
-      a: 'Every article is optimized for both traditional Search Engine Optimization (SEO) and modern Generative Engine Optimization (GEO) to ensure maximum search visibility and AI answer-engine indexing. Plan Dependency: Core tiers focus on on-page keyword density and structure, while higher-tier plans include advanced meta-data formatting and schema-ready markup for CMS integration.'
+      a: 'Every article is optimized for both traditional Search Engine Optimization (SEO) and modern Generative Engine Optimization (GEO) to ensure maximum search visibility and AI answer-engine indexing. Plan Dependency: Core tiers focus on on-page keyword density and structure, while Full-Service includes advanced meta-data formatting and schema-ready markup for direct CMS integration.'
     },
     {
       q: 'How is generative AI utilized in content creation?',
-      a: 'Generative AI tools are used for initial drafting, which is then paired with expert human editing, fact-checking, proofreading, and brand alignment. Plan Dependency: Human-in-the-loop oversight applies to all tiers, but multi-channel plans leverage AI to expand long-form drafts into varied social media platform copy.'
+      a: 'Generative AI tools are used for initial drafting, which is then paired with expert human editing, fact-checking, proofreading, and brand alignment. Plan Dependency: Human-in-the-loop oversight applies to all tiers, but Content + Visuals + Social and Full-Service plans leverage AI to expand long-form drafts into varied social media platform copy.'
     },
     {
       q: 'Is there a grace period if a recurring monthly payment fails?',
-      a: 'If a payment is delayed beyond three (3) calendar days past your billing date, production and publishing are paused until balances are settled. Plan Dependency: For basic plans, this pauses draft creation; for full-service publishing plans, it also halts scheduled CMS uploads and social syndication.'
+      a: 'If a payment is delayed beyond three (3) calendar days past your billing date, production is paused until balances are settled. Plan Dependency: For basic plans, this pauses draft creation. For Content + Visuals + Social, it also halts scheduled social media publishing. For Full-Service, it pauses WordPress staging, publishing, and social syndication.'
     },
     {
       q: 'What payment methods and currencies are accepted?',
@@ -56,7 +56,7 @@ export const FaqSection: React.FC = () => {
     },
     {
       q: 'Who owns the final content and custom visual assets?',
-      a: 'Upon full payment of your monthly invoice, all custom final copy and visual assets become your sole property. Plan Dependency: Ownership transfers fully whether you are on a content-only plan or a full distribution and publishing tier.'
+      a: 'Upon full payment of your monthly invoice, all custom final copy and visual assets become your sole property, subject to third-party stock element licenses (e.g., Canva stock assets) which remain subject to their respective terms. Plan Dependency: Ownership transfers fully whether you are on a content-only plan or a full distribution and publishing tier. Contractor retains rights to unused drafts, initial design concepts, raw working files, or research notes generated prior to finalization.'
     }
   ];
 
