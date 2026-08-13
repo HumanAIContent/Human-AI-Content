@@ -40,6 +40,22 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ onNavigate, onOp
     }
   };
 
+  // Define custom "Ideal for" text for each package
+  const getIdealFor = (pkgId: string) => {
+    switch (pkgId) {
+      case 'essential':
+        return 'Businesses needing research-backed, human-edited SEO/GEO content delivered clean for seamless internal publishing.';
+      case 'visuals':
+        return 'Businesses needing human-edited SEO/GEO blog posts and custom branded graphics delivered ready for internal web publishing.';
+      case 'social':
+        return 'Businesses needing human-edited SEO/GEO articles, custom graphics & hands-off social media scheduling with mandatory approval.';
+      case 'fullservice':
+        return 'Businesses wanting complete, hands-off content execution, including SEO/GEO articles, graphics, WordPress staging, and social posting.';
+      default:
+        return '';
+    }
+  };
+
   return (
     <section id="packages" className="py-16 bg-[#0F172A] relative border-t border-slate-700/50">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -79,6 +95,9 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ onNavigate, onOp
             
             // Use custom plan name for first 3 packages, keep original for full-service
             const planName = isFullService ? pkg.name : getPlanName(pkg.id, pkg.name);
+            
+            // Use custom "Ideal for" text for all packages
+            const idealFor = getIdealFor(pkg.id);
 
             return (
               <div
@@ -198,7 +217,7 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ onNavigate, onOp
                   {/* SECTION 5: Footer - Always at bottom */}
                   <div className="p-2.5 bg-[#0F172A] border-t border-slate-700/50 text-[10px] text-slate-400 text-center">
                     <span className="font-bold text-slate-300">Ideal for: </span>
-                    {pkg.idealFor}
+                    {idealFor}
                   </div>
 
                 </div>
