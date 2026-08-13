@@ -22,7 +22,7 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ onNavigate, onOp
       case 'essential':
         return 'High-Performance AI-Assisted Human-Edited SEO & GEO Articles—Delivered as Pure Text. Deeply researched, content crafted for brands and agencies that manage their own publishing. All articles are delivered polished and publication-ready for complete in-house control.';
       case 'visuals':
-        return 'Long-form AI-assisted, expert human-edited articles monthly with dual SEO/GEO strategy & custom Canva visual assets. Delivered fully organized in your shared Google Drive workspace for seamless client review and publishing.';
+        return 'Streamline your content pipeline with deeply researched, human-edited blog articles designed for dual SEO/GEO indexing. Paired with custom Canva visuals, infographics, and data tables, all deliverables drop into your shared Google Drive workspace every month.';
       case 'social':
         return 'Long-form AI-Assisted Human-Edited articles with dual SEO/GEO optimization, accompanied by custom-branded Canva graphics, infographics, charts, and data tables. Content and custom visuals are delivered, ready to review and publish.';
       default:
