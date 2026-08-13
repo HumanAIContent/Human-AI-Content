@@ -216,7 +216,7 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ onNavigate, onOp
               <thead>
                 <tr className="border-b border-slate-700/50 bg-[#0F172A] text-[11px] text-slate-300 uppercase font-bold tracking-wider">
                   <th className="p-4 w-1/4">Feature / Deliverable</th>
-                  <th className="p-4 text-center">Content Essential (Basic)</th>
+                  <th className="p-4 text-center">Content Essential</th>
                   <th className="p-4 text-center">Content + Visuals</th>
                   <th className="p-4 text-center">Content + Visuals + Social</th>
                   <th className="p-4 text-center text-[#D4AF37]">Full-Service (All-In)</th>
