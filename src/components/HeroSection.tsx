@@ -60,7 +60,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onNavigate, onOpenSamp
               </div>
 
               {/* Centered Primary Action Button */}
-              <div className="flex justify-center mt-10 mb-4">
+              <div className="flex justify-center mt-8 mb-4">
                 <button
                   onClick={() => {
                     const el = document.getElementById('packages');
