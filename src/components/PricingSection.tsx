@@ -9,7 +9,7 @@ interface PricingSectionProps {
 }
 
 export const PricingSection: React.FC<PricingSectionProps> = ({ onNavigate, onOpenAgreements }) => {
-  const [showMatrix, setShowMatrix] = useState(false);
+  const [showMatrix, setShowMatrix] = useState(true);
   const [showFullServiceDetails, setShowFullServiceDetails] = useState(false);
 
   const toggleFullServiceDetails = () => {
@@ -66,47 +66,52 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ onNavigate, onOp
                   </div>
                 )}
 
-                <div className="p-6 space-y-5 flex-1 flex flex-col">
+                <div className="p-6 flex-1 flex flex-col">
                   
-                  {/* Fixed-height container for Plan Name & Tagline so price lines align evenly */}
-                  <div className="flex flex-col justify-between min-h-[85px]">
-                    <h3 className="text-lg font-bold text-[#D4AF37] uppercase tracking-wide">{pkg.name}</h3>
-                    <p className="text-xs text-slate-300 mt-1 leading-relaxed">
-                      {pkg.tagline}
-                    </p>
-                  </div>
-
-                  {/* Pricing Display */}
-                  <div className="border-t border-b border-slate-700/50 py-3 space-y-1">
-                    <div className="flex items-baseline space-x-1.5">
-                      <span className="text-3xl font-extrabold text-white">
-                        ${pkg.monthlyRetainer.toLocaleString()}
-                      </span>
-                      <span className="text-xs font-semibold text-slate-400">USD / mo</span>
+                  {/* LOCKED TOP HEADER BLOCK (Ensures Price Lines Align Perfectly Across Cards) */}
+                  <div className="flex flex-col justify-between h-[230px] mb-5">
+                    
+                    {/* Plan Name & Tagline */}
+                    <div>
+                      <h3 className="text-lg font-bold text-[#D4AF37] uppercase tracking-wide">{pkg.name}</h3>
+                      <p className="text-xs text-slate-300 mt-1 leading-relaxed line-clamp-3">
+                        {pkg.tagline}
+                      </p>
                     </div>
-                    <div className="text-[11px] font-bold text-[#D4AF37] uppercase tracking-wider">
-                      One-Time Setup Fee: ${pkg.setupFee} USD
-                    </div>
-                  </div>
 
-                  {/* CTA Button: Enquire Now */}
-                  <div>
-                    <button
-                      onClick={() => onNavigate('contact', pkg.id)}
-                      className={`w-full py-2.5 px-4 font-bold text-xs uppercase tracking-wider transition-colors flex items-center justify-center space-x-1.5 ${
-                        isPopular
-                          ? 'bg-[#D4AF37] hover:bg-[#C19A2E] text-[#0F172A]'
-                          : 'bg-slate-800 hover:bg-[#D4AF37] text-[#D4AF37] hover:text-[#0F172A] border border-[#D4AF37]/30'
-                      }`}
-                    >
-                      <span>Enquire Now</span>
-                      <ArrowRight className="w-3.5 h-3.5" />
-                    </button>
+                    {/* Pricing Display */}
+                    <div className="border-t border-b border-slate-700/50 py-3 space-y-1 my-auto">
+                      <div className="flex items-baseline space-x-1.5">
+                        <span className="text-3xl font-extrabold text-white">
+                          ${pkg.monthlyRetainer.toLocaleString()}
+                        </span>
+                        <span className="text-xs font-semibold text-slate-400">USD / mo</span>
+                      </div>
+                      <div className="text-[11px] font-bold text-[#D4AF37] uppercase tracking-wider">
+                        One-Time Setup Fee: ${pkg.setupFee} USD
+                      </div>
+                    </div>
+
+                    {/* CTA Button: Enquire Now */}
+                    <div>
+                      <button
+                        onClick={() => onNavigate('contact', pkg.id)}
+                        className={`w-full py-2.5 px-4 font-bold text-xs uppercase tracking-wider transition-colors flex items-center justify-center space-x-1.5 ${
+                          isPopular
+                            ? 'bg-[#D4AF37] hover:bg-[#C19A2E] text-[#0F172A]'
+                            : 'bg-slate-800 hover:bg-[#D4AF37] text-[#D4AF37] hover:text-[#0F172A] border border-[#D4AF37]/30'
+                        }`}
+                      >
+                        <span>Enquire Now</span>
+                        <ArrowRight className="w-3.5 h-3.5" />
+                      </button>
+                    </div>
+
                   </div>
 
                   {/* Core Features Included */}
-                  <div className="space-y-2.5 pt-1 flex-1 flex flex-col">
-                    <div className="text-[11px] font-bold text-slate-300 uppercase tracking-widest">
+                  <div className="space-y-2.5 pt-1 flex-1 flex flex-col border-t border-slate-700/30">
+                    <div className="text-[11px] font-bold text-slate-300 uppercase tracking-widest pt-2">
                       Includes:
                     </div>
                     
