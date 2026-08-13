@@ -19,7 +19,7 @@ export const TestimonialsSection: React.FC = () => {
           </h2>
 
           <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
-            What business owners and marketing executives say about the monthly content management pipeline.
+            What happy clients say when high-level content, effortless communication, and exceeding expectations come together.
           </p>
         </div>
 
