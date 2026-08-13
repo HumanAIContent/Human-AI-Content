@@ -24,7 +24,7 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ onNavigate, onOp
       case 'visuals':
         return 'Streamline your content pipeline with deeply researched, human-edited blog articles designed for dual SEO/GEO indexing. Paired with custom Canva visuals, infographics, and data tables, all deliverables drop into your shared Google Drive workspace every month.';
       case 'social':
-        return 'Long-form AI-Assisted Human-Edited articles with dual SEO/GEO optimization, accompanied by custom-branded Canva graphics, infographics, charts, and data tables. Content and custom visuals are delivered, ready to review and publish.';
+        return 'AI-assisted, human-edited SEO/GEO articles, custom Canva graphics, and hands-off social media management via CoSchedule. All written and visual assets are delivered to a shared Google Drive, and social posts strictly require explicit client approval.';
       default:
         return ''; // Full-service uses its own tagline from the data
     }
@@ -69,8 +69,14 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ onNavigate, onOp
             const isFullService = pkg.id === 'fullservice';
             const isExpanded = showFullServiceDetails && isFullService;
             
-            // Use custom tagline for first 3 packages, keep original for full-service
-            const tagline = isFullService ? pkg.tagline : getTagline(pkg.id);
+            // Use custom tagline for first 3 packages, override full-service tagline
+            let tagline;
+            if (isFullService) {
+              tagline = 'AI-assisted, human-edited SEO/GEO articles, custom Canva visuals, full WordPress draft staging, and CoSchedule social scheduling are delivered monthly. Assets are archived in Google Drive, with site publishing strictly contingent on your direct pre-approval.';
+            } else {
+              tagline = getTagline(pkg.id);
+            }
+            
             // Use custom plan name for first 3 packages, keep original for full-service
             const planName = isFullService ? pkg.name : getPlanName(pkg.id, pkg.name);
 
