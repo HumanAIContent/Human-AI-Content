@@ -9,7 +9,7 @@ interface PricingSectionProps {
 }
 
 export const PricingSection: React.FC<PricingSectionProps> = ({ onNavigate, onOpenAgreements }) => {
-  const [showMatrix, setShowMatrix] = useState(true);
+  const [showMatrix, setShowMatrix] = useState(false);
   const [showFullServiceDetails, setShowFullServiceDetails] = useState(false);
 
   const toggleFullServiceDetails = () => {
