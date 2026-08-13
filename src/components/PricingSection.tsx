@@ -24,7 +24,7 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ onNavigate, onOp
       case 'visuals':
         return 'Long-form AI-Assisted Human-Edited articles with dual SEO/GEO optimization, accompanied by custom-branded Canva graphics, infographics, charts, and data tables. Content and custom visuals are delivered, ready to review and publish.';
       case 'social':
-        return 'Long-form AI-Assisted Human-Edited articles with dual SEO/GEO optimization, with custom-branded Canva graphics, infographics, charts, & data tables. All content and custom visual assets delivered & ready for review and publishing.';
+        return 'Long-form AI-Assisted Human-Edited articles with dual SEO/GEO optimization, accompanied by custom-branded Canva graphics, infographics, charts, and data tables. Content and custom visuals are delivered, ready to review and publish.';
       default:
         return ''; // Full-service uses its own tagline from the data
     }
