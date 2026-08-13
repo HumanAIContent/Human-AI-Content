@@ -31,8 +31,9 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ onNavigate, onOp
             Content Management Plans
           </h2>
 
+          {/* UPDATED COPY HERE */}
           <p className="text-slate-300 text-sm sm:text-base leading-relaxed font-normal">
-            No hidden per-word fees or software subscription surcharges. Prepaid monthly retainers with zero long-term lock-ins. All plans lead directly to a client review & approval workflow.
+            All-inclusive monthly retainers with zero hidden fees, no per-word surprises, and no long-term lock-in contracts. Every plan includes a structured review and approval workflow—content never goes live without your explicit approval.
           </p>
 
           <div className="pt-1 flex items-center justify-center space-x-4 text-xs font-bold uppercase tracking-wider text-slate-400">
