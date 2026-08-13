@@ -59,7 +59,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onNavigate, onOpenSamp
                 </div>
               </div>
 
-              {/* Centered Primary Action Button */}
+              {/* Centered Primary Action Button - CHANGED to yellow background */}
               <div className="flex justify-center mt-8 mb-4">
                 <button
                   onClick={() => {
@@ -72,12 +72,12 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onNavigate, onOpenSamp
                 </button>
               </div>
 
-              {/* Centered Logo Display - CHANGED to larger size */}
+              {/* Centered Logo Display */}
               <div className="flex justify-center items-center mt-5 mb-2">
                 <img
                   src="/Human-AI-Content-Creation-Square.png"
                   alt="Human-AI Content Creation Logo"
-                  className="w-13 h-13 sm:w-55 sm:h-55 object-contain rounded-lg shadow-md"
+                  className="w-32 h-32 sm:w-36 sm:h-36 object-contain rounded-lg shadow-md"
                 />
               </div>
             </div>
