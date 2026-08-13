@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavPage } from '../types';
-import { Sparkles, ShieldCheck, CreditCard, ArrowRight, FileText, Globe, Check } from 'lucide-react';
+import { ShieldCheck, CreditCard, ArrowRight, FileText, Globe, Check } from 'lucide-react';
 
 interface FooterProps {
   onNavigate: (page: NavPage, selectedPackage?: string) => void;
@@ -16,9 +16,11 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, onOpenAgreements }) 
           {/* Column 1 & 2: Brand & Bio */}
           <div className="lg:col-span-2 space-y-3">
             <div className="flex items-center space-x-2">
-              <div className="w-8 h-8 rounded bg-[#1E293B] border border-[#D4AF37]/50 flex items-center justify-center">
-                <Sparkles className="w-4 h-4 text-[#D4AF37]" />
-              </div>
+              <img 
+                src="/Human-AI-Content-Creation-Square.png" 
+                alt="Human AI Content Creation Logo" 
+                className="w-8 h-8 rounded object-cover border border-[#D4AF37]/50" 
+              />
               <span className="font-extrabold text-base text-white tracking-wider uppercase">HUMAN AI CONTENT</span>
             </div>
             
