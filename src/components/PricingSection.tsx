@@ -30,6 +30,16 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ onNavigate, onOp
     }
   };
 
+  // Define custom plan names
+  const getPlanName = (pkgId: string, originalName: string) => {
+    switch (pkgId) {
+      case 'essential':
+        return 'Content Essential (Basic)';
+      default:
+        return originalName;
+    }
+  };
+
   return (
     <section id="packages" className="py-16 bg-[#0F172A] relative border-t border-slate-700/50">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -61,6 +71,8 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ onNavigate, onOp
             
             // Use custom tagline for first 3 packages, keep original for full-service
             const tagline = isFullService ? pkg.tagline : getTagline(pkg.id);
+            // Use custom plan name for first 3 packages, keep original for full-service
+            const planName = isFullService ? pkg.name : getPlanName(pkg.id, pkg.name);
 
             return (
               <div
@@ -84,7 +96,7 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ onNavigate, onOp
                   {/* SECTION 1: Plan Name & Tagline - Box with subtle background */}
                   <div className="p-5 pb-3 bg-[#0F172A]/50 border-b border-slate-700/30">
                     <h3 className="text-base font-bold text-[#D4AF37] uppercase tracking-wide text-center">
-                      {pkg.name}
+                      {planName}
                     </h3>
                     <p className="text-[11px] text-slate-300 mt-1 leading-relaxed text-center">
                       {tagline}
