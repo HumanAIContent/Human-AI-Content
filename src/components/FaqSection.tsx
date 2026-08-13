@@ -47,69 +47,31 @@ export const FaqSection: React.FC = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-          
-          {/* Onboarding SLA & Guarantee */}
-          <div className="lg:col-span-5 bg-[#1E293B] rounded p-6 border border-slate-700/50 space-y-4 shadow-xl">
-            <h3 className="text-base font-bold text-white uppercase tracking-wide flex items-center space-x-2">
-              <ShieldCheck className="w-5 h-5 text-[#D4AF37]" />
-              <span>Onboarding SLA & Guarantee</span>
-            </h3>
+        {/* FAQ Accordion - Full Width */}
+        <div className="bg-[#1E293B] rounded p-6 border border-slate-700/50 space-y-4 shadow-xl">
+          <h3 className="text-base font-bold text-white uppercase tracking-wide flex items-center space-x-2">
+            <HelpCircle className="w-5 h-5 text-[#D4AF37]" />
+            <span>Frequently Asked Questions</span>
+          </h3>
 
-            <div className="space-y-3.5 text-xs text-slate-300 pt-2">
-              <div className="flex items-start space-x-3 bg-[#0F172A] p-3 rounded border border-slate-800">
-                <Clock className="w-4 h-4 text-[#D4AF37] shrink-0 mt-0.5" />
-                <div>
-                  <span className="font-bold text-white block mb-0.5">24 to 48 Hour SLA Response: </span>
-                  Direct response from your content creation manager within 24 to 48 hours. Responses are typically provided within 24 hours, seven days a week.
-                </div>
+          <div className="space-y-3 pt-2">
+            {faqs.map((faq, idx) => (
+              <div key={idx} className="border-b border-slate-700/50 pb-3">
+                <button
+                  onClick={() => setOpenFaqIndex(openFaqIndex === idx ? null : idx)}
+                  className="w-full text-left flex items-center justify-between text-xs sm:text-sm font-semibold text-slate-200 hover:text-[#D4AF37] py-1 transition-colors"
+                >
+                  <span>{faq.q}</span>
+                  {openFaqIndex === idx ? <ChevronUp className="w-4 h-4 text-[#D4AF37] shrink-0 ml-2" /> : <ChevronDown className="w-4 h-4 text-slate-500 shrink-0 ml-2" />}
+                </button>
+                {openFaqIndex === idx && (
+                  <p className="text-xs text-slate-300 mt-2 leading-relaxed pl-1">
+                    {faq.a}
+                  </p>
+                )}
               </div>
-
-              <div className="flex items-start space-x-3 bg-[#0F172A] p-3 rounded border border-slate-800">
-                <CreditCard className="w-4 h-4 text-[#D4AF37] shrink-0 mt-0.5" />
-                <div>
-                  <span className="font-bold text-white block mb-0.5">Prepaid Retainers: </span>
-                  Prepaid monthly retainer packages in USD with zero hidden fees or per-word surprises with no long-term lock-in contracts. You enjoy consistent, hands-off content management.
-                </div>
-              </div>
-
-              <div className="flex items-start space-x-3 bg-[#0F172A] p-3 rounded border border-slate-800">
-                <CheckCircle2 className="w-4 h-4 text-[#D4AF37] shrink-0 mt-0.5" />
-                <div>
-                  <span className="font-bold text-white block mb-0.5">Password-Free Access: </span>
-                  Secure login for the WordPress Editor & the CoSchedule OAuth API authentication. I will never ask for your social media passwords.
-                </div>
-              </div>
-            </div>
+            ))}
           </div>
-
-          {/* FAQ Accordion */}
-          <div className="lg:col-span-7 bg-[#1E293B] rounded p-6 border border-slate-700/50 space-y-4 shadow-xl">
-            <h3 className="text-base font-bold text-white uppercase tracking-wide flex items-center space-x-2">
-              <HelpCircle className="w-5 h-5 text-[#D4AF37]" />
-              <span>Frequently Asked Questions</span>
-            </h3>
-
-            <div className="space-y-3 pt-2">
-              {faqs.map((faq, idx) => (
-                <div key={idx} className="border-b border-slate-700/50 pb-3">
-                  <button
-                    onClick={() => setOpenFaqIndex(openFaqIndex === idx ? null : idx)}
-                    className="w-full text-left flex items-center justify-between text-xs sm:text-sm font-semibold text-slate-200 hover:text-[#D4AF37] py-1 transition-colors"
-                  >
-                    <span>{faq.q}</span>
-                    {openFaqIndex === idx ? <ChevronUp className="w-4 h-4 text-[#D4AF37] shrink-0 ml-2" /> : <ChevronDown className="w-4 h-4 text-slate-500 shrink-0 ml-2" />}
-                  </button>
-                  {openFaqIndex === idx && (
-                    <p className="text-xs text-slate-300 mt-2 leading-relaxed pl-1">
-                      {faq.a}
-                    </p>
-                  )}
-                </div>
-              ))}
-            </div>
-          </div>
-
         </div>
 
       </div>
