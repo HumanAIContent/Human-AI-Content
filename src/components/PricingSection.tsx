@@ -125,9 +125,9 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ onNavigate, onOp
                     {/* Full-Service package with collapsible details */}
                     {isFullService && (
                       <>
-                        {/* Show first 3 items always visible */}
+                        {/* Show first 4 items always visible (including Meta Titles) */}
                         <ul className="space-y-2 text-xs text-slate-200">
-                          {pkg.deliverables.slice(0, 3).map((item, idx) => (
+                          {pkg.deliverables.slice(0, 4).map((item, idx) => (
                             <li key={idx} className="flex items-start space-x-2 leading-snug">
                               <Check className="w-3.5 h-3.5 text-[#D4AF37] shrink-0 mt-0.5" />
                               <span>{item}</span>
@@ -135,7 +135,7 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ onNavigate, onOp
                           ))}
                         </ul>
 
-                        {/* "Show More" trigger - displayed inline after the 3rd feature */}
+                        {/* "Show More" trigger - displayed inline after the 4th feature */}
                         <button
                           onClick={toggleFullServiceDetails}
                           className="text-[11px] font-bold text-[#D4AF37] hover:text-[#C19A2E] transition-colors flex items-center space-x-1.5 mt-1 group"
@@ -153,7 +153,7 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ onNavigate, onOp
                           isExpanded ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0'
                         }`}>
                           <ul className="space-y-2 text-xs text-slate-200 pt-2">
-                            {pkg.deliverables.slice(3).map((item, idx) => (
+                            {pkg.deliverables.slice(4).map((item, idx) => (
                               <li key={idx} className="flex items-start space-x-2 leading-snug">
                                 <Check className="w-3.5 h-3.5 text-[#D4AF37] shrink-0 mt-0.5" />
                                 <span>{item}</span>
