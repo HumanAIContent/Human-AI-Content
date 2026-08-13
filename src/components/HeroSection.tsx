@@ -77,7 +77,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onNavigate, onOpenSamp
                 <img
                   src="/Human-AI-Content-Creation-Square.png"
                   alt="Human-AI Content Creation Logo"
-                  className="w-32 h-32 sm:w-36 sm:h-36 object-contain rounded-lg shadow-md"
+                  className="w-32 h-32 sm:w-40 sm:h-40 object-contain rounded-lg shadow-md"
                 />
               </div>
             </div>
