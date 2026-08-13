@@ -1,50 +1,65 @@
 import React, { useState } from 'react';
 import { PACKAGES } from '../data/packages';
-import { NavPage, PackagePlan } from '../types';
-import { Check, ArrowRight, Sparkles, HelpCircle, FileText, ChevronDown, ChevronUp } from 'lucide-react';
+import { NavPage } from '../types';
+import {
+  Check,
+  ArrowRight,
+  Sparkles,
+  FileText,
+  ChevronDown,
+  ChevronUp,
+} from 'lucide-react';
 
 interface PricingSectionProps {
   onNavigate: (page: NavPage, selectedPackage?: string) => void;
   onOpenAgreements: () => void;
 }
 
-export const PricingSection: React.FC<PricingSectionProps> = ({ onNavigate, onOpenAgreements }) => {
+export const PricingSection: React.FC<PricingSectionProps> = ({
+  onNavigate,
+}) => {
   const [showMatrix, setShowMatrix] = useState(true);
   const [showFullServiceDetails, setShowFullServiceDetails] = useState(false);
 
   const toggleFullServiceDetails = () => {
-    setShowFullServiceDetails(!showFullServiceDetails);
+    setShowFullServiceDetails((currentValue) => !currentValue);
   };
 
   return (
-    <section id="packages" className="py-16 bg-[#0F172A] relative border-t border-slate-700/50">
-      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        
+    <section
+      id="packages"
+      className="relative border-t border-slate-700/50 bg-[#0F172A] py-16"
+    >
+      <div className="relative z-10 mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-12 space-y-3">
-          <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#D4AF37] flex items-center justify-center gap-2">
-            <Sparkles className="w-3.5 h-3.5 text-[#D4AF37]" />
+        <div className="mx-auto mb-12 max-w-3xl space-y-3 text-center">
+          <span className="flex items-center justify-center gap-2 text-xs font-bold uppercase tracking-[0.2em] text-[#D4AF37]">
+            <Sparkles className="h-3.5 w-3.5 text-[#D4AF37]" />
             Monthly Retainer Pricing
           </span>
-          
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+
+          <h2 className="text-3xl font-extrabold tracking-tight text-white sm:text-4xl">
             Content Management Plans
           </h2>
 
-          <p className="text-slate-300 text-sm sm:text-base leading-relaxed font-normal">
-            No hidden per-word fees or software subscription surcharges. Prepaid monthly retainers with zero long-term lock-ins. All plans lead directly to a client review & approval workflow.
+          <p className="text-sm font-normal leading-relaxed text-slate-300 sm:text-base">
+            No hidden per-word fees or software subscription surcharges.
+            Prepaid monthly retainers with zero long-term lock-ins. All plans
+            lead directly to a client review &amp; approval workflow.
           </p>
 
-          <div className="pt-1 flex items-center justify-center space-x-4 text-xs font-bold uppercase tracking-wider text-slate-400">
+          <div className="flex items-center justify-center space-x-4 pt-1 text-xs font-bold uppercase tracking-wider text-slate-400">
             <span className="flex items-center space-x-1">
-              <span className="w-2 h-2 rounded-full bg-emerald-400" />
-              <span>MONTH-TO-MONTH FLEXIBILITY WITH NO LOCK-IN CONTRACTS</span>
+              <span className="h-2 w-2 rounded-full bg-emerald-400" />
+              <span>
+                Month-to-month flexibility with no lock-in contracts
+              </span>
             </span>
           </div>
         </div>
 
-        {/* 4 Package Cards Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+        {/* Package Cards Grid */}
+        <div className="mb-12 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
           {PACKAGES.map((pkg) => {
             const isPopular = pkg.isPopular;
             const isFullService = pkg.id === 'fullservice';
@@ -53,68 +68,78 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ onNavigate, onOp
             return (
               <div
                 key={pkg.id}
-                className={`relative rounded flex flex-col h-full ${
+                className={`relative flex h-full flex-col rounded ${
                   isPopular
-                    ? 'bg-[#1E293B] border-2 border-[#D4AF37] shadow-xl border-l-4'
-                    : 'bg-[#1E293B] border border-slate-700/50 hover:border-[#D4AF37]/50'
+                    ? 'border-2 border-l-4 border-[#D4AF37] bg-[#1E293B] shadow-xl'
+                    : 'border border-slate-700/50 bg-[#1E293B] hover:border-[#D4AF37]/50'
                 }`}
               >
                 {/* Popular Badge Header */}
                 {isPopular && (
-                  <div className="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-[#D4AF37] text-[#0F172A] px-3 py-0.5 text-[10px] font-extrabold uppercase tracking-widest shadow whitespace-nowrap">
+                  <div className="absolute -top-3.5 left-1/2 -translate-x-1/2 whitespace-nowrap bg-[#D4AF37] px-3 py-0.5 text-[10px] font-extrabold uppercase tracking-widest text-[#0F172A] shadow">
                     {pkg.badge}
                   </div>
                 )}
 
-                {/* Plan Name & Tagline - Reduced font sizes */}
-                <div className="p-5 pb-3">
-                  <h3 className="text-base font-bold text-[#D4AF37] uppercase tracking-wide">
+                {/* Plan Name and Tagline */}
+                {/* Fixed height keeps all price borders aligned. */}
+                <div className="h-[88px] p-5 pb-3">
+                  <h3 className="text-base font-bold uppercase tracking-wide text-[#D4AF37]">
                     {pkg.name}
                   </h3>
-                  <p className="text-[11px] text-slate-300 mt-1 min-h-[32px] leading-relaxed">
+
+                  <p className="mt-1 min-h-[32px] text-[11px] leading-relaxed text-slate-300">
                     {pkg.tagline}
                   </p>
                 </div>
 
-                {/* Pricing Display - Compact */}
-                <div className="px-5 py-2.5 border-t border-b border-slate-700/50">
+                {/* Pricing Display */}
+                {/* Fixed height keeps the top and bottom borders aligned. */}
+                <div className="h-[70px] border-b border-t border-slate-700/50 px-5 py-2.5">
                   <div className="flex items-baseline space-x-1.5">
                     <span className="text-2xl font-extrabold text-white">
                       ${pkg.monthlyRetainer.toLocaleString()}
                     </span>
-                    <span className="text-[10px] font-semibold text-slate-400">USD / mo</span>
+
+                    <span className="text-[10px] font-semibold text-slate-400">
+                      USD / mo
+                    </span>
                   </div>
-                  <div className="text-[10px] font-bold text-[#D4AF37] uppercase tracking-wider">
+
+                  <div className="text-[10px] font-bold uppercase tracking-wider text-[#D4AF37]">
                     Setup: ${pkg.setupFee} USD
                   </div>
                 </div>
 
-                {/* CTA Button - Compact */}
+                {/* CTA Button */}
                 <div className="px-5 py-2.5">
                   <button
                     onClick={() => onNavigate('contact', pkg.id)}
-                    className={`w-full py-2 px-4 font-bold text-[10px] uppercase tracking-wider transition-colors flex items-center justify-center space-x-1.5 ${
+                    className={`flex w-full items-center justify-center space-x-1.5 px-4 py-2 text-[10px] font-bold uppercase tracking-wider transition-colors ${
                       isPopular
-                        ? 'bg-[#D4AF37] hover:bg-[#C19A2E] text-[#0F172A]'
-                        : 'bg-slate-800 hover:bg-[#D4AF37] text-[#D4AF37] hover:text-[#0F172A] border border-[#D4AF37]/30'
+                        ? 'bg-[#D4AF37] text-[#0F172A] hover:bg-[#C19A2E]'
+                        : 'border border-[#D4AF37]/30 bg-slate-800 text-[#D4AF37] hover:bg-[#D4AF37] hover:text-[#0F172A]'
                     }`}
                   >
                     <span>Enquire Now</span>
-                    <ArrowRight className="w-3 h-3" />
+                    <ArrowRight className="h-3 w-3" />
                   </button>
                 </div>
 
-                {/* Features Section - This grows/shrinks */}
-                <div className="px-5 py-2.5 flex-1 flex flex-col">
-                  <div className="text-[10px] font-bold text-slate-300 uppercase tracking-widest">
+                {/* Features Section */}
+                <div className="flex flex-1 flex-col px-5 py-2.5">
+                  <div className="text-[10px] font-bold uppercase tracking-widest text-slate-300">
                     Includes:
                   </div>
-                  
+
                   {!isFullService && (
-                    <ul className="space-y-1.5 text-[11px] text-slate-200 mt-2">
+                    <ul className="mt-2 space-y-1.5 text-[11px] text-slate-200">
                       {pkg.deliverables.map((item, idx) => (
-                        <li key={idx} className="flex items-start space-x-2 leading-snug">
-                          <Check className="w-3 h-3 text-[#D4AF37] shrink-0 mt-0.5" />
+                        <li
+                          key={idx}
+                          className="flex items-start space-x-2 leading-snug"
+                        >
+                          <Check className="mt-0.5 h-3 w-3 shrink-0 text-[#D4AF37]" />
                           <span>{item}</span>
                         </li>
                       ))}
@@ -123,10 +148,13 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ onNavigate, onOp
 
                   {isFullService && (
                     <>
-                      <ul className="space-y-1.5 text-[11px] text-slate-200 mt-2">
+                      <ul className="mt-2 space-y-1.5 text-[11px] text-slate-200">
                         {pkg.deliverables.slice(0, 4).map((item, idx) => (
-                          <li key={idx} className="flex items-start space-x-2 leading-snug">
-                            <Check className="w-3 h-3 text-[#D4AF37] shrink-0 mt-0.5" />
+                          <li
+                            key={idx}
+                            className="flex items-start space-x-2 leading-snug"
+                          >
+                            <Check className="mt-0.5 h-3 w-3 shrink-0 text-[#D4AF37]" />
                             <span>{item}</span>
                           </li>
                         ))}
@@ -134,23 +162,31 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ onNavigate, onOp
 
                       <button
                         onClick={toggleFullServiceDetails}
-                        className="text-[10px] font-bold text-[#D4AF37] hover:text-[#C19A2E] transition-colors flex items-center space-x-1.5 mt-2 group"
+                        className="group mt-2 flex items-center space-x-1.5 text-[10px] font-bold text-[#D4AF37] transition-colors hover:text-[#C19A2E]"
                       >
                         <span>{isExpanded ? 'Show Less' : 'Show More'}</span>
+
                         {isExpanded ? (
-                          <ChevronUp className="w-3.5 h-3.5" />
+                          <ChevronUp className="h-3.5 w-3.5" />
                         ) : (
-                          <ChevronDown className="w-3.5 h-3.5" />
+                          <ChevronDown className="h-3.5 w-3.5" />
                         )}
                       </button>
 
-                      <div className={`overflow-hidden transition-all duration-300 ${
-                        isExpanded ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0'
-                      }`}>
-                        <ul className="space-y-1.5 text-[11px] text-slate-200 pt-2">
+                      <div
+                        className={`overflow-hidden transition-all duration-300 ${
+                          isExpanded
+                            ? 'max-h-[500px] opacity-100'
+                            : 'max-h-0 opacity-0'
+                        }`}
+                      >
+                        <ul className="space-y-1.5 pt-2 text-[11px] text-slate-200">
                           {pkg.deliverables.slice(4).map((item, idx) => (
-                            <li key={idx} className="flex items-start space-x-2 leading-snug">
-                              <Check className="w-3 h-3 text-[#D4AF37] shrink-0 mt-0.5" />
+                            <li
+                              key={idx}
+                              className="flex items-start space-x-2 leading-snug"
+                            >
+                              <Check className="mt-0.5 h-3 w-3 shrink-0 text-[#D4AF37]" />
                               <span>{item}</span>
                             </li>
                           ))}
@@ -162,145 +198,241 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ onNavigate, onOp
                   )}
                 </div>
 
-                {/* Footer - Always at bottom */}
-                <div className="p-2.5 bg-[#0F172A] border-t border-slate-700/50 text-[10px] text-slate-400">
+                {/* Footer */}
+                <div className="border-t border-slate-700/50 bg-[#0F172A] p-2.5 text-[10px] text-slate-400">
                   <span className="font-bold text-slate-300">Ideal for: </span>
                   {pkg.idealFor}
                 </div>
-
               </div>
             );
           })}
         </div>
 
         {/* Feature Matrix Toggle Button */}
-        <div className="flex flex-col sm:flex-row items-center justify-between bg-[#1E293B] p-5 rounded border border-slate-700/50 mb-6 gap-4">
+        <div className="mb-6 flex flex-col items-center justify-between gap-4 rounded border border-slate-700/50 bg-[#1E293B] p-5 sm:flex-row">
           <div>
-            <h3 className="text-base font-bold text-white uppercase tracking-wide flex items-center space-x-2">
-              <FileText className="w-4 h-4 text-[#D4AF37]" />
+            <h3 className="flex items-center space-x-2 text-base font-bold uppercase tracking-wide text-white">
+              <FileText className="h-4 w-4 text-[#D4AF37]" />
               <span>Feature Comparison Matrix</span>
             </h3>
-            <p className="text-xs text-slate-400 mt-0.5">
-              Compare article specs, Canva graphics, WordPress staging, and social media scheduling features.
+
+            <p className="mt-0.5 text-xs text-slate-400">
+              Compare article specs, Canva graphics, WordPress staging, and
+              social media scheduling features.
             </p>
           </div>
+
           <button
-            onClick={() => setShowMatrix(!showMatrix)}
-            className="px-4 py-2 bg-[#0F172A] hover:bg-slate-800 border border-[#D4AF37]/40 text-xs font-bold uppercase tracking-wider text-[#D4AF37] flex items-center space-x-2 transition-colors shrink-0"
+            onClick={() => setShowMatrix((currentValue) => !currentValue)}
+            className="flex shrink-0 items-center space-x-2 border border-[#D4AF37]/40 bg-[#0F172A] px-4 py-2 text-xs font-bold uppercase tracking-wider text-[#D4AF37] transition-colors hover:bg-slate-800"
           >
             <span>{showMatrix ? 'Hide Comparison' : 'Show Comparison'}</span>
-            {showMatrix ? <ChevronUp className="w-4 h-4" /> : <ChevronDown className="w-4 h-4" />}
+
+            {showMatrix ? (
+              <ChevronUp className="h-4 w-4" />
+            ) : (
+              <ChevronDown className="h-4 w-4" />
+            )}
           </button>
         </div>
 
         {/* Comparison Matrix Table */}
         {showMatrix && (
-          <div className="bg-[#1E293B] rounded border border-slate-700/50 overflow-x-auto shadow-xl">
-            <table className="w-full text-left border-collapse min-w-[700px]">
+          <div className="overflow-x-auto rounded border border-slate-700/50 bg-[#1E293B] shadow-xl">
+            <table className="w-full min-w-[700px] border-collapse text-left">
               <thead>
-                <tr className="border-b border-slate-700/50 bg-[#0F172A] text-[11px] text-slate-300 uppercase font-bold tracking-wider">
-                  <th className="p-4 w-1/4">Feature / Deliverable</th>
+                <tr className="border-b border-slate-700/50 bg-[#0F172A] text-[11px] font-bold uppercase tracking-wider text-slate-300">
+                  <th className="w-1/4 p-4">Feature / Deliverable</th>
                   <th className="p-4 text-center">Content Essential</th>
                   <th className="p-4 text-center">Content + Visuals</th>
-                  <th className="p-4 text-center">Content + Visuals + Social</th>
-                  <th className="p-4 text-center text-[#D4AF37]">Full-Service (All-In)</th>
+                  <th className="p-4 text-center">
+                    Content + Visuals + Social
+                  </th>
+                  <th className="p-4 text-center text-[#D4AF37]">
+                    Full-Service (All-In)
+                  </th>
                 </tr>
               </thead>
-              <tbody className="text-xs divide-y divide-slate-700/50 text-slate-300">
-                
+
+              <tbody className="divide-y divide-slate-700/50 text-xs text-slate-300">
                 <tr>
-                  <td className="p-3.5 font-bold text-white uppercase text-[11px]">Monthly Retainer</td>
-                  <td className="p-3.5 text-center font-bold">$450 USD / mo</td>
-                  <td className="p-3.5 text-center font-bold">$750 USD / mo</td>
-                  <td className="p-3.5 text-center font-bold">$999 USD / mo</td>
-                  <td className="p-3.5 text-center font-bold text-[#D4AF37]">$1,449 USD / mo</td>
+                  <td className="p-3.5 text-[11px] font-bold uppercase text-white">
+                    Monthly Retainer
+                  </td>
+                  <td className="p-3.5 text-center font-bold">
+                    $450 USD / mo
+                  </td>
+                  <td className="p-3.5 text-center font-bold">
+                    $750 USD / mo
+                  </td>
+                  <td className="p-3.5 text-center font-bold">
+                    $999 USD / mo
+                  </td>
+                  <td className="p-3.5 text-center font-bold text-[#D4AF37]">
+                    $1,449 USD / mo
+                  </td>
                 </tr>
 
                 <tr>
-                  <td className="p-3.5 font-bold text-white uppercase text-[11px]">One-Time Setup Fee</td>
+                  <td className="p-3.5 text-[11px] font-bold uppercase text-white">
+                    One-Time Setup Fee
+                  </td>
                   <td className="p-3.5 text-center">$50 USD</td>
                   <td className="p-3.5 text-center">$100 USD</td>
                   <td className="p-3.5 text-center">$250 USD</td>
-                  <td className="p-3.5 text-center text-[#D4AF37] font-bold">$350 USD</td>
+                  <td className="p-3.5 text-center font-bold text-[#D4AF37]">
+                    $350 USD
+                  </td>
                 </tr>
 
                 <tr>
-                  <td className="p-3.5 font-bold text-white uppercase text-[11px]">Blog Articles per Month</td>
+                  <td className="p-3.5 text-[11px] font-bold uppercase text-white">
+                    Blog Articles per Month
+                  </td>
                   <td className="p-3.5 text-center">4x (1,500 - 2,500w)</td>
                   <td className="p-3.5 text-center">4x (1,500 - 2,500w)</td>
                   <td className="p-3.5 text-center">4x (1,500 - 2,500w)</td>
-                  <td className="p-3.5 text-center text-[#D4AF37] font-bold">4x (1,500 - 2,500w)</td>
-                </tr>
-
-                <tr>
-                  <td className="p-3.5 font-bold text-white uppercase text-[11px]">Dual SEO & GEO Optimization</td>
-                  <td className="p-3.5 text-center text-emerald-400 font-bold">✓ Included</td>
-                  <td className="p-3.5 text-center text-emerald-400 font-bold">✓ Included</td>
-                  <td className="p-3.5 text-center text-emerald-400 font-bold">✓ Included</td>
-                  <td className="p-3.5 text-center text-emerald-400 font-bold">✓ Included</td>
-                </tr>
-
-                <tr>
-                  <td className="p-3.5 font-bold text-white uppercase text-[11px]">Custom Canva Visual Assets</td>
-                  <td className="p-3.5 text-center text-slate-500">—</td>
-                  <td className="p-3.5 text-center text-emerald-400 font-bold">✓ Featured, Infographics, Charts, & Data Tables</td>
-                  <td className="p-3.5 text-center text-emerald-400 font-bold">✓ Featured, Infographics, Charts, & Data Tables + Social Assets</td>
-                  <td className="p-3.5 text-center text-emerald-400 font-bold">✓ Full Custom Suite</td>
-                </tr>
-
-                <tr>
-                  <td className="p-3.5 font-bold text-white uppercase text-[11px]">WordPress Draft Staging</td>
-                  <td className="p-3.5 text-center text-slate-500">—</td>
-                  <td className="p-3.5 text-center text-slate-500">—</td>
-                  <td className="p-3.5 text-center text-slate-500">—</td>
-                  <td className="p-3.5 text-center text-[#D4AF37] font-bold">✓ Full Staging & Gutenberg</td>
-                </tr>
-
-                <tr>
-                  <td className="p-3.5 font-bold text-white uppercase text-[11px]">On-Page Yoast / SEO Meta Setup</td>
-                  <td className="p-3.5 text-center text-slate-500">—</td>
-                  <td className="p-3.5 text-center text-slate-500">—</td>
-                  <td className="p-3.5 text-center text-slate-500">—</td>
-                  <td className="p-3.5 text-center text-[#D4AF37] font-bold">✓ Title, Meta & Keywords</td>
-                </tr>
-
-                <tr>
-                  <td className="p-3.5 font-bold text-white uppercase text-[11px]">CoSchedule Social Management</td>
-                  <td className="p-3.5 text-center text-slate-500">—</td>
-                  <td className="p-3.5 text-center text-slate-500">—</td>
-                  <td className="p-3.5 text-center text-emerald-400 font-bold">✓ 4x Posts (3 Channels)</td>
-                  <td className="p-3.5 text-center text-emerald-400 font-bold">✓ 4x Posts (3 Channels)</td>
-                </tr>
-
-                <tr>
-                  <td className="p-3.5 font-bold text-white uppercase text-[11px]">Google Drive Archive</td>
-                  <td className="p-3.5 text-center text-emerald-400">✓ Drive Workspace</td>
-                  <td className="p-3.5 text-center text-emerald-400">✓ Drive Workspace</td>
-                  <td className="p-3.5 text-center text-emerald-400">✓ Drive Workspace</td>
-                  <td className="p-3.5 text-center text-emerald-400">✓ Drive + WP Media Gallery</td>
-                </tr>
-
-                <tr>
-                  <td className="p-3.5 font-bold text-white uppercase text-[11px]">Enquire Action</td>
-                  <td className="p-3.5 text-center">
-                    <button onClick={() => onNavigate('contact', 'essential')} className="px-3 py-1 bg-slate-800 text-[#D4AF37] hover:bg-[#D4AF37] hover:text-[#0F172A] font-bold text-[10px] uppercase border border-[#D4AF37]/30 transition-colors">Enquire</button>
-                  </td>
-                  <td className="p-3.5 text-center">
-                    <button onClick={() => onNavigate('contact', 'visuals')} className="px-3 py-1 bg-slate-800 text-[#D4AF37] hover:bg-[#D4AF37] hover:text-[#0F172A] font-bold text-[10px] uppercase border border-[#D4AF37]/30 transition-colors">Enquire</button>
-                  </td>
-                  <td className="p-3.5 text-center">
-                    <button onClick={() => onNavigate('contact', 'social')} className="px-3 py-1 bg-slate-800 text-[#D4AF37] hover:bg-[#D4AF37] hover:text-[#0F172A] font-bold text-[10px] uppercase border border-[#D4AF37]/30 transition-colors">Enquire</button>
-                  </td>
-                  <td className="p-3.5 text-center">
-                    <button onClick={() => onNavigate('contact', 'fullservice')} className="px-3 py-1 bg-[#D4AF37] hover:bg-[#C19A2E] text-[#0F172A] font-bold text-[10px] uppercase transition-colors">Enquire</button>
+                  <td className="p-3.5 text-center font-bold text-[#D4AF37]">
+                    4x (1,500 - 2,500w)
                   </td>
                 </tr>
 
+                <tr>
+                  <td className="p-3.5 text-[11px] font-bold uppercase text-white">
+                    Dual SEO &amp; GEO Optimization
+                  </td>
+                  <td className="p-3.5 text-center font-bold text-emerald-400">
+                    ✓ Included
+                  </td>
+                  <td className="p-3.5 text-center font-bold text-emerald-400">
+                    ✓ Included
+                  </td>
+                  <td className="p-3.5 text-center font-bold text-emerald-400">
+                    ✓ Included
+                  </td>
+                  <td className="p-3.5 text-center font-bold text-emerald-400">
+                    ✓ Included
+                  </td>
+                </tr>
+
+                <tr>
+                  <td className="p-3.5 text-[11px] font-bold uppercase text-white">
+                    Custom Canva Visual Assets
+                  </td>
+                  <td className="p-3.5 text-center text-slate-500">—</td>
+                  <td className="p-3.5 text-center font-bold text-emerald-400">
+                    ✓ Featured, Infographics, Charts, &amp; Data Tables
+                  </td>
+                  <td className="p-3.5 text-center font-bold text-emerald-400">
+                    ✓ Featured, Infographics, Charts, &amp; Data Tables +
+                    Social Assets
+                  </td>
+                  <td className="p-3.5 text-center font-bold text-emerald-400">
+                    ✓ Full Custom Suite
+                  </td>
+                </tr>
+
+                <tr>
+                  <td className="p-3.5 text-[11px] font-bold uppercase text-white">
+                    WordPress Draft Staging
+                  </td>
+                  <td className="p-3.5 text-center text-slate-500">—</td>
+                  <td className="p-3.5 text-center text-slate-500">—</td>
+                  <td className="p-3.5 text-center text-slate-500">—</td>
+                  <td className="p-3.5 text-center font-bold text-[#D4AF37]">
+                    ✓ Full Staging &amp; Gutenberg
+                  </td>
+                </tr>
+
+                <tr>
+                  <td className="p-3.5 text-[11px] font-bold uppercase text-white">
+                    On-Page Yoast / SEO Meta Setup
+                  </td>
+                  <td className="p-3.5 text-center text-slate-500">—</td>
+                  <td className="p-3.5 text-center text-slate-500">—</td>
+                  <td className="p-3.5 text-center text-slate-500">—</td>
+                  <td className="p-3.5 text-center font-bold text-[#D4AF37]">
+                    ✓ Title, Meta &amp; Keywords
+                  </td>
+                </tr>
+
+                <tr>
+                  <td className="p-3.5 text-[11px] font-bold uppercase text-white">
+                    CoSchedule Social Management
+                  </td>
+                  <td className="p-3.5 text-center text-slate-500">—</td>
+                  <td className="p-3.5 text-center text-slate-500">—</td>
+                  <td className="p-3.5 text-center font-bold text-emerald-400">
+                    ✓ 4x Posts (3 Channels)
+                  </td>
+                  <td className="p-3.5 text-center font-bold text-emerald-400">
+                    ✓ 4x Posts (3 Channels)
+                  </td>
+                </tr>
+
+                <tr>
+                  <td className="p-3.5 text-[11px] font-bold uppercase text-white">
+                    Google Drive Archive
+                  </td>
+                  <td className="p-3.5 text-center text-emerald-400">
+                    ✓ Drive Workspace
+                  </td>
+                  <td className="p-3.5 text-center text-emerald-400">
+                    ✓ Drive Workspace
+                  </td>
+                  <td className="p-3.5 text-center text-emerald-400">
+                    ✓ Drive Workspace
+                  </td>
+                  <td className="p-3.5 text-center text-emerald-400">
+                    ✓ Drive + WP Media Gallery
+                  </td>
+                </tr>
+
+                <tr>
+                  <td className="p-3.5 text-[11px] font-bold uppercase text-white">
+                    Enquire Action
+                  </td>
+
+                  <td className="p-3.5 text-center">
+                    <button
+                      onClick={() => onNavigate('contact', 'essential')}
+                      className="border border-[#D4AF37]/30 bg-slate-800 px-3 py-1 text-[10px] font-bold uppercase text-[#D4AF37] transition-colors hover:bg-[#D4AF37] hover:text-[#0F172A]"
+                    >
+                      Enquire
+                    </button>
+                  </td>
+
+                  <td className="p-3.5 text-center">
+                    <button
+                      onClick={() => onNavigate('contact', 'visuals')}
+                      className="border border-[#D4AF37]/30 bg-slate-800 px-3 py-1 text-[10px] font-bold uppercase text-[#D4AF37] transition-colors hover:bg-[#D4AF37] hover:text-[#0F172A]"
+                    >
+                      Enquire
+                    </button>
+                  </td>
+
+                  <td className="p-3.5 text-center">
+                    <button
+                      onClick={() => onNavigate('contact', 'social')}
+                      className="border border-[#D4AF37]/30 bg-slate-800 px-3 py-1 text-[10px] font-bold uppercase text-[#D4AF37] transition-colors hover:bg-[#D4AF37] hover:text-[#0F172A]"
+                    >
+                      Enquire
+                    </button>
+                  </td>
+
+                  <td className="p-3.5 text-center">
+                    <button
+                      onClick={() => onNavigate('contact', 'fullservice')}
+                      className="bg-[#D4AF37] px-3 py-1 text-[10px] font-bold uppercase text-[#0F172A] transition-colors hover:bg-[#C19A2E]"
+                    >
+                      Enquire
+                    </button>
+                  </td>
+                </tr>
               </tbody>
             </table>
           </div>
         )}
-
       </div>
     </section>
   );
