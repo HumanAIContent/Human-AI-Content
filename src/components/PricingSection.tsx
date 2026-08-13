@@ -53,7 +53,7 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ onNavigate, onOp
             return (
               <div
                 key={pkg.id}
-                className={`relative rounded flex flex-col transition-all duration-300 ${
+                className={`relative rounded flex flex-col h-full ${
                   isPopular
                     ? 'bg-[#1E293B] border-2 border-[#D4AF37] shadow-xl border-l-4'
                     : 'bg-[#1E293B] border border-slate-700/50 hover:border-[#D4AF37]/50'
@@ -66,7 +66,7 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ onNavigate, onOp
                   </div>
                 )}
 
-                {/* Top section: Plan name, pricing, and CTA button */}
+                {/* TOP SECTION - Fixed height content that should align across all cards */}
                 <div className="p-6 space-y-5">
                   
                   {/* Plan Name & Tagline */}
@@ -77,8 +77,8 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ onNavigate, onOp
                     </p>
                   </div>
 
-                  {/* Pricing Display - Fixed height container */}
-                  <div className="border-t border-b border-slate-700/50 py-3 space-y-1 min-h-[82px]">
+                  {/* Pricing Display - Fixed height */}
+                  <div className="border-t border-b border-slate-700/50 py-3 space-y-1 h-[82px] flex flex-col justify-center">
                     <div className="flex items-baseline space-x-1.5">
                       <span className="text-3xl font-extrabold text-white">
                         ${pkg.monthlyRetainer.toLocaleString()}
@@ -90,8 +90,8 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ onNavigate, onOp
                     </div>
                   </div>
 
-                  {/* CTA Button: Enquire Now - Fixed height container */}
-                  <div className="min-h-[44px]">
+                  {/* CTA Button - Fixed height */}
+                  <div className="h-[44px]">
                     <button
                       onClick={() => onNavigate('contact', pkg.id)}
                       className={`w-full py-2.5 px-4 font-bold text-xs uppercase tracking-wider transition-colors flex items-center justify-center space-x-1.5 ${
@@ -106,15 +106,15 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ onNavigate, onOp
                   </div>
                 </div>
 
-                {/* Bottom section: Features - This is where the variable content lives */}
-                <div className="px-6 pb-6 space-y-2.5 flex-1 flex flex-col">
+                {/* BOTTOM SECTION - Variable content that can grow/shrink */}
+                <div className="px-6 pb-6 flex-1 flex flex-col">
                   <div className="text-[11px] font-bold text-slate-300 uppercase tracking-widest">
                     Includes:
                   </div>
                   
                   {/* Show all deliverables for packages 1-3 */}
                   {!isFullService && (
-                    <ul className="space-y-2 text-xs text-slate-200">
+                    <ul className="space-y-2 text-xs text-slate-200 mt-2.5">
                       {pkg.deliverables.map((item, idx) => (
                         <li key={idx} className="flex items-start space-x-2 leading-snug">
                           <Check className="w-3.5 h-3.5 text-[#D4AF37] shrink-0 mt-0.5" />
@@ -127,8 +127,7 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ onNavigate, onOp
                   {/* Full-Service package with collapsible details */}
                   {isFullService && (
                     <>
-                      {/* Show first 4 items always visible */}
-                      <ul className="space-y-2 text-xs text-slate-200">
+                      <ul className="space-y-2 text-xs text-slate-200 mt-2.5">
                         {pkg.deliverables.slice(0, 4).map((item, idx) => (
                           <li key={idx} className="flex items-start space-x-2 leading-snug">
                             <Check className="w-3.5 h-3.5 text-[#D4AF37] shrink-0 mt-0.5" />
@@ -137,10 +136,9 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ onNavigate, onOp
                         ))}
                       </ul>
 
-                      {/* "Show More" trigger */}
                       <button
                         onClick={toggleFullServiceDetails}
-                        className="text-[11px] font-bold text-[#D4AF37] hover:text-[#C19A2E] transition-colors flex items-center space-x-1.5 mt-1 group"
+                        className="text-[11px] font-bold text-[#D4AF37] hover:text-[#C19A2E] transition-colors flex items-center space-x-1.5 mt-2 group"
                       >
                         <span>{isExpanded ? 'Show Less' : 'Show More'}</span>
                         {isExpanded ? (
@@ -150,7 +148,6 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ onNavigate, onOp
                         )}
                       </button>
 
-                      {/* Collapsible remaining items */}
                       <div className={`overflow-hidden transition-all duration-300 ${
                         isExpanded ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0'
                       }`}>
@@ -164,14 +161,13 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ onNavigate, onOp
                         </ul>
                       </div>
 
-                      {/* Spacer to maintain card height when collapsed */}
                       {!isExpanded && <div className="flex-1" />}
                     </>
                   )}
                 </div>
 
-                {/* Footer Info */}
-                <div className="p-3 bg-[#0F172A] border-t border-slate-700/50 text-[11px] text-slate-400">
+                {/* Footer Info - Always at bottom */}
+                <div className="p-3 bg-[#0F172A] border-t border-slate-700/50 text-[11px] text-slate-400 mt-auto">
                   <span className="font-bold text-slate-300">Ideal for: </span>
                   {pkg.idealFor}
                 </div>
