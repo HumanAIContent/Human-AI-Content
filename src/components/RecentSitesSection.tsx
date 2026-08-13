@@ -36,43 +36,22 @@ export const RecentSitesSection: React.FC<RecentSitesSectionProps> = ({ onSelect
               className="group bg-[#1E293B] rounded border border-slate-700/50 hover:border-[#D4AF37]/50 overflow-hidden transition-all duration-300 flex flex-col justify-between shadow-lg"
             >
               
-              {/* Image */}
+              {/* Image Only - No overlay text */}
               <div className="relative h-44 overflow-hidden bg-[#0F172A]">
                 <img
                   src={site.image}
                   alt={site.name}
                   className="w-full h-full object-cover group-hover:scale-105 grayscale hover:grayscale-0 transition-all duration-500"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#1E293B] via-transparent to-transparent opacity-80" />
-
-                {/* Domain & Niche overlay */}
-                <div className="absolute bottom-2.5 left-2.5 right-2.5">
-                  <div className="text-[10px] font-bold text-[#D4AF37] uppercase tracking-widest">
-                    {site.niche}
-                  </div>
-                  <div className="text-white font-extrabold text-base tracking-wide truncate uppercase">
-                    {site.name}
-                  </div>
-                </div>
               </div>
 
-              {/* Card Body */}
+              {/* Card Body - Only Sample Article section remains */}
               <div className="p-4 space-y-3 flex-1 flex flex-col justify-between">
                 
                 <div className="space-y-2.5">
-                  <div className="flex items-center justify-between text-xs text-slate-400">
-                    <span className="font-mono text-slate-300">{site.domain}</span>
-                    <span className="px-1.5 py-0.5 bg-[#0F172A] text-[9px] font-bold text-[#D4AF37] uppercase border border-slate-800">
-                      {site.packageUsed}
-                    </span>
-                  </div>
-
-                  <p className="text-xs text-slate-300 leading-relaxed line-clamp-3">
-                    {site.description}
-                  </p>
-
+                  {/* Sample Article Section - Renamed from "Sample Topic" */}
                   <div className="pt-2 border-t border-slate-700/50 space-y-0.5">
-                    <div className="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Sample Topic:</div>
+                    <div className="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Sample Article:</div>
                     <p className="text-xs font-semibold text-white italic line-clamp-2">
                       "{site.sampleArticleTitle}"
                     </p>
