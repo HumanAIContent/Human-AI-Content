@@ -68,10 +68,10 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ onNavigate, onOp
 
                 <div className="p-6 space-y-5 flex-1 flex flex-col">
                   
-                  {/* Plan Name & Tagline */}
-                  <div>
+                  {/* Fixed-height container for Plan Name & Tagline so price lines align evenly */}
+                  <div className="flex flex-col justify-between min-h-[85px]">
                     <h3 className="text-lg font-bold text-[#D4AF37] uppercase tracking-wide">{pkg.name}</h3>
-                    <p className="text-xs text-slate-300 mt-1 min-h-[36px] leading-relaxed">
+                    <p className="text-xs text-slate-300 mt-1 leading-relaxed">
                       {pkg.tagline}
                     </p>
                   </div>
@@ -125,7 +125,7 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ onNavigate, onOp
                     {/* Full-Service package with collapsible details */}
                     {isFullService && (
                       <>
-                        {/* Show first 4 items always visible (including Meta Titles) */}
+                        {/* Show first 4 items always visible */}
                         <ul className="space-y-2 text-xs text-slate-200">
                           {pkg.deliverables.slice(0, 4).map((item, idx) => (
                             <li key={idx} className="flex items-start space-x-2 leading-snug">
@@ -135,7 +135,7 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ onNavigate, onOp
                           ))}
                         </ul>
 
-                        {/* "Show More" trigger - displayed inline after the 4th feature */}
+                        {/* "Show More" trigger */}
                         <button
                           onClick={toggleFullServiceDetails}
                           className="text-[11px] font-bold text-[#D4AF37] hover:text-[#C19A2E] transition-colors flex items-center space-x-1.5 mt-1 group"
