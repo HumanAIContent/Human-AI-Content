@@ -10,10 +10,10 @@ interface PricingSectionProps {
 
 export const PricingSection: React.FC<PricingSectionProps> = ({ onNavigate, onOpenAgreements }) => {
   const [showMatrix, setShowMatrix] = useState(true);
-  const [expandedPackage, setExpandedPackage] = useState<string | null>(null);
+  const [showFullServiceDetails, setShowFullServiceDetails] = useState(false);
 
-  const togglePackageDetails = (packageId: string) => {
-    setExpandedPackage(expandedPackage === packageId ? null : packageId);
+  const toggleFullServiceDetails = () => {
+    setShowFullServiceDetails(!showFullServiceDetails);
   };
 
   return (
@@ -47,7 +47,8 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ onNavigate, onOp
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 items-stretch mb-12">
           {PACKAGES.map((pkg) => {
             const isPopular = pkg.isPopular;
-            const isExpanded = expandedPackage === pkg.id;
+            const isFullService = pkg.id === 'fullservice';
+            const isExpanded = showFullServiceDetails && isFullService;
 
             return (
               <div
@@ -103,28 +104,15 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ onNavigate, onOp
                     </button>
                   </div>
 
-                  {/* Core Features Included - Collapsible */}
+                  {/* Core Features Included */}
                   <div className="space-y-2.5 pt-1 flex-1 flex flex-col">
-                    <button
-                      onClick={() => togglePackageDetails(pkg.id)}
-                      className="text-[11px] font-bold text-[#D4AF37] uppercase tracking-widest hover:text-[#C19A2E] transition-colors flex items-center justify-between w-full group"
-                    >
-                      <span>Includes:</span>
-                      <span className="flex items-center space-x-1 text-[10px] text-slate-400 group-hover:text-[#D4AF37]">
-                        <span>{isExpanded ? 'Hide Details' : 'Show Details'}</span>
-                        {isExpanded ? (
-                          <ChevronUp className="w-3.5 h-3.5" />
-                        ) : (
-                          <ChevronDown className="w-3.5 h-3.5" />
-                        )}
-                      </span>
-                    </button>
+                    <div className="text-[11px] font-bold text-slate-300 uppercase tracking-widest">
+                      Includes:
+                    </div>
                     
-                    {/* Collapsible Deliverables List */}
-                    <div className={`overflow-hidden transition-all duration-300 ${
-                      isExpanded ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0'
-                    }`}>
-                      <ul className="space-y-2 text-xs text-slate-200 pt-2">
+                    {/* Show all deliverables for packages 1-3 */}
+                    {!isFullService && (
+                      <ul className="space-y-2 text-xs text-slate-200">
                         {pkg.deliverables.map((item, idx) => (
                           <li key={idx} className="flex items-start space-x-2 leading-snug">
                             <Check className="w-3.5 h-3.5 text-[#D4AF37] shrink-0 mt-0.5" />
@@ -132,18 +120,53 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ onNavigate, onOp
                           </li>
                         ))}
                       </ul>
-                    </div>
+                    )}
 
-                    {/* Show a summary count when collapsed */}
-                    {!isExpanded && (
-                      <div className="text-[10px] text-slate-500 italic mt-1">
-                        {pkg.deliverables.length} features included — click "Show Details" to view
-                      </div>
+                    {/* Full-Service package with collapsible details */}
+                    {isFullService && (
+                      <>
+                        {/* Show first 3 items always visible */}
+                        <ul className="space-y-2 text-xs text-slate-200">
+                          {pkg.deliverables.slice(0, 3).map((item, idx) => (
+                            <li key={idx} className="flex items-start space-x-2 leading-snug">
+                              <Check className="w-3.5 h-3.5 text-[#D4AF37] shrink-0 mt-0.5" />
+                              <span>{item}</span>
+                            </li>
+                          ))}
+                        </ul>
+
+                        {/* "Show More" trigger - displayed inline after the 3rd feature */}
+                        <button
+                          onClick={toggleFullServiceDetails}
+                          className="text-[11px] font-bold text-[#D4AF37] hover:text-[#C19A2E] transition-colors flex items-center space-x-1.5 mt-1 group"
+                        >
+                          <span>{isExpanded ? 'Show Less' : 'Show More'}</span>
+                          {isExpanded ? (
+                            <ChevronUp className="w-3.5 h-3.5" />
+                          ) : (
+                            <ChevronDown className="w-3.5 h-3.5" />
+                          )}
+                        </button>
+
+                        {/* Collapsible remaining items */}
+                        <div className={`overflow-hidden transition-all duration-300 ${
+                          isExpanded ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0'
+                        }`}>
+                          <ul className="space-y-2 text-xs text-slate-200 pt-2">
+                            {pkg.deliverables.slice(3).map((item, idx) => (
+                              <li key={idx} className="flex items-start space-x-2 leading-snug">
+                                <Check className="w-3.5 h-3.5 text-[#D4AF37] shrink-0 mt-0.5" />
+                                <span>{item}</span>
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+
+                        {/* Spacer to maintain card height when collapsed */}
+                        {!isExpanded && <div className="flex-1" />}
+                      </>
                     )}
                   </div>
-
-                  {/* Spacer to push footer down when collapsed */}
-                  {!isExpanded && <div className="flex-1" />}
 
                 </div>
 
