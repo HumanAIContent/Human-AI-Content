@@ -24,7 +24,11 @@ export const Navbar: React.FC<NavbarProps> = ({ activePage, onNavigate, onOpenAg
 
   // Prevent body scroll when mobile menu is open
   useEffect(() => {
-    document.body.style.overflow = isMenuOpen ? 'hidden' : 'unset';
+    if (isMenuOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+    }
     return () => {
       document.body.style.overflow = 'unset';
     };
@@ -44,7 +48,6 @@ export const Navbar: React.FC<NavbarProps> = ({ activePage, onNavigate, onOpenAg
       if (el) {
         el.scrollIntoView({ behavior: 'smooth' });
       } else {
-        // If element not found, try after a delay (content might not be rendered yet)
         setTimeout(() => {
           const el2 = document.getElementById(sectionId);
           if (el2) {
@@ -58,14 +61,12 @@ export const Navbar: React.FC<NavbarProps> = ({ activePage, onNavigate, onOpenAg
     // Navigate to home first, then scroll after render
     onNavigate('home');
     
-    // Try multiple times with increasing delays
     const attemptScroll = (delay: number) => {
       setTimeout(() => {
         const el = document.getElementById(sectionId);
         if (el) {
           el.scrollIntoView({ behavior: 'smooth' });
         } else if (delay < 1000) {
-          // If not found and we haven't tried too many times, try again
           attemptScroll(delay + 200);
         }
       }, delay);
@@ -75,83 +76,79 @@ export const Navbar: React.FC<NavbarProps> = ({ activePage, onNavigate, onOpenAg
   };
 
   return (
-    <header className="sticky top-0 z-50 bg-[#0F172A] border-b border-slate-700/50 backdrop-blur-sm">
-      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
-          
-          {/* Logo */}
-          <button
-            onClick={() => handleNavClick('home')}
-            className="flex items-center space-x-2 hover:opacity-80 transition-opacity"
-          >
-            <img 
-              src="/Human-AI-Content-Creation-Square.png" 
-              alt="Human AI Content Logo" 
-              className="w-8 h-8 rounded bg-[#1E293B] border border-[#D4AF37]/50 object-contain p-0.5"
-            />
-            <span className="font-extrabold text-sm text-white tracking-wider uppercase hidden sm:inline-block">
-              HUMAN AI CONTENT
-            </span>
-          </button>
-
-          {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-6 text-xs font-bold uppercase tracking-wider">
+    <>
+      <header className="sticky top-0 z-50 bg-[#0F172A] border-b border-slate-700/50 backdrop-blur-sm">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex items-center justify-between h-16">
+            
+            {/* Logo */}
             <button
               onClick={() => handleNavClick('home')}
-              className={`hover:text-[#D4AF37] transition-colors ${
-                activePage === 'home' ? 'text-[#D4AF37]' : 'text-slate-300'
-              }`}
+              className="flex items-center space-x-2 hover:opacity-80 transition-opacity"
             >
-              Home
+              <img 
+                src="/Human-AI-Content-Creation-Square.png" 
+                alt="Human AI Content Logo" 
+                className="w-8 h-8 rounded bg-[#1E293B] border border-[#D4AF37]/50 object-contain p-0.5"
+              />
+              <span className="font-extrabold text-sm text-white tracking-wider uppercase hidden sm:inline-block">
+                HUMAN AI CONTENT
+              </span>
             </button>
-            <button
-              onClick={() => {
-                scrollToSection('packages');
-              }}
-              className="text-slate-300 hover:text-[#D4AF37] transition-colors"
-            >
-              Packages
-            </button>
-            <button
-              onClick={() => {
-                scrollToSection('recent-sites');
-              }}
-              className="text-slate-300 hover:text-[#D4AF37] transition-colors"
-            >
-              Portfolio
-            </button>
-            <button
-              onClick={() => {
-                scrollToSection('faq');
-              }}
-              className="text-slate-300 hover:text-[#D4AF37] transition-colors"
-            >
-              FAQ
-            </button>
-            <button
-              onClick={() => handleNavClick('contact')}
-              className={`px-4 py-1.5 bg-[#D4AF37] hover:bg-[#C19A2E] text-[#0F172A] transition-colors rounded ${
-                activePage === 'contact' ? 'bg-[#C19A2E]' : ''
-              }`}
-            >
-              Enquire Now
-            </button>
-          </nav>
 
-          {/* Mobile Menu Button */}
-          <button
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="md:hidden p-2 text-slate-300 hover:text-[#D4AF37] transition-colors"
-            aria-label="Toggle menu"
-          >
-            {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-          </button>
+            {/* Desktop Navigation */}
+            <nav className="hidden md:flex items-center space-x-6 text-xs font-bold uppercase tracking-wider">
+              <button
+                onClick={() => handleNavClick('home')}
+                className={`hover:text-[#D4AF37] transition-colors ${
+                  activePage === 'home' ? 'text-[#D4AF37]' : 'text-slate-300'
+                }`}
+              >
+                Home
+              </button>
+              <button
+                onClick={() => scrollToSection('packages')}
+                className="text-slate-300 hover:text-[#D4AF37] transition-colors"
+              >
+                Packages
+              </button>
+              <button
+                onClick={() => scrollToSection('recent-sites')}
+                className="text-slate-300 hover:text-[#D4AF37] transition-colors"
+              >
+                Portfolio
+              </button>
+              <button
+                onClick={() => scrollToSection('faq')}
+                className="text-slate-300 hover:text-[#D4AF37] transition-colors"
+              >
+                FAQ
+              </button>
+              <button
+                onClick={() => handleNavClick('contact')}
+                className={`px-4 py-1.5 bg-[#D4AF37] hover:bg-[#C19A2E] text-[#0F172A] transition-colors rounded ${
+                  activePage === 'contact' ? 'bg-[#C19A2E]' : ''
+                }`}
+              >
+                Enquire Now
+              </button>
+            </nav>
+
+            {/* Mobile Menu Button */}
+            <button
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+              className="md:hidden p-2 text-slate-300 hover:text-[#D4AF37] transition-colors z-50 relative"
+              aria-label="Toggle menu"
+            >
+              {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+            </button>
+          </div>
         </div>
-      </div>
+      </header>
 
-      {/* Mobile Menu Overlay */}
+      {/* Mobile Menu Overlay - Moved outside header */}
       {isMenuOpen && (
-        <div className="fixed inset-0 bg-[#0F172A] z-40 flex flex-col px-4 pt-4 pb-8 overflow-y-auto">
+        <div className="fixed inset-0 bg-[#0F172A] z-40 flex flex-col px-4 pt-4 pb-8 overflow-y-auto md:hidden">
           <div className="flex justify-end">
             <button
               onClick={() => setIsMenuOpen(false)}
@@ -170,25 +167,19 @@ export const Navbar: React.FC<NavbarProps> = ({ activePage, onNavigate, onOpenAg
               Home
             </button>
             <button
-              onClick={() => {
-                scrollToSection('packages');
-              }}
+              onClick={() => scrollToSection('packages')}
               className="text-slate-300 hover:text-[#D4AF37] transition-colors"
             >
               Packages
             </button>
             <button
-              onClick={() => {
-                scrollToSection('recent-sites');
-              }}
+              onClick={() => scrollToSection('recent-sites')}
               className="text-slate-300 hover:text-[#D4AF37] transition-colors"
             >
               Portfolio
             </button>
             <button
-              onClick={() => {
-                scrollToSection('faq');
-              }}
+              onClick={() => scrollToSection('faq')}
               className="text-slate-300 hover:text-[#D4AF37] transition-colors"
             >
               FAQ
@@ -202,6 +193,6 @@ export const Navbar: React.FC<NavbarProps> = ({ activePage, onNavigate, onOpenAg
           </nav>
         </div>
       )}
-    </header>
+    </>
   );
 };
