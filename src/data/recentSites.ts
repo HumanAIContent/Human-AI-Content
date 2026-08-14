@@ -24,7 +24,7 @@ export const RECENT_SITES: RecentSite[] = [
     name: 'Verdant Organic Wellness',
     domain: 'verdantwellness.com',
     niche: 'Health, Clinical Nutrition & E-Commerce',
-    image: '/verdant-wellness-logo.png',
+    image: '/The Woodlands at Hocking Hills Logo (1).jpg',
     packageUsed: 'Full-Service All-Inclusive',
     description: 'E-commerce health brand needing medically backed, research-dense wellness articles and custom infographics.',
     sampleArticleTitle: 'The Clinical Science of Bioavailable Micronutrients in Cellular Longevity',
