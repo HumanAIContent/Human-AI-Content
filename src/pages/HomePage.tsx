@@ -68,8 +68,7 @@ export const HomePage: React.FC<HomePageProps> = ({
                 <div className="text-[10px] font-bold text-[#D4AF37] uppercase tracking-wider">STEP 3</div>
                 <h4 className="text-white font-bold text-xs uppercase tracking-wide">Drafting & Staging</h4>
                 <p className="text-xs text-slate-400 leading-relaxed">
-                  I pair AI-drafted articles with expert human editing and Canva graphics, staging ready-to-review drafts in WordPress while building your promotional social media campaign inside CoSchedule.
-                </p>
+                  I pair AI-drafted articles with expert human editing & Canva graphics, staging ready-to-review drafts in WordPress or Google Drive while building your promotional social media campaign inside CoSchedule.
               </div>
 
               <div className="bg-[#0F172A] p-4 rounded border border-slate-800 space-y-1.5">
