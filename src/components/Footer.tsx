@@ -16,11 +16,11 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, onOpenAgreements }) 
           {/* Column 1 & 2: Brand & Bio */}
           <div className="lg:col-span-2 space-y-3">
             <div className="flex items-center space-x-2">
-<img 
-  src="/Human-AI-Content-Creation-Square.png" 
-  alt="Human AI Content Creation Logo" 
-  className="w-10 h-10 md:w-16 md:h-16 rounded object-cover border border-[#D4AF37]/50" 
-/>
+              <img 
+                src="/Human-AI-Content-Creation-Square.png" 
+                alt="Human AI Content Creation Logo" 
+                className="w-10 h-10 md:w-16 md:h-16 rounded object-cover border border-[#D4AF37]/50" 
+              />
               <span className="font-extrabold text-base text-white tracking-wider uppercase">HUMAN AI CONTENT</span>
             </div>
             
@@ -94,14 +94,6 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, onOpenAgreements }) 
                   className="hover:text-[#D4AF37] transition-colors"
                 >
                   FAQ
-                </button>
-              </li>
-              <li>
-                <button 
-                  onClick={() => { onNavigate('about'); window.scrollTo({ top: 0, behavior: 'smooth' }); }} 
-                  className="hover:text-[#D4AF37] transition-colors"
-                >
-                  About
                 </button>
               </li>
             </ul>
