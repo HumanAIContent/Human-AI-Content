@@ -39,7 +39,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onNavigate, onOpenSamp
             
             {/* Yellow Title - Left Aligned */}
             <h2 className="text-base sm:text-lg font-bold text-[#D4AF37] mb-4 leading-tight text-left">
-              The Hassle-Free Content Solution for Growing Businesses
+              Meet Your Content Creation Manager
             </h2>
 
             {/* Subheading */}
