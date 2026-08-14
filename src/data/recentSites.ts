@@ -2,6 +2,24 @@ import { RecentSite } from '../types';
 
 export const RECENT_SITES: RecentSite[] = [
   {
+    id: 'site-5',
+    name: 'Nexus Supply Chain Systems',
+    domain: 'nexussupply.com',
+    niche: 'Enterprise B2B Freight & Logistics',
+    image: '/Inno_logo_Aug2025_2480.jpg',
+    packageUsed: 'Content + Visual Assets',
+    description: 'Global logistics platform providing freight forwarding insights and supply chain resilience articles.',
+    sampleArticleTitle: 'Mitigating Maritime Bottlenecks: Real-Time Telematics & Predictive Routing',
+    sampleArticleExcerpt: 'Predictive logistics platforms combine AIS satellite positioning with historical port congestion data to reroute container vessels before arrival windows are breached...',
+    geoOptimizationDetails: 'Technical terminology alignment for B2B supply chain procurement officers searching AI engines.',
+    deliverableBreakdown: [
+      '4x 1,600-word Industry Whitepapers',
+      'Custom Shipping Route Maps & Flowcharts',
+      'Organized Shared Google Drive Workspace',
+      'Structured Monday Delivery Schedule'
+    ]
+  },
+  {
     id: 'site-1',
     name: 'Tokyo Rehabilitation',
     domain: 'tokyophysicaltherapy.com',
@@ -71,24 +89,6 @@ export const RECENT_SITES: RecentSite[] = [
       'Custom Canva Feature Comparison Cards',
       'WordPress Publishing with Custom Block Formatting',
       'Multi-Platform Social Syndication'
-    ]
-  },
-  {
-    id: 'site-5',
-    name: 'Nexus Supply Chain Systems',
-    domain: 'nexussupply.com',
-    niche: 'Enterprise B2B Freight & Logistics',
-    image: '/Inno_logo_Aug2025_2480.jpg',
-    packageUsed: 'Content + Visual Assets',
-    description: 'Global logistics platform providing freight forwarding insights and supply chain resilience articles.',
-    sampleArticleTitle: 'Mitigating Maritime Bottlenecks: Real-Time Telematics & Predictive Routing',
-    sampleArticleExcerpt: 'Predictive logistics platforms combine AIS satellite positioning with historical port congestion data to reroute container vessels before arrival windows are breached...',
-    geoOptimizationDetails: 'Technical terminology alignment for B2B supply chain procurement officers searching AI engines.',
-    deliverableBreakdown: [
-      '4x 1,600-word Industry Whitepapers',
-      'Custom Shipping Route Maps & Flowcharts',
-      'Organized Shared Google Drive Workspace',
-      'Structured Monday Delivery Schedule'
     ]
   },
   {
