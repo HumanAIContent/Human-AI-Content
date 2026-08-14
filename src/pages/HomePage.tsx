@@ -34,8 +34,8 @@ export const HomePage: React.FC<HomePageProps> = ({
       />
 
       {/* How Getting Started Works - ADDED AFTER PRICING SECTION */}
-      <div className="py-16 bg-[#0F172A] border-t border-slate-700/50">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="bg-[#0F172A]">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
           <div className="bg-[#1E293B] rounded p-6 sm:p-10 border border-slate-700/50 space-y-6">
             <div className="text-center max-w-2xl mx-auto space-y-1">
               <h2 className="text-2xl font-extrabold text-white tracking-tight">
