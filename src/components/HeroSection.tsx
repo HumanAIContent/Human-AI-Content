@@ -18,7 +18,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onNavigate, onOpenSamp
             <img
               src="/Human-AI-Content-Creation-Square.png"
               alt="Human-AI Content Creation Logo"
-              className="w-32 h-32 sm:w-40 sm:h-40 object-contain rounded-lg shadow-md"
+              className="w-24 h-24 sm:w-32 sm:h-32 object-contain rounded-lg shadow-md"
             />
           </div>
           
@@ -28,7 +28,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onNavigate, onOpenSamp
           </span>
 
           <h1 className="mb-3 text-xl sm:text-2xl lg:text-3xl font-extrabold leading-tight text-white">
-            Expert Website & Social Media Content Done For You—Hands Off!
+            Expert Website & Social Media Content<br />Done For You—Hands Off!
           </h1>
         </div>
 
