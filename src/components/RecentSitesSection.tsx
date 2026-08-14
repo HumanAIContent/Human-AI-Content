@@ -36,12 +36,12 @@ export const RecentSitesSection: React.FC<RecentSitesSectionProps> = ({ onSelect
               className="group bg-[#1E293B] rounded border border-slate-700/50 hover:border-[#D4AF37]/50 overflow-hidden transition-all duration-300 flex flex-col justify-between shadow-lg"
             >
               
-              {/* Image Container - Now a Perfect Square */}
+              {/* Image Container - Perfect Square with NO grayscale */}
               <div className="relative aspect-square overflow-hidden bg-[#0F172A]">
                 <img
                   src={site.image}
                   alt={site.name}
-                  className="w-full h-full object-cover group-hover:scale-105 grayscale hover:grayscale-0 transition-all duration-500"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-all duration-500"
                 />
               </div>
 
