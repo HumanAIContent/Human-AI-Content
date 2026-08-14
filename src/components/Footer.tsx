@@ -9,7 +9,7 @@ interface FooterProps {
 
 export const Footer: React.FC<FooterProps> = ({ onNavigate, onOpenAgreements }) => {
   return (
-    <footer className="bg-slate-900 border-t border-slate-700/50 text-slate-400 text-xs">
+    <footer className="bg-[#0F172A] border-t border-slate-700/50 text-slate-400 text-xs">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           
@@ -40,12 +40,13 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, onOpenAgreements }) 
             </div>
           </div>
 
-          {/* Column 3: Navigation */}
+          {/* Column 3: Navigation + Contact */}
           <div>
+            {/* Navigation Heading */}
             <h4 className="text-white font-bold mb-3 text-[11px] tracking-widest uppercase text-[#D4AF37]">
               Navigation
             </h4>
-            <ul className="space-y-2">
+            <ul className="space-y-2 mb-6">
               <li>
                 <button 
                   onClick={() => { onNavigate('home'); window.scrollTo({ top: 0, behavior: 'smooth' }); }} 
@@ -95,6 +96,21 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, onOpenAgreements }) 
                 >
                   FAQ
                 </button>
+              </li>
+            </ul>
+
+            {/* New CONTACT Heading */}
+            <h4 className="text-white font-bold mb-3 text-[11px] tracking-widest uppercase text-[#D4AF37]">
+              Contact
+            </h4>
+            <ul className="space-y-2">
+              <li>
+                <a 
+                  href="mailto:mikel@humanaicontent.com" 
+                  className="hover:text-[#D4AF37] transition-colors"
+                >
+                  mikel@humanaicontent.com
+                </a>
               </li>
             </ul>
           </div>
