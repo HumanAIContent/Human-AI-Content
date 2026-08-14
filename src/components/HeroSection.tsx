@@ -143,7 +143,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onNavigate, onOpenSamp
                       <h4 className="text-[10px] font-bold text-white uppercase tracking-wide">4. Proven AI + Human Workflow</h4>
                     </div>
                     <p className="text-[10px] text-slate-300 leading-relaxed">
-                      AI for drafting research, humans for polishing and optimization.
+                      I leverage AI for deep research & initial drafting, reserving maximum time to meticulously refine messaging, fact-check copy, & produce sharp, human-edited visuals.
                     </p>
                   </div>
 
