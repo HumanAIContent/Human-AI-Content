@@ -38,8 +38,8 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onNavigate, onOpenSamp
           <div className="lg:col-span-8 flex flex-col justify-between rounded-lg bg-[#1E293B] p-6 lg:p-7 border-l-4 border-[#D4AF37] border-y border-r border-slate-700/50 shadow-xl">
             
             <div>
-              {/* Yellow Title */}
-              <h2 className="text-base sm:text-lg font-bold text-[#D4AF37] mb-4 leading-tight">
+              {/* Yellow Title - Center Aligned */}
+              <h2 className="text-base sm:text-lg font-bold text-[#D4AF37] mb-4 leading-tight text-center">
                 The Hassle-Free Content Solution for Growing Businesses
               </h2>
 
@@ -73,8 +73,8 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onNavigate, onOpenSamp
                 </div>
               </div>
 
-              {/* Centered Primary Action Button */}
-              <div className="flex justify-center mt-8 mb-4">
+              {/* Centered Primary Action Button - Reduced bottom margin */}
+              <div className="flex justify-center mt-8">
                 <button
                   onClick={() => {
                     const el = document.getElementById('packages');
@@ -87,8 +87,8 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onNavigate, onOpenSamp
               </div>
             </div>
 
-            {/* Quick Trust Bar */}
-            <div className="mt-5 pt-4 border-t border-slate-700/50 flex flex-wrap items-center justify-between gap-4 text-[10px] font-semibold text-slate-400 uppercase tracking-wider">
+            {/* Quick Trust Bar - Reduced top margin */}
+            <div className="mt-3 pt-4 border-t border-slate-700/50 flex flex-wrap items-center justify-between gap-4 text-[10px] font-semibold text-slate-400 uppercase tracking-wider">
               <div className="flex items-center space-x-1.5">
                 <Shield className="w-3.5 h-3.5 text-[#D4AF37]" />
                 <span>Native English Content Creator</span>
