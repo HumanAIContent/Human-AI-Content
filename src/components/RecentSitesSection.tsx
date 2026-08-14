@@ -49,7 +49,7 @@ export const RecentSitesSection: React.FC<RecentSitesSectionProps> = ({ onSelect
               <div className="p-4 space-y-3 flex-1 flex flex-col justify-between">
                 
                 <div className="space-y-2.5">
-                  {/* Sample Article Section - Renamed from "Sample Topic" */}
+                  {/* Sample Article Section */}
                   <div className="pt-2 border-t border-slate-700/50 space-y-0.5">
                     <div className="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Sample Article:</div>
                     <p className="text-xs font-semibold text-white italic line-clamp-2">
