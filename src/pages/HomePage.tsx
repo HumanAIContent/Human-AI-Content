@@ -76,7 +76,7 @@ export const HomePage: React.FC<HomePageProps> = ({
                 <div className="text-[10px] font-bold text-[#D4AF37] uppercase tracking-wider">STEP 4</div>
                 <h4 className="text-white font-bold text-xs uppercase tracking-wide">1-Click Approval</h4>
                 <p className="text-xs text-slate-400 leading-relaxed">
-                  You review staged Article drafts in either Google Drive or WordPress, then CoSchedule social posts. Request up to two revision rounds and then approve. Nothing ever live without your approval.
+                  You review staged Article drafts in either Google Drive or WordPress, then CoSchedule social posts. Request up to two revision rounds free & then approve. Nothing ever live without your approval.
                 </p>
               </div>
 
