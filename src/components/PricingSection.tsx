@@ -24,7 +24,7 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ onNavigate, onOp
       case 'visuals':
         return 'Streamline your content pipeline with deeply researched, human-edited blog articles designed for dual SEO/GEO indexing. Paired with custom Canva visuals, infographics, and data tables, all deliverables drop into your shared Google Drive workspace every month.';
       case 'social':
-        return 'CoSchedule hands-off social media management, custom Canva graphics, and AI-assisted, human-edited SEO/GEO articles. All written and visual assets are delivered to a shared Google Drive, and social posts strictly require explicit client approval.';
+        return 'CoSchedule hands-off social media management, custom Canva graphic designs, and AI-assisted, human-edited SEO/GEO articles. All written and visual assets are delivered to a shared Google Drive, and social posts strictly require explicit client approval.';
       default:
         return ''; // Full-service uses its own tagline from the data
     }
