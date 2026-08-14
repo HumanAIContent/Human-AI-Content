@@ -13,8 +13,8 @@ export const SAMPLE_ARTICLE: SampleArticle = {
     {
       heading: 'Introduction: The Benefits of Pilates for Physical Therapy',
       body: 'Recovery is not just about healing injuries. It is also about restoring confidence, improving movement, and building strength that lasts. That is exactly where Pilates fits into modern physical therapy.\n\nAt Tokyo Rehab, Pilates is more than exercise. It is a focused, guided approach to help people move better, recover faster, and feel stronger in daily life.\n\nPilates blends controlled movement, breathing, and alignment. As a result, it supports both rehabilitation and long-term health. Moreover, it adapts easily to different conditions, making it suitable for many patients.',
-      visualAssetUrl: 'https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=1000&q=80',
-      visualAssetCaption: 'Figure 1: Pilates in a physical therapy setting — controlled movement for rehabilitation.'
+      visualAssetUrl: 'https://tokyophysicaltherapy.com/wp-content/uploads/2026/03/The-Benefits-of-Pilates-for-Physical-Therapy-1.jpg',
+      visualAssetCaption: 'Figure 1: The Benefits of Pilates for Physical Therapy'
     },
     {
       heading: 'What Makes Pilates Different in Physical Therapy?',
@@ -22,13 +22,13 @@ export const SAMPLE_ARTICLE: SampleArticle = {
     },
     {
       heading: 'A Whole-Body Approach to Recovery',
-      body: 'Unlike traditional workouts, Pilates targets the entire body. It strengthens deep stabilizing muscles while improving mobility at the same time. Because of this, patients often notice improvements beyond their initial injury. For example, better posture and coordination can reduce strain on other parts of the body.\n\nFurthermore, Pilates encourages body awareness. This means patients learn how to move correctly, even outside therapy sessions.',
-      visualAssetUrl: 'https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=1000&q=80',
-      visualAssetCaption: 'Figure 2: Whole-body approach — strengthening deep stabilizing muscles.'
+      body: 'Unlike traditional workouts, Pilates targets the entire body. It strengthens deep stabilizing muscles while improving mobility at the same time. Because of this, patients often notice improvements beyond their initial injury. For example, better posture and coordination can reduce strain on other parts of the body.\n\nFurthermore, Pilates encourages body awareness. This means patients learn how to move correctly, even outside therapy sessions.'
     },
     {
       heading: 'Building Core Strength for Lasting Support',
-      body: 'One of the main benefits of Pilates is improved core strength. The "core" includes the abdomen, lower back, hips, and pelvic floor. These muscles act as the body\'s foundation. When they are strong, they support the spine and reduce stress on joints.\n\nStudies show that Pilates enhances muscular endurance and stability. As a result, patients often experience less pain during everyday movements.'
+      body: 'One of the main benefits of Pilates is improved core strength. The "core" includes the abdomen, lower back, hips, and pelvic floor. These muscles act as the body\'s foundation. When they are strong, they support the spine and reduce stress on joints.\n\nStudies show that Pilates enhances muscular endurance and stability. As a result, patients often experience less pain during everyday movements.',
+      visualAssetUrl: 'https://tokyophysicaltherapy.com/wp-content/uploads/2026/03/01KMHMESTRKXXB95WP6E4JM929_YG2P3M_718b333c-22c3-4e7f-8d5a-d0a60d932d06-1152x1536.jpg',
+      visualAssetCaption: 'Figure 2: Core strengthening exercises for lasting support'
     },
     {
       heading: 'Why Core Strength Matters in Rehabilitation',
@@ -36,9 +36,7 @@ export const SAMPLE_ARTICLE: SampleArticle = {
     },
     {
       heading: 'Improving Flexibility Without Risk',
-      body: 'Flexibility is essential in physical therapy. However, aggressive stretching can sometimes do more harm than good.\n\nPilates offers a safer alternative. It uses controlled, flowing movements to gradually increase range of motion.\n\nBecause movements are low-impact, patients can improve flexibility without stressing their joints.',
-      visualAssetUrl: 'https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?auto=format&fit=crop&w=1000&q=80',
-      visualAssetCaption: 'Figure 3: Improving flexibility safely through controlled movements.'
+      body: 'Flexibility is essential in physical therapy. However, aggressive stretching can sometimes do more harm than good.\n\nPilates offers a safer alternative. It uses controlled, flowing movements to gradually increase range of motion.\n\nBecause movements are low-impact, patients can improve flexibility without stressing their joints.'
     },
     {
       heading: 'Why Rest Alone Is Not Always Enough',
@@ -46,7 +44,9 @@ export const SAMPLE_ARTICLE: SampleArticle = {
     },
     {
       heading: 'A Gentle Yet Effective Approach',
-      body: 'Pilates focuses on quality rather than intensity. Each movement is performed with precision and control. This allows patients to stretch muscles while maintaining proper alignment. Over time, this leads to lasting improvements in mobility.\n\nAdditionally, improved flexibility supports better posture. It also reduces stiffness, especially after injury or surgery.'
+      body: 'Pilates focuses on quality rather than intensity. Each movement is performed with precision and control. This allows patients to stretch muscles while maintaining proper alignment. Over time, this leads to lasting improvements in mobility.\n\nAdditionally, improved flexibility supports better posture. It also reduces stiffness, especially after injury or surgery.',
+      visualAssetUrl: 'https://tokyophysicaltherapy.com/wp-content/uploads/2026/03/image12-1152x1536.jpeg',
+      visualAssetCaption: 'Figure 3: Gentle, controlled movements for flexibility and posture'
     },
     {
       heading: 'Reducing Pain and Supporting Healing',
@@ -54,9 +54,7 @@ export const SAMPLE_ARTICLE: SampleArticle = {
     },
     {
       heading: 'How Pilates Helps with Chronic Conditions',
-      body: 'Pilates is especially helpful for chronic pain. Conditions like back pain, arthritis, and muscle imbalances respond well to this approach. Research indicates that Pilates can reduce pain and disability across multiple conditions.\n\nAs a result, patients often regain confidence in their movement. This is a key step in long-term recovery.',
-      visualAssetUrl: 'https://images.unsplash.com/photo-1576678927484-cc907957088c?auto=format&fit=crop&w=1000&q=80',
-      visualAssetCaption: 'Figure 4: Pilates for chronic pain management and rehabilitation.'
+      body: 'Pilates is especially helpful for chronic pain. Conditions like back pain, arthritis, and muscle imbalances respond well to this approach. Research indicates that Pilates can reduce pain and disability across multiple conditions.\n\nAs a result, patients often regain confidence in their movement. This is a key step in long-term recovery.'
     },
     {
       heading: 'Enhancing Balance and Coordination',
@@ -64,13 +62,13 @@ export const SAMPLE_ARTICLE: SampleArticle = {
     },
     {
       heading: 'Why Balance Matters More Than You Think',
-      body: 'Good balance is essential for everyday activities. Walking, bending, and reaching all depend on stability. When balance improves, patients feel more secure. This reduces hesitation and helps them return to normal routines.\n\nIn addition, better coordination leads to smoother, more efficient movement patterns.'
+      body: 'Good balance is essential for everyday activities. Walking, bending, and reaching all depend on stability. When balance improves, patients feel more secure. This reduces hesitation and helps them return to normal routines.\n\nIn addition, better coordination leads to smoother, more efficient movement patterns.',
+      visualAssetUrl: 'https://tokyophysicaltherapy.com/wp-content/uploads/2026/03/image01.jpeg',
+      visualAssetCaption: 'Figure 4: Improved coordination and balance through Pilates'
     },
     {
       heading: 'Supporting Posture and Alignment',
-      body: 'Poor posture is a common issue. It often develops due to injury, sedentary habits, or muscle imbalances. Pilates addresses posture by strengthening key muscles. It also teaches proper alignment during movement.\n\nOver time, this leads to better positioning of the spine and joints.',
-      visualAssetUrl: 'https://images.unsplash.com/photo-1545389336-cf090694435e?auto=format&fit=crop&w=1000&q=80',
-      visualAssetCaption: 'Figure 5: Proper alignment and posture through Pilates exercises.'
+      body: 'Poor posture is a common issue. It often develops due to injury, sedentary habits, or muscle imbalances. Pilates addresses posture by strengthening key muscles. It also teaches proper alignment during movement.\n\nOver time, this leads to better positioning of the spine and joints.'
     },
     {
       heading: 'The Link Between Posture and Pain',
@@ -86,7 +84,9 @@ export const SAMPLE_ARTICLE: SampleArticle = {
     },
     {
       heading: 'Improving Mental Focus and Body Awareness',
-      body: 'Recovery is not just physical. It also involves mental engagement and awareness. Pilates encourages mindful movement. Patients focus on breathing, alignment, and control. This creates a stronger connection between the mind and body.'
+      body: 'Recovery is not just physical. It also involves mental engagement and awareness. Pilates encourages mindful movement. Patients focus on breathing, alignment, and control. This creates a stronger connection between the mind and body.',
+      visualAssetUrl: 'https://tokyophysicaltherapy.com/wp-content/uploads/2026/03/IMG_9297.jpg',
+      visualAssetCaption: 'Figure 5: Mind-body connection through focused Pilates practice'
     },
     {
       heading: 'The Role of Mindfulness in Healing',
@@ -94,9 +94,7 @@ export const SAMPLE_ARTICLE: SampleArticle = {
     },
     {
       heading: 'Preventing Future Injuries',
-      body: 'One of the greatest benefits of Pilates is injury prevention. It strengthens the body while improving movement patterns. This combination reduces the likelihood of future issues. Additionally, Pilates teaches patients how to move safely in daily life.',
-      visualAssetUrl: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=1000&q=80',
-      visualAssetCaption: 'Figure 6: Injury prevention through strength and proper movement.'
+      body: 'One of the greatest benefits of Pilates is injury prevention. It strengthens the body while improving movement patterns. This combination reduces the likelihood of future issues. Additionally, Pilates teaches patients how to move safely in daily life.'
     },
     {
       heading: 'Building a Resilient Body',
@@ -112,7 +110,9 @@ export const SAMPLE_ARTICLE: SampleArticle = {
     },
     {
       heading: 'Why Pilates Works So Well in Physical Therapy',
-      body: 'Pilates works because it combines several key elements. These include strength, flexibility, control, and awareness. Each element plays a role in recovery. Together, they create a balanced approach. This is why Pilates is widely used in rehabilitation settings.'
+      body: 'Pilates works because it combines several key elements. These include strength, flexibility, control, and awareness. Each element plays a role in recovery. Together, they create a balanced approach. This is why Pilates is widely used in rehabilitation settings.',
+      visualAssetUrl: 'https://tokyophysicaltherapy.com/wp-content/uploads/2026/03/image13-1152x1536.jpeg',
+      visualAssetCaption: 'Figure 6: The comprehensive benefits of Pilates in rehabilitation'
     },
     {
       heading: 'A Modern Approach to Movement',
