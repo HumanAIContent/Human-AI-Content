@@ -1,4 +1,4 @@
-export type NavPage = 'home' | 'about' | 'contact' | 'agreements';
+export type NavPage = 'home' | 'contact' | 'agreements';
 
 export interface PackagePlan {
   id: string;
