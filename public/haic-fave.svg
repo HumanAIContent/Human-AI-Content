@@ -2,10 +2,14 @@
   <!-- Black Background -->
   <rect width="200" height="200" fill="#000000"/>
   
-  <!-- White Border (Frame around the entire square) -->
-  <rect x="4" y="4" width="192" height="192" rx="8" fill="none" stroke="#FFFFFF" stroke-width="6"/>
+  <!-- White Border (Outline) - Slightly larger -->
+  <!-- Vertical Bar Border -->
+  <rect x="86" y="36" width="28" height="128" rx="2" fill="#FFFFFF"/>
   
-  <!-- Gold Plus Symbol - Centered -->
+  <!-- Horizontal Bar Border -->
+  <rect x="36" y="86" width="128" height="28" rx="2" fill="#FFFFFF"/>
+  
+  <!-- Gold Plus (Inner) -->
   <!-- Vertical Bar -->
   <rect x="90" y="40" width="20" height="120" rx="2" fill="#d4af37"/>
   
