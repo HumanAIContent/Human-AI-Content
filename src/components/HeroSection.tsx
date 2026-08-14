@@ -131,7 +131,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onNavigate, onOpenSamp
                       <h4 className="text-[10px] font-bold text-white uppercase tracking-wide">3. Reliable Low-Friction Partner</h4>
                     </div>
                     <p className="text-[10px] text-slate-300 leading-relaxed">
-                      Clear workflows, strict deadlines, and predictable output.
+                      Clear workflows and predictable output. I focus on building long-term, reliable relationships with clients who want premium, hassle-free content solutions.
                     </p>
                   </div>
 
