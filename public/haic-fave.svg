@@ -2,15 +2,16 @@
   <!-- Black Background -->
   <rect width="200" height="200" fill="#000000"/>
   
-  <!-- H+AI Text Centered -->
+  <!-- H+AI Text Centered with Tighter Spacing -->
   <text x="50%" y="53%" 
         font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" 
-        font-size="90" 
+        font-size="100" 
         font-weight="900" 
         text-anchor="middle" 
-        dominant-baseline="middle">
+        dominant-baseline="middle"
+        letter-spacing="-2">
     <tspan fill="#FFFFFF">H</tspan>
-    <tspan fill="#d4af37" dx="8">+</tspan>
-    <tspan fill="#FFFFFF" dx="8">AI</tspan>
+    <tspan fill="#d4af37" dx="2">+</tspan>
+    <tspan fill="#FFFFFF" dx="2">AI</tspan>
   </text>
 </svg>
