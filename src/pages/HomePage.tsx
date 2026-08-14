@@ -33,6 +33,69 @@ export const HomePage: React.FC<HomePageProps> = ({
         onOpenAgreements={onOpenAgreements}
       />
 
+      {/* How Getting Started Works - ADDED AFTER PRICING SECTION */}
+      <div className="py-16 bg-[#0F172A] border-t border-slate-700/50">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="bg-[#1E293B] rounded p-6 sm:p-10 border border-slate-700/50 space-y-6">
+            <div className="text-center max-w-2xl mx-auto space-y-1">
+              <h2 className="text-2xl font-extrabold text-white tracking-tight">
+                How Getting Started Works
+              </h2>
+              <p className="text-xs text-slate-300">
+                Four simple steps from agreement signing to live blog publishing.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+              
+              <div className="bg-[#0F172A] p-4 rounded border border-slate-800 space-y-1.5">
+                <div className="text-[10px] font-bold text-[#D4AF37] uppercase tracking-wider">STEP 1</div>
+                <h4 className="text-white font-bold text-xs uppercase tracking-wide">Setup & Access</h4>
+                <p className="text-xs text-slate-400 leading-relaxed">
+                  Complete onboarding questionnaire, provide WP Editor access, and link social profiles via CoSchedule.
+                </p>
+              </div>
+
+              <div className="bg-[#0F172A] p-4 rounded border border-slate-800 space-y-1.5">
+                <div className="text-[10px] font-bold text-[#D4AF37] uppercase tracking-wider">STEP 2</div>
+                <h4 className="text-white font-bold text-xs uppercase tracking-wide">Strategy Alignment</h4>
+                <p className="text-xs text-slate-400 leading-relaxed">
+                  Establish monthly topic schedule, target GEO keywords, and brand style preferences.
+                </p>
+              </div>
+
+              <div className="bg-[#0F172A] p-4 rounded border border-slate-800 space-y-1.5">
+                <div className="text-[10px] font-bold text-[#D4AF37] uppercase tracking-wider">STEP 3</div>
+                <h4 className="text-white font-bold text-xs uppercase tracking-wide">Drafting & Staging</h4>
+                <p className="text-xs text-slate-400 leading-relaxed">
+                  Articles & Canva visuals produced, uploaded to Drive, and staged as WP draft links.
+                </p>
+              </div>
+
+              <div className="bg-[#0F172A] p-4 rounded border border-slate-800 space-y-1.5">
+                <div className="text-[10px] font-bold text-[#D4AF37] uppercase tracking-wider">STEP 4</div>
+                <h4 className="text-white font-bold text-xs uppercase tracking-wide">1-Click Approval</h4>
+                <p className="text-xs text-slate-400 leading-relaxed">
+                  Receive preview links via email. Once approved, content and social campaigns go live.
+                </p>
+              </div>
+
+            </div>
+
+            <div className="text-center pt-2">
+              <button
+                onClick={() => onNavigate('contact', 'trial')}
+                className="bg-[#D4AF37] hover:bg-[#C19A2E] px-6 py-3 text-xs font-bold uppercase tracking-wider text-[#0F172A] transition-colors inline-flex items-center space-x-2 shadow-sm"
+              >
+                <span>Enquire Today or Request A Paid Trial Article</span>
+                <ArrowRight className="w-4 h-4" />
+              </button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
       {/* 4. Client Feedback & Case Results (Testimonials & Global Brands) */}
       <TestimonialsSection />
 
@@ -80,7 +143,7 @@ export const HomePage: React.FC<HomePageProps> = ({
             </div>
 
             <p className="text-xs text-slate-400 pt-2 font-mono">
-              No obligation • Direct access to your content creation Manager.
+              No obligation • Direct access to your content creation Manager
             </p>
 
           </div>
