@@ -6,7 +6,7 @@ export const RECENT_SITES: RecentSite[] = [
     name: 'Tokyo Rehabilitation',
     domain: 'tokyophysicaltherapy.com',
     niche: 'Physical Therapy & Rehabilitation',
-    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1000&q=80',
+    image: 'https://tokyophysicaltherapy.com/wp-content/uploads/2026/03/The-Benefits-of-Pilates-for-Physical-Therapy-1.jpg',
     packageUsed: 'Full-Service All-Inclusive',
     description: 'Physical therapy and rehabilitation clinic requiring patient education articles and local SEO content.',
     sampleArticleTitle: 'The Benefits of Pilates for Physical Therapy',
