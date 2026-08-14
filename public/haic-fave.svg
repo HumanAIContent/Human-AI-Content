@@ -3,27 +3,27 @@
   <rect width="200" height="200" fill="#000000"/>
   
   <!-- H - Top -->
-  <text x="50%" y="30%" 
+  <text x="50%" y="28%" 
         font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" 
-        font-size="56" 
+        font-size="48" 
         font-weight="900" 
         text-anchor="middle" 
         dominant-baseline="central"
         fill="#FFFFFF">H</text>
   
   <!-- + - Middle (Gold) -->
-  <text x="50%" y="46%" 
+  <text x="50%" y="48%" 
         font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" 
-        font-size="32" 
+        font-size="28" 
         font-weight="900" 
         text-anchor="middle" 
         dominant-baseline="central"
         fill="#d4af37">+</text>
   
-  <!-- AI - Bottom (Same size as H) -->
-  <text x="50%" y="62%" 
+  <!-- AI - Bottom (Same size as H, adjusted Y) -->
+  <text x="50%" y="68%" 
         font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" 
-        font-size="56" 
+        font-size="48" 
         font-weight="900" 
         text-anchor="middle" 
         dominant-baseline="central"
