@@ -31,8 +31,6 @@ export interface RecentSite {
   domain: string;
   niche: string;
   image: string;
-  metrics: string;
-  metricLabel: string;
   packageUsed: string;
   description: string;
   sampleArticleTitle: string;
