@@ -57,11 +57,11 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ onNavigate, onOp
   };
 
   return (
-    <section id="packages" className="py-16 bg-[#0F172A] relative border-t border-slate-700/50">
+    <section id="packages" className={`${showMatrix ? 'py-8' : 'py-16'} bg-[#0F172A] relative border-t border-slate-700/50`}>
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-12 space-y-3">
+        <div className={`text-center max-w-3xl mx-auto ${showMatrix ? 'mb-6' : 'mb-12'} space-y-3`}>
           <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#D4AF37] flex items-center justify-center gap-2">
             <Sparkles className="w-3.5 h-3.5 text-[#D4AF37]" />
             Monthly Retainer Pricing
@@ -74,12 +74,10 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ onNavigate, onOp
           <p className="text-slate-300 text-sm sm:text-base leading-relaxed font-normal">
             All-inclusive monthly retainers with zero hidden fees, no per-word surprises, and no long-term lock-in contracts. Every plan includes a structured review and approval workflow—content never goes live without your explicit approval.
           </p>
-
-          {/* Removed: MONTH-TO-MONTH FLEXIBILITY WITH NO LOCK-IN CONTRACTS */}
         </div>
 
         {/* 4 Package Cards Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+        <div className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 ${showMatrix ? 'mb-4' : 'mb-12'}`}>
           {PACKAGES.map((pkg) => {
             const isPopular = pkg.isPopular;
             const isFullService = pkg.id === 'fullservice';
@@ -227,7 +225,7 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ onNavigate, onOp
         </div>
 
         {/* Feature Matrix Toggle Button */}
-        <div className="flex flex-col sm:flex-row items-center justify-between bg-[#1E293B] p-5 rounded border border-slate-700/50 mb-6 gap-4">
+        <div className={`flex flex-col sm:flex-row items-center justify-between bg-[#1E293B] p-5 rounded border border-slate-700/50 ${showMatrix ? 'mb-2' : 'mb-6'} gap-4`}>
           <div>
             <h3 className="text-base font-bold text-white uppercase tracking-wide flex items-center space-x-2">
               <FileText className="w-4 h-4 text-[#D4AF37]" />
