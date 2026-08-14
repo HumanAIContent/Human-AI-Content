@@ -44,7 +44,7 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ onNavigate, onOp
   const getIdealFor = (pkgId: string) => {
     switch (pkgId) {
       case 'essential':
-        return 'Businesses needing research-backed, human-edited SEO/GEO content delivered clean for seamless internal publishing.';
+        return 'Businesses, marketing teams, & growing brands that require high-impact, research-backed, & human-edited SEO and GEO (Generative Engine Optimization) content designed to rank on traditional search engines & stand out in AI discovery platforms.';
       case 'visuals':
         return 'Businesses needing human-edited SEO/GEO blog posts and custom branded graphics delivered ready for internal web publishing.';
       case 'social':
