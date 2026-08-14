@@ -52,7 +52,7 @@ export const HomePage: React.FC<HomePageProps> = ({
                 <div className="text-[10px] font-bold text-[#D4AF37] uppercase tracking-wider">STEP 1</div>
                 <h4 className="text-white font-bold text-xs uppercase tracking-wide">Setup & Access</h4>
                 <p className="text-xs text-slate-400 leading-relaxed">
-                  Complete onboarding questionnaire, provide WP Editor access, and link social profiles via CoSchedule.
+                  Complete onboarding questionnaire, share brand assets, and grant permissions. Setup tasks vary by package, including WordPress access, CoSchedule connection, and Google Drive architecture.
                 </p>
               </div>
 
