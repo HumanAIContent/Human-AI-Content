@@ -11,7 +11,7 @@ export const TestimonialsSection: React.FC = () => {
         <div className="text-center max-w-2xl mx-auto mb-12 space-y-3">
           <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#D4AF37] flex items-center justify-center gap-2">
             <Quote className="w-3.5 h-3.5 text-[#D4AF37]" />
-            Client Stories & Real Impact
+            Client Testimonials & Real Impact
           </span>
 
           <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
