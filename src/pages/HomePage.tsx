@@ -60,7 +60,7 @@ export const HomePage: React.FC<HomePageProps> = ({
                 <div className="text-[10px] font-bold text-[#D4AF37] uppercase tracking-wider">STEP 2</div>
                 <h4 className="text-white font-bold text-xs uppercase tracking-wide">Strategy Alignment</h4>
                 <p className="text-xs text-slate-400 leading-relaxed">
-                  Establish monthly topic schedule, target GEO keywords, and brand style preferences.
+                  I research your business & its niche, combine your topic suggestions with keyword research to build an SEO & GEO strategy. Production starts the Monday after initial payment & setup completion.
                 </p>
               </div>
 
