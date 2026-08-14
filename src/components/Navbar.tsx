@@ -43,6 +43,14 @@ export const Navbar: React.FC<NavbarProps> = ({ activePage, onNavigate, onOpenAg
       const el = document.getElementById(sectionId);
       if (el) {
         el.scrollIntoView({ behavior: 'smooth' });
+      } else {
+        // If element not found, try after a delay (content might not be rendered yet)
+        setTimeout(() => {
+          const el2 = document.getElementById(sectionId);
+          if (el2) {
+            el2.scrollIntoView({ behavior: 'smooth' });
+          }
+        }, 200);
       }
       return;
     }
@@ -50,21 +58,20 @@ export const Navbar: React.FC<NavbarProps> = ({ activePage, onNavigate, onOpenAg
     // Navigate to home first, then scroll after render
     onNavigate('home');
     
-    // Wait for navigation and DOM update
-    setTimeout(() => {
-      const el = document.getElementById(sectionId);
-      if (el) {
-        el.scrollIntoView({ behavior: 'smooth' });
-      } else {
-        // If element still not found, try after another short delay
-        setTimeout(() => {
-          const el2 = document.getElementById(sectionId);
-          if (el2) {
-            el2.scrollIntoView({ behavior: 'smooth' });
-          }
-        }, 300);
-      }
-    }, 300);
+    // Try multiple times with increasing delays
+    const attemptScroll = (delay: number) => {
+      setTimeout(() => {
+        const el = document.getElementById(sectionId);
+        if (el) {
+          el.scrollIntoView({ behavior: 'smooth' });
+        } else if (delay < 1000) {
+          // If not found and we haven't tried too many times, try again
+          attemptScroll(delay + 200);
+        }
+      }, delay);
+    };
+    
+    attemptScroll(300);
   };
 
   return (
