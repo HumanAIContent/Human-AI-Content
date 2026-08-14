@@ -140,7 +140,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, onOpenAgreements }) 
 
         {/* Bottom Bar */}
         <div className="mt-8 pt-6 border-t border-slate-700/50 flex flex-col sm:flex-row items-center justify-between text-slate-400 space-y-3 sm:space-y-0 text-[11px]">
-          <p>© {new Date().getFullYear()} Human AI Content Creation. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Human AI Content. All rights reserved.</p>
           <div className="flex items-center space-x-4">
             <button onClick={onOpenAgreements} className="hover:text-white uppercase font-bold text-[#D4AF37]">Client Agreement Samples</button>
           </div>
