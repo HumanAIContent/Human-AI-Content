@@ -143,8 +143,6 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, onOpenAgreements }) 
           <p>© {new Date().getFullYear()} Human AI Content Creation. All rights reserved.</p>
           <div className="flex items-center space-x-4">
             <button onClick={onOpenAgreements} className="hover:text-white uppercase font-bold text-[#D4AF37]">Client Agreement Samples</button>
-            <span className="text-slate-700">•</span>
-            <button onClick={() => onNavigate('contact')} className="hover:text-white uppercase font-bold text-[#D4AF37]">Enquire About A Paid Trial Article</button>
           </div>
         </div>
       </div>
