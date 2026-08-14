@@ -107,7 +107,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onNavigate, onOpenSamp
                       <h4 className="text-[10px] font-bold text-white uppercase tracking-wide">1. Native English Communication</h4>
                     </div>
                     <p className="text-[10px] text-slate-300 leading-relaxed">
-                      Never edit awkward phrasing or correct subtle grammatical errors + reduced miscommunication problems.
+                      Never edit awkward phrasing or correct subtle grammatical errors. Enjoy clear, seamless communication with zero language barriers.
                     </p>
                   </div>
 
