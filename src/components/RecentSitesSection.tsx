@@ -65,7 +65,7 @@ export const RecentSitesSection: React.FC<RecentSitesSectionProps> = ({ onSelect
                     className="w-full py-2 px-3 bg-[#D4AF37] hover:bg-[#C19A2E] text-[#0F172A] text-xs font-bold uppercase tracking-wider flex items-center justify-center space-x-1.5 transition-colors shadow-sm"
                   >
                     <FileText className="w-3.5 h-3.5" />
-                    <span>View Articles</span>
+                    <span>View Article</span>
                   </button>
                 </div>
 
