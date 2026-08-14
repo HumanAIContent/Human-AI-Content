@@ -51,7 +51,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, onOpenAgreements }) 
                   onClick={() => { onNavigate('home'); window.scrollTo({ top: 0, behavior: 'smooth' }); }} 
                   className="hover:text-[#D4AF37] transition-colors"
                 >
-                  Homepage
+                  Home
                 </button>
               </li>
               <li>
@@ -65,7 +65,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, onOpenAgreements }) 
                   }}
                   className="hover:text-[#D4AF37] transition-colors"
                 >
-                  Featured Work
+                  Portfolio
                 </button>
               </li>
               <li>
@@ -79,7 +79,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, onOpenAgreements }) 
                   }}
                   className="hover:text-[#D4AF37] transition-colors"
                 >
-                  Monthly Retainer Plans
+                  Packages
                 </button>
               </li>
               <li>
