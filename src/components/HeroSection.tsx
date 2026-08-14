@@ -12,7 +12,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onNavigate, onOpenSamp
     <section className="relative overflow-hidden py-6 lg:py-8 bg-[#0F172A]">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
-        {/* Centered Logo and Headline Section - MOVED TO TOP */}
+        {/* Centered Logo and Headline Section */}
         <div className="text-center mb-6">
           <div className="flex justify-center items-center mb-4">
             <img
@@ -34,7 +34,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onNavigate, onOpenSamp
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-5 items-stretch">
           
-          {/* Main Hero Card Container - REMOVED justify-between */}
+          {/* Main Hero Card Container */}
           <div className="lg:col-span-8 flex flex-col rounded-lg bg-[#1E293B] p-6 lg:p-7 border-l-4 border-[#D4AF37] border-y border-r border-slate-700/50 shadow-xl">
             
             {/* Yellow Title - Left Aligned */}
@@ -85,7 +85,73 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onNavigate, onOpenSamp
               </button>
             </div>
 
-            {/* Quick Trust Bar */}
+            {/* Why Work With Me Section - ADDED INSIDE THE CARD */}
+            <div className="mt-6 pt-6 border-t border-slate-700/50 flex-1">
+              <div className="space-y-4">
+                <div className="text-center max-w-3xl mx-auto space-y-1">
+                  <h3 className="text-base font-extrabold text-white tracking-tight">
+                    Why Work With Me Over Cheaper Freelance Options?
+                  </h3>
+                  <p className="text-slate-400 text-[10px]">
+                    Managing generic freelancers takes hours of editing every week. Here is why our managed pipeline is different.
+                  </p>
+                </div>
+
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                  
+                  <div className="bg-[#0F172A]/70 p-3 rounded border border-slate-700/50 space-y-1">
+                    <div className="flex items-center space-x-2">
+                      <div className="w-6 h-6 rounded bg-[#0F172A] border border-[#D4AF37]/40 flex items-center justify-center text-[#D4AF37] shrink-0">
+                        <Globe className="w-3 h-3" />
+                      </div>
+                      <h4 className="text-[10px] font-bold text-white uppercase tracking-wide">1. Native English Communication</h4>
+                    </div>
+                    <p className="text-[10px] text-slate-300 leading-relaxed">
+                      Never edit awkward phrasing or correct subtle grammatical errors.
+                    </p>
+                  </div>
+
+                  <div className="bg-[#0F172A]/70 p-3 rounded border border-slate-700/50 space-y-1">
+                    <div className="flex items-center space-x-2">
+                      <div className="w-6 h-6 rounded bg-[#0F172A] border border-[#D4AF37]/40 flex items-center justify-center text-[#D4AF37] shrink-0">
+                        <Award className="w-3 h-3" />
+                      </div>
+                      <h4 className="text-[10px] font-bold text-white uppercase tracking-wide">2. Full-Funnel Web Expertise</h4>
+                    </div>
+                    <p className="text-[10px] text-slate-300 leading-relaxed">
+                      20 years in web design, SEO, and sales copywriting.
+                    </p>
+                  </div>
+
+                  <div className="bg-[#0F172A]/70 p-3 rounded border border-slate-700/50 space-y-1">
+                    <div className="flex items-center space-x-2">
+                      <div className="w-6 h-6 rounded bg-[#0F172A] border border-[#D4AF37]/40 flex items-center justify-center text-[#D4AF37] shrink-0">
+                        <ShieldCheck className="w-3 h-3" />
+                      </div>
+                      <h4 className="text-[10px] font-bold text-white uppercase tracking-wide">3. Reliable Low-Friction Partner</h4>
+                    </div>
+                    <p className="text-[10px] text-slate-300 leading-relaxed">
+                      Clear workflows, strict deadlines, and predictable output.
+                    </p>
+                  </div>
+
+                  <div className="bg-[#0F172A]/70 p-3 rounded border border-slate-700/50 space-y-1">
+                    <div className="flex items-center space-x-2">
+                      <div className="w-6 h-6 rounded bg-[#0F172A] border border-[#D4AF37]/40 flex items-center justify-center text-[#D4AF37] shrink-0">
+                        <Cpu className="w-3 h-3" />
+                      </div>
+                      <h4 className="text-[10px] font-bold text-white uppercase tracking-wide">4. Proven AI + Human Workflow</h4>
+                    </div>
+                    <p className="text-[10px] text-slate-300 leading-relaxed">
+                      AI for drafting research, humans for polishing and optimization.
+                    </p>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            {/* Quick Trust Bar - Moved below the Why Work With Me section */}
             <div className="mt-4 pt-4 border-t border-slate-700/50 flex flex-wrap items-center justify-between gap-4 text-[10px] font-semibold text-slate-400 uppercase tracking-wider">
               <div className="flex items-center space-x-1.5">
                 <Shield className="w-3.5 h-3.5 text-[#D4AF37]" />
@@ -187,62 +253,6 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onNavigate, onOpenSamp
 
           </div>
 
-        </div>
-
-        {/* Why Work With Me Over Cheaper Freelance Options? - ADDED SECTION */}
-        <div className="mt-12 space-y-6">
-          <div className="text-center max-w-3xl mx-auto space-y-2">
-            <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
-              Why Work With Me Over Cheaper Freelance Options?
-            </h2>
-            <p className="text-slate-300 text-xs sm:text-sm">
-              Managing generic freelancers takes hours of editing every week. Here is why our managed pipeline is different.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            
-            <div className="bg-[#1E293B] p-6 rounded border border-slate-700/50 space-y-2.5">
-              <div className="w-9 h-9 rounded bg-[#0F172A] border border-[#D4AF37]/40 flex items-center justify-center text-[#D4AF37]">
-                <Globe className="w-4 h-4" />
-              </div>
-              <h3 className="text-base font-bold text-white uppercase tracking-wide">1. Native English Communication</h3>
-              <p className="text-xs text-slate-300 leading-relaxed">
-                As a native English speaker from Australia, you will never have to edit awkward phrasing, correct subtle grammatical errors, or waste time bridging communication barriers.
-              </p>
-            </div>
-
-            <div className="bg-[#1E293B] p-6 rounded border border-slate-700/50 space-y-2.5">
-              <div className="w-9 h-9 rounded bg-[#0F172A] border border-[#D4AF37]/40 flex items-center justify-center text-[#D4AF37]">
-                <Award className="w-4 h-4" />
-              </div>
-              <h3 className="text-base font-bold text-white uppercase tracking-wide">2. Full-Funnel Web Expertise</h3>
-              <p className="text-xs text-slate-300 leading-relaxed">
-                Having spent two decades in web design, SEO, and sales copywriting, I understand how content fits into your broader website structure, user experience, and conversion funnel.
-              </p>
-            </div>
-
-            <div className="bg-[#1E293B] p-6 rounded border border-slate-700/50 space-y-2.5">
-              <div className="w-9 h-9 rounded bg-[#0F172A] border border-[#D4AF37]/40 flex items-center justify-center text-[#D4AF37]">
-                <ShieldCheck className="w-4 h-4" />
-              </div>
-              <h3 className="text-base font-bold text-white uppercase tracking-wide">3. Reliable Low-Friction Partner</h3>
-              <p className="text-xs text-slate-300 leading-relaxed">
-                I focus on building long-term, low-friction client relationships. You get clear workflows, strict adherence to weekly deadlines, and predictable output month after month.
-              </p>
-            </div>
-
-            <div className="bg-[#1E293B] p-6 rounded border border-slate-700/50 space-y-2.5">
-              <div className="w-9 h-9 rounded bg-[#0F172A] border border-[#D4AF37]/40 flex items-center justify-center text-[#D4AF37]">
-                <Cpu className="w-4 h-4" />
-              </div>
-              <h3 className="text-base font-bold text-white uppercase tracking-wide">4. Proven AI + Human Workflow</h3>
-              <p className="text-xs text-slate-300 leading-relaxed">
-                Rather than relying on raw AI output or slow traditional methods, I leverage AI for heavy drafting research, allowing maximum time spent polishing, fact-checking, and optimizing your messaging.
-              </p>
-            </div>
-
-          </div>
         </div>
 
       </div>
