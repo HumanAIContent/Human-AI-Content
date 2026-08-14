@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavPage } from '../types';
-import { CheckCircle2, Sparkles, Shield, Cpu, Layers, FileText } from 'lucide-react';
+import { CheckCircle2, Sparkles, Shield, Cpu, Layers, FileText, Globe, Award, ShieldCheck } from 'lucide-react';
 
 interface HeroSectionProps {
   onNavigate: (page: NavPage, selectedPackage?: string) => void;
@@ -85,7 +85,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onNavigate, onOpenSamp
               </button>
             </div>
 
-            {/* Quick Trust Bar - REMOVED mt-2, using mt-4 instead */}
+            {/* Quick Trust Bar */}
             <div className="mt-4 pt-4 border-t border-slate-700/50 flex flex-wrap items-center justify-between gap-4 text-[10px] font-semibold text-slate-400 uppercase tracking-wider">
               <div className="flex items-center space-x-1.5">
                 <Shield className="w-3.5 h-3.5 text-[#D4AF37]" />
@@ -187,6 +187,62 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onNavigate, onOpenSamp
 
           </div>
 
+        </div>
+
+        {/* Why Work With Me Over Cheaper Freelance Options? - ADDED SECTION */}
+        <div className="mt-12 space-y-6">
+          <div className="text-center max-w-3xl mx-auto space-y-2">
+            <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+              Why Work With Me Over Cheaper Freelance Options?
+            </h2>
+            <p className="text-slate-300 text-xs sm:text-sm">
+              Managing generic freelancers takes hours of editing every week. Here is why our managed pipeline is different.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            
+            <div className="bg-[#1E293B] p-6 rounded border border-slate-700/50 space-y-2.5">
+              <div className="w-9 h-9 rounded bg-[#0F172A] border border-[#D4AF37]/40 flex items-center justify-center text-[#D4AF37]">
+                <Globe className="w-4 h-4" />
+              </div>
+              <h3 className="text-base font-bold text-white uppercase tracking-wide">1. Native English Communication</h3>
+              <p className="text-xs text-slate-300 leading-relaxed">
+                As a native English speaker from Australia, you will never have to edit awkward phrasing, correct subtle grammatical errors, or waste time bridging communication barriers.
+              </p>
+            </div>
+
+            <div className="bg-[#1E293B] p-6 rounded border border-slate-700/50 space-y-2.5">
+              <div className="w-9 h-9 rounded bg-[#0F172A] border border-[#D4AF37]/40 flex items-center justify-center text-[#D4AF37]">
+                <Award className="w-4 h-4" />
+              </div>
+              <h3 className="text-base font-bold text-white uppercase tracking-wide">2. Full-Funnel Web Expertise</h3>
+              <p className="text-xs text-slate-300 leading-relaxed">
+                Having spent two decades in web design, SEO, and sales copywriting, I understand how content fits into your broader website structure, user experience, and conversion funnel.
+              </p>
+            </div>
+
+            <div className="bg-[#1E293B] p-6 rounded border border-slate-700/50 space-y-2.5">
+              <div className="w-9 h-9 rounded bg-[#0F172A] border border-[#D4AF37]/40 flex items-center justify-center text-[#D4AF37]">
+                <ShieldCheck className="w-4 h-4" />
+              </div>
+              <h3 className="text-base font-bold text-white uppercase tracking-wide">3. Reliable Low-Friction Partner</h3>
+              <p className="text-xs text-slate-300 leading-relaxed">
+                I focus on building long-term, low-friction client relationships. You get clear workflows, strict adherence to weekly deadlines, and predictable output month after month.
+              </p>
+            </div>
+
+            <div className="bg-[#1E293B] p-6 rounded border border-slate-700/50 space-y-2.5">
+              <div className="w-9 h-9 rounded bg-[#0F172A] border border-[#D4AF37]/40 flex items-center justify-center text-[#D4AF37]">
+                <Cpu className="w-4 h-4" />
+              </div>
+              <h3 className="text-base font-bold text-white uppercase tracking-wide">4. Proven AI + Human Workflow</h3>
+              <p className="text-xs text-slate-300 leading-relaxed">
+                Rather than relying on raw AI output or slow traditional methods, I leverage AI for heavy drafting research, allowing maximum time spent polishing, fact-checking, and optimizing your messaging.
+              </p>
+            </div>
+
+          </div>
         </div>
 
       </div>
