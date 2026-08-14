@@ -21,20 +21,20 @@ export const RECENT_SITES: RecentSite[] = [
   },
   {
     id: 'site-2',
-    name: 'Verdant Organic Wellness',
-    domain: 'verdantwellness.com',
-    niche: 'Health, Clinical Nutrition & E-Commerce',
-    image: 'https://images.unsplash.com/photo-1505576399279-565b52d4ac71?auto=format&fit=crop&w=1000&q=80',
+    name: 'The Woodlands at Hocking Hills',
+    domain: 'thewoodlandsathockinghills.com',
+    niche: 'Luxury Cabin Rentals & Hospitality',
+    image: '/The Woodlands at Hocking Hills Logo (1).jpg',
     packageUsed: 'Full-Service All-Inclusive',
-    description: 'E-commerce health brand needing medically backed, research-dense wellness articles and custom infographics.',
-    sampleArticleTitle: 'The Clinical Science of Bioavailable Micronutrients in Cellular Longevity',
-    sampleArticleExcerpt: 'Micronutrient bioavailability is dictated by enzymatic cleavage and intestinal transport proteins. Recent double-blind trials demonstrate how liposomal delivery systems increase uptake by 240%...',
-    geoOptimizationDetails: 'Fact-checked clinical references formatted for Google AI Overviews & Gemini answer engine authority.',
+    description: 'Luxury cabin rental destination requiring high-quality hospitality content and local SEO optimization.',
+    sampleArticleTitle: 'The Ultimate Guide to Luxury Cabin Rentals in Hocking Hills',
+    sampleArticleExcerpt: 'Discover the perfect blend of rustic charm and modern luxury at The Woodlands at Hocking Hills. From private hot tubs to scenic forest views, experience the best of Ohio\'s premier cabin rental destination.',
+    geoOptimizationDetails: 'Optimized for local search and GEO with detailed area insights and hospitality-focused content strategies.',
     deliverableBreakdown: [
-      '4x 1,800-word Medical Review Articles',
-      'Custom Canva Infographics & Nutrient Tables',
-      'WordPress Gutenberg Staging with Product Cards',
-      'CoSchedule Pinterest & Instagram Scheduling'
+      '4x 1,800-word Hospitality Guides',
+      'Custom Canva Property Graphics',
+      'WordPress Staging with Local SEO Meta',
+      'CoSchedule Social Media Campaigns'
     ]
   },
   {
