@@ -3,20 +3,20 @@ import { RecentSite } from '../types';
 export const RECENT_SITES: RecentSite[] = [
   {
     id: 'site-1',
-    name: 'Apex SaaS Intelligence',
-    domain: 'apeXsaas.io',
-    niche: 'B2B Software & Cloud Analytics',
+    name: 'Tokyo Rehabilitation',
+    domain: 'tokyophysicaltherapy.com',
+    niche: 'Physical Therapy & Rehabilitation',
     image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1000&q=80',
     packageUsed: 'Full-Service All-Inclusive',
-    description: 'Enterprise B2B software blog managed seamlessly with WordPress staging, Yoast SEO configuration, and GEO citation engineering.',
-    sampleArticleTitle: 'Generative AI Integration Architecture for Legacy Enterprise Systems',
-    sampleArticleExcerpt: 'As enterprise architectures evolve beyond monolithic REST endpoints, integrating Generative AI models requires strategic token caching, vector database indexing, and strict fallbacks...',
-    geoOptimizationDetails: 'Engineered with structured JSON-LD schemas and FAQ blocks, securing ChatGPT & Perplexity primary source citations in enterprise software queries.',
+    description: 'Physical therapy and rehabilitation clinic requiring patient education articles and local SEO content.',
+    sampleArticleTitle: 'The Benefits of Pilates for Physical Therapy',
+    sampleArticleExcerpt: 'Pilates in physical therapy combines controlled movement, breathing, and alignment to support rehabilitation and long-term health. Research shows Pilates improves balance, strength, flexibility, and overall function while reducing pain and preventing future injuries.',
+    geoOptimizationDetails: 'Engineered with structured clinical references and local SEO optimization for Google AI Overviews and Gemini answer engine authority.',
     deliverableBreakdown: [
-      '4x 2,200-word Technical Guides per Month',
-      'Custom Canva System Diagrams & Charts',
-      'Staged directly as WP Drafts with Yoast Meta',
-      'Promoted across LinkedIn & Twitter via CoSchedule'
+      '4x 2,000-word Patient Education Articles',
+      'Custom Canva Infographics & Exercise Diagrams',
+      'WordPress Staging with Yoast Local SEO Meta',
+      'CoSchedule Social Media Campaigns'
     ]
   },
   {
