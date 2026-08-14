@@ -36,8 +36,8 @@ export const RecentSitesSection: React.FC<RecentSitesSectionProps> = ({ onSelect
               className="group bg-[#1E293B] rounded border border-slate-700/50 hover:border-[#D4AF37]/50 overflow-hidden transition-all duration-300 flex flex-col justify-between shadow-lg"
             >
               
-              {/* Image Only - No overlay text */}
-              <div className="relative h-44 overflow-hidden bg-[#0F172A]">
+              {/* Image Container - Now a Perfect Square */}
+              <div className="relative aspect-square overflow-hidden bg-[#0F172A]">
                 <img
                   src={site.image}
                   alt={site.name}
