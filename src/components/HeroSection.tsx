@@ -34,61 +34,59 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onNavigate, onOpenSamp
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-5 items-stretch">
           
-          {/* Main Hero Card Container */}
-          <div className="lg:col-span-8 flex flex-col justify-between rounded-lg bg-[#1E293B] p-6 lg:p-7 border-l-4 border-[#D4AF37] border-y border-r border-slate-700/50 shadow-xl">
+          {/* Main Hero Card Container - REMOVED justify-between */}
+          <div className="lg:col-span-8 flex flex-col rounded-lg bg-[#1E293B] p-6 lg:p-7 border-l-4 border-[#D4AF37] border-y border-r border-slate-700/50 shadow-xl">
             
-            <div>
-              {/* Yellow Title - Left Aligned */}
-              <h2 className="text-base sm:text-lg font-bold text-[#D4AF37] mb-4 leading-tight text-left">
-                The Hassle-Free Content Solution for Growing Businesses
-              </h2>
+            {/* Yellow Title - Left Aligned */}
+            <h2 className="text-base sm:text-lg font-bold text-[#D4AF37] mb-4 leading-tight text-left">
+              The Hassle-Free Content Solution for Growing Businesses
+            </h2>
 
-              {/* Subheading */}
-              <p className="mb-6 text-xs sm:text-sm leading-relaxed text-slate-300">
-                Welcome, my name is Mikel. I'm a native Australian content creation expert based in the Philippines with 20+ years of digital marketing expertise. I provide high-performance, AI-assisted, human-edited content creation for select US and global businesses.
-                <br /><br />
-                If you've hired freelancers on platforms like Upwork or Fiverr, you know cost savings often come with communication and language pitfalls. As a native English speaker, you'll never worry about language barriers, awkward phrasing, or heavy rewrites—just quality, hassle-free content.
-                <br /><br />
-                Your content should NOT wait on your to-do list. If you are struggling with finding the time to do it and outsourcing has only resulted in more work for you. I'll create everything, from start to finish, giving you consistent, professional content without the management headaches.
-              </p>
-              
+            {/* Subheading */}
+            <p className="mb-6 text-xs sm:text-sm leading-relaxed text-slate-300">
+              Welcome, my name is Mikel. I'm a native Australian content creation expert based in the Philippines with 20+ years of digital marketing expertise. I provide high-performance, AI-assisted, human-edited content creation for select US and global businesses.
+              <br /><br />
+              If you've hired freelancers on platforms like Upwork or Fiverr, you know cost savings often come with communication and language pitfalls. As a native English speaker, you'll never worry about language barriers, awkward phrasing, or heavy rewrites—just quality, hassle-free content.
+              <br /><br />
+              Your content should NOT wait on your to-do list. If you are struggling with finding the time to do it and outsourcing has only resulted in more work for you. I'll create everything, from start to finish, giving you consistent, professional content without the management headaches.
+            </p>
+            
 
-              {/* Value Highlights Grid */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 mb-3">
-                <div className="flex items-center space-x-2 text-xs font-semibold text-slate-200">
-                  <CheckCircle2 className="w-4 h-4 text-[#D4AF37] shrink-0" />
-                  <span>4x In-Depth Articles Per Month (1,500-2,500w)</span>
-                </div>
-                <div className="flex items-center space-x-2 text-xs font-semibold text-slate-200">
-                  <CheckCircle2 className="w-4 h-4 text-[#D4AF37] shrink-0" />
-                  <span>CoSchedule Social Media Integration</span>
-                </div>
-                <div className="flex items-center space-x-2 text-xs font-semibold text-slate-200">
-                  <CheckCircle2 className="w-4 h-4 text-[#D4AF37] shrink-0" />
-                  <span>Custom Canva Featured Graphics</span>
-                </div>
-                <div className="flex items-center space-x-2 text-xs font-semibold text-slate-200">
-                  <CheckCircle2 className="w-4 h-4 text-[#D4AF37] shrink-0" />
-                  <span>Full WordPress Staging & Yoast Meta</span>
-                </div>
+            {/* Value Highlights Grid */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 mb-3">
+              <div className="flex items-center space-x-2 text-xs font-semibold text-slate-200">
+                <CheckCircle2 className="w-4 h-4 text-[#D4AF37] shrink-0" />
+                <span>4x In-Depth Articles Per Month (1,500-2,500w)</span>
               </div>
-
-              {/* Centered Primary Action Button - Minimal bottom margin */}
-              <div className="flex justify-center mt-4">
-                <button
-                  onClick={() => {
-                    const el = document.getElementById('packages');
-                    if (el) el.scrollIntoView({ behavior: 'smooth' });
-                  }}
-                  className="bg-[#D4AF37] hover:bg-[#C19A2E] px-6 py-2.5 text-xs font-bold uppercase tracking-wider text-[#0F172A] transition-colors rounded shadow-lg hover:shadow-[#D4AF37]/20"
-                >
-                  View Packages
-                </button>
+              <div className="flex items-center space-x-2 text-xs font-semibold text-slate-200">
+                <CheckCircle2 className="w-4 h-4 text-[#D4AF37] shrink-0" />
+                <span>CoSchedule Social Media Integration</span>
+              </div>
+              <div className="flex items-center space-x-2 text-xs font-semibold text-slate-200">
+                <CheckCircle2 className="w-4 h-4 text-[#D4AF37] shrink-0" />
+                <span>Custom Canva Featured Graphics</span>
+              </div>
+              <div className="flex items-center space-x-2 text-xs font-semibold text-slate-200">
+                <CheckCircle2 className="w-4 h-4 text-[#D4AF37] shrink-0" />
+                <span>Full WordPress Staging & Yoast Meta</span>
               </div>
             </div>
 
-            {/* Quick Trust Bar - Reduced top margin */}
-            <div className="mt-2 pt-4 border-t border-slate-700/50 flex flex-wrap items-center justify-between gap-4 text-[10px] font-semibold text-slate-400 uppercase tracking-wider">
+            {/* Centered Primary Action Button */}
+            <div className="flex justify-center mt-4">
+              <button
+                onClick={() => {
+                  const el = document.getElementById('packages');
+                  if (el) el.scrollIntoView({ behavior: 'smooth' });
+                }}
+                className="bg-[#D4AF37] hover:bg-[#C19A2E] px-6 py-2.5 text-xs font-bold uppercase tracking-wider text-[#0F172A] transition-colors rounded shadow-lg hover:shadow-[#D4AF37]/20"
+              >
+                View Packages
+              </button>
+            </div>
+
+            {/* Quick Trust Bar - REMOVED mt-2, using mt-4 instead */}
+            <div className="mt-4 pt-4 border-t border-slate-700/50 flex flex-wrap items-center justify-between gap-4 text-[10px] font-semibold text-slate-400 uppercase tracking-wider">
               <div className="flex items-center space-x-1.5">
                 <Shield className="w-3.5 h-3.5 text-[#D4AF37]" />
                 <span>Native English Content Creator</span>
