@@ -64,7 +64,7 @@ export const FaqSection: React.FC = () => {
   const displayedFaqs = showAllFaqs ? faqs : faqs.slice(0, 5);
 
   return (
-    <section className="py-16 bg-[#0F172A] relative border-t border-slate-700/50">
+    <section id="faq" className="py-16 bg-[#0F172A] relative border-t border-slate-700/50">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
         
         {/* Section Header */}
