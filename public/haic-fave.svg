@@ -2,12 +2,10 @@
   <!-- Black Background -->
   <rect width="200" height="200" fill="#000000"/>
   
-  <!-- Gold "+" Symbol - Centered and Bold -->
-  <text x="50%" y="50%" 
-        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" 
-        font-size="140" 
-        font-weight="300" 
-        text-anchor="middle" 
-        dominant-baseline="central"
-        fill="#d4af37">+</text>
+  <!-- Perfectly Centered Plus Sign -->
+  <!-- Vertical Bar -->
+  <rect x="90" y="40" width="20" height="120" fill="#d4af37"/>
+  
+  <!-- Horizontal Bar -->
+  <rect x="40" y="90" width="120" height="20" fill="#d4af37"/>
 </svg>
