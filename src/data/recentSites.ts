@@ -42,7 +42,7 @@ export const RECENT_SITES: RecentSite[] = [
     name: 'Horizon Wealth Management',
     domain: 'horizonwealth.co',
     niche: 'Financial Advisory & Private Equity',
-    image: 'https://images.unsplash.com/photo-1559526324-4b87b5e36e44?auto=format&fit=crop&w=1000&q=80',
+    image: '/health-logo-haic.png',
     packageUsed: 'Content + Visual Assets + Social Media',
     description: 'High-net-worth advisory firm requiring authoritative tax, estate, and portfolio strategy guides.',
     sampleArticleTitle: 'Navigating Alternative Asset Allocation in High-Interest Rate Macro Cycles',
