@@ -48,7 +48,7 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ onNavigate, onOp
       case 'visuals':
         return 'Businesses needing human-edited SEO/GEO blog posts and custom branded graphics delivered ready for in-house digital execution by your team.';
       case 'social':
-        return 'Businesses needing human-edited SEO/GEO articles, custom graphics & hands-off social media scheduling with mandatory approval.';
+        return 'Businesses wanting hands-off professional social media scheduling with mandatory approval (CoSchedule), custom graphics (Canva), and human-edited SEO/GEO articles.';
       case 'fullservice':
         return 'Businesses wanting complete, hands-off content execution, including SEO/GEO articles, graphics, WordPress staging, and social posting.';
       default:
