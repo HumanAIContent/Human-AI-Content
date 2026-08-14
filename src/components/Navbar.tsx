@@ -129,14 +129,6 @@ export const Navbar: React.FC<NavbarProps> = ({ activePage, onNavigate, onOpenAg
               FAQ
             </button>
             <button
-              onClick={() => handleNavClick('about')}
-              className={`hover:text-[#D4AF37] transition-colors ${
-                activePage === 'about' ? 'text-[#D4AF37]' : 'text-slate-300'
-              }`}
-            >
-              About
-            </button>
-            <button
               onClick={() => handleNavClick('contact')}
               className={`px-4 py-1.5 bg-[#D4AF37] hover:bg-[#C19A2E] text-[#0F172A] transition-colors rounded ${
                 activePage === 'contact' ? 'bg-[#C19A2E]' : ''
@@ -200,14 +192,6 @@ export const Navbar: React.FC<NavbarProps> = ({ activePage, onNavigate, onOpenAg
               className="text-slate-300 hover:text-[#D4AF37] transition-colors"
             >
               FAQ
-            </button>
-            <button
-              onClick={() => handleNavClick('about')}
-              className={`hover:text-[#D4AF37] transition-colors ${
-                activePage === 'about' ? 'text-[#D4AF37]' : 'text-slate-300'
-              }`}
-            >
-              About
             </button>
             <button
               onClick={() => handleNavClick('contact')}
