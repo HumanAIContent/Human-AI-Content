@@ -42,7 +42,7 @@ export const HomePage: React.FC<HomePageProps> = ({
                 How Getting Started Works
               </h2>
               <p className="text-xs text-slate-300">
-                Four simple steps from agreement signing to live blog publishing.
+                Four simple steps from agreement signing to live content publishing. *Setup details vary by package.
               </p>
             </div>
 
