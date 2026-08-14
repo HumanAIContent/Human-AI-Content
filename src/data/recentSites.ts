@@ -78,7 +78,7 @@ export const RECENT_SITES: RecentSite[] = [
     name: 'Nexus Supply Chain Systems',
     domain: 'nexussupply.com',
     niche: 'Enterprise B2B Freight & Logistics',
-    image: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1000&q=80',
+    image: '/Inno_logo_Aug2025_2480.jpg',
     packageUsed: 'Content + Visual Assets',
     description: 'Global logistics platform providing freight forwarding insights and supply chain resilience articles.',
     sampleArticleTitle: 'Mitigating Maritime Bottlenecks: Real-Time Telematics & Predictive Routing',
