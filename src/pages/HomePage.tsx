@@ -37,7 +37,7 @@ export const HomePage: React.FC<HomePageProps> = ({
       <TestimonialsSection />
 
       {/* 5. Questions & Guarantees (FAQs & Onboarding SLA) */}
-      <FaqSection />
+      <FaqSection id="faq" />
 
       {/* 6. Showcase Portfolio • Live Client Sites (Featured Work) */}
       <RecentSitesSection
