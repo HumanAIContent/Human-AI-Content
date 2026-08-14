@@ -93,7 +93,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onNavigate, onOpenSamp
                     Why Work With Me Over Cheaper Freelance Options?
                   </h3>
                   <p className="text-slate-400 text-[10px]">
-                    Managing generic freelancers takes hours of editing every week. Here is why our managed pipeline is different.
+                    Managing generic freelancers takes hours of editing every week. Here is why my managed pipeline is different.
                   </p>
                 </div>
 
@@ -107,7 +107,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onNavigate, onOpenSamp
                       <h4 className="text-[10px] font-bold text-white uppercase tracking-wide">1. Native English Communication</h4>
                     </div>
                     <p className="text-[10px] text-slate-300 leading-relaxed">
-                      Never edit awkward phrasing or correct subtle grammatical errors.
+                      Never edit awkward phrasing or correct subtle grammatical errors + reduced miscommunication problems.
                     </p>
                   </div>
 
