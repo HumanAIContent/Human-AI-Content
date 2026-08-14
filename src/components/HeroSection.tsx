@@ -38,6 +38,11 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onNavigate, onOpenSamp
           <div className="lg:col-span-8 flex flex-col justify-between rounded-lg bg-[#1E293B] p-6 lg:p-7 border-l-4 border-[#D4AF37] border-y border-r border-slate-700/50 shadow-xl">
             
             <div>
+              {/* Yellow Title */}
+              <h2 className="text-base sm:text-lg font-bold text-[#D4AF37] mb-4 leading-tight">
+                The Hassle-Free Content Solution for Growing Businesses
+              </h2>
+
               {/* Subheading */}
               <p className="mb-8 text-xs sm:text-sm leading-relaxed text-slate-300">
                 Welcome, my name is Mikel. I'm a native Australian content creation expert based in the Philippines with 20+ years of digital marketing expertise. I provide high-performance, AI-assisted, human-edited content creation for select US and global businesses.
