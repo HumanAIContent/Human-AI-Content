@@ -59,6 +59,20 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, onOpenAgreements }) 
                   onClick={() => {
                     onNavigate('home');
                     setTimeout(() => {
+                      const el = document.getElementById('packages');
+                      if (el) el.scrollIntoView({ behavior: 'smooth' });
+                    }, 100);
+                  }}
+                  className="hover:text-[#D4AF37] transition-colors"
+                >
+                  Packages
+                </button>
+              </li>
+              <li>
+                <button 
+                  onClick={() => {
+                    onNavigate('home');
+                    setTimeout(() => {
                       const el = document.getElementById('recent-sites');
                       if (el) el.scrollIntoView({ behavior: 'smooth' });
                     }, 100);
@@ -73,13 +87,13 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, onOpenAgreements }) 
                   onClick={() => {
                     onNavigate('home');
                     setTimeout(() => {
-                      const el = document.getElementById('packages');
+                      const el = document.getElementById('faq');
                       if (el) el.scrollIntoView({ behavior: 'smooth' });
                     }, 100);
                   }}
                   className="hover:text-[#D4AF37] transition-colors"
                 >
-                  Packages
+                  FAQ
                 </button>
               </li>
               <li>
