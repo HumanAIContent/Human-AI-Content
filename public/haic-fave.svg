@@ -1,11 +1,17 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
-  <!-- Black Background -->
-  <rect width="200" height="200" fill="#000000"/>
+  <!-- Transparent Background (so it adapts to any theme) -->
   
-  <!-- Perfectly Centered Plus Sign -->
+  <!-- White Border (Outline) - Slightly larger -->
+  <!-- Vertical Bar Border -->
+  <rect x="86" y="36" width="28" height="128" rx="2" fill="#FFFFFF"/>
+  
+  <!-- Horizontal Bar Border -->
+  <rect x="36" y="86" width="128" height="28" rx="2" fill="#FFFFFF"/>
+  
+  <!-- Gold Plus (Inner) -->
   <!-- Vertical Bar -->
-  <rect x="90" y="40" width="20" height="120" fill="#d4af37"/>
+  <rect x="90" y="40" width="20" height="120" rx="2" fill="#d4af37"/>
   
   <!-- Horizontal Bar -->
-  <rect x="40" y="90" width="120" height="20" fill="#d4af37"/>
+  <rect x="40" y="90" width="120" height="20" rx="2" fill="#d4af37"/>
 </svg>
