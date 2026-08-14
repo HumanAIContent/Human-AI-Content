@@ -119,7 +119,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onNavigate, onOpenSamp
                       <h4 className="text-[10px] font-bold text-white uppercase tracking-wide">2. Full-Funnel Web Expertise</h4>
                     </div>
                     <p className="text-[10px] text-slate-300 leading-relaxed">
-                      20 years in web design, SEO, and sales copywriting.
+                      20 years of web design, SEO, and sales copywriting. 4+ years of specialized experience in AI-assisted Human-Edited writing workflows for US and global businesses.
                     </p>
                   </div>
 
