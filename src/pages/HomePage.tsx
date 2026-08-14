@@ -80,7 +80,7 @@ export const HomePage: React.FC<HomePageProps> = ({
             </div>
 
             <p className="text-xs text-slate-400 pt-2 font-mono">
-              No obligation • Direct access to your content creation Manager
+              No obligation • Direct access to your content creation Manager.
             </p>
 
           </div>
