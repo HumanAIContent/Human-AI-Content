@@ -24,7 +24,7 @@ export const RECENT_SITES: RecentSite[] = [
     name: 'Verdant Organic Wellness',
     domain: 'verdantwellness.com',
     niche: 'Health, Clinical Nutrition & E-Commerce',
-    image: '/fire-place-hubs-haic.png',
+    image: '/verdant-wellness-logo.png',
     packageUsed: 'Full-Service All-Inclusive',
     description: 'E-commerce health brand needing medically backed, research-dense wellness articles and custom infographics.',
     sampleArticleTitle: 'The Clinical Science of Bioavailable Micronutrients in Cellular Longevity',
