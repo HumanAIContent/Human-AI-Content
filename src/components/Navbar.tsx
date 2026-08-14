@@ -36,18 +36,35 @@ export const Navbar: React.FC<NavbarProps> = ({ activePage, onNavigate, onOpenAg
   };
 
   const scrollToSection = (sectionId: string) => {
-    // First navigate to home if not already there
-    if (activePage !== 'home') {
-      onNavigate('home');
-    }
-    // Use setTimeout to allow navigation to complete before scrolling
-    setTimeout(() => {
+    setIsMenuOpen(false);
+    
+    // If we're already on home, just scroll
+    if (activePage === 'home') {
       const el = document.getElementById(sectionId);
       if (el) {
         el.scrollIntoView({ behavior: 'smooth' });
       }
-    }, 100);
-    setIsMenuOpen(false);
+      return;
+    }
+    
+    // Navigate to home first, then scroll after render
+    onNavigate('home');
+    
+    // Wait for navigation and DOM update
+    setTimeout(() => {
+      const el = document.getElementById(sectionId);
+      if (el) {
+        el.scrollIntoView({ behavior: 'smooth' });
+      } else {
+        // If element still not found, try after another short delay
+        setTimeout(() => {
+          const el2 = document.getElementById(sectionId);
+          if (el2) {
+            el2.scrollIntoView({ behavior: 'smooth' });
+          }
+        }, 300);
+      }
+    }, 300);
   };
 
   return (
