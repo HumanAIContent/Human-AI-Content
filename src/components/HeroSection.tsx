@@ -12,28 +12,37 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onNavigate, onOpenSamp
     <section className="relative overflow-hidden py-6 lg:py-8 bg-[#0F172A]">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
+        {/* Centered Logo and Headline Section - MOVED TO TOP */}
+        <div className="text-center mb-6">
+          <div className="flex justify-center items-center mb-4">
+            <img
+              src="/Human-AI-Content-Creation-Square.png"
+              alt="Human-AI Content Creation Logo"
+              className="w-32 h-32 sm:w-40 sm:h-40 object-contain rounded-lg shadow-md"
+            />
+          </div>
+          
+          <span className="mb-2 text-xs font-bold uppercase tracking-[0.2em] text-[#D4AF37] flex items-center justify-center gap-2">
+            <Sparkles className="w-3.5 h-3.5 text-[#D4AF37]" />
+            Content Creation Growth-Engine
+          </span>
+
+          <h1 className="mb-3 text-xl sm:text-2xl lg:text-3xl font-extrabold leading-tight text-white">
+            Expert Website & Social Media Content Done For You—Hands Off!
+          </h1>
+        </div>
+
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-5 items-stretch">
           
           {/* Main Hero Card Container */}
           <div className="lg:col-span-8 flex flex-col justify-between rounded-lg bg-[#1E293B] p-6 lg:p-7 border-l-4 border-[#D4AF37] border-y border-r border-slate-700/50 shadow-xl">
             
             <div>
-              {/* Top Eyebrow */}
-              <span className="mb-2 text-xs font-bold uppercase tracking-[0.2em] text-[#D4AF37] flex items-center gap-2">
-                <Sparkles className="w-3.5 h-3.5 text-[#D4AF37]" />
-                Content Creation Growth-Engine
-              </span>
-
-              {/* Main Title */}
-              <h1 className="mb-3 text-xl sm:text-2xl lg:text-3xl font-extrabold leading-tight text-white">
-                Expert Website & Social Media Content Done For You—Hands Off!
-              </h1>
-
               {/* Subheading */}
               <p className="mb-8 text-xs sm:text-sm leading-relaxed text-slate-300">
                 Welcome, my name is Mikel. I'm a native Australian content creation expert based in the Philippines with 20+ years of digital marketing expertise. I provide high-performance, AI-assisted, human-edited content creation for select US and global businesses.
                 <br /><br />
-                If you’ve hired freelancers on platforms like Upwork or Fiverr, you know cost savings often come with communication and language pitfalls. As a native English speaker, you’ll never worry about language barriers, awkward phrasing, or heavy rewrites—just quality, hassle-free content.
+                If you've hired freelancers on platforms like Upwork or Fiverr, you know cost savings often come with communication and language pitfalls. As a native English speaker, you'll never worry about language barriers, awkward phrasing, or heavy rewrites—just quality, hassle-free content.
                 <br /><br />
                 Your content should NOT wait on your to-do list. If you are struggling with finding the time to do it and outsourcing has only resulted in more work for you. I'll create everything, from start to finish, giving you consistent, professional content without the management headaches.
               </p>
@@ -59,7 +68,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onNavigate, onOpenSamp
                 </div>
               </div>
 
-              {/* Centered Primary Action Button - CHANGED to yellow background */}
+              {/* Centered Primary Action Button */}
               <div className="flex justify-center mt-8 mb-4">
                 <button
                   onClick={() => {
@@ -70,15 +79,6 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onNavigate, onOpenSamp
                 >
                   View Packages
                 </button>
-              </div>
-
-              {/* Centered Logo Display */}
-              <div className="flex justify-center items-center mt-5 mb-2">
-                <img
-                  src="/Human-AI-Content-Creation-Square.png"
-                  alt="Human-AI Content Creation Logo"
-                  className="w-32 h-32 sm:w-40 sm:h-40 object-contain rounded-lg shadow-md"
-                />
               </div>
             </div>
 
