@@ -88,7 +88,7 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ onNavigate, onOp
             // Use custom tagline for first 3 packages, override full-service tagline
             let tagline;
             if (isFullService) {
-              tagline = 'AI-assisted, human-edited SEO/GEO articles, custom Canva visuals, full WordPress draft staging, and CoSchedule social scheduling are delivered monthly. Assets are archived in Google Drive, with site publishing strictly contingent on your direct pre-approval.';
+              tagline = 'WordPress draft staging, CoSchedule social scheduling, custom Canva visuals, and AI-assisted, human-edited SEO/GEO articles are delivered monthly. Assets are archived in Google Drive, with site publishing strictly contingent on your direct pre-approval.';
             } else {
               tagline = getTagline(pkg.id);
             }
