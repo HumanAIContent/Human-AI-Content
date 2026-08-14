@@ -60,7 +60,7 @@ export const RECENT_SITES: RecentSite[] = [
     name: 'Lumina AI Tools Directory',
     domain: 'luminaai.tech',
     niche: 'AI Tech News & Software Reviews',
-    image: 'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1000&q=80',
+    image: '/newest.ai-logo.png',
     packageUsed: 'Full-Service All-Inclusive',
     description: 'Rapidly growing tech authority hub reviewing enterprise AI agents and productivity frameworks.',
     sampleArticleTitle: 'Top 10 Autonomous AI Agent Frameworks for Software Development in 2026',
