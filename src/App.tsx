@@ -3,7 +3,6 @@ import { NavPage, RecentSite } from './types';
 import { Navbar } from './components/Navbar';
 import { Footer } from './components/Footer';
 import { HomePage } from './pages/HomePage';
-import { AboutPage } from './pages/AboutPage';
 import { ContactPage } from './pages/ContactPage';
 import { SampleArticleModal } from './components/SampleArticleModal';
 import { AgreementModal } from './components/AgreementModal';
@@ -61,13 +60,6 @@ export default function App() {
             onNavigate={handleNavigate}
             onOpenSampleArticle={handleOpenSampleArticle}
             onOpenAgreements={() => setIsAgreementModalOpen(true)}
-          />
-        )}
-
-        {activePage === 'about' && (
-          <AboutPage
-            onNavigate={handleNavigate}
-            onOpenSampleArticle={() => handleOpenSampleArticle(null)}
           />
         )}
 
