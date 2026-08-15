@@ -85,14 +85,14 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onNavigate, onOpenSamp
               </button>
             </div>
 
-            {/* Why Work With Me Section - UPDATED FONT SIZES */}
+            {/* Why Work With Me Section - MIDDLE GROUND FONT SIZES */}
             <div className="mt-6 pt-6 border-t border-slate-700/50 flex-1">
               <div className="space-y-4">
                 <div className="text-center max-w-3xl mx-auto space-y-1">
-                  <h3 className="text-base sm:text-lg font-extrabold text-white tracking-tight">
+                  <h3 className="text-[15px] sm:text-[17px] font-extrabold text-white tracking-tight">
                     Why Work With Me Over Cheaper Freelance Options?
                   </h3>
-                  <p className="text-xs sm:text-sm text-slate-400">
+                  <p className="text-[11px] sm:text-[13px] text-slate-400">
                     Managing generic freelancers takes hours of editing every week. Here is why my managed pipeline is different.
                   </p>
                 </div>
@@ -104,9 +104,9 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onNavigate, onOpenSamp
                       <div className="w-6 h-6 rounded bg-[#0F172A] border border-[#D4AF37]/40 flex items-center justify-center text-[#D4AF37] shrink-0">
                         <Globe className="w-3 h-3" />
                       </div>
-                      <h4 className="text-xs sm:text-sm font-bold text-white uppercase tracking-wide">1. Native English Communication</h4>
+                      <h4 className="text-[11px] sm:text-[13px] font-bold text-white uppercase tracking-wide">1. Native English Communication</h4>
                     </div>
-                    <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
+                    <p className="text-[11px] sm:text-[13px] text-slate-300 leading-relaxed">
                       Never edit awkward phrasing or correct subtle grammatical errors. Enjoy clear, seamless communication with zero language barriers.
                     </p>
                   </div>
@@ -116,9 +116,9 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onNavigate, onOpenSamp
                       <div className="w-6 h-6 rounded bg-[#0F172A] border border-[#D4AF37]/40 flex items-center justify-center text-[#D4AF37] shrink-0">
                         <Award className="w-3 h-3" />
                       </div>
-                      <h4 className="text-xs sm:text-sm font-bold text-white uppercase tracking-wide">2. Full-Funnel Web Expertise</h4>
+                      <h4 className="text-[11px] sm:text-[13px] font-bold text-white uppercase tracking-wide">2. Full-Funnel Web Expertise</h4>
                     </div>
-                    <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
+                    <p className="text-[11px] sm:text-[13px] text-slate-300 leading-relaxed">
                       20 years of web design, SEO, and sales copywriting. 4+ years of specialized experience in AI-assisted Human-Edited writing workflows for US and global businesses.
                     </p>
                   </div>
@@ -128,9 +128,9 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onNavigate, onOpenSamp
                       <div className="w-6 h-6 rounded bg-[#0F172A] border border-[#D4AF37]/40 flex items-center justify-center text-[#D4AF37] shrink-0">
                         <ShieldCheck className="w-3 h-3" />
                       </div>
-                      <h4 className="text-xs sm:text-sm font-bold text-white uppercase tracking-wide">3. Reliable Low-Friction Partner</h4>
+                      <h4 className="text-[11px] sm:text-[13px] font-bold text-white uppercase tracking-wide">3. Reliable Low-Friction Partner</h4>
                     </div>
-                    <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
+                    <p className="text-[11px] sm:text-[13px] text-slate-300 leading-relaxed">
                       Clear workflows and predictable output. I focus on building long-term, reliable relationships with clients who want premium, hassle-free content solutions.
                     </p>
                   </div>
@@ -140,9 +140,9 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onNavigate, onOpenSamp
                       <div className="w-6 h-6 rounded bg-[#0F172A] border border-[#D4AF37]/40 flex items-center justify-center text-[#D4AF37] shrink-0">
                         <Cpu className="w-3 h-3" />
                       </div>
-                      <h4 className="text-xs sm:text-sm font-bold text-white uppercase tracking-wide">4. Proven AI + Human Workflow</h4>
+                      <h4 className="text-[11px] sm:text-[13px] font-bold text-white uppercase tracking-wide">4. Proven AI + Human Workflow</h4>
                     </div>
-                    <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
+                    <p className="text-[11px] sm:text-[13px] text-slate-300 leading-relaxed">
                       I leverage AI for deep research & initial drafting, reserving maximum time to meticulously refine messaging, fact-check copy, & produce sharp, human-edited visuals.
                     </p>
                   </div>
