@@ -89,10 +89,10 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onNavigate, onOpenSamp
             <div className="mt-6 pt-6 border-t border-slate-700/50 flex-1">
               <div className="space-y-4">
                 <div className="text-center max-w-3xl mx-auto space-y-1">
-                  <h3 className="text-[15px] sm:text-[17px] font-extrabold text-white tracking-tight">
+                  <h3 className="text-[15px] sm:text-[20px] font-extrabold text-white tracking-tight">
                     Why Work With Me Over Cheaper Freelance Options?
                   </h3>
-                  <p className="text-[11px] sm:text-[13px] text-slate-400">
+                  <p className="text-[11px] sm:text-[14px] text-slate-400">
                     Managing generic freelancers takes hours of editing every week. Here is why my managed pipeline is different.
                   </p>
                 </div>
