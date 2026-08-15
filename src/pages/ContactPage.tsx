@@ -251,7 +251,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ initialPackageId, onOp
                   className="w-full py-3.5 bg-[#D4AF37] hover:bg-[#C19A2E] text-[#0F172A] font-bold text-xs uppercase tracking-wider flex items-center justify-center space-x-2 transition-colors shadow-sm"
                 >
                   <Send className="w-4 h-4" />
-                  <span>Submit Retainer Enquiry</span>
+                  <span>Submit Enquiry</span>
                 </button>
 
               </form>
