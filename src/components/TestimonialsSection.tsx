@@ -1,6 +1,6 @@
 import React from 'react';
 import { TESTIMONIALS } from '../data/testimonials';
-import { Star, Quote, CheckCircle2, TrendingUp } from 'lucide-react';
+import { Star, Quote } from 'lucide-react';
 
 export const TestimonialsSection: React.FC = () => {
   return (
@@ -41,12 +41,12 @@ export const TestimonialsSection: React.FC = () => {
                   </div>
                 </div>
 
-                {/* Author Info with 70% larger image directly below star ratings */}
+                {/* Author Info with images (grayscale removed) */}
                 <div className="flex items-center space-x-4 pt-1">
                   <img
                     src={t.avatar}
                     alt={t.name}
-                    className="w-[68px] h-[68px] rounded-full object-cover border-2 border-[#D4AF37] shadow-md shrink-0 grayscale hover:grayscale-0 transition-all"
+                    className="w-[68px] h-[68px] rounded-full object-cover border-2 border-[#D4AF37] shadow-md shrink-0 transition-all"
                   />
                   <div>
                     <h4 className="text-white font-extrabold text-sm uppercase tracking-wide">{t.name}</h4>
