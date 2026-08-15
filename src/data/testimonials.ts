@@ -15,7 +15,7 @@ export const TESTIMONIALS: Testimonial[] = [
     id: 'test-2',
     name: 'Robert Millar',
     role: 'Founder',
-    company: 'Healthful Hub',
+    company: 'Innovacious',
     avatar: '/Robert Millar.webp',
     content: 'As a native English speaker, the communication is instant, crystal clear, and completely reliable. I used to spend hours fixing awkward phrasing from cheaper freelancers. With this service, the articles arrive fully researched, meticulously fact-checked, and paired with custom Canva graphics that perfectly match our brand guidelines.',
     rating: 5,
