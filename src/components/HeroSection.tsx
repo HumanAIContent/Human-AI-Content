@@ -85,7 +85,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onNavigate, onOpenSamp
               </button>
             </div>
 
-            {/* Why Work With Me Section - Titles and Icons outside cards */}
+            {/* Why Work With Me Section - Titles outside cards */}
             <div className="mt-6 pt-6 border-t border-slate-700/50 flex-1">
               <div className="space-y-4">
                 <div className="text-center max-w-3xl mx-auto space-y-1">
@@ -97,7 +97,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onNavigate, onOpenSamp
                   </p>
                 </div>
 
-                {/* Titles and Icons Row (outside cards) */}
+                {/* Titles and Icons Row 1 - Titles 1 & 2 (above boxes 1 & 2) */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                   
                   <div className="flex items-center space-x-2 px-1">
@@ -118,6 +118,28 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onNavigate, onOpenSamp
                     </h4>
                   </div>
 
+                </div>
+
+                {/* Cards Row 1 - Descriptions for 1 & 2 */}
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                  
+                  <div className="bg-[#0F172A]/70 p-3 rounded border border-slate-700/50 space-y-1">
+                    <p className="text-[11px] sm:text-[13px] text-slate-300 leading-relaxed">
+                      Never edit awkward phrasing or correct subtle grammatical errors. Enjoy clear, seamless communication with zero language barriers.
+                    </p>
+                  </div>
+
+                  <div className="bg-[#0F172A]/70 p-3 rounded border border-slate-700/50 space-y-1">
+                    <p className="text-[11px] sm:text-[13px] text-slate-300 leading-relaxed">
+                      20 years of web design, SEO, and sales copywriting. 4+ years of specialized experience in AI-assisted Human-Edited writing workflows for US and global businesses.
+                    </p>
+                  </div>
+
+                </div>
+
+                {/* Titles and Icons Row 2 - Titles 3 & 4 (below boxes 1 & 2, above boxes 3 & 4) */}
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                  
                   <div className="flex items-center space-x-2 px-1">
                     <div className="w-6 h-6 rounded bg-[#0F172A] border border-[#D4AF37]/40 flex items-center justify-center text-[#D4AF37] shrink-0">
                       <ShieldCheck className="w-3 h-3" />
@@ -138,21 +160,9 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onNavigate, onOpenSamp
 
                 </div>
 
-                {/* Cards Row (description only) */}
+                {/* Cards Row 2 - Descriptions for 3 & 4 */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                   
-                  <div className="bg-[#0F172A]/70 p-3 rounded border border-slate-700/50 space-y-1">
-                    <p className="text-[11px] sm:text-[13px] text-slate-300 leading-relaxed">
-                      Never edit awkward phrasing or correct subtle grammatical errors. Enjoy clear, seamless communication with zero language barriers.
-                    </p>
-                  </div>
-
-                  <div className="bg-[#0F172A]/70 p-3 rounded border border-slate-700/50 space-y-1">
-                    <p className="text-[11px] sm:text-[13px] text-slate-300 leading-relaxed">
-                      20 years of web design, SEO, and sales copywriting. 4+ years of specialized experience in AI-assisted Human-Edited writing workflows for US and global businesses.
-                    </p>
-                  </div>
-
                   <div className="bg-[#0F172A]/70 p-3 rounded border border-slate-700/50 space-y-1">
                     <p className="text-[11px] sm:text-[13px] text-slate-300 leading-relaxed">
                       Clear workflows and predictable output. I focus on building long-term, reliable relationships with clients who want premium, hassle-free content solutions.
