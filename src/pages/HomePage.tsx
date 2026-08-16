@@ -48,34 +48,38 @@ export const HomePage: React.FC<HomePageProps> = ({
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
               
-              <div className="bg-[#0F172A] p-4 rounded border-l-4 border-[#D4AF37] border-y border-r border-slate-800 transition-all duration-300 space-y-1.5">
-                <div className="text-[10px] font-bold text-[#D4AF37] uppercase tracking-wider">STEP 1</div>
-                <h4 className="text-white font-bold text-xs uppercase tracking-wide">Setup & Access</h4>
-                <p className="text-xs text-slate-400 leading-relaxed">
+              <div className="bg-[#0F172A] p-4 rounded border border-slate-800 relative transition-all duration-300 space-y-1.5">
+                <div className="absolute left-0 top-0 bottom-0 w-1 bg-[#D4AF37] rounded-l"></div>
+                <div className="text-[10px] font-bold text-[#D4AF37] uppercase tracking-wider pl-2">STEP 1</div>
+                <h4 className="text-white font-bold text-xs uppercase tracking-wide pl-2">Setup & Access</h4>
+                <p className="text-xs text-slate-400 leading-relaxed pl-2">
                   Pay the one-time setup fee, complete onboarding questionnaire, & grant access. Package setup varies, covering WordPress credentials, CoSchedule connections, brand assets, & Google Drive setup.
                 </p>
               </div>
 
-              <div className="bg-[#0F172A] p-4 rounded border-l-4 border-[#D4AF37] border-y border-r border-slate-800 transition-all duration-300 space-y-1.5">
-                <div className="text-[10px] font-bold text-[#D4AF37] uppercase tracking-wider">STEP 2</div>
-                <h4 className="text-white font-bold text-xs uppercase tracking-wide">Strategy Alignment</h4>
-                <p className="text-xs text-slate-400 leading-relaxed">
+              <div className="bg-[#0F172A] p-4 rounded border border-slate-800 relative transition-all duration-300 space-y-1.5">
+                <div className="absolute left-0 top-0 bottom-0 w-1 bg-[#D4AF37] rounded-l"></div>
+                <div className="text-[10px] font-bold text-[#D4AF37] uppercase tracking-wider pl-2">STEP 2</div>
+                <h4 className="text-white font-bold text-xs uppercase tracking-wide pl-2">Strategy Alignment</h4>
+                <p className="text-xs text-slate-400 leading-relaxed pl-2">
                   I research your business & its niche, combine your topic suggestions with keyword research to build an SEO & GEO strategy. Production starts the Monday after the initial monthly retainer payment.
                 </p>
               </div>
 
-              <div className="bg-[#0F172A] p-4 rounded border-l-4 border-[#D4AF37] border-y border-r border-slate-800 transition-all duration-300 space-y-1.5">
-                <div className="text-[10px] font-bold text-[#D4AF37] uppercase tracking-wider">STEP 3</div>
-                <h4 className="text-white font-bold text-xs uppercase tracking-wide">Drafting & Staging</h4>
-                <p className="text-xs text-slate-400 leading-relaxed">
+              <div className="bg-[#0F172A] p-4 rounded border border-slate-800 relative transition-all duration-300 space-y-1.5">
+                <div className="absolute left-0 top-0 bottom-0 w-1 bg-[#D4AF37] rounded-l"></div>
+                <div className="text-[10px] font-bold text-[#D4AF37] uppercase tracking-wider pl-2">STEP 3</div>
+                <h4 className="text-white font-bold text-xs uppercase tracking-wide pl-2">Drafting & Staging</h4>
+                <p className="text-xs text-slate-400 leading-relaxed pl-2">
                   I pair AI-drafted articles with expert human editing & Canva graphics, staging ready-to-review drafts in WordPress or Google Drive while building your promotional social media campaign inside CoSchedule.
                 </p>
               </div>
 
-              <div className="bg-[#0F172A] p-4 rounded border-l-4 border-[#D4AF37] border-y border-r border-slate-800 transition-all duration-300 space-y-1.5">
-                <div className="text-[10px] font-bold text-[#D4AF37] uppercase tracking-wider">STEP 4</div>
-                <h4 className="text-white font-bold text-xs uppercase tracking-wide">1-Click Approval</h4>
-                <p className="text-xs text-slate-400 leading-relaxed">
+              <div className="bg-[#0F172A] p-4 rounded border border-slate-800 relative transition-all duration-300 space-y-1.5">
+                <div className="absolute left-0 top-0 bottom-0 w-1 bg-[#D4AF37] rounded-l"></div>
+                <div className="text-[10px] font-bold text-[#D4AF37] uppercase tracking-wider pl-2">STEP 4</div>
+                <h4 className="text-white font-bold text-xs uppercase tracking-wide pl-2">1-Click Approval</h4>
+                <p className="text-xs text-slate-400 leading-relaxed pl-2">
                   You review staged Article drafts in either Google Drive or WordPress, then CoSchedule social posts. Request up to two revision rounds free & then approve. Nothing ever live without your approval.
                 </p>
               </div>
