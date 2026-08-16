@@ -24,7 +24,7 @@ export const RecentSitesSection: React.FC<RecentSitesSectionProps> = ({ onSelect
           </h2>
 
           <p className="text-slate-300 text-sm sm:text-base leading-relaxed font-normal">
-            Explore active client articles.
+            Explore active client articles and social media posts.
           </p>
         </div>
 
