@@ -125,14 +125,13 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onNavigate, onOpenSamp
                   
                   <div className="bg-[#0F172A]/70 p-3 rounded border border-[#D4AF37]/50 space-y-1">
                     <p className="text-[11px] sm:text-[13px] text-slate-300 leading-relaxed">
-                      Never waste time editing awkward phrasing or correcting subtle grammatical errors again. Enjoy flawless, seamless communication with a native English speaker and absolute zero language barriers to deal with.
+                      Never waste time editing awkward phrasing or correcting subtle grammatical errors again. Enjoy flawless, seamless communication with a native English speaker and absolute zero language barriers.
                     </p>
                   </div>
 
                   <div className="bg-[#0F172A]/70 p-3 rounded border border-[#D4AF37]/50 space-y-1">
                     <p className="text-[11px] sm:text-[13px] text-slate-300 leading-relaxed">
-                      20+ years of experience in web design, SEO, and sales copywriting alongside 4+ years mastering AI-assisted, human-edited content workflows to build high-performance content solutions for US & global brands.
-                    </p>
+                      20+ years of expertise in web design, SEO, and sales copywriting, combined with 4+ years refining advanced AI-assisted, human-edited content workflows for ambitious US and global businesses.
                   </div>
 
                 </div>
