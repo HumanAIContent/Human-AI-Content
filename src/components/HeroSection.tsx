@@ -125,7 +125,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onNavigate, onOpenSamp
                   
                   <div className="bg-[#0F172A]/70 p-3 rounded border border-[#D4AF37]/50 space-y-1">
                     <p className="text-[11px] sm:text-[13px] text-slate-300 leading-relaxed">
-                      Never waste time editing awkward phrasing or correcting subtle grammatical errors again. Enjoy flawless, seamless communication with a native English speaker and absolute zero language barriers.
+                      Never waste time editing awkward phrasing or correcting subtle grammatical errors. Enjoy flawless, seamless communication with a native English speaker and absolute zero language barriers.
                     </p>
                   </div>
 
