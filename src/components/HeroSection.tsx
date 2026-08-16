@@ -93,7 +93,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onNavigate, onOpenSamp
                     Why Work With Me Over Cheaper Freelance Options?
                   </h3>
                   <p className="text-[11px] sm:text-[14px] text-slate-400">
-                    Generic freelancers require constant back-and-forth and heavy editing.  Enjoy flawless, seamless communication, pristine copy, and absolute zero language barriers.
+                    Generic freelancers require constant back-and-forth. Enjoy flawless, seamless communication, pristine copy, and no language barriers.
                   </p>
                 </div>
 
