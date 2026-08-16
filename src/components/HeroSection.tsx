@@ -93,7 +93,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onNavigate, onOpenSamp
                     Why Work With Me Over Cheaper Freelance Options?
                   </h3>
                   <p className="text-[11px] sm:text-[14px] text-slate-400">
-                    Managing generic freelancers takes hours of editing every week. Here is why my managed pipeline is different.
+                    Generic freelancers require constant back-and-forth and heavy editing.  Enjoy flawless, seamless communication, pristine copy, and absolute zero language barriers.
                   </p>
                 </div>
 
