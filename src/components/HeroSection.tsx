@@ -85,7 +85,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onNavigate, onOpenSamp
               </button>
             </div>
 
-            {/* Why Work With Me Section - Titles moved outside cards */}
+            {/* Why Work With Me Section - Titles and Icons outside cards */}
             <div className="mt-6 pt-6 border-t border-slate-700/50 flex-1">
               <div className="space-y-4">
                 <div className="text-center max-w-3xl mx-auto space-y-1">
@@ -97,72 +97,74 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onNavigate, onOpenSamp
                   </p>
                 </div>
 
+                {/* Titles and Icons Row (outside cards) */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                   
-                  {/* Card 1 */}
-                  <div className="bg-[#0F172A]/70 p-3 rounded border border-slate-700/50 space-y-1">
-                    <div className="flex items-center space-x-2">
-                      <div className="w-6 h-6 rounded bg-[#0F172A] border border-[#D4AF37]/40 flex items-center justify-center text-[#D4AF37] shrink-0">
-                        <Globe className="w-3 h-3" />
-                      </div>
+                  <div className="flex items-center space-x-2 px-1">
+                    <div className="w-6 h-6 rounded bg-[#0F172A] border border-[#D4AF37]/40 flex items-center justify-center text-[#D4AF37] shrink-0">
+                      <Globe className="w-3 h-3" />
                     </div>
+                    <h4 className="text-[11px] sm:text-[13px] font-bold text-white uppercase tracking-wide">
+                      1. Native English Communication
+                    </h4>
+                  </div>
+
+                  <div className="flex items-center space-x-2 px-1">
+                    <div className="w-6 h-6 rounded bg-[#0F172A] border border-[#D4AF37]/40 flex items-center justify-center text-[#D4AF37] shrink-0">
+                      <Award className="w-3 h-3" />
+                    </div>
+                    <h4 className="text-[11px] sm:text-[13px] font-bold text-white uppercase tracking-wide">
+                      2. Full-Funnel Web Expertise
+                    </h4>
+                  </div>
+
+                  <div className="flex items-center space-x-2 px-1">
+                    <div className="w-6 h-6 rounded bg-[#0F172A] border border-[#D4AF37]/40 flex items-center justify-center text-[#D4AF37] shrink-0">
+                      <ShieldCheck className="w-3 h-3" />
+                    </div>
+                    <h4 className="text-[11px] sm:text-[13px] font-bold text-white uppercase tracking-wide">
+                      3. Reliable Low-Friction Partner
+                    </h4>
+                  </div>
+
+                  <div className="flex items-center space-x-2 px-1">
+                    <div className="w-6 h-6 rounded bg-[#0F172A] border border-[#D4AF37]/40 flex items-center justify-center text-[#D4AF37] shrink-0">
+                      <Cpu className="w-3 h-3" />
+                    </div>
+                    <h4 className="text-[11px] sm:text-[13px] font-bold text-white uppercase tracking-wide">
+                      4. Proven AI + Human Workflow
+                    </h4>
+                  </div>
+
+                </div>
+
+                {/* Cards Row (description only) */}
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                  
+                  <div className="bg-[#0F172A]/70 p-3 rounded border border-slate-700/50 space-y-1">
                     <p className="text-[11px] sm:text-[13px] text-slate-300 leading-relaxed">
                       Never edit awkward phrasing or correct subtle grammatical errors. Enjoy clear, seamless communication with zero language barriers.
                     </p>
                   </div>
 
-                  {/* Card 2 */}
                   <div className="bg-[#0F172A]/70 p-3 rounded border border-slate-700/50 space-y-1">
-                    <div className="flex items-center space-x-2">
-                      <div className="w-6 h-6 rounded bg-[#0F172A] border border-[#D4AF37]/40 flex items-center justify-center text-[#D4AF37] shrink-0">
-                        <Award className="w-3 h-3" />
-                      </div>
-                    </div>
                     <p className="text-[11px] sm:text-[13px] text-slate-300 leading-relaxed">
                       20 years of web design, SEO, and sales copywriting. 4+ years of specialized experience in AI-assisted Human-Edited writing workflows for US and global businesses.
                     </p>
                   </div>
 
-                  {/* Card 3 */}
                   <div className="bg-[#0F172A]/70 p-3 rounded border border-slate-700/50 space-y-1">
-                    <div className="flex items-center space-x-2">
-                      <div className="w-6 h-6 rounded bg-[#0F172A] border border-[#D4AF37]/40 flex items-center justify-center text-[#D4AF37] shrink-0">
-                        <ShieldCheck className="w-3 h-3" />
-                      </div>
-                    </div>
                     <p className="text-[11px] sm:text-[13px] text-slate-300 leading-relaxed">
                       Clear workflows and predictable output. I focus on building long-term, reliable relationships with clients who want premium, hassle-free content solutions.
                     </p>
                   </div>
 
-                  {/* Card 4 */}
                   <div className="bg-[#0F172A]/70 p-3 rounded border border-slate-700/50 space-y-1">
-                    <div className="flex items-center space-x-2">
-                      <div className="w-6 h-6 rounded bg-[#0F172A] border border-[#D4AF37]/40 flex items-center justify-center text-[#D4AF37] shrink-0">
-                        <Cpu className="w-3 h-3" />
-                      </div>
-                    </div>
                     <p className="text-[11px] sm:text-[13px] text-slate-300 leading-relaxed">
                       I leverage AI for deep research & initial drafting, reserving maximum time to meticulously refine messaging, fact-check copy, & produce sharp, human-edited visuals.
                     </p>
                   </div>
 
-                </div>
-
-                {/* Titles placed outside and above the cards */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 -mb-2">
-                  <h4 className="text-[11px] sm:text-[13px] font-bold text-white uppercase tracking-wide text-center sm:text-left pl-1">
-                    1. Native English Communication
-                  </h4>
-                  <h4 className="text-[11px] sm:text-[13px] font-bold text-white uppercase tracking-wide text-center sm:text-left pl-1">
-                    2. Full-Funnel Web Expertise
-                  </h4>
-                  <h4 className="text-[11px] sm:text-[13px] font-bold text-white uppercase tracking-wide text-center sm:text-left pl-1">
-                    3. Reliable Low-Friction Partner
-                  </h4>
-                  <h4 className="text-[11px] sm:text-[13px] font-bold text-white uppercase tracking-wide text-center sm:text-left pl-1">
-                    4. Proven AI + Human Workflow
-                  </h4>
                 </div>
 
               </div>
