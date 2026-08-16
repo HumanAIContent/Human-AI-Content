@@ -22,7 +22,7 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ onNavigate, onOp
       case 'essential':
         return 'High-Performance AI-Assisted Human-Edited SEO & GEO Articles—Delivered as Pure Text. Deeply researched, content crafted for brands and agencies that manage their own publishing. All articles are delivered polished and publication-ready for complete in-house control.';
       case 'visuals':
-        return 'Streamline your content pipeline with deeply researched, human-edited blog articles designed for dual SEO/GEO indexing. Paired with custom Canva visuals, infographics, and data tables, all deliverables drop into your shared Google Drive workspace every month.';
+        return 'Streamline your content pipeline with deeply researched, human-edited articles designed for dual SEO/GEO indexing. Paired with custom Canva visuals, infographics, and data tables, all deliverables drop into your shared Google Drive workspace every month.';
       case 'social':
         return 'CoSchedule hands-off social media management, custom Canva graphic designs, and AI-assisted, human-edited SEO/GEO articles. All written content and visual assets are delivered to a shared Google Drive, and social posts strictly require explicit client approval.';
       default:
@@ -276,7 +276,7 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ onNavigate, onOp
                 </tr>
 
                 <tr>
-                  <td className="p-3.5 font-bold text-white uppercase text-[11px]">Blog Articles per Month</td>
+                  <td className="p-3.5 font-bold text-white uppercase text-[11px]">Articles per Month</td>
                   <td className="p-3.5 text-center">4x (1,500 - 2,500w)</td>
                   <td className="p-3.5 text-center">4x (1,500 - 2,500w)</td>
                   <td className="p-3.5 text-center">4x (1,500 - 2,500w)</td>
