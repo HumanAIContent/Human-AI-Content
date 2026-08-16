@@ -48,7 +48,7 @@ export const HomePage: React.FC<HomePageProps> = ({
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
               
-              <div className="bg-[#0F172A] p-4 rounded border border-slate-800 space-y-1.5">
+              <div className="bg-[#0F172A] p-4 rounded border-l-4 border-[#D4AF37] border-y border-r border-slate-800 hover:border-[#D4AF37]/70 transition-all duration-300 space-y-1.5">
                 <div className="text-[10px] font-bold text-[#D4AF37] uppercase tracking-wider">STEP 1</div>
                 <h4 className="text-white font-bold text-xs uppercase tracking-wide">Setup & Access</h4>
                 <p className="text-xs text-slate-400 leading-relaxed">
@@ -56,7 +56,7 @@ export const HomePage: React.FC<HomePageProps> = ({
                 </p>
               </div>
 
-              <div className="bg-[#0F172A] p-4 rounded border border-slate-800 space-y-1.5">
+              <div className="bg-[#0F172A] p-4 rounded border-l-4 border-[#D4AF37] border-y border-r border-slate-800 hover:border-[#D4AF37]/70 transition-all duration-300 space-y-1.5">
                 <div className="text-[10px] font-bold text-[#D4AF37] uppercase tracking-wider">STEP 2</div>
                 <h4 className="text-white font-bold text-xs uppercase tracking-wide">Strategy Alignment</h4>
                 <p className="text-xs text-slate-400 leading-relaxed">
@@ -64,7 +64,7 @@ export const HomePage: React.FC<HomePageProps> = ({
                 </p>
               </div>
 
-              <div className="bg-[#0F172A] p-4 rounded border border-slate-800 space-y-1.5">
+              <div className="bg-[#0F172A] p-4 rounded border-l-4 border-[#D4AF37] border-y border-r border-slate-800 hover:border-[#D4AF37]/70 transition-all duration-300 space-y-1.5">
                 <div className="text-[10px] font-bold text-[#D4AF37] uppercase tracking-wider">STEP 3</div>
                 <h4 className="text-white font-bold text-xs uppercase tracking-wide">Drafting & Staging</h4>
                 <p className="text-xs text-slate-400 leading-relaxed">
@@ -72,7 +72,7 @@ export const HomePage: React.FC<HomePageProps> = ({
                 </p>
               </div>
 
-              <div className="bg-[#0F172A] p-4 rounded border border-slate-800 space-y-1.5">
+              <div className="bg-[#0F172A] p-4 rounded border-l-4 border-[#D4AF37] border-y border-r border-slate-800 hover:border-[#D4AF37]/70 transition-all duration-300 space-y-1.5">
                 <div className="text-[10px] font-bold text-[#D4AF37] uppercase tracking-wider">STEP 4</div>
                 <h4 className="text-white font-bold text-xs uppercase tracking-wide">1-Click Approval</h4>
                 <p className="text-xs text-slate-400 leading-relaxed">
