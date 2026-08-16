@@ -105,7 +105,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onNavigate, onOpenSamp
                       <Globe className="w-3 h-3" />
                     </div>
                     <h4 className="text-[11px] sm:text-[13px] font-bold text-white uppercase tracking-wide">
-                      1. Native English Communication
+                      1. Zero Language Barriers
                     </h4>
                   </div>
 
@@ -145,7 +145,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onNavigate, onOpenSamp
                       <ShieldCheck className="w-3 h-3" />
                     </div>
                     <h4 className="text-[11px] sm:text-[13px] font-bold text-white uppercase tracking-wide">
-                      3. Reliable Low-Friction Partner
+                      3. Hassle-Free Content Flow
                     </h4>
                   </div>
 
