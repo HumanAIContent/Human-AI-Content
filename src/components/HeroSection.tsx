@@ -125,13 +125,13 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onNavigate, onOpenSamp
                   
                   <div className="bg-[#0F172A]/70 p-3 rounded border border-slate-700/50 space-y-1">
                     <p className="text-[11px] sm:text-[13px] text-slate-300 leading-relaxed">
-                      Never edit awkward phrasing or correct subtle grammatical errors. Enjoy clear, seamless communication with zero language barriers.
+                      Never waste time editing awkward phrasing or correcting subtle grammatical errors again. Enjoy flawless, seamless communication with a native English speaker and absolute zero language barriers.
                     </p>
                   </div>
 
                   <div className="bg-[#0F172A]/70 p-3 rounded border border-slate-700/50 space-y-1">
                     <p className="text-[11px] sm:text-[13px] text-slate-300 leading-relaxed">
-                      20 years of web design, SEO, and sales copywriting. 4+ years of specialized experience in AI-assisted Human-Edited writing workflows for US and global businesses.
+                      20+ years in web design, SEO, and sales copywriting, combined with 4+ years refining specialized AI-assisted, human-edited content workflows for ambitious US and global businesses.
                     </p>
                   </div>
 
@@ -165,13 +165,13 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onNavigate, onOpenSamp
                   
                   <div className="bg-[#0F172A]/70 p-3 rounded border border-slate-700/50 space-y-1">
                     <p className="text-[11px] sm:text-[13px] text-slate-300 leading-relaxed">
-                      Clear workflows and predictable output. I focus on building long-term, reliable relationships with clients who want premium, hassle-free content solutions.
+                      Streamlined workflows, clear timelines, and predictable output. I build reliable, long-term client relationships focused on delivering high-performing, completely hassle-free content solutions.
                     </p>
                   </div>
 
                   <div className="bg-[#0F172A]/70 p-3 rounded border border-slate-700/50 space-y-1">
                     <p className="text-[11px] sm:text-[13px] text-slate-300 leading-relaxed">
-                      I leverage AI for deep research & initial drafting, reserving maximum time to meticulously refine messaging, fact-check copy, & produce sharp, human-edited visuals.
+                      I leverage AI for deep topic research and initial drafting, saving valuable time to meticulously refine messaging, rigorously fact-check copy, and craft sharp, high-impact visuals.
                     </p>
                   </div>
 
