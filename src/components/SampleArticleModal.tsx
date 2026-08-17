@@ -34,15 +34,15 @@ const REAL_ESTATE_ARTICLE = {
 export const SampleArticleModal: React.FC<SampleArticleModalProps> = ({ isOpen, onClose, selectedSite }) => {
   if (!isOpen) return null;
 
-  // Determine which article to use based on the site name
+  // Determine which article to use based on the site domain
   let article = SAMPLE_ARTICLE; // Default to Pilates article
   
   if (selectedSite) {
-    if (selectedSite.name === 'Innovacious') {
+    if (selectedSite.domain === 'innovacious.com') {
       // Card 1 (Innovacious) → Real Estate article
       article = REAL_ESTATE_ARTICLE;
     }
-    // Card 2 (Tokyo Rehabilitation, site-2) → uses SAMPLE_ARTICLE (Pilates)
+    // Card 2 (Tokyo Rehabilitation) → uses SAMPLE_ARTICLE (Pilates)
   }
 
   const siteName = selectedSite ? selectedSite.name : article.siteName;
