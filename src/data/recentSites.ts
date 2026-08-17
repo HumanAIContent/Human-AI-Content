@@ -4,7 +4,7 @@ export const RECENT_SITES: RecentSite[] = [
   {
     id: 'site-5',
     name: 'Nexus Supply Chain Systems',
-    domain: 'nexussupply.com',
+    domain: ' Innovacious.com',
     niche: 'Enterprise B2B Freight & Logistics',
     image: '/Inno_logo_Aug2025_2480.jpg',
     packageUsed: 'Content + Visual Assets',
