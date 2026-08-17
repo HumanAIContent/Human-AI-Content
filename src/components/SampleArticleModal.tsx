@@ -47,8 +47,22 @@ const REAL_ESTATE_ARTICLE = {
       body: 'You need to know what is working and what is not on your website. Install Google Analytics to track visitor behaviour.\n\nPay attention to which pages get the most traffic. Look at where visitors are coming from and where they are leaving your site.\n\nSet up goals to track form submissions, phone clicks, and other important actions. This data tells you what is converting and what needs improvement.\n\nWhen you generate leads, you must know where they originated. This insight allows you to double down on the marketing lead sources that pay off.'
     },
     {
-      heading: 'Examples of Real Estate Websites That Get It Right',
-      body: 'Sometimes the best way to learn is by seeing what others are doing well.\n\nSites like The Oppenheim Group combine sleek design with easy navigation and clear calls to action. Their property listings are stunning but load quickly.\n\nThe Altman Brothers website showcases their brand personality while making it super simple to search properties. It allows visitors to get in touch effortlessly.\n\nDolly Lenz uses high-end photography and compelling copy to position herself as a luxury market expert. This approach defines luxury real estate marketing.\n\nWhat these sites have in common is that they are built with the user in mind. They are not just online brochures.\n\nThey are marketing tools designed to generate leads and build relationships with potential clients. You can usually request a product demo from developers to see how these backends work.'
+      heading: 'Example 1: The Oppenheim Group',
+      body: 'Sites like The Oppenheim Group combine sleek design with easy navigation and clear calls to action. Their property listings are stunning but load quickly.',
+      visualAssetUrl: '/oppenheim-group.png',
+      visualAssetCaption: 'Figure: The Oppenheim Group - sleek design with easy navigation'
+    },
+    {
+      heading: 'Example 2: The Altman Brothers',
+      body: 'The Altman Brothers website showcases their brand personality while making it super simple to search properties. It allows visitors to get in touch effortlessly.',
+      visualAssetUrl: '/altman-bros-1536x766.png',
+      visualAssetCaption: 'Figure: The Altman Brothers - brand personality and easy search'
+    },
+    {
+      heading: 'Example 3: Dolly Lenz',
+      body: 'Dolly Lenz uses high-end photography and compelling copy to position herself as a luxury market expert. This approach defines luxury real estate marketing.\n\nWhat these sites have in common is that they are built with the user in mind. They are not just online brochures.\n\nThey are marketing tools designed to generate leads and build relationships with potential clients. You can usually request a product demo from developers to see how these backends work.',
+      visualAssetUrl: '/dolly-lenz-1536x766.png',
+      visualAssetCaption: 'Figure: Dolly Lenz - high-end luxury real estate marketing'
     },
     {
       heading: 'Common Mistakes That Kill Website Performance',
