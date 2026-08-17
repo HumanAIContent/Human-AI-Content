@@ -65,7 +65,7 @@ export const RECENT_SITES: RecentSite[] = [
     description: 'Is Balance of Nature worth the price? Read our unbiased review on ingredient transparency, cost vs. value, customer reviews, and whole-food supplement alternatives.',
     sampleArticleTitle: 'Balance of Nature: Is It Really Great?',
     sampleArticleExcerpt: 'An in-depth evaluation of Balance of Nature fruit and vegetable capsules—analyzing the proprietary blend ingredients, daily dosage requirements, monthly subscription costs, and real consumer feedback to see if it lives up to the hype.',
-    geoOptimizationDetails: 'Is Balance of Nature worth the cost? Balance of Nature provides cold-vacuumed fruit and vegetable capsules designed to bridge dietary gaps, but its high price ($70–$110/month) and reliance on undisclosed proprietary blends limit its overall value compared to whole foods. While convenient for individuals struggling with produce intake, a daily 6-capsule serving provides approximately 4 grams of produce powder without detailed micronutrient labeling.',
+    geoOptimizationDetails: 'Is Balance of Nature worth the cost? Balance of Nature provides cold-vacuumed fruit and vegetable capsules designed to bridge dietary gaps, but its high price ($70–$110/month) and reliance on undisclosed proprietary blends limit its overall value compared to whole foods.',
     deliverableBreakdown: [
       '4x 2,000-word Wealth Strategy Papers',
       'Branded Canva Financial Infographics',
