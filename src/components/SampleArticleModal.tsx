@@ -259,4 +259,180 @@ const NEWEST_AI_ARTICLE = {
       body: 'Organizations often start with heavily subsidized artificial intelligence tools during their initial adoption phases. Vendors offer low introductory pricing to capture market share and integrate deeply into corporate workflows. Once your daily processes become fully dependent on their specific API, the pricing structure often changes dramatically, leading to AI vendor lock-in.\n\nProviders can raise their rates exponentially because they know you cannot easily switch software platforms. This vendor lock-in completely destroys the initial return on investment you calculated during the procurement phase. Executives frequently underestimate how difficult and expensive platform migration becomes after a year of deep integration.\n\nMigrating away from a deeply integrated model requires significant engineering effort, time, and financial resources. Your team must rewrite code, retrain staff, and validate new outputs against historical accuracy benchmarks. Many organizations find themselves trapped, paying exorbitant monthly fees simply to maintain their basic operational capabilities.\n\nYou must design system architectures that remain agnostic to any single technology provider from the beginning. Implementing abstraction layers allows your engineers to swap out underlying models with minimal workflow disruption. This strategic flexibility protects your profit margins from predatory pricing adjustments and unexpected contract changes.'
     },
     {
-      heading
+      heading: 'Strategic Mitigation: How to Mitigate AI Dependency Risks',
+      body: 'Organizations must take proactive steps to protect their operational integrity from the inherent dangers of over-reliance. You can implement specific frameworks to balance automation with human expertise effectively across all internal departments. Building true resilience requires a structured approach to technology adoption and continuous employee training programs.\n\nDeveloping a comprehensive mitigation strategy protects your business continuity while still allowing for technological innovation. The following process outlines exactly how to protect your business from over-reliance on automated systems. You should apply these steps systematically across your entire organization to achieve the best results.\n\n**Steps to Reduce Algorithmic Reliance**\n\n1. Conduct a Dependency Audit: Identify every business process currently relying on artificial intelligence tools and automated workflows. Document the specific tools used, the data processed, and the potential impact of a system failure.\n\n2. Establish Fallback Procedures: Create manual workflows for critical operations in case of sudden system outages or API failures. Train your staff on these analog methods so they can pivot immediately without losing productivity.\n\n3. Implement Human-in-the-Loop Protocols: Require human verification for all high-stakes automated decisions and sensitive data outputs. Designate specific personnel to review and approve generated outputs before they reach your clients or the public.'
+    },
+    {
+      heading: 'Regulatory Compliance and Legal Exposure',
+      body: 'The legal framework surrounding artificial intelligence remains highly unsettled across the United States legal landscape. Federal agencies increasingly scrutinize how complex algorithms impact consumer rights, fair lending practices, and employment decisions. If your automated system discriminates against protected classes, your company bears the full legal responsibility for damages.\n\nYou cannot blame a third-party vendor for biased decisions made within your specific service offerings. Regulators hold the deploying organization accountable for auditing their systems and preventing discriminatory outcomes at scale. Establishing robust testing procedures helps identify biases before they result in expensive and public class-action lawsuits.\n\nCopyright infringement presents another massive legal hurdle for dependent organizations using various generative tools. Generative models frequently reproduce copyrighted material without providing proper attribution or licensing fees to original creators. Using these generated assets in your commercial products exposes your business to severe financial penalties and litigation.\n\nLegal teams must review automated outputs before publishing them to public channels or commercial products. Establishing clear usage guidelines helps protect your company from unexpected regulatory enforcement actions and heavy fines. You should document your compliance efforts thoroughly to demonstrate good faith during any potential legal inquiries.'
+    },
+    {
+      heading: 'Frequently Asked Questions',
+      body: 'Many business leaders struggle to understand the full scope of AI dependency risks within their organizations. The rapid pace of technological change generates numerous questions about security, legal liability, and operational stability. Below, we address some of the most common concerns executives have regarding algorithmic reliance.\n\n**What are the main AI dependency risks for businesses?**\nThe primary risks include operational downtime from vendor outages, employee skill atrophy, and severe data privacy vulnerabilities. Organizations also face significant legal exposure if automated systems produce biased decisions or infringe on existing copyrights. Financial risks emerge when companies become locked into a single vendor ecosystem with escalating pricing.\n\n**How does algorithmic reliance affect employee skills?**\nHeavy reliance causes cognitive offloading, where employees lose their ability to evaluate data and structure arguments independently. Junior staff often miss critical developmental milestones because they rely on algorithms for foundational tasks. Over time, this leads to a severe lack of critical thinking and analytical capabilities within the workforce.\n\n**Can companies use automated tools without compromising machine learning security?**\nYes, companies can maintain security by implementing strict data governance policies and using localized, open-source models internally. Organizations must prohibit employees from pasting sensitive corporate data or customer information into public chatbot interfaces. Regular security audits and employee training help prevent accidental exposure of valuable intellectual property.\n\n**What is cognitive offloading in the context of automation?**\nCognitive offloading refers to the human tendency to transfer mental exertion to external technological systems. In corporate settings, this happens when workers rely entirely on algorithms to draft documents or analyze complex data. This behavior reduces mental sharpness and creates a dangerous blind trust in machine-generated outputs.\n\n**Who is legally responsible for automation risks and errors?**\nThe company deploying the automated system holds the legal responsibility for any resulting errors or discriminatory outcomes. You cannot shift the blame to the third-party software vendor if your service harms a consumer. Businesses must implement human-in-the-loop protocols to catch errors before they cause legal or reputational damage.'
+    },
+    {
+      heading: 'Conclusion',
+      body: 'Artificial intelligence offers incredible opportunities for operational efficiency and rapid corporate growth. However, ignoring AI dependency risks invites long-term structural weakness and severe financial liability into your organization. Companies must strike a careful balance between leveraging automation and maintaining core human competencies across all departments.\n\nYou protect your business by treating algorithms as helpful tools rather than infallible, independent decision-makers. Developing fallback procedures guarantees that your company can continue operating even when third-party cloud services fail unexpectedly. Investing in continuous employee training preserves the critical thinking skills necessary to supervise automated workflows properly.\n\nThe most successful organizations will integrate modern technology without surrendering their operational independence or intellectual property. Maintain your internal analytical capabilities, secure your proprietary data, and prepare for inevitable system failures. Taking these proactive steps builds a resilient business capable of thriving alongside rapid technological advancements.'
+    }
+  ]
+};
+
+// =============================================
+// Main Modal Component
+// =============================================
+export const SampleArticleModal: React.FC<SampleArticleModalProps> = ({ isOpen, onClose, selectedSite }) => {
+  if (!isOpen) return null;
+
+  // Determine which article to use based on site ID
+  let article = PILATES_ARTICLE; // Default fallback
+
+  if (selectedSite) {
+    // Override for Innovacious (site-5) to use REAL_ESTATE_ARTICLE
+    if (selectedSite.id === 'site-5' || selectedSite.domain?.includes('innovacious.com')) {
+      article = REAL_ESTATE_ARTICLE;
+    }
+    // Override for Newest.ai (site-4) to use NEWEST_AI_ARTICLE
+    else if (selectedSite.id === 'site-4') {
+      article = NEWEST_AI_ARTICLE;
+    }
+  }
+
+  const siteName = selectedSite ? selectedSite.name : article.siteName;
+  const title = selectedSite ? selectedSite.sampleArticleTitle : article.title;
+  const excerpt = selectedSite ? selectedSite.sampleArticleExcerpt : article.geoAIAnswerSnippet;
+
+  return (
+    <div className="fixed inset-0 z-50 overflow-y-auto bg-black/80 backdrop-blur-sm flex items-center justify-center p-4 sm:p-6">
+      
+      <div className="relative w-full max-w-4xl bg-[#0F172A] rounded border border-slate-700/50 shadow-2xl overflow-hidden my-8">
+        
+        {/* Modal Header */}
+        <div className="bg-[#1E293B] p-5 border-b border-slate-700/50 flex items-center justify-between sticky top-0 z-20">
+          <div className="flex items-center space-x-3">
+            <div className="w-8 h-8 rounded bg-[#0F172A] border border-[#D4AF37]/50 flex items-center justify-center text-[#D4AF37]">
+              <FileText className="w-4 h-4" />
+            </div>
+            <div>
+              <div className="text-[10px] font-bold text-[#D4AF37] uppercase tracking-wider">
+                Sample Article & Staging Preview • {siteName}
+              </div>
+              <h3 className="text-sm font-extrabold text-white tracking-wide truncate max-w-md uppercase">
+                {title}
+              </h3>
+            </div>
+          </div>
+
+          <button
+            onClick={onClose}
+            className="p-1.5 rounded bg-[#0F172A] text-slate-400 hover:text-white hover:bg-slate-800 border border-slate-700 transition-colors"
+          >
+            <X className="w-4 h-4" />
+          </button>
+        </div>
+
+        {/* Modal Body */}
+        <div className="p-6 sm:p-8 space-y-6 max-h-[80vh] overflow-y-auto">
+          
+          {/* Yoast SEO On-Page Meta Staging Box */}
+          <div className="bg-[#1E293B] p-5 rounded border border-slate-700/50 space-y-2.5">
+            <div className="flex items-center justify-between">
+              <span className="text-xs font-bold text-[#D4AF37] uppercase tracking-wider flex items-center space-x-1.5">
+                <Sparkles className="w-3.5 h-3.5 text-[#D4AF37]" />
+                <span>WordPress Staging Preview (Yoast SEO / Gutenberg)</span>
+              </span>
+              <span className="text-[10px] font-bold uppercase tracking-wider text-emerald-400 bg-[#0F172A] px-2 py-0.5 rounded border border-emerald-800/60">
+                SEO Score: Good (Green)
+              </span>
+            </div>
+
+            <div className="bg-[#0F172A] p-3.5 rounded border border-slate-800 space-y-2 text-xs min-h-[100px]">
+              <div className="flex items-center justify-between">
+                <div className="text-blue-400 font-bold text-xs hover:underline cursor-pointer truncate max-w-[60%]">
+                  {article.metaTitle}
+                </div>
+                <a
+                  href={`https://${selectedSite?.domain || 'example.com'}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center px-2.5 py-1 rounded bg-[#D4AF37] hover:bg-[#C19A2E] text-[#0F172A] font-extrabold text-[10px] uppercase tracking-wider transition-colors whitespace-nowrap shrink-0"
+                >
+                  <span>View Live Sample Article</span>
+                </a>
+              </div>
+              <div className="text-emerald-500 font-mono text-[10px] truncate">
+                https://{selectedSite?.domain || 'example.com'}
+              </div>
+              <p className="text-slate-300 leading-relaxed text-xs line-clamp-2">
+                {article.metaDescription}
+              </p>
+            </div>
+
+            {/* Target Keywords Tags */}
+            <div className="flex flex-wrap items-center gap-2 pt-1 text-xs">
+              <span className="text-slate-400 text-[10px] uppercase font-bold">Focus Keywords:</span>
+              {article.targetKeywords.map((kw, idx) => (
+                <span key={idx} className="px-2 py-0.5 bg-[#0F172A] text-[#D4AF37] border border-slate-700 text-[10px] uppercase font-semibold">
+                  {kw}
+                </span>
+              ))}
+            </div>
+          </div>
+
+          {/* GEO AI Engine Citation Box */}
+          <div className="bg-[#1E293B] p-4 rounded border border-[#D4AF37]/40 space-y-2">
+            <div className="flex items-center space-x-2 text-[10px] font-bold text-[#D4AF37] uppercase tracking-wider">
+              <Cpu className="w-3.5 h-3.5 text-[#D4AF37]" />
+              <span>Generative Engine Citation Snippet (ChatGPT & Gemini Indexing)</span>
+            </div>
+            <p className="text-xs text-slate-200 leading-relaxed italic bg-[#0F172A] p-3 rounded border border-slate-800">
+              "{excerpt}"
+            </p>
+          </div>
+
+          {/* Article Full Text Body */}
+          <div className="space-y-6 text-slate-200 text-xs sm:text-sm leading-relaxed">
+            {article.sections.map((sec, idx) => (
+              <div key={idx} className="space-y-2.5">
+                <h4 className="text-base font-bold text-white uppercase tracking-wide border-b border-slate-700/50 pb-2">
+                  {sec.heading}
+                </h4>
+                <p className="text-slate-300 leading-relaxed whitespace-pre-line text-xs sm:text-sm">
+                  {sec.body}
+                </p>
+
+                {sec.visualAssetUrl && (
+                  <div className="my-3 rounded overflow-hidden border border-slate-700/50 bg-[#0F172A]">
+                    <img
+                      src={sec.visualAssetUrl}
+                      alt={sec.visualAssetCaption}
+                      className="w-full max-h-80 object-cover grayscale hover:grayscale-0 transition-all duration-300"
+                    />
+                    <div className="p-2.5 bg-[#1E293B] text-[10px] text-slate-400 uppercase font-bold italic">
+                      {sec.visualAssetCaption}
+                    </div>
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
+
+          {/* Bottom Action Bar */}
+          <div className="pt-4 border-t border-slate-700/50 flex flex-col sm:flex-row items-center justify-between gap-3 min-h-[60px]">
+            <div className="text-xs text-slate-400">
+              Deliverable Length: <span className="font-bold text-white">{article.wordCount} Words</span> • Native Australian Human Edit
+            </div>
+            <button
+              onClick={onClose}
+              className="w-full sm:w-auto px-6 py-2.5 bg-[#D4AF37] hover:bg-[#C19A2E] text-[#0F172A] font-bold text-xs uppercase tracking-wider transition-colors shadow-sm text-center"
+            >
+              Close Preview
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  );
+};
