@@ -4,7 +4,7 @@ export const RECENT_SITES: RecentSite[] = [
   {
     id: 'site-5',
     name: 'Innovacious',
-    domain: 'https://innovacious.com/content-services-for-real-estate-agents/',
+    domain: 'innovacious.com/content-services-for-real-estate-agents/',
     niche: 'Web Management & Digital Growth Service',
     image: '/Inno_logo_Aug2025_2480.jpg',
     packageUsed: 'Content + Visual Assets',
