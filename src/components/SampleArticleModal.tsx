@@ -34,30 +34,15 @@ const REAL_ESTATE_ARTICLE = {
 export const SampleArticleModal: React.FC<SampleArticleModalProps> = ({ isOpen, onClose, selectedSite }) => {
   if (!isOpen) return null;
 
-  // DEBUG: Log what we're receiving
-  console.log('========== MODAL OPENED ==========');
-  console.log('selectedSite:', selectedSite);
-  console.log('selectedSite id:', selectedSite?.id);
-  console.log('selectedSite name:', selectedSite?.name);
-  console.log('selectedSite domain:', selectedSite?.domain);
-  console.log('===================================');
-
   // Determine which article to use
-  // ONLY use the Real Estate article if the site is explicitly Innovacious
   let article = SAMPLE_ARTICLE; // Default to Pilates
 
   if (selectedSite && selectedSite.domain === 'innovacious.com') {
-    console.log('✅ Using REAL_ESTATE_ARTICLE for Innovacious');
     article = REAL_ESTATE_ARTICLE;
   } else if (selectedSite && selectedSite.name === 'Innovacious') {
-    console.log('✅ Using REAL_ESTATE_ARTICLE for Innovacious');
     article = REAL_ESTATE_ARTICLE;
   } else if (selectedSite && selectedSite.id === 'site-5') {
-    console.log('✅ Using REAL_ESTATE_ARTICLE for Innovacious');
     article = REAL_ESTATE_ARTICLE;
-  } else {
-    console.log('✅ Using SAMPLE_ARTICLE (Pilates) for:', selectedSite?.name || 'unknown');
-    article = SAMPLE_ARTICLE;
   }
 
   const siteName = selectedSite ? selectedSite.name : article.siteName;
@@ -117,7 +102,7 @@ export const SampleArticleModal: React.FC<SampleArticleModalProps> = ({ isOpen, 
                   href={`https://${selectedSite?.domain || 'example.com'}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="px-2.5 py-1 rounded bg-[#D4AF37] hover:bg-[#C19A2E] text-[#0F172A] font-extrabold text-[10px] uppercase tracking-wider inline-flex items-center space-x-1"
+                  className="inline-flex items-center px-2.5 py-1 rounded bg-[#D4AF37] hover:bg-[#C19A2E] text-[#0F172A] font-extrabold text-[10px] uppercase tracking-wider transition-colors"
                 >
                   <span>View Live Sample Article</span>
                 </a>
@@ -179,14 +164,14 @@ export const SampleArticleModal: React.FC<SampleArticleModalProps> = ({ isOpen, 
             ))}
           </div>
 
-          {/* Bottom Action Bar */}
-          <div className="pt-4 border-t border-slate-700/50 flex flex-col sm:flex-row items-center justify-between gap-3">
+          {/* Bottom Action Bar - Fixed height to keep consistent */}
+          <div className="pt-4 border-t border-slate-700/50 flex flex-col sm:flex-row items-center justify-between gap-3 min-h-[60px]">
             <div className="text-xs text-slate-400">
               Deliverable Length: <span className="font-bold text-white">{article.wordCount} Words</span> • Native Australian Human Edit
             </div>
             <button
               onClick={onClose}
-              className="w-full sm:w-auto px-6 py-2.5 bg-[#D4AF37] hover:bg-[#C19A2E] text-[#0F172A] font-bold text-xs uppercase tracking-wider transition-colors shadow-sm"
+              className="w-full sm:w-auto px-6 py-2.5 bg-[#D4AF37] hover:bg-[#C19A2E] text-[#0F172A] font-bold text-xs uppercase tracking-wider transition-colors shadow-sm text-center"
             >
               Close Preview
             </button>
