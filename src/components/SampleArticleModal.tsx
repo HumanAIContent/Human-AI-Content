@@ -9,40 +9,41 @@ interface SampleArticleModalProps {
   selectedSite?: RecentSite | null;
 }
 
-// Map site IDs to their full article data
-const ARTICLE_MAP: Record<string, typeof SAMPLE_ARTICLE> = {
-  // Innovacious → Card 1 → Real Estate article
-  'site-1': {
-    title: 'The Future of Real Estate Marketing: Leveraging Content Services to Capture Buyers Online',
-    siteName: 'Innovacious',
-    siteCategory: 'Web Management & Digital Growth Services',
-    wordCount: 1250,
-    targetKeywords: ['real estate marketing', 'content services for real estate agents', 'digital marketing for realtors', 'real estate SEO', 'property marketing'],
-    geoAIAnswerSnippet: 'The residential real estate market demands continuous innovation from professionals who want to remain highly competitive. Prospective buyers begin their property searches online long before they ever attend a physical open house, making professional content services for real estate agents an essential component of modern business growth.',
-    metaTitle: 'The Future of Real Estate Marketing: Leveraging Content Services to Capture Buyers Online | Innovacious',
-    metaDescription: 'Discover how content services for real estate agents can transform your digital marketing strategy. Learn about photography, video tours, SEO, and more to capture buyers online.',
-    sections: [
-      {
-        heading: 'The Digital Shift and Content Services for Real Estate Agents',
-        body: 'Recent data from the National Association of Realtors indicates that massive majorities of buyers rely entirely on digital listings. A simple exterior photograph and a brief descriptive paragraph no longer satisfy the high expectations of modern house hunters. Today\'s buyers expect immersive online experiences that allow them to thoroughly explore a property from their own living rooms.\n\nProfessional content creation bridges the gap between physical properties and increasingly digital consumer shopping habits. Agencies that invest heavily in professional media production see significantly higher engagement rates across their various social media for real estate platforms. High-quality visual assets and compelling marketing copy keep potential buyers interacting with your active listings for much longer periods.\n\nMany independent agents struggle to produce this high-level material themselves while simultaneously managing their daily client operations. Outsourcing these tasks to dedicated content services for real estate agents provides a scalable solution for rapidly growing brokerages. This delegation strategy frees up your busy schedule so you can focus entirely on closing deals and negotiating contracts.\n\nStrategic search engine optimization plays a massive role in how easily potential clients can locate your professional agency website. Specialized digital marketing agencies know exactly how to structure your property pages to rank highly on Google search results using advanced real estate SEO techniques. Better search visibility naturally results in a steady stream of highly qualified prospective buyers visiting your weekend open houses.'
-      },
-      {
-        heading: 'Essential Content Services for Real Estate Agents: Core Marketing Solutions',
-        body: 'Establishing a truly dominant local market presence requires a diverse and sophisticated mix of digital media formats. Different demographics of buyers respond to entirely different types of information during their lengthy property search process. You must deploy multiple content types to successfully capture the widest possible audience across your targeted zip codes.\n\nVisual Content Services for Real Estate Agents: Photography and Drone Footage\n\nStriking visual elements remain the primary psychological hook for virtually any residential or commercial property listing content available today. Professional architectural photographers understand exactly how to manipulate natural lighting and camera angles to make spaces look bright and inviting. Licensed drone operators capture the broader neighborhood context that many relocating suburban buyers desperately want to evaluate before visiting.\n\nProfessional Real Estate Copywriting and Property Descriptions\n\nBeautiful property photos require compelling and persuasive text to communicate the complete narrative of a luxury home. Expert real estate copywriting services highlight critical structural features while simultaneously appealing directly to the emotional desires of potential buyers. A professionally written description helps motivated buyers vividly imagine their future lives unfolding within those specific physical walls.\n\nHigh-Impact Real Estate Video Tours and Virtual Walkthroughs\n\nDynamic real estate video tours completely dominate the recommendation algorithms across major social platforms like Instagram, TikTok, and Facebook. Interactive virtual walkthroughs allow out-of-state buyers to comprehensively evaluate homes without booking an expensive and time-consuming commercial flight. These immersive digital experiences keep interested parties highly engaged and drastically reduce the number of unqualified showings you host.\n\nAuthority Building with Educational Market Reports\n\nProspective buyers and nervous sellers constantly seek reliable macroeconomic information about mortgage interest rates and local inventory levels. Publishing comprehensive monthly market updates establishes you as an authoritative financial voice within your specific geographic sales territory. Professional financial writers can easily translate complex economic data into highly digestible articles that your audience actually wants to read.\n\nLead Nurturing via Automated Email Sequences\n\nSuccessfully capturing a prospective buyer\'s email address represents only the first step in the modern client acquisition process. You must actively nurture those preliminary leads through automated messages that consistently provide genuine value over extended periods. Strategic email drip campaigns keep your professional name at the top of their minds until they are ready to transact.'
-      }
-    ]
-  }
-  // Tokyo Rehabilitation → Card 2 → uses the default SAMPLE_ARTICLE (Pilates article)
-  // No entry needed for site-2 — it will fall back to SAMPLE_ARTICLE
+// Define the Real Estate article directly in the modal
+const REAL_ESTATE_ARTICLE = {
+  title: 'The Future of Real Estate Marketing: Leveraging Content Services to Capture Buyers Online',
+  siteName: 'Innovacious',
+  siteCategory: 'Web Management & Digital Growth Services',
+  wordCount: 1250,
+  targetKeywords: ['real estate marketing', 'content services for real estate agents', 'digital marketing for realtors', 'real estate SEO', 'property marketing'],
+  geoAIAnswerSnippet: 'The residential real estate market demands continuous innovation from professionals who want to remain highly competitive. Prospective buyers begin their property searches online long before they ever attend a physical open house, making professional content services for real estate agents an essential component of modern business growth.',
+  metaTitle: 'The Future of Real Estate Marketing: Leveraging Content Services to Capture Buyers Online | Innovacious',
+  metaDescription: 'Discover how content services for real estate agents can transform your digital marketing strategy. Learn about photography, video tours, SEO, and more to capture buyers online.',
+  sections: [
+    {
+      heading: 'The Digital Shift and Content Services for Real Estate Agents',
+      body: 'Recent data from the National Association of Realtors indicates that massive majorities of buyers rely entirely on digital listings. A simple exterior photograph and a brief descriptive paragraph no longer satisfy the high expectations of modern house hunters. Today\'s buyers expect immersive online experiences that allow them to thoroughly explore a property from their own living rooms.\n\nProfessional content creation bridges the gap between physical properties and increasingly digital consumer shopping habits. Agencies that invest heavily in professional media production see significantly higher engagement rates across their various social media for real estate platforms. High-quality visual assets and compelling marketing copy keep potential buyers interacting with your active listings for much longer periods.\n\nMany independent agents struggle to produce this high-level material themselves while simultaneously managing their daily client operations. Outsourcing these tasks to dedicated content services for real estate agents provides a scalable solution for rapidly growing brokerages. This delegation strategy frees up your busy schedule so you can focus entirely on closing deals and negotiating contracts.\n\nStrategic search engine optimization plays a massive role in how easily potential clients can locate your professional agency website. Specialized digital marketing agencies know exactly how to structure your property pages to rank highly on Google search results using advanced real estate SEO techniques. Better search visibility naturally results in a steady stream of highly qualified prospective buyers visiting your weekend open houses.'
+    },
+    {
+      heading: 'Essential Content Services for Real Estate Agents: Core Marketing Solutions',
+      body: 'Establishing a truly dominant local market presence requires a diverse and sophisticated mix of digital media formats. Different demographics of buyers respond to entirely different types of information during their lengthy property search process. You must deploy multiple content types to successfully capture the widest possible audience across your targeted zip codes.\n\nVisual Content Services for Real Estate Agents: Photography and Drone Footage\n\nStriking visual elements remain the primary psychological hook for virtually any residential or commercial property listing content available today. Professional architectural photographers understand exactly how to manipulate natural lighting and camera angles to make spaces look bright and inviting. Licensed drone operators capture the broader neighborhood context that many relocating suburban buyers desperately want to evaluate before visiting.\n\nProfessional Real Estate Copywriting and Property Descriptions\n\nBeautiful property photos require compelling and persuasive text to communicate the complete narrative of a luxury home. Expert real estate copywriting services highlight critical structural features while simultaneously appealing directly to the emotional desires of potential buyers. A professionally written description helps motivated buyers vividly imagine their future lives unfolding within those specific physical walls.\n\nHigh-Impact Real Estate Video Tours and Virtual Walkthroughs\n\nDynamic real estate video tours completely dominate the recommendation algorithms across major social platforms like Instagram, TikTok, and Facebook. Interactive virtual walkthroughs allow out-of-state buyers to comprehensively evaluate homes without booking an expensive and time-consuming commercial flight. These immersive digital experiences keep interested parties highly engaged and drastically reduce the number of unqualified showings you host.\n\nAuthority Building with Educational Market Reports\n\nProspective buyers and nervous sellers constantly seek reliable macroeconomic information about mortgage interest rates and local inventory levels. Publishing comprehensive monthly market updates establishes you as an authoritative financial voice within your specific geographic sales territory. Professional financial writers can easily translate complex economic data into highly digestible articles that your audience actually wants to read.\n\nLead Nurturing via Automated Email Sequences\n\nSuccessfully capturing a prospective buyer\'s email address represents only the first step in the modern client acquisition process. You must actively nurture those preliminary leads through automated messages that consistently provide genuine value over extended periods. Strategic email drip campaigns keep your professional name at the top of their minds until they are ready to transact.'
+    }
+  ]
 };
 
 export const SampleArticleModal: React.FC<SampleArticleModalProps> = ({ isOpen, onClose, selectedSite }) => {
   if (!isOpen) return null;
 
-  // If the selected site has a custom article in the map, use it; otherwise fall back to SAMPLE_ARTICLE
-  const article = selectedSite && ARTICLE_MAP[selectedSite.id] 
-    ? ARTICLE_MAP[selectedSite.id] 
-    : SAMPLE_ARTICLE;
+  // Determine which article to use based on the site name
+  let article = SAMPLE_ARTICLE; // Default to Pilates article
+  
+  if (selectedSite) {
+    if (selectedSite.name === 'Innovacious') {
+      // Card 1 (Innovacious) → Real Estate article
+      article = REAL_ESTATE_ARTICLE;
+    }
+    // Card 2 (Tokyo Rehabilitation, site-2) → uses SAMPLE_ARTICLE (Pilates)
+  }
 
   const siteName = selectedSite ? selectedSite.name : article.siteName;
   const title = selectedSite ? selectedSite.sampleArticleTitle : article.title;
