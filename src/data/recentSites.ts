@@ -59,7 +59,7 @@ export const RECENT_SITES: RecentSite[] = [
     id: 'site-3',
     name: 'Healthful Hub',
     domain: 'healthfulhub.com/balance-of-nature-is-it-really-great/',
-    niche: 'Financial Advisory & Private Equity',
+    niche: 'Independent whole-food product evaluation, ingredient transparency analysis, and organic herbal wellness.',
     image: '/health-logo-haic.png',
     packageUsed: 'Content + Visual Assets + Social Media',
     description: 'Is Balance of Nature worth the price? Read our unbiased review on ingredient transparency, cost vs. value, customer reviews, and whole-food supplement alternatives.',
