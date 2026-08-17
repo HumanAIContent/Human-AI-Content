@@ -11,6 +11,7 @@ interface SampleArticleModalProps {
 
 // Map site IDs to their full article data
 const ARTICLE_MAP: Record<string, typeof SAMPLE_ARTICLE> = {
+  // Innovacious → Card 1 → Real Estate article
   'site-1': {
     title: 'The Future of Real Estate Marketing: Leveraging Content Services to Capture Buyers Online',
     siteName: 'Innovacious',
@@ -31,7 +32,8 @@ const ARTICLE_MAP: Record<string, typeof SAMPLE_ARTICLE> = {
       }
     ]
   }
-  // site-2 (Tokyo Rehabilitation) will fall back to SAMPLE_ARTICLE (Pilates)
+  // Tokyo Rehabilitation → Card 2 → uses the default SAMPLE_ARTICLE (Pilates article)
+  // No entry needed for site-2 — it will fall back to SAMPLE_ARTICLE
 };
 
 export const SampleArticleModal: React.FC<SampleArticleModalProps> = ({ isOpen, onClose, selectedSite }) => {
