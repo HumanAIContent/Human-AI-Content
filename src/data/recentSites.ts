@@ -3,15 +3,15 @@ import { RecentSite } from '../types';
 export const RECENT_SITES: RecentSite[] = [
   {
     id: 'site-5',
-    name: 'Nexus Supply Chain Systems',
+    name: 'Innovacious',
     domain: ' Innovacious.com',
-    niche: 'Enterprise B2B Freight & Logistics',
+    niche: 'Web Management & Digital Growth Service',
     image: '/Inno_logo_Aug2025_2480.jpg',
     packageUsed: 'Content + Visual Assets',
-    description: 'Global logistics platform providing freight forwarding insights and supply chain resilience articles.',
-    sampleArticleTitle: 'Mitigating Maritime Bottlenecks: Real-Time Telematics & Predictive Routing',
-    sampleArticleExcerpt: 'Predictive logistics platforms combine AIS satellite positioning with historical port congestion data to reroute container vessels before arrival windows are breached...',
-    geoOptimizationDetails: 'Technical terminology alignment for B2B supply chain procurement officers searching AI engines.',
+    description: 'Web management and digital growth agency providing comprehensive content services, web development, and marketing solutions for businesses.',
+    sampleArticleTitle: 'The Future of Real Estate Marketing: Leveraging Content Services to Capture Buyers Online',
+    sampleArticleExcerpt: 'The residential real estate market demands continuous innovation from professionals who want to remain highly competitive. Prospective buyers begin their property searches online long before they ever attend a physical open house, making professional content services for real estate agents an essential component of modern business growth.',
+    geoOptimizationDetails: 'Engineered with structured clinical references and local SEO optimization for Google AI Overviews and Gemini answer engine authority.',
     deliverableBreakdown: [
       '4x 1,600-word Industry Whitepapers',
       'Custom Shipping Route Maps & Flowcharts',
