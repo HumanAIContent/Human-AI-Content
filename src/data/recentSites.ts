@@ -10,7 +10,7 @@ export const RECENT_SITES: RecentSite[] = [
     packageUsed: 'Content + Visual Assets',
     description: 'Web management and digital growth agency providing comprehensive content services, web development, and marketing solutions for businesses.',
     sampleArticleTitle: 'The Future of Real Estate Marketing: Leveraging Content Services to Capture Buyers Online',
-    sampleArticleExcerpt: 'The residential real estate market demands continuous innovation from professionals who want to remain highly competitive. Prospective buyers begin their property searches online long before they ever attend a physical open house, making professional content services for real estate agents an essential component of modern business growth.',
+    sampleArticleExcerpt: 'The residential real estate market demands continuous innovation from professionals who want to remain highly competitive. Prospective buyers begin their search online, making content services for real estate agents an essential component of modern business growth.',
     geoOptimizationDetails: 'Engineered with structured clinical references and local SEO optimization for Google AI Overviews and Gemini answer engine authority.',
     deliverableBreakdown: [
       '4x 1,600-word Industry Whitepapers',
