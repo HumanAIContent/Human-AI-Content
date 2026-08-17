@@ -33,10 +33,10 @@ export const RecentSitesSection: React.FC<RecentSitesSectionProps> = ({ onSelect
           {RECENT_SITES.map((site) => (
             <div
               key={site.id}
-              className="group bg-[#1E293B] rounded border border-slate-700/50 hover:border-[#D4AF37]/50 overflow-hidden transition-all duration-300 flex flex-col shadow-lg"
+              className="group bg-[#1E293B] rounded border border-slate-700/50 hover:border-[#D4AF37]/50 overflow-hidden transition-all duration-300 flex flex-col justify-between shadow-lg"
             >
               
-              {/* Image Container - Perfect Square */}
+              {/* Image Container - Perfect Square with NO grayscale */}
               <div className="relative aspect-square overflow-hidden bg-[#0F172A]">
                 <img
                   src={site.image}
@@ -45,21 +45,21 @@ export const RecentSitesSection: React.FC<RecentSitesSectionProps> = ({ onSelect
                 />
               </div>
 
-              {/* Card Body - Flex column with button at bottom */}
-              <div className="p-4 flex-1 flex flex-col">
+              {/* Card Body - Only Sample Article section remains */}
+              <div className="p-4 space-y-3 flex-1 flex flex-col justify-between">
                 
-                {/* Sample Article Section - Takes remaining space */}
-                <div className="flex-1 space-y-2.5">
+                <div className="space-y-2.5">
+                  {/* Sample Article Section */}
                   <div className="pt-2 border-t border-slate-700/50 space-y-0.5">
                     <div className="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Sample Article:</div>
-                    <p className="text-xs font-semibold text-white italic line-clamp-2 min-h-[2.5rem]">
+                    <p className="text-xs font-semibold text-white italic line-clamp-2">
                       "{site.sampleArticleTitle}"
                     </p>
                   </div>
                 </div>
 
-                {/* Action Trigger Button - Always at bottom */}
-                <div className="pt-2 mt-auto">
+                {/* Action Trigger Button */}
+                <div className="pt-2">
                   <button
                     onClick={() => onSelectSite(site)}
                     className="w-full py-2 px-3 bg-[#D4AF37] hover:bg-[#C19A2E] text-[#0F172A] text-xs font-bold uppercase tracking-wider flex items-center justify-center space-x-1.5 transition-colors shadow-sm"
