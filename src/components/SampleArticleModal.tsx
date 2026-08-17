@@ -409,7 +409,7 @@ export const SampleArticleModal: React.FC<SampleArticleModalProps> = ({ isOpen, 
                     <img
                       src={sec.visualAssetUrl}
                       alt={sec.visualAssetCaption}
-                      className="w-full max-h-80 object-cover grayscale hover:grayscale-0 transition-all duration-300"
+                      className="w-full max-h-80 object-cover transition-all duration-300"
                     />
                     <div className="p-2.5 bg-[#1E293B] text-[10px] text-slate-400 uppercase font-bold italic">
                       {sec.visualAssetCaption}
