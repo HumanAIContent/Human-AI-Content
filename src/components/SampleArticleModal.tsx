@@ -222,157 +222,41 @@ const PILATES_ARTICLE = {
 };
 
 // =============================================
-// Main Modal Component
+// NEWEST.AI Article (AI Dependency Risks) - Full Content
 // =============================================
-export const SampleArticleModal: React.FC<SampleArticleModalProps> = ({ isOpen, onClose, selectedSite }) => {
-  if (!isOpen) return null;
-
-  // Determine which article to use based on site ID
-  let article = PILATES_ARTICLE; // Default fallback
-
-  if (selectedSite) {
-    // Override for Innovacious (site-5) to use REAL_ESTATE_ARTICLE
-    if (selectedSite.id === 'site-5' || selectedSite.domain?.includes('innovacious.com')) {
-      article = REAL_ESTATE_ARTICLE;
-    }
-  }
-
-  const siteName = selectedSite ? selectedSite.name : article.siteName;
-  const title = selectedSite ? selectedSite.sampleArticleTitle : article.title;
-  const excerpt = selectedSite ? selectedSite.sampleArticleExcerpt : article.geoAIAnswerSnippet;
-
-  return (
-    <div className="fixed inset-0 z-50 overflow-y-auto bg-black/80 backdrop-blur-sm flex items-center justify-center p-4 sm:p-6">
-      
-      <div className="relative w-full max-w-4xl bg-[#0F172A] rounded border border-slate-700/50 shadow-2xl overflow-hidden my-8">
-        
-        {/* Modal Header */}
-        <div className="bg-[#1E293B] p-5 border-b border-slate-700/50 flex items-center justify-between sticky top-0 z-20">
-          <div className="flex items-center space-x-3">
-            <div className="w-8 h-8 rounded bg-[#0F172A] border border-[#D4AF37]/50 flex items-center justify-center text-[#D4AF37]">
-              <FileText className="w-4 h-4" />
-            </div>
-            <div>
-              <div className="text-[10px] font-bold text-[#D4AF37] uppercase tracking-wider">
-                Sample Article & Staging Preview • {siteName}
-              </div>
-              <h3 className="text-sm font-extrabold text-white tracking-wide truncate max-w-md uppercase">
-                {title}
-              </h3>
-            </div>
-          </div>
-
-          <button
-            onClick={onClose}
-            className="p-1.5 rounded bg-[#0F172A] text-slate-400 hover:text-white hover:bg-slate-800 border border-slate-700 transition-colors"
-          >
-            <X className="w-4 h-4" />
-          </button>
-        </div>
-
-        {/* Modal Body */}
-        <div className="p-6 sm:p-8 space-y-6 max-h-[80vh] overflow-y-auto">
-          
-          {/* Yoast SEO On-Page Meta Staging Box */}
-          <div className="bg-[#1E293B] p-5 rounded border border-slate-700/50 space-y-2.5">
-            <div className="flex items-center justify-between">
-              <span className="text-xs font-bold text-[#D4AF37] uppercase tracking-wider flex items-center space-x-1.5">
-                <Sparkles className="w-3.5 h-3.5 text-[#D4AF37]" />
-                <span>WordPress Staging Preview (Yoast SEO / Gutenberg)</span>
-              </span>
-              <span className="text-[10px] font-bold uppercase tracking-wider text-emerald-400 bg-[#0F172A] px-2 py-0.5 rounded border border-emerald-800/60">
-                SEO Score: Good (Green)
-              </span>
-            </div>
-
-            <div className="bg-[#0F172A] p-3.5 rounded border border-slate-800 space-y-2 text-xs min-h-[100px]">
-              <div className="flex items-center justify-between">
-                <div className="text-blue-400 font-bold text-xs hover:underline cursor-pointer truncate max-w-[60%]">
-                  {article.metaTitle}
-                </div>
-                <a
-                  href={`https://${selectedSite?.domain || 'example.com'}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center px-2.5 py-1 rounded bg-[#D4AF37] hover:bg-[#C19A2E] text-[#0F172A] font-extrabold text-[10px] uppercase tracking-wider transition-colors whitespace-nowrap shrink-0"
-                >
-                  <span>View Live Sample Article</span>
-                </a>
-              </div>
-              <div className="text-emerald-500 font-mono text-[10px] truncate">
-                https://{selectedSite?.domain || 'example.com'}
-              </div>
-              <p className="text-slate-300 leading-relaxed text-xs line-clamp-2">
-                {article.metaDescription}
-              </p>
-            </div>
-
-            {/* Target Keywords Tags */}
-            <div className="flex flex-wrap items-center gap-2 pt-1 text-xs">
-              <span className="text-slate-400 text-[10px] uppercase font-bold">Focus Keywords:</span>
-              {article.targetKeywords.map((kw, idx) => (
-                <span key={idx} className="px-2 py-0.5 bg-[#0F172A] text-[#D4AF37] border border-slate-700 text-[10px] uppercase font-semibold">
-                  {kw}
-                </span>
-              ))}
-            </div>
-          </div>
-
-          {/* GEO AI Engine Citation Box */}
-          <div className="bg-[#1E293B] p-4 rounded border border-[#D4AF37]/40 space-y-2">
-            <div className="flex items-center space-x-2 text-[10px] font-bold text-[#D4AF37] uppercase tracking-wider">
-              <Cpu className="w-3.5 h-3.5 text-[#D4AF37]" />
-              <span>Generative Engine Citation Snippet (ChatGPT & Gemini Indexing)</span>
-            </div>
-            <p className="text-xs text-slate-200 leading-relaxed italic bg-[#0F172A] p-3 rounded border border-slate-800">
-              "{excerpt}"
-            </p>
-          </div>
-
-          {/* Article Full Text Body */}
-          <div className="space-y-6 text-slate-200 text-xs sm:text-sm leading-relaxed">
-            {article.sections.map((sec, idx) => (
-              <div key={idx} className="space-y-2.5">
-                <h4 className="text-base font-bold text-white uppercase tracking-wide border-b border-slate-700/50 pb-2">
-                  {sec.heading}
-                </h4>
-                <p className="text-slate-300 leading-relaxed whitespace-pre-line text-xs sm:text-sm">
-                  {sec.body}
-                </p>
-
-                {sec.visualAssetUrl && (
-                  <div className="my-3 rounded overflow-hidden border border-slate-700/50 bg-[#0F172A]">
-                    <img
-                      src={sec.visualAssetUrl}
-                      alt={sec.visualAssetCaption}
-                      className="w-full max-h-80 object-cover grayscale hover:grayscale-0 transition-all duration-300"
-                    />
-                    <div className="p-2.5 bg-[#1E293B] text-[10px] text-slate-400 uppercase font-bold italic">
-                      {sec.visualAssetCaption}
-                    </div>
-                  </div>
-                )}
-              </div>
-            ))}
-          </div>
-
-          {/* Bottom Action Bar */}
-          <div className="pt-4 border-t border-slate-700/50 flex flex-col sm:flex-row items-center justify-between gap-3 min-h-[60px]">
-            <div className="text-xs text-slate-400">
-              Deliverable Length: <span className="font-bold text-white">{article.wordCount} Words</span> • Native Australian Human Edit
-            </div>
-            <button
-              onClick={onClose}
-              className="w-full sm:w-auto px-6 py-2.5 bg-[#D4AF37] hover:bg-[#C19A2E] text-[#0F172A] font-bold text-xs uppercase tracking-wider transition-colors shadow-sm text-center"
-            >
-              Close Preview
-            </button>
-          </div>
-
-        </div>
-
-      </div>
-
-    </div>
-  );
-};
+const NEWEST_AI_ARTICLE = {
+  title: 'AI Dependency Risks: The Hidden Cost of Cognitive Offloading',
+  siteName: 'Newest.ai',
+  siteCategory: 'AI Tech News & Software Reviews',
+  wordCount: 2200,
+  targetKeywords: ['AI dependency risks', 'cognitive offloading', 'algorithmic reliance', 'generative AI vulnerabilities', 'machine learning security', 'AI vendor lock-in', 'automation risks'],
+  geoAIAnswerSnippet: 'Artificial intelligence integration happens rapidly across corporate America today as companies race to optimize their complex workflows. Businesses adopt generative models to streamline daily operations, reduce overhead costs, and accelerate production cycles. However, this rapid adoption introduces severe AI dependency risks that executive leadership teams frequently overlook during implementation.',
+  metaTitle: 'AI Dependency Risks: The Hidden Cost of Cognitive Offloading | Newest.ai',
+  metaDescription: 'Explore the hidden risks of AI dependency, including cognitive offloading, vendor lock-in, and data security. Learn how to mitigate automation risks and build a resilient business.',
+  sections: [
+    {
+      heading: 'Introduction',
+      body: 'Artificial intelligence integration happens rapidly across corporate America today as companies race to optimize their complex workflows. Businesses adopt generative models to streamline daily operations, reduce overhead costs, and accelerate production cycles. However, this rapid adoption introduces severe AI dependency risks that executive leadership teams frequently overlook during implementation.\n\nYou might notice your team relying heavily on algorithmic outputs for basic decision-making processes and strategic planning. This heavy algorithmic reliance creates hidden vulnerabilities within your core business infrastructure that can surface unexpectedly. We must examine the long-term consequences of outsourcing human intelligence to sophisticated machine learning systems and platforms.\n\nOrganizations face critical operational threats when they fail to balance automation with human oversight in their daily workflows. Building a resilient company requires understanding how these automated tools change employee behavior and internal system architecture. The following analysis explores the specific dangers associated with generative AI vulnerabilities and offers actionable mitigation strategies.'
+    },
+    {
+      heading: 'Table of Contents',
+      body: '• Algorithmic Reliance: Systemic Vulnerabilities and Single Points of Failure\n• Machine Learning Security: Data Privacy and Corporate Security Blind Spots\n• AI Vendor Lock-In: The Financial Implications of Vendor Lock-In\n• Strategic Mitigation: How to Mitigate AI Dependency Risks\n• Automation Risks: Regulatory Compliance and Legal Exposure\n• Frequently Asked Questions\n• Conclusion'
+    },
+    {
+      heading: 'Generative AI Vulnerabilities and Skill Atrophy',
+      body: 'Cognitive offloading occurs when humans transfer mental tasks to external technological systems for convenience. When employees use artificial intelligence to draft emails or analyze data, they stop exercising their own analytical muscles. Over time, this behavioral pattern leads to noticeable skill atrophy across various departments within the workplace.\n\nA recent study by the Stanford Institute for Human-Centered Artificial Intelligence highlights how over-reliance on automation degrades critical thinking capabilities. Workers lose the ability to spot subtle errors because they assume the machine output is inherently correct. This blind trust fundamentally weakens your organizational competency and increases the likelihood of embarrassing public mistakes.\n\nYou cannot afford to have a workforce that simply rubber-stamps algorithmic suggestions without critical review. Employees must maintain the ability to evaluate information independently from the tools they use daily. Maintaining this independence prevents your team from accepting hallucinations or logically flawed arguments as factual information.\n\nJunior employees face the highest risk of missing crucial developmental milestones during their early careers. If an algorithm writes every preliminary report, junior staff never learn how to structure arguments effectively. They skip the productive struggle required to build genuine expertise in their chosen professional field.\n\nYou need experienced professionals who can step in immediately when automated systems fail or generate incorrect data points. Without foundational skills, your future leadership pipeline becomes dangerously thin and incapable of high-level strategic thinking. Organizations eventually pay a steep price when they lack competent human operators to guide complex automated processes.\n\nTraining programs must adapt to teach workers how to evaluate machine outputs critically rather than accept them blindly. Mentorship should focus on developing the intuition required to question suspicious data points and unusual patterns. This proactive approach preserves institutional knowledge while still allowing teams to leverage modern productivity tools.'
+    },
+    {
+      heading: 'Algorithmic Reliance: Systemic Vulnerabilities and Single Points of Failure',
+      body: 'Heavy reliance on third-party generative models creates massive systemic vulnerabilities across your entire technology stack. Most companies access these powerful tools through cloud-based APIs controlled by a few major tech giants. If a provider experiences an unexpected outage, your dependent workflows grind to an immediate halt, highlighting the automation risks inherent in modern infrastructure.\n\nYou essentially surrender operational control to an external entity with its own corporate priorities. When an external server goes offline, your customer service chatbots and automated data processing pipelines fail simultaneously. This interconnected fragility means a single point of failure can disrupt operations globally within minutes.\n\nOrganizations must design resilient system architectures that degrade gracefully when external cloud services become temporarily unavailable. You should maintain secondary methods for processing critical tasks that do not require constant API connectivity. Building this redundancy requires significant upfront investment but ultimately saves your company from experiencing catastrophic downtime later.\n\n**The Ripple Effect of Algorithm Updates**\n\nA sudden model update can break your automated workflows overnight without any prior warning. Prompts that yielded perfect results yesterday might generate useless garbage today following a silent backend adjustment. Gartner research indicates that most organizations lack adequate contingency plans for sudden vendor changes.\n\nYour engineering team must constantly monitor and adjust internal systems to match external API modifications. This constant maintenance drains engineering resources and eliminates the efficiency gains you originally sought from automation. Companies often find themselves trapped in an endless cycle of patching broken integrations to maintain basic functionality.\n\nYou can mitigate this by version-locking your API calls whenever the vendor platform permits it. However, providers eventually deprecate older models, forcing you to upgrade and re-test your entire implementation. You must budget significant time for continuous integration testing to catch these breaking changes early.'
+    },
+    {
+      heading: 'Machine Learning Security: Data Privacy and Corporate Security Blind Spots',
+      body: 'Feeding proprietary data into public machine learning models introduces massive security risks for enterprise organizations. Employees routinely paste sensitive financial data or source code into chatbots to speed up their daily work. These careless actions inadvertently train external models on your highly confidential corporate information and trade secrets, compromising your machine learning security protocols.\n\nCompetitors could potentially extract this sensitive data through clever prompt engineering techniques aimed at public models. You lose control over your intellectual property the exact moment it leaves your internal network architecture. Organizations must establish strict data governance policies regarding external tool usage to prevent catastrophic information leaks.\n\nYou should implement localized, open-source models for handling highly sensitive customer information internally. A survey by Pew Research Center shows growing public concern about how companies process personal data and data privacy automatically. Maintaining customer trust requires transparent data practices and robust security infrastructure to prevent unauthorized access.\n\nConducting regular internal audits can help identify exactly where your team might leak valuable company secrets. You must monitor outbound API traffic to detect unauthorized data transfers initiated by well-meaning employees. Educating your staff about data privacy remains the most effective defense against accidental intellectual property exposure.'
+    },
+    {
+      heading: 'The Financial Implications of Vendor Lock-In',
+      body: 'Organizations often start with heavily subsidized artificial intelligence tools during their initial adoption phases. Vendors offer low introductory pricing to capture market share and integrate deeply into corporate workflows. Once your daily processes become fully dependent on their specific API, the pricing structure often changes dramatically, leading to AI vendor lock-in.\n\nProviders can raise their rates exponentially because they know you cannot easily switch software platforms. This vendor lock-in completely destroys the initial return on investment you calculated during the procurement phase. Executives frequently underestimate how difficult and expensive platform migration becomes after a year of deep integration.\n\nMigrating away from a deeply integrated model requires significant engineering effort, time, and financial resources. Your team must rewrite code, retrain staff, and validate new outputs against historical accuracy benchmarks. Many organizations find themselves trapped, paying exorbitant monthly fees simply to maintain their basic operational capabilities.\n\nYou must design system architectures that remain agnostic to any single technology provider from the beginning. Implementing abstraction layers allows your engineers to swap out underlying models with minimal workflow disruption. This strategic flexibility protects your profit margins from predatory pricing adjustments and unexpected contract changes.'
+    },
+    {
+      heading
