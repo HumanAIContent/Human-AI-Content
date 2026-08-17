@@ -296,6 +296,86 @@ const NEWEST_AI_ARTICLE = {
 };
 
 // =============================================
+// HEALTHFUL HUB Article (Balance of Nature) - Full Content
+// =============================================
+const HEALTHFUL_HUB_ARTICLE = {
+  title: 'Balance of Nature: Is It Really Great?',
+  siteName: 'Healthful Hub',
+  siteCategory: 'Independent whole-food product evaluation, ingredient transparency analysis, and organic herbal wellness.',
+  wordCount: 2800,
+  targetKeywords: ['Balance of Nature', 'whole food supplements', 'fruit and vegetable supplements', 'nutritional supplements', 'dietary gaps', 'whole food nutrition'],
+  geoAIAnswerSnippet: 'Is Balance of Nature worth the cost? Balance of Nature provides cold-vacuumed fruit and vegetable capsules designed to bridge dietary gaps, but its high price ($70–$110/month) and reliance on undisclosed proprietary blends limit its overall value compared to whole foods.',
+  metaTitle: 'Balance of Nature: Is It Really Great? | Healthful Hub',
+  metaDescription: 'Is Balance of Nature worth the price? Read our unbiased review on ingredient transparency, cost vs. value, customer reviews, and whole-food supplement alternatives.',
+  sections: [
+    {
+      heading: 'Introduction: Balance of Nature: Fruits and Veggies',
+      body: 'In a world where convenience often trumps nutrition, many people struggle to consume the recommended daily intake of fruits and vegetables. This dietary gap can lead to nutritional deficiencies, impacting overall health and well-being. Enter Balance of Nature Fruits and Veggies, a whole food supplement designed to bridge this gap. Marketed as a convenient way to ensure you get your daily dose of fruits and vegetables, this supplement claims to offer a wide array of benefits. But does it live up to the hype?'
+    },
+    {
+      heading: 'What is Balance of Nature?',
+      body: 'Balance of Nature is a supplement that comes in two forms: Fruits and Veggies. The company behind this product emphasizes that these supplements are made from real, whole foods. According to the manufacturer, the supplements are free from additives, fillers, and synthetic ingredients. Each capsule is packed with a variety of fruits and vegetables that have been dried and ground into a fine powder. This powder is then encapsulated, making it easy to take on a daily basis.\n\nKey Ingredients and Their Benefits\n\nThe Fruits and Veggies supplements boast a broad range of ingredients. The Fruit supplement includes apples, bananas, blueberries, and more. On the other hand, the Veggies supplement contains broccoli, spinach, carrots, and other nutrient-rich vegetables. These ingredients are chosen for their high vitamin, mineral, and antioxidant content. For example, blueberries are well-known for their antioxidant properties, while spinach is a good source of iron and calcium. The inclusion of these ingredients suggests that the supplement could support various aspects of health, from immune function to energy levels.\n\nHow the Supplements are Made\n\nOne of the selling points of Balance of Nature is its unique production process. The fruits and vegetables used in the supplements are flash-dried to preserve their nutrients. This process involves quickly freezing the produce and then removing the water content. The result is a concentrated form of the original food, with most of its nutrients intact. The company claims that this method ensures that the supplements retain the nutritional value of fresh fruits and vegetables. However, it\'s worth noting that some nutrients, particularly heat-sensitive ones like vitamin C, may degrade during the drying process.\n\nUser Experience and Taste\n\nOne of the main concerns people have when it comes to supplements is taste. Thankfully, Balance of Nature seems to have addressed this issue. Many users report that the supplements are easy to swallow and do not have an unpleasant aftertaste. Since the capsules are made from powdered fruits and vegetables, they lack the bitterness or earthiness that some other plant-based supplements might have. This makes them more palatable, especially for those who struggle with the taste of certain vegetables. Personally, I love the taste of most vegetables, but other supplements I\'ve used have left an unusual aftertaste. Balance of Nature has virtually no aftertaste at all.\n\nThe Convenience Factor\n\nAnother significant advantage of Balance of Nature is its convenience. Many people find it challenging to incorporate enough fruits and vegetables into their daily diet. Whether due to time constraints, a lack of access to fresh produce, or simply not enjoying the taste, getting the recommended daily servings can be difficult. These supplements provide a simple solution. You can take them anywhere, and they don\'t require refrigeration. This convenience makes it easier to stay consistent with your intake of fruits and vegetables.'
+    },
+    {
+      heading: 'Potential Health Benefits',
+      body: 'The potential health benefits of Balance of Nature Fruits and Veggies are numerous. For one, the supplements may help fill nutritional gaps in your diet. If you\'re not getting enough vitamins and minerals from food, these supplements could provide a valuable boost. Additionally, the antioxidants in the fruits and vegetables may help reduce oxidative stress, which is linked to chronic diseases like heart disease and cancer. Some users also report feeling more energetic after taking the supplements, which could be due to the increased nutrient intake.'
+    },
+    {
+      heading: 'The Science Behind Whole Food Supplements',
+      body: 'Whole food supplements like Balance of Nature are often touted as being superior to synthetic vitamins. The rationale is that whole foods provide a complex matrix of nutrients that work together synergistically. This is in contrast to synthetic vitamins, which may not be as well absorbed by the body. Some studies support the idea that nutrients from whole foods are more bioavailable. However, it\'s important to remember that supplements should not replace a balanced diet. Instead, they should complement it, helping to ensure that you meet your nutritional needs.'
+    },
+    {
+      heading: 'Price and Value for Money',
+      body: 'One aspect that potential customers often consider is the cost of the supplement. Balance of Nature is not the cheapest option on the market. However, many users believe that the quality of the ingredients justifies the price. The company also offers discounts for subscribing to a monthly delivery, which can make the supplements more affordable. Additionally, considering the convenience and potential health benefits, many people feel that the investment is worthwhile.'
+    },
+    {
+      heading: 'Are There Any Side Effects?',
+      body: 'One question that often arises with any supplement is the potential for side effects. Balance of Nature Fruits and Veggies are made from natural ingredients, which generally makes them safe for most people. The company claims that their products have no known side effects, which is reassuring. However, it\'s always a good idea to consult with a healthcare provider before starting any new supplement, especially for those with pre-existing medical conditions or who are pregnant or nursing.\n\nSome users have reported minor digestive issues, such as bloating or gas, particularly when first starting the supplement. These symptoms may be due to the increase in fiber from the fruit and vegetable powders. For most people, these issues are temporary and subside as the body adjusts. If side effects persist, it may be necessary to adjust the dosage or discontinue use.'
+    },
+    {
+      heading: 'How to Use Balance of Nature Supplements',
+      body: 'The recommended dosage for Balance of Nature Fruits and Veggies is three capsules of each per day. They suggest taking the supplements with water, ideally with meals, to aid absorption. For those who prefer not to take pills, the capsules can be opened and mixed into smoothies, yogurt, or other foods. This flexibility makes it easier to incorporate the supplement into your daily routine.\n\nIt\'s also worth noting that Balance of Nature supplements are not intended to replace your daily servings of fruits and vegetables. Instead, they are meant to complement your diet, providing additional nutrients that might be lacking. The directions encourage users to continue eating a varied and balanced diet, rich in whole foods, while using the supplements.'
+    },
+    {
+      heading: 'Comparison with Other Supplements',
+      body: 'When comparing Balance of Nature to other similar products on the market, there are several factors to consider. First, the focus on whole food ingredients sets it apart from many other supplements that rely on synthetic vitamins and minerals. This emphasis on natural, food-based nutrition may appeal to those looking for a more holistic approach to health.\n\nHowever, Balance of Nature is priced higher than many other fruit and vegetable supplements. Some competitors offer similar products at a lower cost, though they may not have the same ingredient quality or production process. Additionally, some alternative supplements include probiotics or other added ingredients, which could provide additional health benefits. Choosing the right supplement often comes down to individual needs and preferences, as well as budget considerations.'
+    },
+    {
+      heading: 'Clinical Research and Efficacy',
+      body: 'One of the key factors in evaluating any supplement is the scientific evidence supporting its efficacy. While Balance of Nature cites the nutritional value of its ingredients, there is limited clinical research specifically on the product itself. Most of the evidence comes from studies on the benefits of consuming fruits and vegetables in general, which are well-documented. These studies highlight the role of fruits and vegetables in reducing the risk of chronic diseases, supporting immune function, and promoting overall health.\n\nHowever, the lack of direct clinical trials on Balance of Nature means that its effectiveness as a supplement is largely based on anecdotal evidence and theoretical benefits. While the ingredients used are known for their health benefits, the extent to which these benefits are retained in supplement form is not fully established. Consumers should consider this when evaluating the product and whether it meets their needs.'
+    },
+    {
+      heading: 'Shelf Life and Storage',
+      body: 'Another practical consideration is the shelf life of the supplements. Balance of Nature Fruits and Veggies have a long shelf life thanks to the drying process used to preserve the ingredients. The capsules should be stored in a cool, dry place, away from direct sunlight, to maintain their potency. The convenience of not needing refrigeration is a plus for those who travel frequently or prefer to keep supplements at their desk or in a gym bag.\n\nThe shelf life can vary depending on how the supplements are stored, but they typically last for several months. The packaging includes an expiration date, so it\'s easy to keep track of when to use them by. Ensuring that the capsules are stored properly is essential to maximizing their nutritional benefits over time.'
+    },
+    {
+      heading: 'Who Should Consider Taking Balance of Nature?',
+      body: 'Balance of Nature supplements might appeal to various groups of people. First and foremost, they may benefit those who struggle to meet their daily fruit and vegetable intake due to a busy lifestyle or limited access to fresh produce. If you\'re someone who often finds it challenging to incorporate enough whole foods into your diet, these supplements could serve as a convenient way to ensure you\'re getting essential nutrients.\n\nAthletes and fitness enthusiasts might also find value in Balance of Nature. Proper nutrition is crucial for optimal performance and recovery, and these supplements could help fill in any dietary gaps. Additionally, older adults, who may have a harder time consuming enough fruits and vegetables due to changes in appetite or digestion, could find these supplements beneficial.'
+    },
+    {
+      heading: 'Environmental and Ethical Considerations',
+      body: 'Today, more consumers are paying attention to the environmental and ethical aspects of the products they purchase. Balance of Nature prides itself on using natural, whole food ingredients, which is positive from an environmental standpoint. The company states that their products are free from pesticides and other harmful chemicals, which suggests a commitment to sustainability.\n\nHowever, there is limited information available about the sourcing of the ingredients and the overall environmental impact of the production process. For consumers who prioritize eco-friendly and ethically sourced products, this might be a factor to investigate further before making a purchase. Transparency in sourcing and manufacturing practices is becoming increasingly important to many health-conscious consumers.'
+    },
+    {
+      heading: 'Customer Service and Support',
+      body: 'Another critical aspect to consider when purchasing a supplement is the quality of customer service and support. Balance of Nature offers a subscription service, which can be convenient for regular users who want to ensure they never run out of their supplements. Balance of Nature also provides a satisfaction guarantee, allowing customers to return the product if they\'re not satisfied. This policy can provide peace of mind, especially for first-time buyers.\n\nReviews of their customer service are generally positive, with many customers praising the prompt and helpful responses they\'ve received. However, as with any company, there are occasional complaints about billing issues or delays in shipping. Ensuring clear communication and understanding the terms of any subscription service is always advisable to avoid potential problems.'
+    },
+    {
+      heading: 'The Role of Supplements in a Healthy Lifestyle',
+      body: 'It\'s important to remember that supplements like Balance of Nature are just one part of a healthy lifestyle. While they can help fill nutritional gaps, they should not be relied upon as the sole source of vitamins and minerals. A well-rounded diet, rich in a variety of whole foods, is essential for overall health.\n\nRegular physical activity, sufficient sleep, and stress management are also crucial components of a healthy lifestyle. Supplements can support these efforts, but they should not replace the foundational elements of good health. Consumers should approach supplements with realistic expectations, understanding that they are a complement to, not a replacement for, a healthy diet.'
+    },
+    {
+      heading: 'User Tips and Best Practices',
+      body: 'If you decide to incorporate Balance of Nature into your daily routine, there are a few best practices to keep in mind. First, consistency is key. Taking the supplements daily, as recommended, will provide the best chance of experiencing the potential benefits. It\'s also a good idea to take the capsules with meals, as this can aid in nutrient absorption.\n\nFor those who prefer not to swallow capsules, opening them and mixing the contents with food or drinks is a viable option. This can make the supplement more enjoyable to take, particularly for those who have difficulty with pills. Additionally, tracking how you feel over time can help you gauge whether the supplements are having a positive impact on your health.'
+    },
+    {
+      heading: 'Conclusion: Balance of Nature: Fruits and Veggies',
+      body: 'So, is Balance of Nature Fruits and Veggies worth the investment? The answer depends on your individual needs and lifestyle. If you struggle to get enough fruits and vegetables in your diet, these supplements could provide a convenient way to boost your nutrient intake. They\'re made from real, whole foods, and many users report positive effects on their energy levels and overall health.\n\nHowever, they are not a substitute for a balanced diet, and their higher price point may not fit every budget. Additionally, the lack of direct clinical research on the product itself means that much of the evidence for its efficacy is anecdotal. For those who prioritize natural ingredients and are willing to invest in their health, Balance of Nature may be a worthwhile addition to their daily routine. But as always, it\'s essential to do your research and consult with a healthcare professional before starting any new supplement regiment.'
+    }
+  ]
+};
+
+// =============================================
 // Main Modal Component
 // =============================================
 export const SampleArticleModal: React.FC<SampleArticleModalProps> = ({ isOpen, onClose, selectedSite }) => {
@@ -312,6 +392,10 @@ export const SampleArticleModal: React.FC<SampleArticleModalProps> = ({ isOpen, 
     // Override for Newest.ai (site-4) to use NEWEST_AI_ARTICLE
     else if (selectedSite.id === 'site-4') {
       article = NEWEST_AI_ARTICLE;
+    }
+    // Override for Healthful Hub (site-3) to use HEALTHFUL_HUB_ARTICLE
+    else if (selectedSite.id === 'site-3') {
+      article = HEALTHFUL_HUB_ARTICLE;
     }
   }
 
