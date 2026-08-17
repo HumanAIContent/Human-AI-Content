@@ -1,5 +1,4 @@
 import React from 'react';
-import { ALL_ARTICLES } from '../data/allArticles';
 import { SAMPLE_ARTICLE } from '../data/sampleArticles';
 import { RecentSite } from '../types';
 import { X, Cpu, FileText, Sparkles } from 'lucide-react';
@@ -232,12 +231,8 @@ export const SampleArticleModal: React.FC<SampleArticleModalProps> = ({ isOpen, 
   let article = PILATES_ARTICLE; // Default fallback
 
   if (selectedSite) {
-    // Check if the site has a custom article in ALL_ARTICLES
-    if (ALL_ARTICLES[selectedSite.id]) {
-      article = ALL_ARTICLES[selectedSite.id];
-    }
     // Override for Innovacious (site-5) to use REAL_ESTATE_ARTICLE
-    else if (selectedSite.id === 'site-5' || selectedSite.domain?.includes('innovacious.com')) {
+    if (selectedSite.id === 'site-5' || selectedSite.domain?.includes('innovacious.com')) {
       article = REAL_ESTATE_ARTICLE;
     }
   }
