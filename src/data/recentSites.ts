@@ -76,7 +76,7 @@ export const RECENT_SITES: RecentSite[] = [
   {
     id: 'site-4',
     name: 'Newest.ai',
-    domain: 'newest.ai',
+    domain: 'newest.ai/ai-dependency-risks/',
     niche: 'AI Tech News & Software Reviews',
     image: '/newest.ai-logo.png',
     packageUsed: 'Full-Service All-Inclusive',
