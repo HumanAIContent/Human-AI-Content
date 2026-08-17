@@ -31,42 +31,34 @@ const REAL_ESTATE_ARTICLE = {
   ]
 };
 
-// Simple function to determine which article to use
-function getArticleForSite(site: RecentSite | null | undefined) {
-  // If no site is selected, use the default
-  if (!site) return SAMPLE_ARTICLE;
-
-  // DEBUG: Log what we're receiving
-  console.log('========== SITE DATA ==========');
-  console.log('Site ID:', site.id);
-  console.log('Site Name:', site.name);
-  console.log('Site Domain:', site.domain);
-  console.log('================================');
-
-  // Check by ID, Name, and Domain (one of these should work)
-  if (
-    site.id === 'site-1' ||
-    site.id === 'site-5' ||
-    site.name === 'Innovacious' ||
-    site.name === 'innovacious' ||
-    site.domain === 'innovacious.com'
-  ) {
-    console.log('✅ Using REAL_ESTATE_ARTICLE for Innovacious');
-    return REAL_ESTATE_ARTICLE;
-  }
-
-  // Default to Pilates article for everyone else
-  console.log('✅ Using SAMPLE_ARTICLE (Pilates) for:', site.name);
-  return SAMPLE_ARTICLE;
-}
-
 export const SampleArticleModal: React.FC<SampleArticleModalProps> = ({ isOpen, onClose, selectedSite }) => {
   if (!isOpen) return null;
 
-  // Use the helper function to get the right article
-  const article = getArticleForSite(selectedSite);
+  // DEBUG: Log what we're receiving
+  console.log('========== MODAL OPENED ==========');
+  console.log('selectedSite:', selectedSite);
+  console.log('selectedSite id:', selectedSite?.id);
+  console.log('selectedSite name:', selectedSite?.name);
+  console.log('selectedSite domain:', selectedSite?.domain);
+  console.log('===================================');
 
-  console.log('Article title being used:', article.title);
+  // Determine which article to use
+  // ONLY use the Real Estate article if the site is explicitly Innovacious
+  let article = SAMPLE_ARTICLE; // Default to Pilates
+
+  if (selectedSite && selectedSite.domain === 'innovacious.com') {
+    console.log('✅ Using REAL_ESTATE_ARTICLE for Innovacious');
+    article = REAL_ESTATE_ARTICLE;
+  } else if (selectedSite && selectedSite.name === 'Innovacious') {
+    console.log('✅ Using REAL_ESTATE_ARTICLE for Innovacious');
+    article = REAL_ESTATE_ARTICLE;
+  } else if (selectedSite && selectedSite.id === 'site-5') {
+    console.log('✅ Using REAL_ESTATE_ARTICLE for Innovacious');
+    article = REAL_ESTATE_ARTICLE;
+  } else {
+    console.log('✅ Using SAMPLE_ARTICLE (Pilates) for:', selectedSite?.name || 'unknown');
+    article = SAMPLE_ARTICLE;
+  }
 
   const siteName = selectedSite ? selectedSite.name : article.siteName;
   const title = selectedSite ? selectedSite.sampleArticleTitle : article.title;
