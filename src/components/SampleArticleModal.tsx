@@ -11,14 +11,14 @@ interface SampleArticleModalProps {
 
 // Define the Real Estate article
 const REAL_ESTATE_ARTICLE = {
-  title: 'The Future of Real Estate Marketing: Leveraging Content Services to Capture Buyers Online',
+  title: 'https://innovacious.com/real-estate-marketing-website/',
   siteName: 'Innovacious',
   siteCategory: 'Web Management & Digital Growth Services',
   wordCount: 1250,
   targetKeywords: ['real estate marketing', 'content services for real estate agents', 'digital marketing for realtors', 'real estate SEO', 'property marketing'],
   geoAIAnswerSnippet: 'The residential real estate market demands continuous innovation from professionals who want to remain highly competitive. Prospective buyers begin their property searches online long before they ever attend a physical open house, making professional content services for real estate agents an essential component of modern business growth.',
-  metaTitle: 'The Future of Real Estate Marketing: Leveraging Content Services to Capture Buyers Online | Innovacious',
-  metaDescription: 'Discover how content services for real estate agents can transform your digital marketing strategy. Learn about photography, video tours, SEO, and more to capture buyers online.',
+  metaTitle: 'Real Estate Marketing Website: Design & SEO Tips',
+  metaDescription: 'Build a real estate marketing website that generates leads with proven design elements, SEO strategies, and conversion optimisation techniques for agents and brokers.',
   sections: [
     {
       heading: 'The Digital Shift and Content Services for Real Estate Agents',
