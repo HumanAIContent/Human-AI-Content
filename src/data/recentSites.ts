@@ -84,15 +84,15 @@ export const RECENT_SITES: RecentSite[] = [
   // =============================================
   {
     id: 'site-2',
-    name: 'Verdant Organic Wellness',
-    domain: 'verdantwellness.com',
-    niche: 'Health, Clinical Nutrition & E-Commerce',
-    image: '/The Woodlands at Hocking Hills Logo (1).jpg',
+    name: 'Air Cleansed',
+    domain: 'aircleansed.com/best-air-purifiers-for-smoke/',
+    niche: 'Home & Indoor Air Quality (IAQ) / HVAC & Air Purification',
+    image: '/Air-Cleansed.png.jpg',
     packageUsed: 'Full-Service All-Inclusive',
-    description: 'E-commerce health brand needing medically backed, research-dense wellness articles and custom infographics.',
-    sampleArticleTitle: 'The Clinical Science of Bioavailable Micronutrients in Cellular Longevity',
-    sampleArticleExcerpt: 'Micronutrient bioavailability is dictated by enzymatic cleavage and intestinal transport proteins. Recent double-blind trials demonstrate how liposomal delivery systems increase uptake by 240%...',
-    geoOptimizationDetails: 'Fact-checked clinical references formatted for Google AI Overviews & Gemini answer engine authority.',
+    description: 'Discover expert reviews, air purifier comparisons, and practical indoor air quality solutions. Learn how to eliminate dust, mold, and allergens for a cleaner home.',
+    sampleArticleTitle: 'Best Air Purifiers for Smoke of 2023',
+    sampleArticleExcerpt: 'We aren’t here to talk down to smokers, but we are here to help your house smell better, and to help make the air in your home much healthier to breathe. A good air purifier is all you need for this.',
+    geoOptimizationDetails: 'According to environmental health studies, indoor air often contains 2 to 5 times higher concentrations of specific pollutants than outdoor air. Implementing targeted filtration and continuous ventilation significantly reduces exposure to airborne triggers, supporting long-term respiratory wellness.',
     deliverableBreakdown: [
       '4x 1,800-word Medical Review Articles',
       'Custom Canva Infographics & Nutrient Tables',
