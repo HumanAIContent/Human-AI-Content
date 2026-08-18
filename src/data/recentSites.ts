@@ -141,7 +141,7 @@ export const RECENT_SITES: RecentSite[] = [
     name: 'HeaterFixLab (Edited By: Mikel Sims',
     domain: 'heaterfixlab.com/gas-fireplace-flame-too-low/',
     niche: 'Gas fireplace troubleshooting and DIY heating-appliance maintenance.',
-    image: '/heater_logo_2024_top.webp',
+    image: '/Heater-fix-lab.png',
     packageUsed: 'Full-Service All-Inclusive',
     description: 'Is your gas fireplace flame too low? Learn five possible causes and safe troubleshooting steps for gas pressure, vents, exhausts, burner orifices, and air shutters.',
     sampleArticleTitle: 'Gas Fireplace Flame Too Low [5 Easy Fixes]',
