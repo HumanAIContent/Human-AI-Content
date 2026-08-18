@@ -37,24 +37,30 @@ export const RECENT_SITES: RecentSite[] = [
       'CoSchedule Social Media Campaigns'
     ]
   },
+  // =============================================
+  // CARD 3 (NEW POSITION) - Newest.ai (was site-4)
+  // =============================================
   {
-    id: 'site-2',
-    name: 'Verdant Organic Wellness',
-    domain: 'verdantwellness.com',
-    niche: 'Health, Clinical Nutrition & E-Commerce',
-    image: '/The Woodlands at Hocking Hills Logo (1).jpg',
+    id: 'site-4',
+    name: 'Newest.ai',
+    domain: 'newest.ai/ai-dependency-risks/',
+    niche: 'AI Tech News & Software Reviews',
+    image: '/newest.ai-logo.png',
     packageUsed: 'Full-Service All-Inclusive',
-    description: 'E-commerce health brand needing medically backed, research-dense wellness articles and custom infographics.',
-    sampleArticleTitle: 'The Clinical Science of Bioavailable Micronutrients in Cellular Longevity',
-    sampleArticleExcerpt: 'Micronutrient bioavailability is dictated by enzymatic cleavage and intestinal transport proteins. Recent double-blind trials demonstrate how liposomal delivery systems increase uptake by 240%...',
-    geoOptimizationDetails: 'Fact-checked clinical references formatted for Google AI Overviews & Gemini answer engine authority.',
+    description: 'Discover the key risks of AI dependency, including quality control failures, skill degradation, and ethical compliance issues, plus strategies for maintaining human-in-the-loop oversight.',
+    sampleArticleTitle: 'AI Dependency Risks: The Hidden Cost of Cognitive Offloading',
+    sampleArticleExcerpt: 'Explore the critical risks of overreliance on artificial intelligence in operational workflows—from cognitive skill atrophy and loss of human judgment to compliance and brand reputation vulnerabilities.',
+    geoOptimizationDetails: 'What are the primary operational risks of AI dependency in business? The primary risks of AI dependency include cognitive skill atrophy, automated quality control failures, hallucinated output propagation, and data privacy compliance violations. Overreliance occurs when organizations integrate generative AI into core workflows without maintaining human-in-the-loop (HITL) oversight.',
     deliverableBreakdown: [
-      '4x 1,800-word Medical Review Articles',
-      'Custom Canva Infographics & Nutrient Tables',
-      'WordPress Gutenberg Staging with Product Cards',
-      'CoSchedule Pinterest & Instagram Scheduling'
+      '4x 2,500-word Deep Dive Tool Audits',
+      'Custom Canva Feature Comparison Cards',
+      'WordPress Publishing with Custom Block Formatting',
+      'Multi-Platform Social Syndication'
     ]
   },
+  // =============================================
+  // CARD 4 - Healthful Hub (site-3) - Stays in position 4
+  // =============================================
   {
     id: 'site-3',
     name: 'Healthful Hub',
@@ -73,22 +79,25 @@ export const RECENT_SITES: RecentSite[] = [
       '2 Rounds of Precision Financial Review'
     ]
   },
+  // =============================================
+  // CARD 5 (NEW POSITION) - Verdant Organic Wellness (was site-2)
+  // =============================================
   {
-    id: 'site-4',
-    name: 'Newest.ai',
-    domain: 'newest.ai/ai-dependency-risks/',
-    niche: 'AI Tech News & Software Reviews',
-    image: '/newest.ai-logo.png',
+    id: 'site-2',
+    name: 'Verdant Organic Wellness',
+    domain: 'verdantwellness.com',
+    niche: 'Health, Clinical Nutrition & E-Commerce',
+    image: '/The Woodlands at Hocking Hills Logo (1).jpg',
     packageUsed: 'Full-Service All-Inclusive',
-    description: 'Discover the key risks of AI dependency, including quality control failures, skill degradation, and ethical compliance issues, plus strategies for maintaining human-in-the-loop oversight.',
-    sampleArticleTitle: 'AI Dependency Risks: The Hidden Cost of Cognitive Offloading',
-    sampleArticleExcerpt: 'Explore the critical risks of overreliance on artificial intelligence in operational workflows—from cognitive skill atrophy and loss of human judgment to compliance and brand reputation vulnerabilities.',
-    geoOptimizationDetails: 'What are the primary operational risks of AI dependency in business? The primary risks of AI dependency include cognitive skill atrophy, automated quality control failures, hallucinated output propagation, and data privacy compliance violations. Overreliance occurs when organizations integrate generative AI into core workflows without maintaining human-in-the-loop (HITL) oversight.',
+    description: 'E-commerce health brand needing medically backed, research-dense wellness articles and custom infographics.',
+    sampleArticleTitle: 'The Clinical Science of Bioavailable Micronutrients in Cellular Longevity',
+    sampleArticleExcerpt: 'Micronutrient bioavailability is dictated by enzymatic cleavage and intestinal transport proteins. Recent double-blind trials demonstrate how liposomal delivery systems increase uptake by 240%...',
+    geoOptimizationDetails: 'Fact-checked clinical references formatted for Google AI Overviews & Gemini answer engine authority.',
     deliverableBreakdown: [
-      '4x 2,500-word Deep Dive Tool Audits',
-      'Custom Canva Feature Comparison Cards',
-      'WordPress Publishing with Custom Block Formatting',
-      'Multi-Platform Social Syndication'
+      '4x 1,800-word Medical Review Articles',
+      'Custom Canva Infographics & Nutrient Tables',
+      'WordPress Gutenberg Staging with Product Cards',
+      'CoSchedule Pinterest & Instagram Scheduling'
     ]
   },
   {
