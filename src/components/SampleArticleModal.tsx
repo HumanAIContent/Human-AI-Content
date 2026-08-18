@@ -466,7 +466,9 @@ const FIREPLACE_HUBS_ARTICLE = {
     },
     {
       heading: 'Table of Contents',
-      body: '• Gas Fireplace Flame Too Low [5 Easy Fixes]\n• 1. Low Gas Pressure\n• 2. Obstructed Air Intake Vents\n• 3. Blocked Exhausts\n• 4. Clogged Burner Orifice\n• 5. Wide-Open Air Shutter\n• How To Get A Bigger Flame On Your Gas Fireplace\n• FAQs:\n• Conclusion'
+      body: '• Gas Fireplace Flame Too Low [5 Easy Fixes]\n• 1. Low Gas Pressure\n• 2. Obstructed Air Intake Vents\n• 3. Blocked Exhausts\n• 4. Clogged Burner Orifice\n• 5. Wide-Open Air Shutter\n• How To Get A Bigger Flame On Your Gas Fireplace\n• FAQs:\n• Conclusion',
+      visualAssetUrl: '/Green-Mountain-Grill-Too-Hot-1.jpg.webp',
+      visualAssetCaption: 'Figure: Gas fireplace flame too low - common causes and fixes'
     },
     {
       heading: 'Gas Fireplace Flame Too Low [5 Easy Fixes]',
