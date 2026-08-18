@@ -448,6 +448,66 @@ const AIR_CLEANSED_ARTICLE = {
 };
 
 // =============================================
+// FIREPLACE HUBS Article (Gas Fireplace Flame Too Low) - Full Content
+// =============================================
+const FIREPLACE_HUBS_ARTICLE = {
+  title: 'Gas Fireplace Flame Too Low [5 Easy Fixes]',
+  siteName: 'Fireplace Hubs',
+  siteCategory: 'A practical, problem-solving resource that helps homeowners diagnose and fix appliance and grill issues through step-by-step guides.',
+  wordCount: 2800,
+  targetKeywords: ['gas fireplace flame too low', 'gas fireplace troubleshooting', 'fireplace flame adjustment', 'gas fireplace repair', 'low flame gas fireplace'],
+  geoAIAnswerSnippet: 'Having your gas fireplace flame too low means that you won\'t get adequate heat from it in cold weather. Before you drive yourself crazy trying to figure out what has gone wrong and why the flame isn\'t getting any bigger, read our guide.',
+  metaTitle: 'Gas Fireplace Flame Too Low [5 Easy Fixes] | Fireplace Hubs',
+  metaDescription: 'Learn how to fix a gas fireplace flame that\'s too low. Discover 5 easy fixes including low gas pressure, clogged burner orifice, and blocked exhausts.',
+  sections: [
+    {
+      heading: 'Introduction',
+      body: 'Having your gas fireplace flame too low means that you won\'t get adequate heat from it in cold weather. Before you drive yourself crazy trying to figure out what has gone wrong and why the flame isn\'t getting any bigger, read our guide.\n\nFirstly, the possible reasons that can be causing your fireplace flame to be so small are- low gas pressure, obstructed air intake vents, blocked exhausts, clogged burner orifice, and wide-open air shutter.\n\nHow can you solve these issues? To begin, keep scrolling!'
+    },
+    {
+      heading: 'Table of Contents',
+      body: '• Gas Fireplace Flame Too Low [5 Easy Fixes]\n• 1. Low Gas Pressure\n• 2. Obstructed Air Intake Vents\n• 3. Blocked Exhausts\n• 4. Clogged Burner Orifice\n• 5. Wide-Open Air Shutter\n• How To Get A Bigger Flame On Your Gas Fireplace\n• FAQs:\n• Conclusion'
+    },
+    {
+      heading: 'Gas Fireplace Flame Too Low [5 Easy Fixes]',
+      body: 'In this section, we will take a closer look at the causes that make your fireplace flame too low and provide you with simple solutions to fix them.'
+    },
+    {
+      heading: '1. Low Gas Pressure',
+      body: 'Low gas pressure is the number one reason why your gas fireplace flame is inadequate. People think that the gas supply pressure is okay, so that must mean that the fireplace is getting enough gas pressure.\n\nBut, your fireplace needs to maintain manifold pressure or outlet pressure that is supplied to the burners, to operate correctly.\n\nSo, just because the supplied pressure is okay, that doesn\'t mean your flame is getting adequate gas pressure at the burners. This may be why your fireplace flame is too low.\n\n**Solution:**\n\nYou can start by measuring the manifold pressure. Your fireplace should have a label on it specifying the required manifold pressure.\n\nHowever, if you don\'t find any ratings, you can check your fireplace user\'s manual for specifications.\n\nYou will see that there is a line leading into the gas control and another leading out of the gas control.\n\nA 1/8th inch (3 mm) N.P.T. plug is provided on the inlet and the outlet sides of the gas control for a test gauge attachment to measure the manifold pressure.\n\nA little flat-blade screwdriver can be used to crack the tap\'s center screw. Put a rubber hose over the tap to get a pressure reading.\n\nThe fireplace and its individual shut-off valve must be disconnected from the fuel supply pipe network during any pressure testing.\n\nIf the pressure testing indicates an erroneous gas pressure, call your local gas utility company. They can help fix the manifold pressure on your fireplace.'
+    },
+    {
+      heading: '2. Obstructed Air Intake Vents',
+      body: 'The air intake vents of your fireplace supply the flame with combustible air that feeds a healthy flame. It is covered with an air filter that prevents dirt and dust from getting into the fireplace through the vents.\n\nYour filter can become too dirty to let in any air through the vents. Again, the vents themselves could be obstructed by spider webs or other foreign particles.\n\n**Solution:**\n\nYou can start by cleaning your air filter. Turn off the fireplace for safety. Locate the air filter and remove it. You can just slide it out. Usually, there isn\'t any need to use tools to remove air filters.\n\nNow, take the air filter outside and wash it down with a garden house or rinse it in a faucet. You can scrub it with a brush to clean it up properly. Let it dry.\n\nThen, ensure that the inside of the vents is clean. Use wire brushes to reach inside the vent. After ensuring that it is clean, reinstall the air filter.'
+    },
+    {
+      heading: '3. Blocked Exhausts',
+      body: 'When you burn a flame, carbon dioxide and moisture are produced along with heat. A fireplace needs this poisonous gas to leave through its exhaust. Otherwise, the carbon dioxide snuffs the burner flame.\n\nSo, a blocked exhaust can trap fumes from the flame inside the fireplace that will eat away at the flame itself and make it low.\n\n**Solution:**\n\nYou need to ensure that your fireplace exhaust or chimney is clean. A thorough cleaning involves soot removal from the firebox, smoke chamber, flue liner, smoker shelf, and damper.\n\nCleaning the chimney is a complicated process that requires several tools. Here\'s what you need to do:\n\n• Close the woodstove and glass door of your fireplace so that the inside of your house doesn\'t get dirty. Get a chimney brush that fits your chimney and connect it to fiberglass rods that are long enough to go down your chimney.\n• Take off the chimney cap. You need to unscrew some screws.\n• Jam the brush down your chimney. Scrub vigorously to get all the dirt and creosote out of it.\n• Get a shop vac to clean the woodstove of all the remaining ashes and creosote dust.\n\nYour chimney should be pretty clean at this point.'
+    },
+    {
+      heading: '4. Clogged Burner Orifice',
+      body: 'Your burners may not be able to create a healthy flame due to a dirty burner orifice that is clogged with soot, grit, and debris.\n\nCleaning your burners should be a regular part of your heater\'s maintenance regimen.\n\n**Solution:**\n\nHere\'s how you clean the burner orifice:\n\nStep 1: Shut off the power supply and gas supply before beginning. Locate the burner assembly and take pictures to remember how it is positioned. Remove the retaining plate. You will need to remove a few screws.\n\nStep 2: Now, remove the burners. Begin by grasping each one on the side closest to the gas valve and gently pushing it forward to disengage the latch that holds it to the combustion chamber and pull it out. Gentleness is key.\n\nStep 3: Clean the buildup from the ends with a small brass wire brush. Blow compressed air through the opposite end of the burner to dislodge carbon deposits, then brush again until all deposits are gone. Make sure to blast dirt out of the burner\'s fins on both sides.\n\nStep 4: Remove the flame sensor from the burner housing by disconnecting the wire and unscrewing the screw that holds it in place. Reinstall the sensor and reconnect the wire after rubbing the sensor rod with fine metal wool until it is shining.\n\nStep 5: Reassemble the burners and retaining plate. Start up the fireplace for testing.'
+    },
+    {
+      heading: '5. Wide-Open Air Shutter',
+      body: 'The air shutter controls the fuel-air mixture. The amount of air that interacts with the gas at the burner opening is determined by the air shutter.\n\nA smaller blue flame results from too much air mixing when the air shutter is too widely open.\n\n**Solution:**\n\nAdjust the air shutter so that it is open moderately. Test the flame at different air shutter positioning. If this is causing your issue, the flame should get better.'
+    },
+    {
+      heading: 'How To Get A Bigger Flame On Your Gas Fireplace',
+      body: 'Apart from figuring out whether any of the above issues are present in your fireplace and fixing them, you can try the following things to get a bigger flame on your gas fireplace. Here\'s how to increase the flame on the gas fireplace.\n\n**1. Place Logs Optimally**\n\nFor fireplaces with ceramic logs, the placement is required to be a certain way. Your fireplace owner\'s manual will have the correct layout. Ensure that the logs are positioned that way.\n\n**2. Clean Your Fireglass**\n\nIf your fireplace employs fire glass instead of logs, remember to remove all of the pieces of glass and clean them with liquid dish soap and water on a regular basis. Allow them to dry after a thorough rinsing before reinstalling.\n\n**3. Use the Correct Product To Cover Burners**\n\nSome fire log sets require the use of sand or vermiculite as filler, while some fire glass requires the use of sand or vermiculite as filler. Make sure you cover the gas burners with the appropriate materials.\n\nIn both natural gas logs and fire glass fireplaces, silica sand is used to cover the burners. Vermiculite is used in propane gas fireplaces.\n\nIn a gas fireplace, silica sand can reduce the amount of propane that rises to the surface and the size of the flames.\n\n**4. Replace Valve Motor**\n\nThe valve motor is primarily responsible for gas generation. This is the point at which the amount of gas that can travel through is determined.\n\nTurn the valve both clockwise and counterclockwise to test the valve motor. If the valves are faulty or can\'t be regulated, the burner will produce an abnormally sized flame.\n\nThe best course of action in this circumstance is to hire a professional to replace the valve motor.'
+    },
+    {
+      heading: 'FAQs',
+      body: '**Can you adjust the pilot flame?**\n\nTypically, yes. There may be a "Lo-Hi" button that allows you to adjust the fire upward or downward. Others will have a screw that can be simply adjusted with a screwdriver. Turning the screw clockwise lowers the flame while turning it counterclockwise raises it.\n\n**What happens when a gas regulator fails?**\n\nYou can expect your fireplace\'s gas flow to be blocked or stopped when there is a gas regulator failure. A diaphragm has ruptured on a few occasions, causing significant leaking. This is a common issue with a lot of brands.\n\n**What color should the pilot light be on a gas fireplace?**\n\nA natural gas fire should be bright blue with a hint of yellow at the very top. You should see a bluish-green in color with a yellow-tinged tip if you have a propane gas fireplace. You should get a flame that is powerful enough to cover the thermocouple tip by at least ½ an inch.\n\n**How much does it cost to replace a gas regulator?**\n\nIn most circumstances, the overall price of a fuel pressure regulator is between $150 and $350, but a digital fuel pressure regulator replacement can easily cost more than $500.\n\n**Is it safe to leave the pilot light on?**\n\nIt\'s generally safe to leave your fireplace pilot light on all the time, as long as it stays illuminated. While it is more expensive to keep your pilot light on between uses, there are certain advantages to doing so.'
+    },
+    {
+      heading: 'Conclusion',
+      body: 'Hopefully, you now know the answer to, "Why is my gas fireplace flame so low?" If you are having more trouble with your fireplace flame, you can comment on your queries.'
+    }
+  ]
+};
+
+// =============================================
 // Main Modal Component
 // =============================================
 export const SampleArticleModal: React.FC<SampleArticleModalProps> = ({ isOpen, onClose, selectedSite }) => {
@@ -472,6 +532,10 @@ export const SampleArticleModal: React.FC<SampleArticleModalProps> = ({ isOpen, 
     // Override for Air Cleansed (site-2) to use AIR_CLEANSED_ARTICLE
     else if (selectedSite.id === 'site-2') {
       article = AIR_CLEANSED_ARTICLE;
+    }
+    // Override for Fireplace Hubs (site-6) to use FIREPLACE_HUBS_ARTICLE
+    else if (selectedSite.id === 'site-6') {
+      article = FIREPLACE_HUBS_ARTICLE;
     }
   }
 
