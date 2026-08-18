@@ -102,7 +102,7 @@ export const RECENT_SITES: RecentSite[] = [
   },
   {
     id: 'site-6',
-    name: 'Fireplace Hubs',
+    name: 'Fireplace Hubs (Edited By: Mikel Sims)',
     domain: 'fireplacehubs.com/green-mountain-grill-too-hot/',
     niche: 'A practical, problem-solving resource that helps homeowners diagnose and fix appliance and grill issues through step-by-step guides.',
     image: '/fire-place-hubs-haic.png',
@@ -120,7 +120,7 @@ export const RECENT_SITES: RecentSite[] = [
   },
   {
     id: 'site-7',
-    name: 'Salted Angler.',
+    name: 'Salted Angler (Edited By: Mikel Sims).',
     domain: 'saltedangler.com/spinning-rods/penn-rampage-jigging-rod-review/',
     niche: 'Fishing gear reviews and buying advice.',
     image: '/salted-angler.jpg',
