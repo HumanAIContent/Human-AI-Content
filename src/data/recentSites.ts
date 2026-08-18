@@ -6,7 +6,7 @@ export const RECENT_SITES: RecentSite[] = [
     name: 'Innovacious',
     domain: 'innovacious.com/real-estate-marketing-website/',
     niche: 'Web Management & Digital Growth Service',
-    image: '/Inno_logo_Aug2025_2480.jpg',
+    image: '/Inno_logo_Aug2025_2480.png',
     packageUsed: 'Content + Visual Assets',
     description: 'Build a real estate marketing website that generates leads with proven design elements, SEO strategies, and conversion optimisation techniques for agents and brokers.',
     sampleArticleTitle: 'Real Estate Marketing Website: Design & SEO Tips',
