@@ -123,7 +123,7 @@ export const RECENT_SITES: RecentSite[] = [
     name: 'Salted Angler.',
     domain: 'saltedangler.com/spinning-rods/penn-rampage-jigging-rod-review/',
     niche: 'Fishing gear reviews and buying advice.',
-    image: '/cropped-SA-logo-512-512-t.png',
+    image: '/salted-angler.jpg',
     packageUsed: 'Content Essential',
     description: 'Read our Penn Rampage Jigging Rod review covering features, field performance, pros, cons, ideal species, and how it compares with alternative fishing rods.',
     sampleArticleTitle: 'Penn Rampage Jigging Rod Review',
