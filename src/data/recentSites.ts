@@ -87,7 +87,7 @@ export const RECENT_SITES: RecentSite[] = [
     name: 'Air Cleansed',
     domain: 'aircleansed.com/best-air-purifiers-for-smoke/',
     niche: 'Home & Indoor Air Quality (IAQ) / HVAC & Air Purification',
-    image: '/Air-Cleansed.png.jpg',
+    image: '/Air-Cleansed.png',
     packageUsed: 'Full-Service All-Inclusive',
     description: 'Discover expert reviews, air purifier comparisons, and practical indoor air quality solutions. Learn how to eliminate dust, mold, and allergens for a cleaner home.',
     sampleArticleTitle: 'Best Air Purifiers for Smoke of 2023',
