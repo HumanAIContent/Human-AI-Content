@@ -508,6 +508,50 @@ const FIREPLACE_HUBS_ARTICLE = {
 };
 
 // =============================================
+// SALTED ANGLER Article (Penn Rampage Jigging Rod Review) - Full Content
+// =============================================
+const SALTED_ANGLER_ARTICLE = {
+  title: 'Penn Rampage Jigging Rod Review',
+  siteName: 'Salted Angler',
+  siteCategory: 'Fishing gear reviews and buying advice.',
+  wordCount: 1800,
+  targetKeywords: ['Penn Rampage Jigging Rod', 'jigging rod review', 'saltwater fishing rod', 'Penn fishing rods', 'offshore jigging'],
+  geoAIAnswerSnippet: 'If you are in need of a lightweight but sturdy rod to slay your favorite larger species such as Grouper, AmberJack, Snapper, Redfish, Snook or even if you are chasing Yellowtail, Dolphin or Seabass, the Penn Rampage Jigging Rod can prove to be an excellent choice.',
+  metaTitle: 'Penn Rampage Jigging Rod Review | Salted Angler',
+  metaDescription: 'Read our Penn Rampage Jigging Rod review covering features, field performance, pros, cons, ideal species, and how it compares with alternative fishing rods.',
+  sections: [
+    {
+      heading: 'Introduction',
+      body: 'If you are in need of a lightweight but sturdy rod to slay your favorite larger species such as Grouper, AmberJack, Snapper, Redfish, Snook or even if you are chasing Yellowtail, Dolphin or Seabass, the Penn Rampage Jigging Rod can prove to be an excellent choice.\nI choose to review the Penn Rampage Jigging Rods as they are versatile rods that can handle a variety of fishing conditions and they provide excellent value. As usual, Penn has put together quality components that include a 1 piece of graphite composite blank, Fuji aluminum oxide guides, heavy-duty reel seats, rubber gimbals on the butt and a triangular torque grip that just fits in your hand nicely.\nThe Penn Rampage Jigging Rods were first released to the market in the fall of 2013 and are available in two styles the Rampage Jig Spinning Rod and the Rampage Jig Casting Rod. Both rods retail for $79.95 and provide an excellent value based on the quality of construction.\nIn my opinion, the choice between the spinning and the casting models comes down to personal preference and the targeted species. For snapper, dolphin, and topwater column fish I prefer to use the spinning model to site cast and would probably pair this with something like a Fin-Nor Lethal or a Penn Spinfisher VI.\nIf I am going to post up on a wreck for Red Grouper, AJ or Tuna I am most likely going to choose a conventional model and pair it up with something like a Penn Squall Lever Drag or Penn Squall 2-Speed Lever Drag.'
+    },
+    {
+      heading: 'Features',
+      body: 'Designed specifically for vertical jigging – While the Penn Rampage is designed with vertical jigging in mind you will come to discover that the rod is versatile enough to use for other techniques such as free-lining bait, or sight casting to snook, big reds and cobia.\n1-piece graphite composite blank – The graphite composite blank is made of a combination of both graphite and fiberglass to provide strength from the fiberglass for pulling power and to still be lightweight. The addition of graphite to the mix also provides a level of sensitivity that makes it easier to detect when you have a fish taking your bait or lure.\nFuji aluminum oxide guides – The guides on these rods are made by Fuji and are aluminum frames with an aluminum oxide insert. The aluminum oxide inserts are a very smooth and hard material that is both smooth and durable. Having a smooth guide system is important as it will work equally well for both monofilaments as well as braid lines.\nGraphite reel seat – The graphite reel seat is sturdy and will hold your favorite reel tightly to the rod without any play. One of the things that I always want to make sure of is that the reel is securely locked onto the rod. There is nothing more disturbing than feeling the reel loosening from your rod in the middle of fighting a fish.\nTorque EVA foregrip – Penn has a unique foregrip that is triangular in shape and is called the torque grip. The advantage of the torque EVA triangular foregrip is that when you are fighting a fish the rod is less likely to turn in your hands. The triangular shape also conforms to your hands so that you do not need to grip the handle with as much pressure to still feel as though you have control of the rod. After a long day on the water with the Penn Rampage, I do not tend to get cramps in my hands as I often do with a standard round handle design.\nSlimmed Rear grip – The rear grip is slimmed down not to grab your shirt or other items when you are jigging. Basically, this design eliminates chafing from a consistent up-and-down motion of jigging.\nRubber gimbal – There are several advantages of the rubber gimbal design that is located on the butt of the rod. The first is that when you place your rod down maybe harder than you had anticipated on your boat deck it is soft and will not mark the decking or possibly even crack the gel coat. I know that whenever I hear someone slam the rod to the floor of my boat when they are baiting the hook, I cringe. The other advantage is that if you are fighting a big fish and you place the butt of the rod on your hip or thigh without a fighting belt, it is much more comfortable.'
+    },
+    {
+      heading: 'Features at a Glance',
+      body: '• Designed specifically for vertical jigging\n• Versatile enough for various techniques\n• 1-piece graphite composite blank\n• Fuji aluminum oxide guides\n• Graphite reel seat\n• Torque foregrip\n• Rubber gimbal\nYou will notice in the image above that the Penn Rampage Jigging rods have 2 different types of handles. The spinning version has a straight handle as would be expected, this is referred to as a Handle Type A and the casting rod has a finger or pistol grip which is referred to as a Handle Type B.'
+    },
+    {
+      heading: 'Field Test',
+      body: 'For a field test, I paired the 6\'6" jig casting rod model RAMJG3080C66 with a Penn Battle II 6000 and loaded it up with 400 yards of 40 lb spider wire braid. We took my buddies 26\' Stamas the Del Rio out to one of our favorite spots for grouper about 50 miles off the coast of Cape Coral, FL.\nI found that pairing the Penn Rampage with the Battle II provided for a well-balanced setup. I was able to fish both cut bait and live pinfish equally well which to me makes this a very versatile setup. We landed a few nice grouper in the 10-15 lb range and one that was 22 lbs.\nAll in all, it was a great day on the water and the rod performed well. For a rod with a moderate fast action and a medium power rating, I found that it was lightweight but still had the backbone to bring the larger fish in easily.\nI am looking forward to taking this setup down to the Keys in a few weeks to chase some Dolphin and hopefully get a chance at a few Cobia as well. Based on my experience so far with this setup, I think that I am going to be delighted with how it handles the fast hard-fighting fish.'
+    },
+    {
+      heading: 'Pros and Cons',
+      body: '**Pros:**\n• Price\n• Durability\n• Grip\n• Weight\n**Cons:**\n• Can be a bit stiff'
+    },
+    {
+      heading: 'Alternatives',
+      body: 'A few of the other rods that I would suggest you take a look at in this category would be the Penn Bluewater Carnage II Jigging Spinning rod or the Ugly Stik Tiger Elite Jig Casting Rod.\nThe Penn Bluewater Carnage II Jigging Spinning rod is going to be about twice the price but is an exceptional rod that is lighter weight, more responsive and uses an SLS3 carbon blank.\nThe Ugly Stik Tiger Elite Jig Casting Rod is well, an Ugly Stik and we love our Ugly Stik\'s don\'t we. For a similar price point at the Penn Rampage, you get a great rod that is super durable.'
+    },
+    {
+      heading: 'In Conclusion',
+      body: 'Overall I was impressed with the Penn Rampage Jigging rods and I think that I will be keeping at least one of these around for my grouper fishing and when I get a chance to get down to the Keys.\nWhat I like is that for less than $200 I can have a reliable and durable setup when pairing the Rampage with a Battle II.'
+    }
+  ]
+};
+
+// =============================================
 // Main Modal Component
 // =============================================
 export const SampleArticleModal: React.FC<SampleArticleModalProps> = ({ isOpen, onClose, selectedSite }) => {
@@ -536,6 +580,10 @@ export const SampleArticleModal: React.FC<SampleArticleModalProps> = ({ isOpen, 
     // Override for Fireplace Hubs (site-6) to use FIREPLACE_HUBS_ARTICLE
     else if (selectedSite.id === 'site-6') {
       article = FIREPLACE_HUBS_ARTICLE;
+    }
+    // Override for Salted Angler (site-7) to use SALTED_ANGLER_ARTICLE
+    else if (selectedSite.id === 'site-7') {
+      article = SALTED_ANGLER_ARTICLE;
     }
   }
 
