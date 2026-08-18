@@ -448,7 +448,7 @@ const AIR_CLEANSED_ARTICLE = {
 };
 
 // =============================================
-// FIREPLACE HUBS Article (Gas Fireplace Flame Too Low) - MOVED TO CARD 8
+// FIREPLACE HUBS Article (Gas Fireplace Flame Too Low) - Card 8
 // =============================================
 const FIREPLACE_HUBS_ARTICLE = {
   title: 'Gas Fireplace Flame Too Low [5 Easy Fixes]',
@@ -466,7 +466,9 @@ const FIREPLACE_HUBS_ARTICLE = {
     },
     {
       heading: 'Table of Contents',
-      body: '• Gas Fireplace Flame Too Low [5 Easy Fixes]\n• 1. Low Gas Pressure\n• 2. Obstructed Air Intake Vents\n• 3. Blocked Exhausts\n• 4. Clogged Burner Orifice\n• 5. Wide-Open Air Shutter\n• How To Get A Bigger Flame On Your Gas Fireplace\n• FAQs:\n• Conclusion'
+      body: '• Gas Fireplace Flame Too Low [5 Easy Fixes]\n• 1. Low Gas Pressure\n• 2. Obstructed Air Intake Vents\n• 3. Blocked Exhausts\n• 4. Clogged Burner Orifice\n• 5. Wide-Open Air Shutter\n• How To Get A Bigger Flame On Your Gas Fireplace\n• FAQs:\n• Conclusion',
+      visualAssetUrl: '/Gas-fireplace-flame-too-low.jpg',
+      visualAssetCaption: 'Figure: Gas fireplace flame too low - common causes and fixes'
     },
     {
       heading: 'Gas Fireplace Flame Too Low [5 Easy Fixes]',
