@@ -690,49 +690,54 @@ export const SampleArticleModal: React.FC<SampleArticleModalProps> = ({ isOpen, 
         <div className="p-6 sm:p-8 space-y-6 max-h-[80vh] overflow-y-auto">
           
           {/* Yoast SEO On-Page Meta Staging Box */}
-          <div className="bg-[#1E293B] p-5 rounded border border-slate-700/50 space-y-2.5">
-            <div className="flex items-center justify-between">
-              <span className="text-xs font-bold text-[#D4AF37] uppercase tracking-wider flex items-center space-x-1.5">
-                <Sparkles className="w-3.5 h-3.5 text-[#D4AF37]" />
-                <span>WordPress Staging Preview (Yoast SEO / Gutenberg)</span>
-              </span>
-              <span className="text-[10px] font-bold uppercase tracking-wider text-emerald-400 bg-[#0F172A] px-2 py-0.5 rounded border border-emerald-800/60">
-                SEO Score: Good (Green)
-              </span>
-            </div>
+<div className="bg-[#1E293B] p-5 rounded border border-slate-700/50 space-y-2.5">
+  <div className="flex items-center justify-between">
+    <span className="text-xs font-bold text-[#D4AF37] uppercase tracking-wider flex items-center space-x-1.5">
+      <Sparkles className="w-3.5 h-3.5 text-[#D4AF37]" />
+      <span>WordPress Staging Preview (Yoast SEO / Gutenberg)</span>
+    </span>
+    <span className="text-[10px] font-bold uppercase tracking-wider text-emerald-400 bg-[#0F172A] px-2 py-0.5 rounded border border-emerald-800/60">
+      SEO Score: Good (Green)
+    </span>
+  </div>
 
-            <div className="bg-[#0F172A] p-3.5 rounded border border-slate-800 space-y-2 text-xs min-h-[100px]">
-              <div className="flex items-center justify-between">
-                <div className="text-blue-400 font-bold text-xs hover:underline cursor-pointer truncate max-w-[60%]">
-                  {article.metaTitle}
-                </div>
-                <a
-                  href={`https://${selectedSite?.domain || 'example.com'}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center px-2.5 py-1 rounded bg-[#D4AF37] hover:bg-[#C19A2E] text-[#0F172A] font-extrabold text-[10px] uppercase tracking-wider transition-colors whitespace-nowrap shrink-0"
-                >
-                  <span>View Live Sample Article</span>
-                </a>
-              </div>
-              <div className="text-emerald-500 font-mono text-[10px] truncate">
-                https://{selectedSite?.domain || 'example.com'}
-              </div>
-              <p className="text-slate-300 leading-relaxed text-xs line-clamp-2">
-                {article.metaDescription}
-              </p>
-            </div>
+  <div className="bg-[#0F172A] p-3.5 rounded border border-slate-800 space-y-2 text-xs min-h-[100px]">
+    <div className="flex items-center justify-between gap-2">
+      <a
+        href={`https://${selectedSite?.domain || 'example.com'}`}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-blue-400 font-bold text-xs hover:underline truncate max-w-[60%] hover:text-blue-300 transition-colors"
+      >
+        {article.metaTitle}
+      </a>
+      <a
+        href={`https://${selectedSite?.domain || 'example.com'}`}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="inline-flex items-center px-2.5 py-1 rounded bg-[#D4AF37] hover:bg-[#C19A2E] text-[#0F172A] font-extrabold text-[10px] uppercase tracking-wider transition-colors whitespace-nowrap shrink-0"
+      >
+        <span>View Live Sample Article</span>
+      </a>
+    </div>
+    <div className="text-emerald-500 font-mono text-[10px] truncate">
+      https://{selectedSite?.domain || 'example.com'}
+    </div>
+    <p className="text-slate-300 leading-relaxed text-xs line-clamp-2">
+      {article.metaDescription}
+    </p>
+  </div>
 
-            {/* Target Keywords Tags */}
-            <div className="flex flex-wrap items-center gap-2 pt-1 text-xs">
-              <span className="text-slate-400 text-[10px] uppercase font-bold">Focus Keywords:</span>
-              {article.targetKeywords.map((kw, idx) => (
-                <span key={idx} className="px-2 py-0.5 bg-[#0F172A] text-[#D4AF37] border border-slate-700 text-[10px] uppercase font-semibold">
-                  {kw}
-                </span>
-              ))}
-            </div>
-          </div>
+  {/* Target Keywords Tags */}
+  <div className="flex flex-wrap items-center gap-2 pt-1 text-xs">
+    <span className="text-slate-400 text-[10px] uppercase font-bold">Focus Keywords:</span>
+    {article.targetKeywords.map((kw, idx) => (
+      <span key={idx} className="px-2 py-0.5 bg-[#0F172A] text-[#D4AF37] border border-slate-700 text-[10px] uppercase font-semibold">
+        {kw}
+      </span>
+    ))}
+  </div>
+</div>
 
           {/* GEO AI Engine Citation Box */}
           <div className="bg-[#1E293B] p-4 rounded border border-[#D4AF37]/40 space-y-2">
