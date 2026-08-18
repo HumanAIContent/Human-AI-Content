@@ -138,7 +138,7 @@ export const RECENT_SITES: RecentSite[] = [
   },
   {
     id: 'site-8',
-    name: 'HeaterFixLab (Edited By: Mikel Sims',
+    name: 'HeaterFixLab (Edited By: Mikel Sims)',
     domain: 'heaterfixlab.com/gas-fireplace-flame-too-low/',
     niche: 'Gas fireplace troubleshooting and DIY heating-appliance maintenance.',
     image: '/Heater-fix-lab.png',
