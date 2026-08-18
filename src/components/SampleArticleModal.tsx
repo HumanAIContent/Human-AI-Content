@@ -396,6 +396,50 @@ const HEALTHFUL_HUB_ARTICLE = {
 };
 
 // =============================================
+// AIR CLEANSED Article (Best Air Purifiers for Smoke) - Full Content
+// =============================================
+const AIR_CLEANSED_ARTICLE = {
+  title: 'Best Air Purifiers for Smoke of 2023 Reviews with Comparisons',
+  siteName: 'Air Cleansed',
+  siteCategory: 'Home & Indoor Air Quality (IAQ) / HVAC & Air Purification',
+  wordCount: 2200,
+  targetKeywords: ['air purifiers for smoke', 'best air purifiers', 'smoke removal', 'air purifier reviews', 'Coway Airmega 400', 'LEVOIT H13', 'Blueair HealthProtect', 'Dyson Pure Hot + Cool', 'Austin Air Bedroom Machine'],
+  geoAIAnswerSnippet: 'We aren\'t here to talk down to smokers, but we are here to help your house smell better, and to help make the air in your home much healthier to breathe. A good air purifier is all you need for this.',
+  metaTitle: 'Best Air Purifiers for Smoke of 2023 Reviews with Comparisons | Air Cleansed',
+  metaDescription: 'Discover the best air purifiers for smoke with in-depth reviews and comparisons. Find the perfect model for your home to eliminate odors and improve indoor air quality.',
+  sections: [
+    {
+      heading: 'Best Air Purifiers for Smoke Reviews',
+      body: 'There are so many options out there that it can make your head spin. We will be discussing some of the best air purifiers for smoke to help you in your quest for the one which is right for you.'
+    },
+    {
+      heading: 'Coway Airmega 400 Smart Air Purifier',
+      body: 'Here we have a very large and powerful air purifier, the Coway Airmega 400 Smart Air Purifier, designed to accommodate truly massive spaces, and it works well at controlling odors.\n\n**Review:**\nThe Coway Airmega 400 Smart Air Purifier is designed to handle spaces up to 1,560 square feet, which should be more than enough for most homes. It can purify the air in the advertised space up to two times an hour, resulting in some very clean air. This unit features a combined true HEPA filter and a carbon filter, eliminating up to 99.97% of the particles in the air. This includes dust, pollen, and other allergens too. The carbon filter does an excellent job of removing odors such as smoke from the air. This unit also comes with an indicator that tells you when both of the filters need to be washed or changed. One of the filters is washable, and the other is not. This air purifier comes with an LED air quality indicator, and it always takes measurements of the level of air quality in your home, so you know exactly where you stand at all times. The fact that the Coway Airmega 400 Smart Air Purifier uses only 64 watts makes it one of the more energy-efficient models, plus it\'s quiet, coming in at just over 40 decibels, even on the highest settings. There are 5 settings to choose from. The 3 smart modes automatically adjust to the purifier\'s surroundings to give you the best results at all times.\n\n**Pros:**\n• Dual filters for maximum air purification\n• Can handle very large spaces\n• Great odor control\n• One of the filters is washable\n• Tests the room for air quality\n• Quiet and energy-efficient\n\n**Cons:**\n• Gets louder over time\n• Loses efficiency over time'
+    },
+    {
+      heading: 'LEVOIT H13 True HEPA Filter Air Purifier',
+      body: 'This is a smaller and more affordable air purifier than the one we just looked at, one that does a great job of eliminating allergens and odors in single rooms.\n\n**Review:**\nThe LEVOIT H13 True HEPA Filter Air Purifier is designed to purify the air in rooms up to 516 square feet; although it can also be used for smaller rooms, it\'s not a unit that you could use for the whole house. However, what does need to be said is that this purifier comes with a true HEPA filter, and it comes with 3 stages of filtration. The pre-filter removes dust, lint, fur, and other such contaminants from the air, the true HEPA filter removes mold spores, pollen, pet dander, and other such pollutants, and the carbon filter removes odors, such as smoke and pet odors. In terms of filter maintenance, the LEVOIT H13 True HEPA Filter Air Purifier comes with an indicator that tells you when the filters need to be either washed or replaced. It is recommended that filters be replaced every 6 to 8 months. What is important to note is that this model is CARB certified. You might also like it because it\'s not overly loud, topping out at 46 decibels on the highest setting. The noise level at the lowest setting is roughly 25 decibels. You may also like this model because of its dual setting night light.\n\n**Pros:**\n• Ideal for single rooms\n• Great pollutant and odor removal\n• Indicator for filter maintenance\n• Fairly quiet\n• CARB compliant\n• Space-friendly\n\n**Cons:**\n• Not ideal for very large spaces\n• Durability/longevity of the motor is not the best'
+    },
+    {
+      heading: 'Blueair HealthProtect 7470i Smart Air Purifier',
+      body: 'This is an air purifier designed for even smaller spaces than the previous models reviewed, making it ideal for removing odors and purifying the air in small areas such as bedrooms or small living rooms.\n\n**Review:**\nThis air purifier is designed to accommodate rooms up to 674 square feet, which should be enough to handle smaller rooms. That said, keep in mind that the Blueair HealthProtect 7470i comes in various sizes, with the largest one being able to handle nearly 400 square feet. This model features a 3-part filtration system that uses a pre-filter, HEPA-like filter, and an activated carbon filter. Together, these 3 filters remove up to 99% of airborne contaminants, things like fur, dust, pollen, other allergens, pet dander, and odors too. Keep in mind that the pre-filter can be washed, but the other 2 will need to be replaced at some point, around every 6 months. Moreover, on its highest setting, this unit produces 22 decibels of noise. Generally speaking, that\'s not overly loud, however, for such a small unit, it\'s more noise than we would expect. That said, it is small and can easily fit on a desk or nightstand.\n\n**Pros:**\n• Ideal for small single rooms\n• 3-stage filtration\n• Great odor control\n• Pre-filter is washable\n• Various speed settings\n• Generally quiet\n• Small size and space-friendly\n\n**Cons:**\n• A bit pricey'
+    },
+    {
+      heading: 'Dyson Pure Hot + Cool Air Purifier',
+      body: 'This is an advanced air purifier that also serves as a heater for small spaces. It\'s got some interesting features worth talking about.\n\n**Review:**\nThe Dyson Pure Hot + Cool Air Purifier is rated to be effective for spaces up to 290 square feet, which is not too bad at all, as it should be able to handle 1 large or several smaller rooms. It comes with a high-quality HEPA filter that can remove up to 99.97% of airborne contaminants such as smoke, pollen, dust, pet dander, and more. Keep in mind that this purifier features dual filtration. It is powerful, as it delivers up to 77 gallons of airflow per minute. The Dyson Pure Hot + Cool Air Purifier has a sensor and an onboard display that informs you of the air quality at all times, and it even measures various specific compounds that should not be present in the air. What is also impressive about this unit is that it also works as a heater, and the heating aspect is quite powerful. Another awesome feature is how the Dyson Pure Hot + Cool Air Purifier is Wi-Fi enabled, so you can control it using your smartphone, plus you can get air-quality updates on your phone as well.\n\n**Pros:**\n• Excellent quality and durability\n• Doubles as a heater\n• Efficient pollutant and odor removal\n• Wi-Fi enabled – can connect to a phone\n• Space efficient\n• 350-degree airflow\n• Quite powerful\n\n**Cons:**\n• Expensive for its size\n• Syncing with phones can be a challenge'
+    },
+    {
+      heading: 'Austin Air Bedroom Machine Air Purifier B402A1',
+      body: 'Going back in the other direction, we want to finish things off with a purifier designed to handle massive spaces, whether several rooms or even a whole home.\n\n**Review:**\nIn terms of spatial capacity, the Austin Air Purifier is a large unit and it can handle large spaces of up to 1,500 square feet, making it one of the most powerful air purifiers on the list today. Not only is it powerful, but it is also super-efficient at its intended purpose, which is the removal of pollutants and odors from the air you breathe. It comes with a 4-stage filtration process. The first filter, the pre-filter, removes dust, hair, and pet dander; the second stage removes mold, spores, and pollen; the third stage removes chemicals, gasses, and odors; and the fourth stage, the HEPA filter, removes up to 99.97% of particles larger than 0.3 microns. As you can see, this may very well be the most efficient filter on our list. The Austin Air Purifier comes with a 360-degree air intake system and has 3 speed settings. What needs to be said about this unit is that it is not very energy efficient, as it uses up to 135 watts on the highest setting, and on that same note, it\'s not the quietest air purifier out there either.\n\n**Pros:**\n• Ideal for very large spaces\n• Extremely efficient 4-stage filtration\n• Excellent odor removal\n• 3 speed settings\n• Portable – has wheels\n\n**Cons:**\n• Makes a fair bit of noise\n• Not energy efficient'
+    },
+    {
+      heading: 'Final Verdict',
+      body: 'Whatever size room or home you need the air purified, we have reviewed various models that should work to eliminate smoke and pet odors and make the air much better for you to breathe. It all comes down to the size you need and how much you\'re willing to spend.'
+    }
+  ]
+};
+
+// =============================================
 // Main Modal Component
 // =============================================
 export const SampleArticleModal: React.FC<SampleArticleModalProps> = ({ isOpen, onClose, selectedSite }) => {
@@ -416,6 +460,10 @@ export const SampleArticleModal: React.FC<SampleArticleModalProps> = ({ isOpen, 
     // Override for Healthful Hub (site-3) to use HEALTHFUL_HUB_ARTICLE
     else if (selectedSite.id === 'site-3') {
       article = HEALTHFUL_HUB_ARTICLE;
+    }
+    // Override for Air Cleansed (site-2) to use AIR_CLEANSED_ARTICLE
+    else if (selectedSite.id === 'site-2') {
+      article = AIR_CLEANSED_ARTICLE;
     }
   }
 
