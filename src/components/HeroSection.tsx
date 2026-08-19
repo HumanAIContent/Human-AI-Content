@@ -18,7 +18,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onNavigate, onOpenSamp
             <img
               src="/Human-AI-Content-Creation-Square.png"
               alt="Human-AI Content Creation Logo"
-              className="w-24 h-24 sm:w-32 sm:h-32 object-contain rounded-lg shadow-md"
+              className="w-32 h-32 sm:w-32 sm:h-32 object-contain rounded-lg shadow-md"
             />
           </div>
           
@@ -85,98 +85,69 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onNavigate, onOpenSamp
               </button>
             </div>
 
-            {/* Why Work With Me Section - Consistent font size throughout heading */}
+            {/* Why Work With Me Section - MIDDLE GROUND FONT SIZES */}
             <div className="mt-6 pt-6 border-t border-slate-700/50 flex-1">
               <div className="space-y-4">
                 <div className="text-center max-w-3xl mx-auto space-y-1">
-                  <h3 className="text-[20px] font-extrabold text-white tracking-tight">
+                  <h3 className="text-[15px] sm:text-[20px] font-extrabold text-white tracking-tight">
                     Why Work With Me Over Cheaper Freelance Options?
                   </h3>
                   <p className="text-[11px] sm:text-[14px] text-slate-400">
-                    Generic freelancers require constant back-and-forth. Enjoy flawless, seamless communication, pristine copy, and no language barriers.
+                    Managing generic freelancers takes hours of editing every week. Here is why my managed pipeline is different.
                   </p>
                 </div>
 
-                {/* Titles and Icons Row 1 - Titles 1 & 2 (above boxes 1 & 2) */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                   
-                  <div className="flex items-center space-x-2 px-1">
-                    <div className="w-6 h-6 rounded bg-[#0F172A] border border-[#D4AF37]/40 flex items-center justify-center text-[#D4AF37] shrink-0">
-                      <Globe className="w-3 h-3" />
+                  <div className="bg-[#0F172A]/70 p-3 rounded border border-slate-700/50 space-y-1">
+                    <div className="flex items-center space-x-2">
+                      <div className="w-6 h-6 rounded bg-[#0F172A] border border-[#D4AF37]/40 flex items-center justify-center text-[#D4AF37] shrink-0">
+                        <Globe className="w-3 h-3" />
+                      </div>
+                      <h4 className="text-[11px] sm:text-[13px] font-bold text-white uppercase tracking-wide">1. Native English Communication</h4>
                     </div>
-                    <h4 className="text-[11px] sm:text-[13px] font-bold text-white uppercase tracking-wide">
-                      1. Zero Language Barriers
-                    </h4>
-                  </div>
-
-                  <div className="flex items-center space-x-2 px-1">
-                    <div className="w-6 h-6 rounded bg-[#0F172A] border border-[#D4AF37]/40 flex items-center justify-center text-[#D4AF37] shrink-0">
-                      <Award className="w-3 h-3" />
-                    </div>
-                    <h4 className="text-[11px] sm:text-[13px] font-bold text-white uppercase tracking-wide">
-                      2. Full-Funnel Web Expertise
-                    </h4>
-                  </div>
-
-                </div>
-
-                {/* Cards Row 1 - Descriptions for 1 & 2 with thin yellow border */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                  
-                  <div className="bg-[#0F172A]/70 p-3 rounded border border-[#D4AF37]/50 space-y-1">
                     <p className="text-[11px] sm:text-[13px] text-slate-300 leading-relaxed">
-                      Never waste time editing awkward phrasing or correcting subtle grammatical errors. Enjoy flawless, seamless communication with a native English speaker and absolute zero language barriers.
+                      Never edit awkward phrasing or correct subtle grammatical errors. Enjoy clear, seamless communication with zero language barriers.
                     </p>
                   </div>
 
-                  <div className="bg-[#0F172A]/70 p-3 rounded border border-[#D4AF37]/50 space-y-1">
+                  <div className="bg-[#0F172A]/70 p-3 rounded border border-slate-700/50 space-y-1">
+                    <div className="flex items-center space-x-2">
+                      <div className="w-6 h-6 rounded bg-[#0F172A] border border-[#D4AF37]/40 flex items-center justify-center text-[#D4AF37] shrink-0">
+                        <Award className="w-3 h-3" />
+                      </div>
+                      <h4 className="text-[11px] sm:text-[13px] font-bold text-white uppercase tracking-wide">2. Full-Funnel Web Expertise</h4>
+                    </div>
                     <p className="text-[11px] sm:text-[13px] text-slate-300 leading-relaxed">
-                     20+ years in web design, SEO, and sales copywriting, combined with 4+ years refining specialized AI-assisted, human-edited content workflows for ambitious US and global businesses.
+                      20 years of web design, SEO, and sales copywriting. 4+ years of specialized experience in AI-assisted Human-Edited writing workflows for US and global businesses.
                     </p>
                   </div>
 
-                </div>
-
-                {/* Titles and Icons Row 2 - Titles 3 & 4 (below boxes 1 & 2, above boxes 3 & 4) */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                  
-                  <div className="flex items-center space-x-2 px-1">
-                    <div className="w-6 h-6 rounded bg-[#0F172A] border border-[#D4AF37]/40 flex items-center justify-center text-[#D4AF37] shrink-0">
-                      <ShieldCheck className="w-3 h-3" />
+                  <div className="bg-[#0F172A]/70 p-3 rounded border border-slate-700/50 space-y-1">
+                    <div className="flex items-center space-x-2">
+                      <div className="w-6 h-6 rounded bg-[#0F172A] border border-[#D4AF37]/40 flex items-center justify-center text-[#D4AF37] shrink-0">
+                        <ShieldCheck className="w-3 h-3" />
+                      </div>
+                      <h4 className="text-[11px] sm:text-[13px] font-bold text-white uppercase tracking-wide">3. Reliable Low-Friction Partner</h4>
                     </div>
-                    <h4 className="text-[11px] sm:text-[13px] font-bold text-white uppercase tracking-wide">
-                      3. Hassle-Free Content Flow
-                    </h4>
-                  </div>
-
-                  <div className="flex items-center space-x-2 px-1">
-                    <div className="w-6 h-6 rounded bg-[#0F172A] border border-[#D4AF37]/40 flex items-center justify-center text-[#D4AF37] shrink-0">
-                      <Cpu className="w-3 h-3" />
-                    </div>
-                    <h4 className="text-[11px] sm:text-[13px] font-bold text-white uppercase tracking-wide">
-                      4. Proven AI + Human Workflow
-                    </h4>
-                  </div>
-
-                </div>
-
-                {/* Cards Row 2 - Descriptions for 3 & 4 with thin yellow border */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                  
-                  <div className="bg-[#0F172A]/70 p-3 rounded border border-[#D4AF37]/50 space-y-1">
                     <p className="text-[11px] sm:text-[13px] text-slate-300 leading-relaxed">
-                      Streamlined workflows, clear timelines, and predictable output. I build reliable, long-term client relationships focused on delivering high-performing, completely hassle-free content solutions.
+                      Clear workflows and predictable output. I focus on building long-term, reliable relationships with clients who want premium, hassle-free content solutions.
                     </p>
                   </div>
 
-                  <div className="bg-[#0F172A]/70 p-3 rounded border border-[#D4AF37]/50 space-y-1">
+                  <div className="bg-[#0F172A]/70 p-3 rounded border border-slate-700/50 space-y-1">
+                    <div className="flex items-center space-x-2">
+                      <div className="w-6 h-6 rounded bg-[#0F172A] border border-[#D4AF37]/40 flex items-center justify-center text-[#D4AF37] shrink-0">
+                        <Cpu className="w-3 h-3" />
+                      </div>
+                      <h4 className="text-[11px] sm:text-[13px] font-bold text-white uppercase tracking-wide">4. Proven AI + Human Workflow</h4>
+                    </div>
                     <p className="text-[11px] sm:text-[13px] text-slate-300 leading-relaxed">
-                      I leverage AI for deep topic research and initial drafting, saving valuable time to meticulously refine messaging, rigorously fact-check copy, and craft sharp, high-impact visuals.
+                      I leverage AI for deep research & initial drafting, reserving maximum time to meticulously refine messaging, fact-check copy, & produce sharp, human-edited visuals.
                     </p>
                   </div>
 
                 </div>
-
               </div>
             </div>
 
