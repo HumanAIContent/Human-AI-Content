@@ -789,8 +789,9 @@ export const SampleArticleModal: React.FC<SampleArticleModalProps> = ({ isOpen, 
             </button>
           </div>
 
-        </div>  {/* Close Modal Body */}
-      </div>    {/* Close Inner Container */}
-    </div>      {/* Close Modal Wrapper */}
+                 </div>  {/* 1: Bottom Action Bar */}
+        </div>    {/* 2: Modal Body */}
+      </div>      {/* 3: Inner Container */}
+    </div>        {/* 4: Modal Wrapper */}
   );
-};            {/* Close Component */}
+};
