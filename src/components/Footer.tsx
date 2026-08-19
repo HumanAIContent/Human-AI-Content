@@ -29,17 +29,6 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, onOpenAgreements }) 
             <p className="text-slate-300 leading-relaxed max-w-md text-xs">
               A complete, end-to-end content management solution for US and international brands, blending the efficiency of AI-assisted content generation with the refinement of human editing. Fresh, authoritative, and reader-ready material published consistently—all through a hassle-free, hands-off service that runs seamlessly in the background, requiring virtually zero oversight from you.
             </p>
-
-            <div className="pt-1 flex flex-wrap gap-2 text-[10px] uppercase font-bold">
-              <span className="px-2.5 py-1 bg-[#1E293B] text-[#D4AF37] border border-slate-700/60 flex items-center space-x-1">
-                <Globe className="w-3 h-3" />
-                <span>Native Australian Strategist</span>
-              </span>
-              <span className="px-2.5 py-1 bg-[#1E293B] text-slate-300 border border-slate-700/60 flex items-center space-x-1">
-                <ShieldCheck className="w-3 h-3 text-emerald-400" />
-                <span>20+ Yrs Web & Copy Experience</span>
-              </span>
-            </div>
           </div>
 
           {/* Column 3: Navigation + Contact */}
@@ -144,7 +133,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, onOpenAgreements }) 
               </li>
             </ul>
 
-            {/* Service Agreement Overviews - MOVED HERE */}
+            {/* Service Agreement Overviews */}
             <div className="pt-4 border-t border-slate-700/50">
               <button 
                 onClick={onOpenAgreements} 
