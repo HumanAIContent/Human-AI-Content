@@ -44,7 +44,6 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, onOpenAgreements }) 
 
           {/* Column 3: Navigation + Contact */}
           <div>
-            {/* Navigation Heading */}
             <h4 className="text-white font-bold mb-3 text-[11px] tracking-widest uppercase text-[#D4AF37]">
               Navigation
             </h4>
@@ -101,7 +100,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, onOpenAgreements }) 
               </li>
             </ul>
 
-            {/* New CONTACT Heading */}
+            {/* CONTACT Heading */}
             <h4 className="text-white font-bold mb-3 text-[11px] tracking-widest uppercase text-[#D4AF37]">
               Contact
             </h4>
@@ -117,12 +116,12 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, onOpenAgreements }) 
             </ul>
           </div>
 
-          {/* Column 4: Services */}
+          {/* Column 4: Services Offered + Service Agreement Overviews */}
           <div>
             <h4 className="text-white font-bold mb-3 text-[11px] tracking-widest uppercase text-[#D4AF37]">
               Services Offered
             </h4>
-            <ul className="space-y-2 text-slate-300">
+            <ul className="space-y-2 text-slate-300 mb-4">
               <li className="flex items-center space-x-1.5">
                 <Check className="w-3.5 h-3.5 text-[#D4AF37]" />
                 <span>SEO & GEO Articles (up to 2,500w)</span>
@@ -144,6 +143,17 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, onOpenAgreements }) 
                 <span>Google Drive Shared Archiving</span>
               </li>
             </ul>
+
+            {/* Service Agreement Overviews - MOVED HERE */}
+            <div className="pt-4 border-t border-slate-700/50">
+              <button 
+                onClick={onOpenAgreements} 
+                className="text-[#D4AF37] hover:text-white font-bold text-[11px] uppercase tracking-wider transition-colors flex items-center space-x-1.5"
+              >
+                <FileText className="w-3.5 h-3.5" />
+                <span>Service Agreement Overviews</span>
+              </button>
+            </div>
           </div>
 
         </div>
@@ -151,9 +161,6 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, onOpenAgreements }) 
         {/* Bottom Bar */}
         <div className="mt-8 pt-6 border-t border-slate-700/50 flex flex-col sm:flex-row items-center justify-between text-slate-400 space-y-3 sm:space-y-0 text-[11px]">
           <p>© {new Date().getFullYear()} Human AI Content. All rights reserved.</p>
-          <div className="flex items-center space-x-4">
-            <button onClick={onOpenAgreements} className="hover:text-white uppercase font-bold text-[#D4AF37]">Service Agreement Overviews</button>
-          </div>
         </div>
       </div>
     </footer>
