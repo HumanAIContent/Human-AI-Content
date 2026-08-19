@@ -91,7 +91,7 @@ export const Navbar: React.FC<NavbarProps> = ({ activePage, onNavigate, onOpenAg
                 alt="Human AI Content Logo" 
                 className="w-8 h-8 rounded bg-[#1E293B] border border-[#D4AF37]/50 object-contain p-0.5"
               />
-              <span className="font-extrabold text-sm text-white tracking-wider uppercase hidden sm:inline-block">
+              <span className="font-extrabold text-sm text-white tracking-wider uppercase">
                 HUMAN <span className="text-[#D4AF37]">AI</span> CONTENT
               </span>
             </button>
