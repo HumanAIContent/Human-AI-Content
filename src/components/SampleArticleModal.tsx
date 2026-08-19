@@ -793,9 +793,3 @@ export const SampleArticleModal: React.FC<SampleArticleModalProps> = ({ isOpen, 
     </div>
   </div>
 );
-
-      </div>
-
-    </div>
-  );
-};
