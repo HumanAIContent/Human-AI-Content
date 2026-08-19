@@ -21,7 +21,9 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, onOpenAgreements }) 
                 alt="Human AI Content Creation Logo" 
                 className="w-10 h-10 md:w-16 md:h-16 rounded object-cover border border-[#D4AF37]/50" 
               />
-              <span className="font-extrabold text-base text-white tracking-wider uppercase">HUMAN AI CONTENT</span>
+              <span className="font-extrabold text-base text-white tracking-wider uppercase">
+                HUMAN <span className="text-[#D4AF37]">AI</span> CONTENT
+              </span>
             </div>
             
             <p className="text-slate-300 leading-relaxed max-w-md text-xs">
