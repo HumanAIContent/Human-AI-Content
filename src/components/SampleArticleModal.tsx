@@ -776,7 +776,7 @@ export const SampleArticleModal: React.FC<SampleArticleModalProps> = ({ isOpen, 
           ))}
         </div>
 
-               {/* Bottom Action Bar */}
+                     {/* Bottom Action Bar */}
           <div className="pt-4 border-t border-slate-700/50 flex flex-col sm:flex-row items-center justify-between gap-3 min-h-[60px]">
             <div className="text-xs text-slate-400 text-center sm:text-left">
               Deliverable Length: <span className="font-bold text-white">{article.wordCount} Words</span> • Native Australian Human Edit
@@ -789,9 +789,8 @@ export const SampleArticleModal: React.FC<SampleArticleModalProps> = ({ isOpen, 
             </button>
           </div>
 
-                 </div>  {/* 1: Bottom Action Bar */}
-        </div>    {/* 2: Modal Body */}
-      </div>      {/* 3: Inner Container */}
-    </div>        {/* 4: Modal Wrapper */}
+        </div>
+      </div>
+    </div>
   );
 };
