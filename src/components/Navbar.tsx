@@ -10,6 +10,7 @@ interface NavbarProps {
 
 export const Navbar: React.FC<NavbarProps> = ({ activePage, onNavigate, onOpenAgreements }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [activeTab, setActiveTab] = useState<string>('home');
 
   // Close mobile menu when window resizes to desktop
   useEffect(() => {
@@ -37,6 +38,7 @@ export const Navbar: React.FC<NavbarProps> = ({ activePage, onNavigate, onOpenAg
   const handleNavClick = (page: NavPage, selectedPackage?: string) => {
     onNavigate(page, selectedPackage);
     setIsMenuOpen(false);
+    setActiveTab(page);
     // Scroll to top when navigating to home
     if (page === 'home') {
       window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -45,6 +47,7 @@ export const Navbar: React.FC<NavbarProps> = ({ activePage, onNavigate, onOpenAg
 
   const scrollToSection = (sectionId: string) => {
     setIsMenuOpen(false);
+    setActiveTab(sectionId);
     
     // If we're already on home, just scroll
     if (activePage === 'home') {
@@ -81,6 +84,10 @@ export const Navbar: React.FC<NavbarProps> = ({ activePage, onNavigate, onOpenAg
     attemptScroll(300);
   };
 
+  const isTabActive = (tabId: string) => {
+    return activeTab === tabId;
+  };
+
   return (
     <>
       <header className="sticky top-0 z-50 bg-[#0F172A] border-b border-slate-700/50 backdrop-blur-sm">
@@ -107,33 +114,39 @@ export const Navbar: React.FC<NavbarProps> = ({ activePage, onNavigate, onOpenAg
               <button
                 onClick={() => handleNavClick('home')}
                 className={`hover:text-[#D4AF37] transition-colors ${
-                  activePage === 'home' ? 'text-[#D4AF37]' : 'text-slate-300'
+                  isTabActive('home') ? 'text-[#D4AF37]' : 'text-slate-300'
                 }`}
               >
                 Home
               </button>
               <button
                 onClick={() => scrollToSection('packages')}
-                className="text-slate-300 hover:text-[#D4AF37] transition-colors"
+                className={`hover:text-[#D4AF37] transition-colors ${
+                  isTabActive('packages') ? 'text-[#D4AF37]' : 'text-slate-300'
+                }`}
               >
                 Packages
               </button>
               <button
                 onClick={() => scrollToSection('recent-sites')}
-                className="text-slate-300 hover:text-[#D4AF37] transition-colors"
+                className={`hover:text-[#D4AF37] transition-colors ${
+                  isTabActive('recent-sites') ? 'text-[#D4AF37]' : 'text-slate-300'
+                }`}
               >
                 Portfolio
               </button>
               <button
                 onClick={() => scrollToSection('faq')}
-                className="text-slate-300 hover:text-[#D4AF37] transition-colors"
+                className={`hover:text-[#D4AF37] transition-colors ${
+                  isTabActive('faq') ? 'text-[#D4AF37]' : 'text-slate-300'
+                }`}
               >
                 FAQ
               </button>
               <button
                 onClick={() => handleNavClick('contact')}
                 className={`px-4 py-1.5 bg-[#D4AF37] hover:bg-[#C19A2E] text-[#0F172A] transition-colors rounded ${
-                  activePage === 'contact' ? 'bg-[#C19A2E]' : ''
+                  isTabActive('contact') ? 'bg-[#C19A2E]' : ''
                 }`}
               >
                 Enquire Now
@@ -167,32 +180,40 @@ export const Navbar: React.FC<NavbarProps> = ({ activePage, onNavigate, onOpenAg
             <button
               onClick={() => handleNavClick('home')}
               className={`hover:text-[#D4AF37] transition-colors ${
-                activePage === 'home' ? 'text-[#D4AF37]' : 'text-slate-300'
+                isTabActive('home') ? 'text-[#D4AF37]' : 'text-slate-300'
               }`}
             >
               Home
             </button>
             <button
               onClick={() => scrollToSection('packages')}
-              className="text-slate-300 hover:text-[#D4AF37] transition-colors"
+              className={`hover:text-[#D4AF37] transition-colors ${
+                isTabActive('packages') ? 'text-[#D4AF37]' : 'text-slate-300'
+              }`}
             >
               Packages
             </button>
             <button
               onClick={() => scrollToSection('recent-sites')}
-              className="text-slate-300 hover:text-[#D4AF37] transition-colors"
+              className={`hover:text-[#D4AF37] transition-colors ${
+                isTabActive('recent-sites') ? 'text-[#D4AF37]' : 'text-slate-300'
+              }`}
             >
               Portfolio
             </button>
             <button
               onClick={() => scrollToSection('faq')}
-              className="text-slate-300 hover:text-[#D4AF37] transition-colors"
+              className={`hover:text-[#D4AF37] transition-colors ${
+                isTabActive('faq') ? 'text-[#D4AF37]' : 'text-slate-300'
+              }`}
             >
               FAQ
             </button>
             <button
               onClick={() => handleNavClick('contact')}
-              className="w-full py-2.5 bg-[#D4AF37] hover:bg-[#C19A2E] text-[#0F172A] transition-colors rounded text-center"
+              className={`w-full py-2.5 bg-[#D4AF37] hover:bg-[#C19A2E] text-[#0F172A] transition-colors rounded text-center ${
+                isTabActive('contact') ? 'bg-[#C19A2E]' : ''
+              }`}
             >
               Enquire Now
             </button>
