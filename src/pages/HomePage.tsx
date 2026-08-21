@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavPage, RecentSite } from '../types';
 import { HeroSection } from '../components/HeroSection';
-import { RecentSitesSection } from '../components/RecentSitesSection';
+import RecentSitesSection from '../components/RecentSitesSection';
 import { PricingSection } from '../components/PricingSection';
 import { TestimonialsSection } from '../components/TestimonialsSection';
 import { FaqSection } from '../components/FaqSection';
