@@ -88,15 +88,23 @@ export const Navbar: React.FC<NavbarProps> = ({ activePage, onNavigate, onOpenAg
     return activeTab === tabId;
   };
 
+  const scrollToFooter = () => {
+    setIsMenuOpen(false);
+    const footer = document.querySelector('footer') || document.getElementById('footer');
+    if (footer) {
+      footer.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <>
       <header className="sticky top-0 z-50 bg-[#0F172A] border-b border-slate-700/50 backdrop-blur-sm">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             
-            {/* Logo */}
+            {/* Logo - Navigates to Footer */}
             <button
-              onClick={() => handleNavClick('home')}
+              onClick={scrollToFooter}
               className="flex items-center space-x-2 hover:opacity-80 transition-opacity"
             >
               <img 
