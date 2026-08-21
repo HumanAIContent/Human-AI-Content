@@ -37,6 +37,10 @@ export const Navbar: React.FC<NavbarProps> = ({ activePage, onNavigate, onOpenAg
   const handleNavClick = (page: NavPage, selectedPackage?: string) => {
     onNavigate(page, selectedPackage);
     setIsMenuOpen(false);
+    // Scroll to top when navigating to home
+    if (page === 'home') {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
   };
 
   const scrollToSection = (sectionId: string) => {
@@ -60,6 +64,8 @@ export const Navbar: React.FC<NavbarProps> = ({ activePage, onNavigate, onOpenAg
     
     // Navigate to home first, then scroll after render
     onNavigate('home');
+    // Scroll to top of the page first, then to the section
+    window.scrollTo({ top: 0, behavior: 'smooth' });
     
     const attemptScroll = (delay: number) => {
       setTimeout(() => {
