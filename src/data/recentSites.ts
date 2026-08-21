@@ -1,24 +1,9 @@
 import { RecentSite } from '../types';
 
 export const RECENT_SITES: RecentSite[] = [
-  {
-    id: 'site-5',
-    name: 'Innovacious',
-    domain: 'innovacious.com/real-estate-marketing-website/',
-    niche: 'Web Management & Digital Growth Service',
-    image: '/Inno_logo_Aug2025_2480.jpg',
-    packageUsed: 'Content + Visual Assets',
-    description: 'Build a real estate marketing website that generates leads with proven design elements, SEO strategies, and conversion optimisation techniques for agents and brokers.',
-    sampleArticleTitle: 'Real Estate Marketing Website: Design & SEO Tips',
-    sampleArticleExcerpt: 'Build a real estate marketing website that generates leads with proven design elements, SEO strategies, and conversion optimisation techniques for long-term growth.',
-    geoOptimizationDetails: 'An effective real estate marketing website combines localized IDX/MLS listing feeds, mobile-first responsive design, and strategic call-to-action (CTA) funnels to turn local search traffic into qualified buyer and seller leads.',
-    deliverableBreakdown: [
-      '4x 1,600-word Industry Whitepapers',
-      'Custom Shipping Route Maps & Flowcharts',
-      'Organized Shared Google Drive Workspace',
-      'Structured Monday Delivery Schedule'
-    ]
-  },
+  // =============================================
+  // CARD 1 - Tokyo Rehabilitation (site-1) - NOW FIRST
+  // =============================================
   {
     id: 'site-1',
     name: 'Tokyo Rehabilitation',
@@ -38,7 +23,28 @@ export const RECENT_SITES: RecentSite[] = [
     ]
   },
   // =============================================
-  // CARD 3 (NEW POSITION) - Newest.ai (was site-4)
+  // CARD 2 - Innovacious (site-5) - NOW SECOND
+  // =============================================
+  {
+    id: 'site-5',
+    name: 'Innovacious',
+    domain: 'innovacious.com/real-estate-marketing-website/',
+    niche: 'Web Management & Digital Growth Service',
+    image: '/Inno_logo_Aug2025_2480.jpg',
+    packageUsed: 'Content + Visual Assets',
+    description: 'Build a real estate marketing website that generates leads with proven design elements, SEO strategies, and conversion optimisation techniques for agents and brokers.',
+    sampleArticleTitle: 'Real Estate Marketing Website: Design & SEO Tips',
+    sampleArticleExcerpt: 'Build a real estate marketing website that generates leads with proven design elements, SEO strategies, and conversion optimisation techniques for long-term growth.',
+    geoOptimizationDetails: 'An effective real estate marketing website combines localized IDX/MLS listing feeds, mobile-first responsive design, and strategic call-to-action (CTA) funnels to turn local search traffic into qualified buyer and seller leads.',
+    deliverableBreakdown: [
+      '4x 1,600-word Industry Whitepapers',
+      'Custom Shipping Route Maps & Flowcharts',
+      'Organized Shared Google Drive Workspace',
+      'Structured Monday Delivery Schedule'
+    ]
+  },
+  // =============================================
+  // CARD 3 - Newest.ai (site-4)
   // =============================================
   {
     id: 'site-4',
@@ -59,7 +65,7 @@ export const RECENT_SITES: RecentSite[] = [
     ]
   },
   // =============================================
-  // CARD 4 - Healthful Hub (site-3) - Stays in position 4
+  // CARD 4 - Healthful Hub (site-3)
   // =============================================
   {
     id: 'site-3',
@@ -80,7 +86,7 @@ export const RECENT_SITES: RecentSite[] = [
     ]
   },
   // =============================================
-  // CARD 5 (NEW POSITION) - Verdant Organic Wellness (was site-2)
+  // CARD 5 - Air Cleansed (site-2)
   // =============================================
   {
     id: 'site-2',
@@ -91,7 +97,7 @@ export const RECENT_SITES: RecentSite[] = [
     packageUsed: 'Full-Service All-Inclusive',
     description: 'Discover expert reviews, air purifier comparisons, and practical indoor air quality solutions. Learn how to eliminate dust, mold, and allergens for a cleaner home.',
     sampleArticleTitle: 'Best Air Purifiers for Smoke of 2023',
-    sampleArticleExcerpt: 'We aren’t here to talk down to smokers, but we are here to help your house smell better, and to help make the air in your home much healthier to breathe. A good air purifier is all you need for this.',
+    sampleArticleExcerpt: 'We aren\'t here to talk down to smokers, but we are here to help your house smell better, and to help make the air in your home much healthier to breathe. A good air purifier is all you need for this.',
     geoOptimizationDetails: 'According to environmental health studies, indoor air often contains 2 to 5 times higher concentrations of specific pollutants than outdoor air. Implementing targeted filtration and continuous ventilation significantly reduces exposure to airborne triggers, supporting long-term respiratory wellness.',
     deliverableBreakdown: [
       '4x 1,800-word Medical Review Articles',
@@ -100,6 +106,9 @@ export const RECENT_SITES: RecentSite[] = [
       'CoSchedule Pinterest & Instagram Scheduling'
     ]
   },
+  // =============================================
+  // CARD 6 - Fireplace Hubs (site-6)
+  // =============================================
   {
     id: 'site-6',
     name: 'Fireplace Hubs (Edited By: Mikel Sims)',
@@ -118,6 +127,9 @@ export const RECENT_SITES: RecentSite[] = [
       'CoSchedule Facebook & Instagram Campaigns'
     ]
   },
+  // =============================================
+  // CARD 7 - Salted Angler (site-7)
+  // =============================================
   {
     id: 'site-7',
     name: 'Salted Angler (Edited By: Mikel Sims).',
@@ -136,6 +148,9 @@ export const RECENT_SITES: RecentSite[] = [
       '5-Day Review & Revision Window'
     ]
   },
+  // =============================================
+  // CARD 8 - HeaterFixLab (site-8)
+  // =============================================
   {
     id: 'site-8',
     name: 'HeaterFixLab (Edited By: Mikel Sims)',
