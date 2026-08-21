@@ -45,21 +45,10 @@ const RecentSitesSection: React.FC<RecentSitesSectionProps> = ({ onSelectSite })
                 />
               </div>
 
-{/* Card Body - Only Sample Article section remains */}
-<div className="p-4 space-y-3 flex-1 flex flex-col justify-between">
-  
-  <div className="space-y-2.5">
-    {/* Sample Article Section */}
-    <div className="pt-2 border-t border-slate-700/50 space-y-0.5">
-      <div className="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Sample Article:</div>
-      <p className="text-xs font-semibold text-white italic line-clamp-2">
-        "{site.sampleArticleTitle}"
-      </p>
-    </div>
-  </div>
-
+{/* Card Body - Button only */}
+<div className="p-4 flex-1 flex flex-col justify-end">
   {/* Action Trigger Button */}
-  <div className="pt-2">
+  <div>
     <button
       onClick={() => onSelectSite(site)}
       className="w-full py-2 px-3 bg-[#D4AF37] hover:bg-[#C19A2E] text-[#0F172A] text-xs font-bold uppercase tracking-wider flex items-center justify-center space-x-1.5 transition-colors shadow-sm"
@@ -68,7 +57,6 @@ const RecentSitesSection: React.FC<RecentSitesSectionProps> = ({ onSelectSite })
       <span>View Samples</span>
     </button>
   </div>
-
 </div>
 
             </div>
