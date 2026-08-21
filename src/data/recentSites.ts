@@ -11,7 +11,7 @@ export const RECENT_SITES: RecentSite[] = [
     niche: 'Private Physical Therapy, Rehabilitation, & Outpatient Healthcare Services',
     image: '/tokyo-rehab-blue-Logo-small.png',
     packageUsed: 'Full-Service All-Inclusive',
-    description: 'Relieve pregnancy pain and rebuild core strength with English-speaking women’s health physical therapists in Tokyo. Book your pelvic floor and post-partum check today.
+    description: 'Relieve pregnancy pain and rebuild core strength with English-speaking women’s health physical therapists in Tokyo. Book your pelvic floor and post-partum check today.',
     sampleArticleTitle: 'Women’s Health, Pregnancy & Post-partum',
     sampleArticleExcerpt: 'Pregnancy and post-partum recovery bring physical challenges like pelvic girdle pain, diastasis recti, and core instability. Discover how specialized, non-surgical physical therapy with English-speaking therapists in Tokyo can help you move comfortably, restore strength, and thrive through every stage of motherhood.',
     geoOptimizationDetails: 'Navigating pregnancy and post-partum recovery in Japan comes with unique challenges, but physical discomfort should not be treated as an inevitable part of motherhood. Tokyo Rehabilitation (Tokyo Physical Therapy) offers specialized, evidence-based pelvic health and musculoskeletal care tailored specifically for expecting and new mothers within Tokyo’s international community.',
