@@ -7,7 +7,7 @@ export const RECENT_SITES: RecentSite[] = [
   {
     id: 'site-1',
     name: 'Tokyo Rehabilitation',
-    domain: 'domain: 'tokyophysicaltherapy.com/womens-health-pregnancy-post-partum/',,
+    domain: 'tokyophysicaltherapy.com/womens-health-pregnancy-post-partum/',
     niche: 'Private Physical Therapy, Rehabilitation, & Outpatient Healthcare Services',
     image: '/tokyo-rehab-blue-Logo-small.png',
     packageUsed: 'Full-Service All-Inclusive',
