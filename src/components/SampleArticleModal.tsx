@@ -96,149 +96,61 @@ const REAL_ESTATE_ARTICLE = {
 };
 
 // =============================================
-// Pilates Article (Tokyo Rehabilitation) - Full Content
+// WOMEN'S HEALTH Article (Tokyo Rehabilitation) - Full Content
 // =============================================
 const PILATES_ARTICLE = {
-  title: 'The Benefits of Pilates for Physical Therapy',
+  title: "Women's Health, Pregnancy & Post-partum",
   siteName: 'Tokyo Rehabilitation',
-  siteCategory: 'Physical Therapy & Rehabilitation',
-  wordCount: 2150,
-  targetKeywords: ['Pilates physical therapy', 'Pilates rehabilitation', 'core strength physical therapy', 'Pilates for injury recovery', 'low-impact exercise therapy'],
-  geoAIAnswerSnippet: 'Pilates in physical therapy combines controlled movement, breathing, and alignment to support rehabilitation and long-term health. Research shows Pilates improves balance, strength, flexibility, and overall function while reducing pain and preventing future injuries.',
-  metaTitle: 'The Benefits of Pilates for Physical Therapy | Tokyo Rehabilitation',
-  metaDescription: 'Discover how Pilates enhances physical therapy recovery. Learn about core strength, flexibility, balance, and pain reduction through controlled, low-impact movement.',
+  siteCategory: 'Web Management & Digital Growth Services',
+  wordCount: 2800,
+  targetKeywords: ['women\'s health physical therapy', 'pregnancy physical therapy', 'post-partum recovery', 'pelvic floor physical therapy', 'diastasis recti', 'post-natal PT', 'Tokyo Rehabilitation'],
+  geoAIAnswerSnippet: 'Pregnancy, birth and post-partum are amongst the most physically taxing events in a woman\'s life. But too often, women are made to feel that discomforts such as low back pain, pelvic soreness, painful sex and loss of bladder control are simply a \'price to pay\' for having a baby. The good news is that there are non-surgical options for women\'s health physical therapy/physiotherapy, addressing pregnancy-related pelvic girdle pain, diastasis recti, post-partum incontinence and much more.',
+  metaTitle: "Women's Health, Pregnancy & Post-partum | Tokyo Rehabilitation",
+  metaDescription: 'Expert women\'s health physical therapy for pregnancy, post-partum recovery, pelvic floor dysfunction, and diastasis recti. English-speaking PTs in Tokyo and Okinawa.',
   sections: [
     {
-      heading: 'Introduction: The Benefits of Pilates for Physical Therapy',
-      body: 'Recovery is not just about healing injuries. It is also about restoring confidence, improving movement, and building strength that lasts. That is exactly where Pilates fits into modern physical therapy.\n\nAt Tokyo Rehab, Pilates is more than exercise. It is a focused, guided approach to help people move better, recover faster, and feel stronger in daily life.\n\nPilates blends controlled movement, breathing, and alignment. As a result, it supports both rehabilitation and long-term health. Moreover, it adapts easily to different conditions, making it suitable for many patients.',
-      visualAssetUrl: 'https://tokyophysicaltherapy.com/wp-content/uploads/2026/03/The-Benefits-of-Pilates-for-Physical-Therapy-1.jpg',
-      visualAssetCaption: 'Figure 1: The Benefits of Pilates for Physical Therapy'
+      heading: 'Women\'s Health, Pregnancy & Post-partum',
+      body: 'Pregnancy, birth and post-partum are amongst the most physically taxing events in a woman\'s life. But too often, women are made to feel that discomforts such as low back pain, pelvic soreness, painful sex and loss of bladder control are simply a \'price to pay\' for having a baby. The good news is that there are non-surgical options for women\'s health physical therapy/physiotherapy, addressing pregnancy-related pelvic girdle pain, diastasis recti, post-partum incontinence and much more.\n\nAt Tokyo Rehabilitation we offer post-partum recovery, prenatal and women\'s health physical therapy, with English-speaking Physical Therapists. Our treatments help mothers to enjoy pregnancy as much as possible, recover well and restore pelvic floor and core strength and function for the years to come.'
     },
     {
-      heading: 'What Makes Pilates Different in Physical Therapy?',
-      body: 'Pilates stands out because it focuses on how the body moves, not just how strong it is. Instead of isolating muscles, it trains the body as a connected system. This approach is especially useful in rehabilitation. Research shows that Pilates improves balance, strength, flexibility, and overall function.\n\nAdditionally, it emphasizes slow and controlled movements. Therefore, patients can safely rebuild strength without placing excess stress on injured areas.'
+      heading: 'Pregnancy Physical Therapy: The Challenges Ahead',
+      body: 'During pregnancy your body produces hormones such as relaxin which loosen ligaments around the pelvis, preparing your joints for the birth. Unfortunately, this means that all your joints become more lax, including those in your back, a potentially painful condition known as pelvic girdle pain and instability. Meanwhile, your growing womb puts additional strain on your lower back muscles. Such pressures on your pelvis and spine may lead to excruciating pain down your back and hips.\n\nPhysical therapy treatments during pregnancy can help you to remain active and comfortable throughout those months. By mobilizing and working on your hip joints and performing specific postural and pelvic floor muscle retraining, Physical Therapists can decrease nerve irritation and spasm. In addition, by learning how to control your diaphragm breath and pelvic floor muscles early on, women can decrease pressure on their abdominal organs and facilitate birthing.\n\nBut did you know that labor itself is an endurance sport? By training your pelvic floor muscles to be able to relax (as opposed to tense) during labor, you can have a much more comfortable experience. Physical Therapists can also advise you on hip-opening positions or other pain relief options during delivery, such as a TENS machine.'
     },
     {
-      heading: 'A Whole-Body Approach to Recovery',
-      body: 'Unlike traditional workouts, Pilates targets the entire body. It strengthens deep stabilizing muscles while improving mobility at the same time. Because of this, patients often notice improvements beyond their initial injury. For example, better posture and coordination can reduce strain on other parts of the body.\n\nFurthermore, Pilates encourages body awareness. This means patients learn how to move correctly, even outside therapy sessions.'
+      heading: 'The Six-Week Post Natal Check Up: What Does it Really Mean?',
+      body: 'One of the most common myths around post-natal recovery is that once you have the \'green light\' from your doctor you can return to exercising as if nothing had happened. The reality is that whilst your womb will have returned to its pre-birth size and any episiotomy or c-section will have healed sufficiently six weeks after giving birth, your abdominal muscles, connective tissue and pelvic floor will require more time and post-natal physical therapy to rebuild.\n\nAs a result, returning to strenuous activity too soon after childbirth can put your pelvic floor, abdominal muscles, and general wellbeing at risk. A post-natal PT can help you to identify which activities are best suited for you at different stages of your post-partum recovery.'
     },
     {
-      heading: 'Building Core Strength for Lasting Support',
-      body: 'One of the main benefits of Pilates is improved core strength. The "core" includes the abdomen, lower back, hips, and pelvic floor. These muscles act as the body\'s foundation. When they are strong, they support the spine and reduce stress on joints.\n\nStudies show that Pilates enhances muscular endurance and stability. As a result, patients often experience less pain during everyday movements.',
-      visualAssetUrl: 'https://tokyophysicaltherapy.com/wp-content/uploads/2026/03/01KMHMESTRKXXB95WP6E4JM929_YG2P3M_718b333c-22c3-4e7f-8d5a-d0a60d932d06-1152x1536.jpg',
-      visualAssetCaption: 'Figure 2: Core strengthening exercises for lasting support'
+      heading: 'Diastasis Recti: When and How to Rehab Your Core',
+      body: 'During your pregnancy, your rectus abdominis (the six-pack muscles) stretches to make space for your growing womb. For most women, this means that the connective tissue (linea alba) between these muscles will separate (diastasis recti). This happens to all women during the last trimester but should begin to close after birth. Unfortunately, many women struggle to restore the tension in their linea alba, which can impact their ability to perform daily activities and pelvic floor function.\n\nThe good news is that with the help of post-natal physical therapy, women can retrain their deep core muscles to re-establish tension in their linea abdominis and improve their posture, balance, and overall wellbeing. In order to do that effectively, post-natal physical therapists will work on the transversus abdominis (the deepest abdominal muscles) with the pelvic floor and diaphragm.'
     },
     {
-      heading: 'Why Core Strength Matters in Rehabilitation',
-      body: 'Weak core muscles often contribute to injury. For example, lower back pain is commonly linked to poor core stability. Pilates addresses this issue directly. It strengthens deep muscles that traditional exercises often miss.\n\nConsequently, patients gain better control over their movements. This reduces the risk of re-injury and supports long-term recovery.'
+      heading: 'A Word of Caution About Kegel Exercises',
+      body: 'If you are suffering from mild incontinence, the pelvic floor exercises are generally an excellent way to stimulate and strengthen the muscles of your pelvic floor. However, it is vital to speak to a women\'s health physical therapist before commencing any pelvic floor exercises. In many cases, Kegels can be detrimental to women with very sore or highly tightened pelvic floor muscles.\n\nThe pelvic floor is a muscular sling found at the bottom of your spine, supporting your womb, bladder, and bowels. Much like any other muscle group in your body, your pelvic floor can be either too weak or overly tightened. If you are experiencing a high tone pelvic floor, trying to perform Kegel exercises will cause additional soreness and discomfort, worsening incontinence and painful sex.\n\nA physical therapist can identify the cause of your pelvic floor dysfunction and recommend the suitable treatment. By using non-invasive external manual therapy, biofeedback, and internal pelvic floor muscle testing (when required) a women\'s health physical therapy can provide you with individualized treatments.'
     },
     {
-      heading: 'Improving Flexibility Without Risk',
-      body: 'Flexibility is essential in physical therapy. However, aggressive stretching can sometimes do more harm than good.\n\nPilates offers a safer alternative. It uses controlled, flowing movements to gradually increase range of motion.\n\nBecause movements are low-impact, patients can improve flexibility without stressing their joints.'
+      heading: 'Common Myths About Pregnancy and Post-Partum Physical Therapy',
+      body: '**Assuming that pain and incontinence is normal during pregnancy:** Unfortunately many women feel that they have to suffer through pregnancy-related discomforts. Luckily for them, the majority of pregnancy discomforts can be successfully addressed with the right treatment.\n\n**Returning to strenuous post-partum specific exercises too soon after birth:** Unless you have had a post-partum specific PT/Physio assessment, it is highly recommended to avoid high impact activity and heavy lifting during the first 6 months following childbirth.\n\n**Overlooking the impact of a C-Section on your wellbeing:** Many women fail to acknowledge the long-term effects of a C-Section on their wellbeing. After all, it is a major abdominal surgery with lasting repercussions on the connective tissue and pelvic floor. A physical therapist can help you to desensitize your abdominal muscles and scar tissue, improve your posture and core stability, as well as return to exercising safely.\n\n**Focusing too much on the width of the gap in your six-pack:** Many women wrongly focus too much on the width of the gap in their abdominal muscles. The truth is, it is the tension and ability to control this gap that matters.\n\n**Failing to look after your back and posture:** Women who suffer from diastasis recti tend to lean forward when caring for their infant. This places enormous strain on their upper back, thoracic spine, and pelvic joints.'
     },
     {
-      heading: 'Why Rest Alone Is Not Always Enough',
-      body: 'In the past, people were often told to rest completely until all symptoms disappeared. While short-term rest is helpful, prolonged inactivity may actually slow recovery.\n\nInitially, one to two days of rest is recommended. After that, gradual movement and activity are encouraged.\n\nThis is because the brain benefits from controlled stimulation. Gentle activity helps retrain the nervous system and restore normal function. However, it is important that activity be guided and appropriate. Doing too much too soon can worsen symptoms. On the other hand, doing too little can delay progress.\n\nThis balance is where structured rehabilitation becomes essential.'
+      heading: 'The Best Ways to Look After Your Pelvic Floor and Core in the Long Term',
+      body: '**Book a six-week post-partum pelvic assessment.** In the same way that you would schedule a regular dental or medical check-up, a six-week post-partum physical therapy assessment can help to detect potential issues early and prevent future complications.\n\n**Practice 360-degree breathing throughout pregnancy and post-partum:** Make sure to breathe into your rib cage and belly, whilst relaxing your pelvic floor muscles on the inhale and gently drawing your belly button in on the exhale.\n\n**Use pillows to support your infant:** Use a pillow to bring your infant up to eye level when feeding or laying them down instead of bending down.\n\n**Make sure to progress your post-partum activities carefully and systematically:** Before progressing to more strenuous post-partum-specific activities, it is essential to develop good breathing and posture.\n\n**Do not ignore pain and discomfort during pregnancy:** By seeking specialist help for your pregnancy-related discomforts you can prevent further difficulties during post-partum.'
     },
     {
-      heading: 'A Gentle Yet Effective Approach',
-      body: 'Pilates focuses on quality rather than intensity. Each movement is performed with precision and control. This allows patients to stretch muscles while maintaining proper alignment. Over time, this leads to lasting improvements in mobility.\n\nAdditionally, improved flexibility supports better posture. It also reduces stiffness, especially after injury or surgery.',
-      visualAssetUrl: 'https://tokyophysicaltherapy.com/wp-content/uploads/2026/03/image12-1152x1536.jpeg',
-      visualAssetCaption: 'Figure 3: Gentle, controlled movements for flexibility and posture'
+      heading: 'Specialist Women\'s Health Physical Therapy For Our International Patients',
+      body: 'During pregnancy and post-partum, living in another country can be especially challenging. Not only do you have to look after your infant with little or no support from your family, you also have to navigate the healthcare system in an unfamiliar tongue. The good news is that you do not have to navigate it alone.\n\nAt Tokyo Rehabilitation our team of English-speaking physical therapists provides women\'s health physical therapy in Tokyo, Okinawa and Yokota. We offer expert women\'s health physical therapy/physiotherapy services to mothers, expecting mothers, and their partners in Japan. Our post-natal physical therapists have been working with international patients for over 4 decades.'
     },
     {
-      heading: 'Reducing Pain and Supporting Healing',
-      body: 'Pain management is a major goal in physical therapy. Pilates has been shown to reduce pain and improve quality of life in various conditions. This is partly because Pilates strengthens supportive muscles. It also improves alignment, which reduces strain on joints and tissues.\n\nMoreover, the slow pace of Pilates allows patients to move without triggering pain.'
+      heading: 'Pregnancy related questions we get asked most often',
+      body: '**When should I start seeing a physical therapist during pregnancy?**\n\nYou can see a women\'s physical therapist at any point during your pregnancy. It is generally best to come for an assessment as early as possible to make sure you can have the most out of your pregnancy and childbirth.\n\n**Is pelvic physical therapy safe during pregnancy?**\n\nYes, women\'s health physical therapy is a safe non-surgical option for women experiencing discomfort during pregnancy.\n\n**How soon after childbirth can I have a post-partum physical therapy assessment?**\n\nWe recommend booking a post-partum physical therapy assessment 6 weeks after birth, if you are experiencing persistent pelvic pain, difficulties walking or are particularly uncomfortable, we can also give you some helpful advice at home.\n\n**What is a specialized pelvic assessment?**\n\nYour initial assessment will begin with a discussion about your goals and medical history and a physical assessment looking at your physical capabilities and restrictions. You will also be asked a series of questions regarding your expectations and concerns. A specialist women\'s physical therapist will then assess your pelvic alignment and function. In addition, they will check your abdominal muscles and look for signs of diastasis recti. An internal assessment of your pelvic floor muscles is only done when needed and upon your consent.\n\n**Can I have physical therapy after a C-Section?**\n\nYes. Physical therapy can help you with the rehabilitation of your abdominal muscles following a C-Section, helping desensitize and release the tight scar tissue. It can also help alleviate lower back pain suffered after a C-Section.\n\n**I gave birth many years ago but still experience incontinence/core weakness, is it too late for physical therapy?**\n\nIt is never too late to undertake post-partum physical therapy. The truth is, your body is incredibly resilient and adaptable, even many years after childbirth, your body can relearn how to control your pelvic floor muscles and rebuild core strength.'
     },
     {
-      heading: 'How Pilates Helps with Chronic Conditions',
-      body: 'Pilates is especially helpful for chronic pain. Conditions like back pain, arthritis, and muscle imbalances respond well to this approach. Research indicates that Pilates can reduce pain and disability across multiple conditions.\n\nAs a result, patients often regain confidence in their movement. This is a key step in long-term recovery.'
+      heading: 'Summary: Pregnancy, Birth, and Post Partum Physical Therapy',
+      body: 'Pelvic pain and other pregnancy-related discomforts are very common and should never be considered normal, no matter how frequently they occur. If you are suffering from any pregnancy-related discomforts, you owe it to yourself to seek physical therapy treatment.\n\nYour six-week post-partum check-up is not an indication of when you can return to exercising. It simply means that your womb and episiotomy/c-section have healed sufficiently. On the other hand, your abdominal muscles, connective tissue, and pelvic floor will require additional post-partum physical therapy to regain their pre-birth tension and function. As a result, returning to strenuous activity too soon after childbirth can put your pelvic floor, abdominal muscles, and general wellbeing at risk. A post-natal PT can help you to identify which activities are best suited for you at different stages of your post-partum recovery.\n\nDuring your pregnancy, your rectus abdominis (the six-pack muscles) stretches to make space for your growing womb. For most women, this means that the connective tissue (linea alba) between these muscles will separate (diastasis recti). This happens to all women during the last trimester but should begin to close after birth. Unfortunately many women struggle to restore the tension in their linea alba, which can impact their ability to perform daily activities and pelvic floor function.\n\nThe good news is that with the help of post-natal physical therapy, women can retrain their deep core muscles to re-establish tension in their linea abdominis and improve their posture, balance, and overall wellbeing.\n\nIf you are suffering from mild incontinence, the pelvic floor exercises are generally an excellent way to stimulate and strengthen the muscles of your pelvic floor. However, it is vital to speak to a women\'s health physical therapist before commencing any pelvic floor exercises. In many cases, Kegels can be detrimental to women with very sore or highly tightened pelvic floor muscles.'
     },
     {
-      heading: 'Enhancing Balance and Coordination',
-      body: 'Balance is often affected by injury or inactivity. Fortunately, Pilates helps restore stability through controlled movement. Exercises focus on alignment and muscle control. This improves coordination between different parts of the body.\n\nStudies show that Pilates can significantly improve balance and reduce the risk of falls.'
-    },
-    {
-      heading: 'Why Balance Matters More Than You Think',
-      body: 'Good balance is essential for everyday activities. Walking, bending, and reaching all depend on stability. When balance improves, patients feel more secure. This reduces hesitation and helps them return to normal routines.\n\nIn addition, better coordination leads to smoother, more efficient movement patterns.',
-      visualAssetUrl: 'https://tokyophysicaltherapy.com/wp-content/uploads/2026/03/image01.jpeg',
-      visualAssetCaption: 'Figure 4: Improved coordination and balance through Pilates'
-    },
-    {
-      heading: 'Supporting Posture and Alignment',
-      body: 'Poor posture is a common issue. It often develops due to injury, sedentary habits, or muscle imbalances. Pilates addresses posture by strengthening key muscles. It also teaches proper alignment during movement.\n\nOver time, this leads to better positioning of the spine and joints.'
-    },
-    {
-      heading: 'The Link Between Posture and Pain',
-      body: 'Poor posture places extra stress on the body. This can lead to discomfort, especially in the neck and back. Pilates corrects these imbalances. It trains the body to maintain proper alignment naturally. As a result, patients often experience reduced tension and improved comfort.'
-    },
-    {
-      heading: 'A Low-Impact Option for Safe Recovery',
-      body: 'Not all exercises are suitable during rehabilitation. High-impact movements can delay healing or cause setbacks. Pilates offers a safe alternative. It is low-impact and highly adaptable. This makes it ideal for people recovering from surgery, injury, or chronic conditions.'
-    },
-    {
-      heading: 'Adapting to Individual Needs',
-      body: 'Every patient is different. Therefore, Pilates programs can be modified to suit individual needs. At Tokyo Rehabilitation, exercises are tailored to each person\'s condition and goals. This personalized approach ensures that patients progress safely and effectively.'
-    },
-    {
-      heading: 'Improving Mental Focus and Body Awareness',
-      body: 'Recovery is not just physical. It also involves mental engagement and awareness. Pilates encourages mindful movement. Patients focus on breathing, alignment, and control. This creates a stronger connection between the mind and body.',
-      visualAssetUrl: 'https://tokyophysicaltherapy.com/wp-content/uploads/2026/03/IMG_9297.jpg',
-      visualAssetCaption: 'Figure 5: Mind-body connection through focused Pilates practice'
-    },
-    {
-      heading: 'The Role of Mindfulness in Healing',
-      body: 'Mindfulness helps patients stay present during exercise. This reduces the risk of incorrect movement. It also improves concentration and reduces stress. In turn, this supports overall recovery. Research suggests Pilates can enhance both physical and mental health outcomes.'
-    },
-    {
-      heading: 'Preventing Future Injuries',
-      body: 'One of the greatest benefits of Pilates is injury prevention. It strengthens the body while improving movement patterns. This combination reduces the likelihood of future issues. Additionally, Pilates teaches patients how to move safely in daily life.'
-    },
-    {
-      heading: 'Building a Resilient Body',
-      body: 'A strong, balanced body is less prone to injury. Pilates helps achieve this by targeting both strength and mobility. Patients learn how to engage the right muscles at the right time. As a result, everyday activities become safer and more efficient.'
-    },
-    {
-      heading: 'Supporting a Wide Range of Conditions',
-      body: 'Pilates is highly versatile. It can be used in many areas of physical therapy. For example, it supports recovery from musculoskeletal injuries. It also benefits neurological conditions and chronic pain. Research highlights its role in improving physical function and quality of life.'
-    },
-    {
-      heading: 'From Rehabilitation to Long-Term Wellness',
-      body: 'Pilates does not stop at recovery. It continues to support long-term health. Patients often transition from therapy into ongoing Pilates practice. This helps maintain strength, flexibility, and overall well-being.'
-    },
-    {
-      heading: 'Why Pilates Works So Well in Physical Therapy',
-      body: 'Pilates works because it combines several key elements. These include strength, flexibility, control, and awareness. Each element plays a role in recovery. Together, they create a balanced approach. This is why Pilates is widely used in rehabilitation settings.',
-      visualAssetUrl: 'https://tokyophysicaltherapy.com/wp-content/uploads/2026/03/image13-1152x1536.jpeg',
-      visualAssetCaption: 'Figure 6: The comprehensive benefits of Pilates in rehabilitation'
-    },
-    {
-      heading: 'A Modern Approach to Movement',
-      body: 'Physical therapy continues to evolve. Pilates fits perfectly into this modern approach. It focuses on functional movement. This means exercises translate directly into real-life activities. As a result, patients see practical improvements in their daily lives.'
-    },
-    {
-      heading: 'The Experience at Tokyo Rehab',
-      body: 'At Tokyo Rehab, Pilates is integrated into personalized treatment plans. Each session is designed to meet the patient\'s needs. Therapists guide patients through controlled movements. They ensure proper technique and progression. This hands-on approach leads to better outcomes.'
-    },
-    {
-      heading: 'A Focus on Long-Term Results',
-      body: 'The goal is not just short-term relief. Instead, the focus is on lasting improvement. Patients build strength, improve mobility, and gain confidence. Over time, they develop habits that support ongoing health.'
-    },
-    {
-      heading: 'Getting Started with Pilates in Physical Therapy',
-      body: 'Starting Pilates is simple. However, guidance is important, especially during rehabilitation. Working with trained professionals ensures exercises are performed correctly. This reduces the risk of injury and maximizes results.'
-    },
-    {
-      heading: 'What to Expect in Your First Session',
-      body: 'Your first session will focus on assessment. Therapists evaluate your movement, strength, and flexibility. Then, they create a personalized program. This ensures exercises match your current ability. Progression happens gradually. Each session builds on the last.'
-    },
-    {
-      heading: 'A Smarter Way to Move Forward',
-      body: 'Pilates offers a powerful combination of benefits. It strengthens the body while improving movement and awareness. It also supports recovery in a safe and controlled way. For anyone in physical therapy, it provides a path toward better movement and long-term health.'
-    },
-    {
-      heading: 'Final Thoughts: The Benefits of Pilates for Physical Therapy',
-      body: 'Recovery is a journey. Pilates makes that journey more effective and more sustainable. It helps patients move with confidence again. It also prepares them for the demands of daily life. At Tokyo Rehabilitation, Pilates is not just an add-on. It is a core part of helping people feel stronger, move better, and live without limitations.\n\nTo learn more and schedule an appointment:\n\n• Visit our website and book your appointment today so we can hear your story, assess your movement, and design a plan tailored to you. Tell us briefly what you are dealing with, and we will help match you with the right clinician.\n• Call us directly; for all appointments, please call 03-3446-1682 or email us at info@tokyorehab.com.\n• Bring your questions. We will explain our findings in clear language and discuss how manual therapy, exercise, and lifestyle changes can work together for you.'
+      heading: 'About Tokyo Rehabilitation',
+      body: 'Founded by Mari Gish, PT, Tokyo Rehabilitation has served the English-speaking community in Japan for over 40 years. With state-of-the-art clinics in Shirokane, Minato-ku (Tokyo) and Kadena (Okinawa), our team of U.S.- and Japan-licensed physical therapists, osteopaths, and Pilates specialists provides compassionate, 1-on-1 rehabilitation and holistic wellness support.\n\nWe specialize in orthopedic and sports rehabilitation, Men and Women\'s Pelvic Health, pre- and postnatal care, pediatric physical therapy, neurological recovery, specialized manual care, osteopathic techniques, and sympathetic nervous system downregulation. We accept international insurance policies and serve as an overseas Tricare provider.\n\nNavigating a foreign healthcare system doesn\'t mean having to compromise on the quality or style of your recovery. While Japanese National Health Insurance clinics offer an accessible option for quick, passive relief, private 1-on-1 physical therapy/physio bridges the cultural and linguistic gap for foreign residents who need comprehensive, active rehabilitation. By understanding how both models operate, you can confidently choose the pathway that best fits your specific injury, lifestyle goals, and peace of mind. If you are ready to tackle pain at its root with personalized, English-speaking care in Tokyo or Okinawa, reaching out to a dedicated physical therapy team is your best first step toward living fully and pain-free in Japan.\n\n**To learn more and schedule an appointment:**\n\n• Visit our website and book your appointment today so we can hear your story, assess your movement, and design a plan tailored to you. Tell us briefly what you are dealing with, and we will help match you with the right clinician.\n• Call us directly; for all appointments, please call 03-3446-1682 or email us at info@tokyorehab.com.\n• Bring your questions. We will explain our findings in clear language and discuss how manual therapy, exercise, and lifestyle changes can work together for you.\n\n• Tokyo Clinic: NIC Haimu Bldg, Suite 504, 3-4-1 Shirokane, Minato-ku, Tokyo 108-0072\n• Okinawa Clinic: Lagoon Palace 4th Floor, 6 Chome-22-13 Mizugama, Kadena, Okinawa 904-0204\n• Yokota Clinic: Tokyo 697-22 Fussa, Fussa-shi Tokyo\n\nIf you enjoyed this article, please also see: Navigating Physical Therapy in Japan: A Complete Guide.'
     }
   ]
 };
