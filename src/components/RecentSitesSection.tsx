@@ -33,7 +33,7 @@ const RecentSitesSection: React.FC<RecentSitesSectionProps> = ({ onSelectSite })
           {RECENT_SITES.map((site) => (
             <div
               key={site.id}
-              className="group bg-[#1E293B] rounded border border-slate-700/50 hover:border-[#D4AF37]/50 overflow-hidden transition-all duration-300 flex flex-col justify-between shadow-lg"
+              className="group bg-[#1E293B] rounded border border-slate-700/50 hover:border-[#D4AF37]/50 overflow-hidden transition-all duration-300 flex flex-col shadow-lg"
             >
               
               {/* Image Container - Perfect Square with NO grayscale */}
@@ -45,19 +45,16 @@ const RecentSitesSection: React.FC<RecentSitesSectionProps> = ({ onSelectSite })
                 />
               </div>
 
-{/* Card Body - Button only */}
-<div className="p-4 flex-1 flex flex-col justify-end">
-  {/* Action Trigger Button */}
-  <div>
-    <button
-      onClick={() => onSelectSite(site)}
-      className="w-full py-2 px-3 bg-[#D4AF37] hover:bg-[#C19A2E] text-[#0F172A] text-xs font-bold uppercase tracking-wider flex items-center justify-center space-x-1.5 transition-colors shadow-sm"
-    >
-      <FileText className="w-3.5 h-3.5" />
-      <span>View Samples</span>
-    </button>
-  </div>
-</div>
+              {/* Card Body - Full-width button */}
+              <div className="flex-1 flex flex-col justify-end">
+                <button
+                  onClick={() => onSelectSite(site)}
+                  className="w-full py-3 bg-[#D4AF37] hover:bg-[#C19A2E] text-[#0F172A] text-xs font-bold uppercase tracking-wider flex items-center justify-center space-x-1.5 transition-colors shadow-sm"
+                >
+                  <FileText className="w-3.5 h-3.5" />
+                  <span>View Samples</span>
+                </button>
+              </div>
 
             </div>
           ))}
