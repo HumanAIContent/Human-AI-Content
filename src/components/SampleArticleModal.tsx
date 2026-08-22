@@ -703,32 +703,7 @@ const socialImages = [
     </p>
   </div>
 
-            {/* Social Media Samples Box */}
-            <div className="bg-[#1E293B] p-4 rounded border border-slate-700/50 space-y-3">
-              <div className="flex items-center space-x-2 text-[10px] font-bold text-[#D4AF37] uppercase tracking-wider">
-                <Image className="w-3.5 h-3.5 text-[#D4AF37]" />
-                <span>Social Media Samples - Tokyo Rehabilitation</span>
-              </div>
-              <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
-                {socialImages.map((img, idx) => (
-                  <div
-                    key={idx}
-                    className="relative aspect-square overflow-hidden rounded border border-slate-700/50 cursor-pointer hover:border-[#D4AF37] transition-all duration-200 group"
-                    onClick={() => setLightboxImage(img.full)}
-                  >
-                    <img
-                      src={img.thumbnail}
-                      alt={img.alt}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                    />
-                    <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-200 flex items-center justify-center">
-                      <span className="text-white text-[10px] font-bold opacity-0 group-hover:opacity-100 transition-opacity">Click to enlarge</span>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-
+  
             {/* Article Full Text Body */}
             <div className="space-y-6 text-slate-200 text-xs sm:text-sm leading-relaxed">
               {article.sections.map((sec, idx) => (
