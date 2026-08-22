@@ -576,13 +576,13 @@ export const SampleArticleModal: React.FC<SampleArticleModalProps> = ({ isOpen, 
   const title = selectedSite ? selectedSite.sampleArticleTitle : article.title;
   const excerpt = selectedSite ? selectedSite.sampleArticleExcerpt : article.geoAIAnswerSnippet;
 
-  // Social media images for the new box
-  const socialImages = [
-    { thumbnail: '/Tokyo-FB-thumb.jpg', full: '/Tokyo-FB.jpg', alt: 'Social Media Sample 1' },
-    { thumbnail: '/Tokyo-FB-2-thumb.jpg', full: '/Tokyo-FB-2.jpg', alt: 'Social Media Sample 2' },
-    { thumbnail: '/Tokyo-INSTA-thumb.jpg', full: '/Tokyo-INSTA.jpg', alt: 'Social Media Sample 3' },
-    { thumbnail: '/Tokyo-INSTA-2-thumb.jpg', full: '/Tokyo-INSTA-2.jpg', alt: 'Social Media Sample 4' },
-  ];
+// Social media images for the new box
+const socialImages = [
+  { thumbnail: '/Tokyo-INSTA-thumb.jpg', full: '/Tokyo-INSTA.jpg', alt: 'Social Media Sample 1' },
+  { thumbnail: '/Tokyo-FB-2-thumb.jpg', full: '/Tokyo-FB-2.jpg', alt: 'Social Media Sample 2' },
+  { thumbnail: '/Tokyo-FB-thumb.jpg', full: '/Tokyo-FB.jpg', alt: 'Social Media Sample 3' },
+  { thumbnail: '/Tokyo-INSTA-2-thumb.jpg', full: '/Tokyo-INSTA-2.jpg', alt: 'Social Media Sample 4' },
+];
 
   return (
     <>
