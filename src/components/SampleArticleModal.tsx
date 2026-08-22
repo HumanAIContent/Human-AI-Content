@@ -601,111 +601,122 @@ export const SampleArticleModal: React.FC<SampleArticleModalProps> = ({ isOpen, 
         </button>
       </div>
 
-      {/* Modal Body - Scrollable */}
-      <div className="p-4 sm:p-6 md:p-8 space-y-4 sm:space-y-6 overflow-y-auto flex-1">
-        
-        {/* Yoast SEO On-Page Meta Staging Box */}
-        <div className="bg-[#1E293B] p-4 sm:p-5 rounded border border-slate-700/50 space-y-2.5">
-          <div className="flex items-center justify-between">
-            <span className="text-xs font-bold text-[#D4AF37] uppercase tracking-wider flex items-center space-x-1.5">
-              <Sparkles className="w-3.5 h-3.5 text-[#D4AF37]" />
-              <span>WordPress Staging Preview (Yoast SEO / Gutenberg)</span>
-            </span>
-            <span className="text-[10px] font-bold uppercase tracking-wider text-emerald-400 bg-[#0F172A] px-2 py-0.5 rounded border border-emerald-800/60">
-              SEO Score: Good (Green)
-            </span>
-          </div>
+    {/* Modal Body - Scrollable */}
+<div className="p-4 sm:p-6 md:p-8 space-y-4 sm:space-y-6 overflow-y-auto flex-1">
+  
+  {/* Article Header Image - Only for Card 1 (Tokyo Rehabilitation) */}
+  {selectedSite?.id === 'site-1' && (
+    <div className="rounded overflow-hidden border border-slate-700/50 bg-[#0F172A]">
+      <img
+        src="/Tokyo-FB.png"
+        alt="Tokyo Rehabilitation - Women's Health, Pregnancy & Post-partum"
+        className="w-full h-auto object-cover"
+      />
+    </div>
+  )}
+  
+  {/* Yoast SEO On-Page Meta Staging Box */}
+  <div className="bg-[#1E293B] p-4 sm:p-5 rounded border border-slate-700/50 space-y-2.5">
+    <div className="flex items-center justify-between">
+      <span className="text-xs font-bold text-[#D4AF37] uppercase tracking-wider flex items-center space-x-1.5">
+        <Sparkles className="w-3.5 h-3.5 text-[#D4AF37]" />
+        <span>WordPress Staging Preview (Yoast SEO / Gutenberg)</span>
+      </span>
+      <span className="text-[10px] font-bold uppercase tracking-wider text-emerald-400 bg-[#0F172A] px-2 py-0.5 rounded border border-emerald-800/60">
+        SEO Score: Good (Green)
+      </span>
+    </div>
 
-          <div className="bg-[#0F172A] p-3 sm:p-3.5 rounded border border-slate-800 space-y-2 text-xs min-h-[80px] sm:min-h-[100px]">
-            <div className="flex items-center justify-between gap-2 flex-wrap sm:flex-nowrap">
-              <a
-                href={`https://${selectedSite?.domain || 'example.com'}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue-400 font-bold text-xs hover:underline truncate max-w-[50%] sm:max-w-[60%] hover:text-blue-300 transition-colors"
-              >
-                {article.metaTitle}
-              </a>
-              <a
-                href={`https://${selectedSite?.domain || 'example.com'}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center px-2 py-1 sm:px-2.5 sm:py-1 rounded bg-[#D4AF37] hover:bg-[#C19A2E] text-[#0F172A] font-extrabold text-[8px] sm:text-[10px] uppercase tracking-wider transition-colors whitespace-nowrap shrink-0"
-              >
-                <span>View Live Sample Article</span>
-              </a>
+    <div className="bg-[#0F172A] p-3 sm:p-3.5 rounded border border-slate-800 space-y-2 text-xs min-h-[80px] sm:min-h-[100px]">
+      <div className="flex items-center justify-between gap-2 flex-wrap sm:flex-nowrap">
+        <a
+          href={`https://${selectedSite?.domain || 'example.com'}`}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-400 font-bold text-xs hover:underline truncate max-w-[50%] sm:max-w-[60%] hover:text-blue-300 transition-colors"
+        >
+          {article.metaTitle}
+        </a>
+        <a
+          href={`https://${selectedSite?.domain || 'example.com'}`}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center px-2 py-1 sm:px-2.5 sm:py-1 rounded bg-[#D4AF37] hover:bg-[#C19A2E] text-[#0F172A] font-extrabold text-[8px] sm:text-[10px] uppercase tracking-wider transition-colors whitespace-nowrap shrink-0"
+        >
+          <span>View Live Sample Article</span>
+        </a>
+      </div>
+      <div className="text-emerald-500 font-mono text-[10px] truncate">
+        https://{selectedSite?.domain || 'example.com'}
+      </div>
+      <p className="text-slate-300 leading-relaxed text-xs line-clamp-2">
+        {article.metaDescription}
+      </p>
+    </div>
+
+    {/* Target Keywords Tags */}
+    <div className="flex flex-wrap items-center gap-2 pt-1 text-xs">
+      <span className="text-slate-400 text-[10px] uppercase font-bold">Focus Keywords:</span>
+      {article.targetKeywords.map((kw, idx) => (
+        <span key={idx} className="px-2 py-0.5 bg-[#0F172A] text-[#D4AF37] border border-slate-700 text-[10px] uppercase font-semibold">
+          {kw}
+        </span>
+      ))}
+    </div>
+  </div>
+
+  {/* GEO AI Engine Citation Box */}
+  <div className="bg-[#1E293B] p-4 rounded border border-[#D4AF37]/40 space-y-2">
+    <div className="flex items-center space-x-2 text-[10px] font-bold text-[#D4AF37] uppercase tracking-wider">
+      <Cpu className="w-3.5 h-3.5 text-[#D4AF37]" />
+      <span>Generative Engine Citation Snippet (ChatGPT & Gemini Indexing)</span>
+    </div>
+    <p className="text-xs text-slate-200 leading-relaxed italic bg-[#0F172A] p-3 rounded border border-slate-800">
+      "{excerpt}"
+    </p>
+  </div>
+
+  {/* Article Full Text Body */}
+  <div className="space-y-6 text-slate-200 text-xs sm:text-sm leading-relaxed">
+    {article.sections.map((sec, idx) => (
+      <div key={idx} className="space-y-2.5">
+        <h4 className="text-sm sm:text-base font-bold text-white uppercase tracking-wide border-b border-slate-700/50 pb-2">
+          {sec.heading}
+        </h4>
+        <p className="text-slate-300 leading-relaxed whitespace-pre-line text-xs sm:text-sm">
+          {sec.body}
+        </p>
+
+        {sec.visualAssetUrl && (
+          <div className="my-3 rounded overflow-hidden border border-slate-700/50 bg-[#0F172A]">
+            <img
+              src={sec.visualAssetUrl}
+              alt={sec.visualAssetCaption}
+              className="w-full max-h-80 object-cover transition-all duration-300"
+            />
+            <div className="p-2.5 bg-[#1E293B] text-[10px] text-slate-400 uppercase font-bold italic">
+              {sec.visualAssetCaption}
             </div>
-            <div className="text-emerald-500 font-mono text-[10px] truncate">
-              https://{selectedSite?.domain || 'example.com'}
-            </div>
-            <p className="text-slate-300 leading-relaxed text-xs line-clamp-2">
-              {article.metaDescription}
-            </p>
           </div>
+        )}
+      </div>
+    ))}
+  </div>
 
-          {/* Target Keywords Tags */}
-          <div className="flex flex-wrap items-center gap-2 pt-1 text-xs">
-            <span className="text-slate-400 text-[10px] uppercase font-bold">Focus Keywords:</span>
-            {article.targetKeywords.map((kw, idx) => (
-              <span key={idx} className="px-2 py-0.5 bg-[#0F172A] text-[#D4AF37] border border-slate-700 text-[10px] uppercase font-semibold">
-                {kw}
-              </span>
-            ))}
-          </div>
-        </div>
+  {/* Bottom Action Bar */}
+  <div className="pt-4 border-t border-slate-700/50 flex flex-col sm:flex-row items-center justify-between gap-3 min-h-[60px]">
+    <div className="text-xs text-slate-400 text-center sm:text-left">
+      Deliverable Length: <span className="font-bold text-white">{article.wordCount} Words</span> • Native Australian Human Edit
+    </div>
+    <button
+      onClick={onClose}
+      className="w-full sm:w-auto px-6 py-2.5 bg-[#D4AF37] hover:bg-[#C19A2E] text-[#0F172A] font-bold text-xs uppercase tracking-wider transition-colors shadow-sm text-center"
+    >
+      Close Preview
+    </button>
+  </div>
 
-        {/* GEO AI Engine Citation Box */}
-        <div className="bg-[#1E293B] p-4 rounded border border-[#D4AF37]/40 space-y-2">
-          <div className="flex items-center space-x-2 text-[10px] font-bold text-[#D4AF37] uppercase tracking-wider">
-            <Cpu className="w-3.5 h-3.5 text-[#D4AF37]" />
-            <span>Generative Engine Citation Snippet (ChatGPT & Gemini Indexing)</span>
-          </div>
-          <p className="text-xs text-slate-200 leading-relaxed italic bg-[#0F172A] p-3 rounded border border-slate-800">
-            "{excerpt}"
-          </p>
-        </div>
-
-        {/* Article Full Text Body */}
-        <div className="space-y-6 text-slate-200 text-xs sm:text-sm leading-relaxed">
-          {article.sections.map((sec, idx) => (
-            <div key={idx} className="space-y-2.5">
-              <h4 className="text-sm sm:text-base font-bold text-white uppercase tracking-wide border-b border-slate-700/50 pb-2">
-                {sec.heading}
-              </h4>
-              <p className="text-slate-300 leading-relaxed whitespace-pre-line text-xs sm:text-sm">
-                {sec.body}
-              </p>
-
-              {sec.visualAssetUrl && (
-                <div className="my-3 rounded overflow-hidden border border-slate-700/50 bg-[#0F172A]">
-                  <img
-                    src={sec.visualAssetUrl}
-                    alt={sec.visualAssetCaption}
-                    className="w-full max-h-80 object-cover transition-all duration-300"
-                  />
-                  <div className="p-2.5 bg-[#1E293B] text-[10px] text-slate-400 uppercase font-bold italic">
-                    {sec.visualAssetCaption}
-                  </div>
-                </div>
-              )}
-            </div>
-          ))}
-        </div>
-
-                     {/* Bottom Action Bar */}
-          <div className="pt-4 border-t border-slate-700/50 flex flex-col sm:flex-row items-center justify-between gap-3 min-h-[60px]">
-            <div className="text-xs text-slate-400 text-center sm:text-left">
-              Deliverable Length: <span className="font-bold text-white">{article.wordCount} Words</span> • Native Australian Human Edit
-            </div>
-            <button
-              onClick={onClose}
-              className="w-full sm:w-auto px-6 py-2.5 bg-[#D4AF37] hover:bg-[#C19A2E] text-[#0F172A] font-bold text-xs uppercase tracking-wider transition-colors shadow-sm text-center"
-            >
-              Close Preview
-            </button>
-          </div>
-
-        </div>
+</div>
       </div>
     </div>
   );
