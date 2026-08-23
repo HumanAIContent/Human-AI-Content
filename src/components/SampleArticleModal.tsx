@@ -616,40 +616,42 @@ const socialImages = [
 {/* Modal Body - Scrollable */}
 <div className="p-4 sm:p-6 md:p-8 space-y-4 sm:space-y-6 overflow-y-auto flex-1">
   
-{/* Social Media Samples Box */}
-<div className="bg-[#1E293B] p-4 rounded border border-slate-700/50 space-y-3">
-  <div className="flex items-center space-x-2 text-[10px] font-bold text-[#D4AF37] uppercase tracking-wider">
-    <Image className="w-3.5 h-3.5 text-[#D4AF37]" />
-    <span>Social Media Samples - Tokyo Rehabilitation</span>
-  </div>
-  <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
-    {socialImages.map((img, idx) => (
-      <div
-        key={idx}
-        className="relative aspect-square overflow-hidden rounded border border-slate-700/50 cursor-pointer hover:border-[#D4AF37] transition-all duration-200 group"
-        onClick={() => setLightboxImage(img.full)}
-      >
-        <img
-          src={img.thumbnail}
-          alt={img.alt}
-          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-        />
-        <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-200 flex items-center justify-center">
-          <span className="text-white text-[10px] font-bold opacity-0 group-hover:opacity-100 transition-opacity">Click to enlarge</span>
+  {/* Social Media Samples Box */}
+  <div className="bg-[#1E293B] p-4 rounded border border-slate-700/50 space-y-3">
+    <div className="flex items-center space-x-2 text-[10px] font-bold text-[#D4AF37] uppercase tracking-wider">
+      <Image className="w-3.5 h-3.5 text-[#D4AF37]" />
+      <span>Social Media Samples - Tokyo Rehabilitation</span>
+    </div>
+    <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+      {socialImages.map((img, idx) => (
+        <div
+          key={idx}
+          className="relative aspect-square overflow-hidden rounded border border-slate-700/50 cursor-pointer hover:border-[#D4AF37] transition-all duration-200 group"
+          onClick={() => setLightboxImage(img.full)}
+        >
+          <img
+            src={img.thumbnail}
+            alt={img.alt}
+            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+          />
+          <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-200 flex items-center justify-center">
+            <span className="text-white text-[10px] font-bold opacity-0 group-hover:opacity-100 transition-opacity">Click to enlarge</span>
+          </div>
         </div>
-      </div>
-    ))}
+      ))}
+    </div>
   </div>
-</div>
 
   {/* Yoast SEO On-Page Meta Staging Box */}
   <div className="bg-[#1E293B] p-4 sm:p-5 rounded border border-slate-700/50 space-y-2.5">
     <div className="flex items-center justify-between">
       <span className="text-xs font-bold text-[#D4AF37] uppercase tracking-wider flex items-center space-x-1.5">
-        <span className="text-xs font-bold text-[#D4AF37] uppercase tracking-wider flex items-center space-x-1.5">
-  <Sparkles className="w-3.5 h-3.5 text-[#D4AF37]" />
-  <span>WordPress SEO Staging Preview</span>
-</span>
+        <Sparkles className="w-3.5 h-3.5 text-[#D4AF37]" />
+        <span>WordPress SEO Staging Preview</span>
+      </span>
+      <span className="text-[10px] font-bold uppercase tracking-wider text-emerald-400 bg-[#0F172A] px-2 py-0.5 rounded border border-emerald-800/60">
+        SEO Score: Good (Green)
+      </span>
     </div>
 
     <div className="bg-[#0F172A] p-3 sm:p-3.5 rounded border border-slate-800 space-y-2 text-xs min-h-[80px] sm:min-h-[100px]">
@@ -701,48 +703,47 @@ const socialImages = [
     </p>
   </div>
 
-  
-            {/* Article Full Text Body */}
-            <div className="space-y-6 text-slate-200 text-xs sm:text-sm leading-relaxed">
-              {article.sections.map((sec, idx) => (
-                <div key={idx} className="space-y-2.5">
-                  <h4 className="text-sm sm:text-base font-bold text-white uppercase tracking-wide border-b border-slate-700/50 pb-2">
-                    {sec.heading}
-                  </h4>
-                  <p className="text-slate-300 leading-relaxed whitespace-pre-line text-xs sm:text-sm">
-                    {sec.body}
-                  </p>
+  {/* Article Full Text Body */}
+  <div className="space-y-6 text-slate-200 text-xs sm:text-sm leading-relaxed">
+    {article.sections.map((sec, idx) => (
+      <div key={idx} className="space-y-2.5">
+        <h4 className="text-sm sm:text-base font-bold text-white uppercase tracking-wide border-b border-slate-700/50 pb-2">
+          {sec.heading}
+        </h4>
+        <p className="text-slate-300 leading-relaxed whitespace-pre-line text-xs sm:text-sm">
+          {sec.body}
+        </p>
 
-                  {sec.visualAssetUrl && (
-                    <div className="my-3 rounded overflow-hidden border border-slate-700/50 bg-[#0F172A]">
-                      <img
-                        src={sec.visualAssetUrl}
-                        alt={sec.visualAssetCaption}
-                        className="w-full max-h-80 object-cover transition-all duration-300"
-                      />
-                      <div className="p-2.5 bg-[#1E293B] text-[10px] text-slate-400 uppercase font-bold italic">
-                        {sec.visualAssetCaption}
-                      </div>
-                    </div>
-                  )}
-                </div>
-              ))}
+        {sec.visualAssetUrl && (
+          <div className="my-3 rounded overflow-hidden border border-slate-700/50 bg-[#0F172A]">
+            <img
+              src={sec.visualAssetUrl}
+              alt={sec.visualAssetCaption}
+              className="w-full max-h-80 object-cover transition-all duration-300"
+            />
+            <div className="p-2.5 bg-[#1E293B] text-[10px] text-slate-400 uppercase font-bold italic">
+              {sec.visualAssetCaption}
             </div>
-
-            {/* Bottom Action Bar */}
-            <div className="pt-4 border-t border-slate-700/50 flex flex-col sm:flex-row items-center justify-between gap-3 min-h-[60px]">
-              <div className="text-xs text-slate-400 text-center sm:text-left">
-                Deliverable Length: <span className="font-bold text-white">{article.wordCount} Words</span> • Native Australian Human Edit
-              </div>
-              <button
-                onClick={onClose}
-                className="w-full sm:w-auto px-6 py-2.5 bg-[#D4AF37] hover:bg-[#C19A2E] text-[#0F172A] font-bold text-xs uppercase tracking-wider transition-colors shadow-sm text-center"
-              >
-                Close Preview
-              </button>
-            </div>
-
           </div>
+        )}
+      </div>
+    ))}
+  </div>
+
+  {/* Bottom Action Bar */}
+  <div className="pt-4 border-t border-slate-700/50 flex flex-col sm:flex-row items-center justify-between gap-3 min-h-[60px]">
+    <div className="text-xs text-slate-400 text-center sm:text-left">
+      Deliverable Length: <span className="font-bold text-white">{article.wordCount} Words</span> • Native Australian Human Edit
+    </div>
+    <button
+      onClick={onClose}
+      className="w-full sm:w-auto px-6 py-2.5 bg-[#D4AF37] hover:bg-[#C19A2E] text-[#0F172A] font-bold text-xs uppercase tracking-wider transition-colors shadow-sm text-center"
+    >
+      Close Preview
+    </button>
+  </div>
+
+</div>
         </div>
       </div>
 
