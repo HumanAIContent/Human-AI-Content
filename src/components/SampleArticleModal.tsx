@@ -597,7 +597,11 @@ export const SampleArticleModal: React.FC<SampleArticleModalProps> = ({ isOpen, 
               </div>
               <div className="min-w-0">
                 <div className="text-[8px] sm:text-[10px] font-bold text-[#D4AF37] uppercase tracking-wider truncate">
-  Sample & Staging Previews • Innovacious
+  {selectedSite?.id === 'site-1' 
+    ? 'Sample & Staging Previews • Tokyo Rehabilitation'
+    : selectedSite?.id === 'site-5' 
+      ? 'Sample & Staging Previews • Innovacious'
+      : `Sample & Staging Previews • ${siteName}`}
 </div>
                 <h3 className="text-xs sm:text-sm font-extrabold text-white tracking-wide truncate max-w-[160px] sm:max-w-md">
                   {title}
