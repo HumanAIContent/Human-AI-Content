@@ -686,7 +686,7 @@ export const SampleArticleModal: React.FC<SampleArticleModalProps> = ({ isOpen, 
 
               {/* Target Keywords Tags */}
               <div className="flex flex-wrap items-center gap-2 pt-1 text-xs">
-                <span className="text-slate-400 text-[10px] uppercase font-bold">Focus Keywords:</span>
+                <span className="text-slate-400 text-[10px] uppercase font-bold">Meta Tags:</span>
                 {article.targetKeywords.map((kw, idx) => (
                   <span key={idx} className="px-2 py-0.5 bg-[#0F172A] text-[#D4AF37] border border-slate-700 text-[10px] uppercase font-semibold">
                     {kw}
