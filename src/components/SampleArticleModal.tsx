@@ -16,11 +16,11 @@ const REAL_ESTATE_ARTICLE = {
   title: 'Real Estate Marketing Website: 10 Proven Tips That Convert',
   siteName: 'Innovacious',
   siteCategory: 'Web Management & Digital Growth Services',
-  wordCount: 2400, // Approximate word count for this article
+  wordCount: 2400,
   targetKeywords: ['real estate marketing website', 'real estate SEO', 'real estate lead generation', 'IDX integration', 'real estate web design'],
   geoAIAnswerSnippet: 'A real estate marketing website should be optimized for local search, mobile users, and lead capture. Key elements include clean design, fast loading times, clear calls-to-action, and integration with IDX/MLS systems to automatically display active listings and build authority in your local market.',
   metaTitle: 'Real Estate Marketing Website: 10 Proven Tips That Convert | Innovacious',
-  metaDescription: 'Learn how to build a real estate marketing website that generates leads. This guide covers design, local SEO, content strategy, IDX integration, and more.',
+  metaDescription: 'Is your real estate marketing website getting found on Google? Explore key mobile, design, and local SEO tips to start attracting home buyers now.',
   sections: [
     {
       heading: 'Real Estate Marketing Website: 10 Proven Tips That Convert',
@@ -36,7 +36,7 @@ const REAL_ESTATE_ARTICLE = {
     },
     {
       heading: '2. SEO Strategy That Gets Your Website Found',
-      body: 'One of the biggest challenges that real estate agents face when it comes to their websites is search engine optimisation . SEO is the process of optimising your website so that it ranks higher in search results. This way, your website will be easier to find by people searching for real estate agents in your area.\n\n### Location-Based Keywords\n\nWhen it comes to real estate SEO, you should always use location-based keywords. If you\'re a real estate agent based in Melbourne, for example, you should always include Melbourne in your page titles, headings, and property descriptions. This way, people searching for real estate agents in Melbourne will be able to find you more easily. You should also create content about the different areas you work in, such as Melbourne suburb guides. This type of content is valuable to people searching for real estate agents, as it helps them find the right one for their needs.\n\n### Blog Posts and Content Marketing\n\nCreating blog posts is a great way to improve your real estate website\'s SEO while also providing valuable information to your leads. You can write about many different topics related to real estate, such as the local property market or first-time home buyer\'s guides. The more blog posts you have on your website, the more content there is for search engines to index, increasing your chances of ranking higher in search results.'
+      body: 'One of the biggest challenges that real estate agents face when it comes to their websites is search engine optimisation. SEO is the process of optimising your website so that it ranks higher in search results. This way, your website will be easier to find by people searching for real estate agents in your area.\n\n### Location-Based Keywords\n\nWhen it comes to real estate SEO, you should always use location-based keywords. If you\'re a real estate agent based in Melbourne, for example, you should always include Melbourne in your page titles, headings, and property descriptions. This way, people searching for real estate agents in Melbourne will be able to find you more easily. You should also create content about the different areas you work in, such as Melbourne suburb guides. This type of content is valuable to people searching for real estate agents, as it helps them find the right one for their needs.\n\n### Blog Posts and Content Marketing\n\nCreating blog posts is a great way to improve your real estate website\'s SEO while also providing valuable information to your leads. You can write about many different topics related to real estate, such as the local property market or first-time home buyer\'s guides. The more blog posts you have on your website, the more content there is for search engines to index, increasing your chances of ranking higher in search results.'
     },
     {
       heading: '3. Technical SEO Basics You Can\'t Ignore',
@@ -576,18 +576,17 @@ export const SampleArticleModal: React.FC<SampleArticleModalProps> = ({ isOpen, 
   const title = selectedSite ? selectedSite.sampleArticleTitle : article.title;
   const excerpt = selectedSite ? selectedSite.sampleArticleExcerpt : article.geoAIAnswerSnippet;
 
-// Social media images for the new box
-const socialImages = [
-  { thumbnail: '/Tokyo-INSTA-thumb.jpg', full: '/Tokyo-INSTA.jpg', alt: 'Social Media Sample 1' },
-  { thumbnail: '/Tokyo-FB-2-thumb.jpg', full: '/Tokyo-FB-2.jpg', alt: 'Social Media Sample 2' },
-  { thumbnail: '/Tokyo-FB-thumb.jpg', full: '/Tokyo-FB.jpg', alt: 'Social Media Sample 3' },
-  { thumbnail: '/Tokyo-INSTA-2-thumb.jpg', full: '/Tokyo-INSTA-2.jpg', alt: 'Social Media Sample 4' },
-];
+  // Social media images for the new box
+  const socialImages = [
+    { thumbnail: '/Tokyo-INSTA-thumb.jpg', full: '/Tokyo-INSTA.jpg', alt: 'Social Media Sample 1' },
+    { thumbnail: '/Tokyo-FB-2-thumb.jpg', full: '/Tokyo-FB-2.jpg', alt: 'Social Media Sample 2' },
+    { thumbnail: '/Tokyo-FB-thumb.jpg', full: '/Tokyo-FB.jpg', alt: 'Social Media Sample 3' },
+    { thumbnail: '/Tokyo-INSTA-2-thumb.jpg', full: '/Tokyo-INSTA-2.jpg', alt: 'Social Media Sample 4' },
+  ];
 
   return (
     <>
       <div className="fixed inset-0 z-50 overflow-y-auto bg-black/80 backdrop-blur-sm flex items-center justify-center p-0 sm:p-4 md:p-6">
-        
         <div className="relative w-full max-w-4xl bg-[#0F172A] rounded-none sm:rounded-lg border-0 sm:border border-slate-700/50 shadow-2xl overflow-hidden my-0 sm:my-8 min-h-screen sm:min-h-0 max-h-screen sm:max-h-[90vh] flex flex-col">
           
           {/* Modal Header - Fixed positioning on mobile */}
@@ -596,16 +595,14 @@ const socialImages = [
               <div className="w-6 h-6 sm:w-8 sm:h-8 rounded bg-[#0F172A] border border-[#D4AF37]/50 flex items-center justify-center text-[#D4AF37] shrink-0">
                 <FileText className="w-3 h-3 sm:w-4 sm:h-4" />
               </div>
-<div className="min-w-0">
-  <div className="text-[8px] sm:text-[10px] font-bold text-[#D4AF37] uppercase tracking-wider truncate">
-    {selectedSite?.id === 'site-5' 
-      ? 'Real Estate Marketing Website: 10 Proven Tips That Convert'
-      : `Sample & Staging Previews • ${siteName}`}
-  </div>
-  <h3 className="text-xs sm:text-sm font-extrabold text-white tracking-wide truncate max-w-[160px] sm:max-w-md">
-    {title}
-  </h3>
-</div>}
+              <div className="min-w-0">
+                <div className="text-[8px] sm:text-[10px] font-bold text-[#D4AF37] uppercase tracking-wider truncate">
+                  {selectedSite?.id === 'site-5' 
+                    ? 'Real Estate Marketing Website: 10 Proven Tips That Convert'
+                    : `Sample & Staging Previews • ${siteName}`}
+                </div>
+                <h3 className="text-xs sm:text-sm font-extrabold text-white tracking-wide truncate max-w-[160px] sm:max-w-md">
+                  {title}
                 </h3>
               </div>
             </div>
@@ -617,148 +614,148 @@ const socialImages = [
             </button>
           </div>
 
-{/* Modal Body - Scrollable */}
-<div className="p-4 sm:p-6 md:p-8 space-y-4 sm:space-y-6 overflow-y-auto flex-1">
-  
-  {/* Social Media Samples Box */}
-  <div className="bg-[#1E293B] p-4 rounded border border-slate-700/50 space-y-3">
-    <div className="flex items-center space-x-2 text-[10px] font-bold text-[#D4AF37] uppercase tracking-wider">
-      <Image className="w-3.5 h-3.5 text-[#D4AF37]" />
-      <span>Social Media Samples - Tokyo Rehabilitation</span>
-    </div>
-    <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
-      {socialImages.map((img, idx) => (
-        <div
-          key={idx}
-          className="relative aspect-square overflow-hidden rounded border border-slate-700/50 cursor-pointer hover:border-[#D4AF37] transition-all duration-200 group"
-          onClick={() => setLightboxImage(img.full)}
-        >
-          <img
-            src={img.thumbnail}
-            alt={img.alt}
-            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-          />
-          <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-200 flex items-center justify-center">
-            <span className="text-white text-[10px] font-bold opacity-0 group-hover:opacity-100 transition-opacity">Click to enlarge</span>
+          {/* Modal Body - Scrollable */}
+          <div className="p-4 sm:p-6 md:p-8 space-y-4 sm:space-y-6 overflow-y-auto flex-1">
+            
+            {/* Social Media Samples Box */}
+            <div className="bg-[#1E293B] p-4 rounded border border-slate-700/50 space-y-3">
+              <div className="flex items-center space-x-2 text-[10px] font-bold text-[#D4AF37] uppercase tracking-wider">
+                <Image className="w-3.5 h-3.5 text-[#D4AF37]" />
+                <span>Social Media Samples - Tokyo Rehabilitation</span>
+              </div>
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+                {socialImages.map((img, idx) => (
+                  <div
+                    key={idx}
+                    className="relative aspect-square overflow-hidden rounded border border-slate-700/50 cursor-pointer hover:border-[#D4AF37] transition-all duration-200 group"
+                    onClick={() => setLightboxImage(img.full)}
+                  >
+                    <img
+                      src={img.thumbnail}
+                      alt={img.alt}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
+                    <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-200 flex items-center justify-center">
+                      <span className="text-white text-[10px] font-bold opacity-0 group-hover:opacity-100 transition-opacity">Click to enlarge</span>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Yoast SEO On-Page Meta Staging Box */}
+            <div className="bg-[#1E293B] p-4 sm:p-5 rounded border border-slate-700/50 space-y-2.5">
+              <div className="flex items-center justify-between">
+                <span className="text-xs font-bold text-[#D4AF37] uppercase tracking-wider flex items-center space-x-1.5">
+                  <Sparkles className="w-3.5 h-3.5 text-[#D4AF37]" />
+                  <span>WordPress SEO Staging Preview</span>
+                </span>
+                <span className="text-[10px] font-bold uppercase tracking-wider text-emerald-400 bg-[#0F172A] px-2 py-0.5 rounded border border-emerald-800/60">
+                  SEO Score: Good (Green)
+                </span>
+              </div>
+
+              <div className="bg-[#0F172A] p-3 sm:p-3.5 rounded border border-slate-800 space-y-2 text-xs min-h-[80px] sm:min-h-[100px]">
+                <div className="flex items-center justify-between gap-2 flex-wrap sm:flex-nowrap">
+                  <a
+                    href={`https://${selectedSite?.domain || 'example.com'}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-400 font-bold text-xs hover:underline truncate max-w-[50%] sm:max-w-[60%] hover:text-blue-300 transition-colors"
+                  >
+                    {article.metaTitle}
+                  </a>
+                  <a
+                    href={`https://${selectedSite?.domain || 'example.com'}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center px-2 py-1 sm:px-2.5 sm:py-1 rounded bg-[#D4AF37] hover:bg-[#C19A2E] text-[#0F172A] font-extrabold text-[8px] sm:text-[10px] uppercase tracking-wider transition-colors whitespace-nowrap shrink-0"
+                  >
+                    <span>View Live Sample Article</span>
+                  </a>
+                </div>
+                <div className="text-emerald-500 font-mono text-[10px] truncate">
+                  https://{selectedSite?.domain || 'example.com'}
+                </div>
+                <p className="text-slate-300 leading-relaxed text-xs line-clamp-2">
+                  {article.metaDescription}
+                </p>
+              </div>
+
+              {/* Target Keywords Tags */}
+              <div className="flex flex-wrap items-center gap-2 pt-1 text-xs">
+                <span className="text-slate-400 text-[10px] uppercase font-bold">Focus Keywords:</span>
+                {article.targetKeywords.map((kw, idx) => (
+                  <span key={idx} className="px-2 py-0.5 bg-[#0F172A] text-[#D4AF37] border border-slate-700 text-[10px] uppercase font-semibold">
+                    {kw}
+                  </span>
+                ))}
+              </div>
+            </div>
+
+            {/* GEO AI Engine Citation Box */}
+            <div className="bg-[#1E293B] p-4 rounded border border-[#D4AF37]/40 space-y-2">
+              <div className="flex items-center space-x-2 text-[10px] font-bold text-[#D4AF37] uppercase tracking-wider">
+                <Cpu className="w-3.5 h-3.5 text-[#D4AF37]" />
+                <span>Generative Engine Citation Snippet (ChatGPT & Gemini Indexing)</span>
+              </div>
+              <p className="text-xs text-slate-200 leading-relaxed italic bg-[#0F172A] p-3 rounded border border-slate-800">
+                "{excerpt}"
+              </p>
+            </div>
+
+            {/* Article Full Text Body */}
+            <div className="space-y-6 text-slate-200 text-xs sm:text-sm leading-relaxed">
+              {/* Feature Image - Only for Card 2 (Innovacious) */}
+              {selectedSite?.id === 'site-5' && (
+                <div className="rounded overflow-hidden border border-slate-700/50 bg-[#0F172A]">
+                  <img
+                    src="/real-estate-marketing-website-feature.jpg"
+                    alt="Real Estate Marketing Website - Feature Image"
+                    className="w-full h-auto object-cover"
+                  />
+                </div>
+              )}
+              
+              {article.sections.map((sec, idx) => (
+                <div key={idx} className="space-y-2.5">
+                  <h4 className="text-sm sm:text-base font-bold text-white uppercase tracking-wide border-b border-slate-700/50 pb-2">
+                    {sec.heading}
+                  </h4>
+                  <p className="text-slate-300 leading-relaxed whitespace-pre-line text-xs sm:text-sm">
+                    {sec.body}
+                  </p>
+
+                  {sec.visualAssetUrl && (
+                    <div className="my-3 rounded overflow-hidden border border-slate-700/50 bg-[#0F172A]">
+                      <img
+                        src={sec.visualAssetUrl}
+                        alt={sec.visualAssetCaption}
+                        className="w-full max-h-80 object-cover transition-all duration-300"
+                      />
+                      <div className="p-2.5 bg-[#1E293B] text-[10px] text-slate-400 uppercase font-bold italic">
+                        {sec.visualAssetCaption}
+                      </div>
+                    </div>
+                  )}
+                </div>
+              ))}
+            </div>
+
+            {/* Bottom Action Bar */}
+            <div className="pt-4 border-t border-slate-700/50 flex flex-col sm:flex-row items-center justify-between gap-3 min-h-[60px]">
+              <div className="text-xs text-slate-400 text-center sm:text-left">
+                Deliverable Length: <span className="font-bold text-white">{article.wordCount} Words</span> • Native Australian Human Edit
+              </div>
+              <button
+                onClick={onClose}
+                className="w-full sm:w-auto px-6 py-2.5 bg-[#D4AF37] hover:bg-[#C19A2E] text-[#0F172A] font-bold text-xs uppercase tracking-wider transition-colors shadow-sm text-center"
+              >
+                Close Preview
+              </button>
+            </div>
+
           </div>
-        </div>
-      ))}
-    </div>
-  </div>
-
-  {/* Yoast SEO On-Page Meta Staging Box */}
-  <div className="bg-[#1E293B] p-4 sm:p-5 rounded border border-slate-700/50 space-y-2.5">
-    <div className="flex items-center justify-between">
-      <span className="text-xs font-bold text-[#D4AF37] uppercase tracking-wider flex items-center space-x-1.5">
-        <Sparkles className="w-3.5 h-3.5 text-[#D4AF37]" />
-        <span>WordPress SEO Staging Preview</span>
-      </span>
-      <span className="text-[10px] font-bold uppercase tracking-wider text-emerald-400 bg-[#0F172A] px-2 py-0.5 rounded border border-emerald-800/60">
-        SEO Score: Good (Green)
-      </span>
-    </div>
-
-    <div className="bg-[#0F172A] p-3 sm:p-3.5 rounded border border-slate-800 space-y-2 text-xs min-h-[80px] sm:min-h-[100px]">
-      <div className="flex items-center justify-between gap-2 flex-wrap sm:flex-nowrap">
-        <a
-          href={`https://${selectedSite?.domain || 'example.com'}`}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-blue-400 font-bold text-xs hover:underline truncate max-w-[50%] sm:max-w-[60%] hover:text-blue-300 transition-colors"
-        >
-          {article.metaTitle}
-        </a>
-        <a
-          href={`https://${selectedSite?.domain || 'example.com'}`}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center px-2 py-1 sm:px-2.5 sm:py-1 rounded bg-[#D4AF37] hover:bg-[#C19A2E] text-[#0F172A] font-extrabold text-[8px] sm:text-[10px] uppercase tracking-wider transition-colors whitespace-nowrap shrink-0"
-        >
-          <span>View Live Sample Article</span>
-        </a>
-      </div>
-      <div className="text-emerald-500 font-mono text-[10px] truncate">
-        https://{selectedSite?.domain || 'example.com'}
-      </div>
-      <p className="text-slate-300 leading-relaxed text-xs line-clamp-2">
-        {article.metaDescription}
-      </p>
-    </div>
-
-    {/* Target Keywords Tags */}
-    <div className="flex flex-wrap items-center gap-2 pt-1 text-xs">
-      <span className="text-slate-400 text-[10px] uppercase font-bold">Focus Keywords:</span>
-      {article.targetKeywords.map((kw, idx) => (
-        <span key={idx} className="px-2 py-0.5 bg-[#0F172A] text-[#D4AF37] border border-slate-700 text-[10px] uppercase font-semibold">
-          {kw}
-        </span>
-      ))}
-    </div>
-  </div>
-
-  {/* GEO AI Engine Citation Box */}
-  <div className="bg-[#1E293B] p-4 rounded border border-[#D4AF37]/40 space-y-2">
-    <div className="flex items-center space-x-2 text-[10px] font-bold text-[#D4AF37] uppercase tracking-wider">
-      <Cpu className="w-3.5 h-3.5 text-[#D4AF37]" />
-      <span>Generative Engine Citation Snippet (ChatGPT & Gemini Indexing)</span>
-    </div>
-    <p className="text-xs text-slate-200 leading-relaxed italic bg-[#0F172A] p-3 rounded border border-slate-800">
-      "{excerpt}"
-    </p>
-  </div>
-
-  {/* Article Full Text Body */}
-<div className="space-y-6 text-slate-200 text-xs sm:text-sm leading-relaxed">
-  {/* Feature Image - Only for Card 2 (Innovacious) */}
-  {selectedSite?.id === 'site-5' && (
-    <div className="rounded overflow-hidden border border-slate-700/50 bg-[#0F172A]">
-      <img
-        src="/real-estate-marketing-website-feature.jpg"
-        alt="Real Estate Marketing Website - Feature Image"
-        className="w-full h-auto object-cover"
-      />
-    </div>
-  )}
-  
-  {article.sections.map((sec, idx) => (
-    <div key={idx} className="space-y-2.5">
-      <h4 className="text-sm sm:text-base font-bold text-white uppercase tracking-wide border-b border-slate-700/50 pb-2">
-        {sec.heading}
-      </h4>
-      <p className="text-slate-300 leading-relaxed whitespace-pre-line text-xs sm:text-sm">
-        {sec.body}
-      </p>
-
-      {sec.visualAssetUrl && (
-        <div className="my-3 rounded overflow-hidden border border-slate-700/50 bg-[#0F172A]">
-          <img
-            src={sec.visualAssetUrl}
-            alt={sec.visualAssetCaption}
-            className="w-full max-h-80 object-cover transition-all duration-300"
-          />
-          <div className="p-2.5 bg-[#1E293B] text-[10px] text-slate-400 uppercase font-bold italic">
-            {sec.visualAssetCaption}
-          </div>
-        </div>
-      )}
-    </div>
-  ))}
-</div>
-
-  {/* Bottom Action Bar */}
-  <div className="pt-4 border-t border-slate-700/50 flex flex-col sm:flex-row items-center justify-between gap-3 min-h-[60px]">
-    <div className="text-xs text-slate-400 text-center sm:text-left">
-      Deliverable Length: <span className="font-bold text-white">{article.wordCount} Words</span> • Native Australian Human Edit
-    </div>
-    <button
-      onClick={onClose}
-      className="w-full sm:w-auto px-6 py-2.5 bg-[#D4AF37] hover:bg-[#C19A2E] text-[#0F172A] font-bold text-xs uppercase tracking-wider transition-colors shadow-sm text-center"
-    >
-      Close Preview
-    </button>
-  </div>
-
-</div>
         </div>
       </div>
 
