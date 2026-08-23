@@ -596,12 +596,16 @@ const socialImages = [
               <div className="w-6 h-6 sm:w-8 sm:h-8 rounded bg-[#0F172A] border border-[#D4AF37]/50 flex items-center justify-center text-[#D4AF37] shrink-0">
                 <FileText className="w-3 h-3 sm:w-4 sm:h-4" />
               </div>
-              <div className="min-w-0">
-                <div className="text-[8px] sm:text-[10px] font-bold text-[#D4AF37] uppercase tracking-wider truncate">
-                  Sample & Staging Previews • {siteName}
-                </div>
-                <h3 className="text-xs sm:text-sm font-extrabold text-white tracking-wide truncate max-w-[160px] sm:max-w-md">
-                  {title}
+<div className="min-w-0">
+  <div className="text-[8px] sm:text-[10px] font-bold text-[#D4AF37] uppercase tracking-wider truncate">
+    {selectedSite?.id === 'site-5' 
+      ? 'Real Estate Marketing Website: 10 Proven Tips That Convert'
+      : `Sample & Staging Previews • ${siteName}`}
+  </div>
+  <h3 className="text-xs sm:text-sm font-extrabold text-white tracking-wide truncate max-w-[160px] sm:max-w-md">
+    {title}
+  </h3>
+</div>}
                 </h3>
               </div>
             </div>
