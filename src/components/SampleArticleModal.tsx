@@ -649,9 +649,10 @@ const socialImages = [
         <Sparkles className="w-3.5 h-3.5 text-[#D4AF37]" />
         <span>WordPress Staging Preview (Yoast SEO / Gutenberg)</span>
       </span>
-      <span className="text-[10px] font-bold uppercase tracking-wider text-emerald-400 bg-[#0F172A] px-2 py-0.5 rounded border border-emerald-800/60">
-        SEO Score: Good (Green)
-      </span>
+     <span className="text-xs font-bold text-[#D4AF37] uppercase tracking-wider flex items-center space-x-1.5">
+  <Sparkles className="w-3.5 h-3.5 text-[#D4AF37]" />
+  <span>SEO Staging Preview</span>
+</span>
     </div>
 
     <div className="bg-[#0F172A] p-3 sm:p-3.5 rounded border border-slate-800 space-y-2 text-xs min-h-[80px] sm:min-h-[100px]">
