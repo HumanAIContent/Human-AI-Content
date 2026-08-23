@@ -646,12 +646,9 @@ const socialImages = [
   <div className="bg-[#1E293B] p-4 sm:p-5 rounded border border-slate-700/50 space-y-2.5">
     <div className="flex items-center justify-between">
       <span className="text-xs font-bold text-[#D4AF37] uppercase tracking-wider flex items-center space-x-1.5">
-        <Sparkles className="w-3.5 h-3.5 text-[#D4AF37]" />
-        <span>WordPress Staging Preview (Yoast SEO / Gutenberg)</span>
-      </span>
-     <span className="text-xs font-bold text-[#D4AF37] uppercase tracking-wider flex items-center space-x-1.5">
+        <span className="text-xs font-bold text-[#D4AF37] uppercase tracking-wider flex items-center space-x-1.5">
   <Sparkles className="w-3.5 h-3.5 text-[#D4AF37]" />
-  <span>SEO Staging Preview</span>
+  <span>WordPress SEO Staging Preview</span>
 </span>
     </div>
 
