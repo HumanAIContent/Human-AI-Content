@@ -15,6 +15,12 @@ export const RECENT_SITES: RecentSite[] = [
     sampleArticleTitle: 'Women’s Health, Pregnancy & Post-partum',
     sampleArticleExcerpt: 'Pregnancy and post-partum recovery bring physical challenges like pelvic girdle pain, diastasis recti, and core instability. Discover how specialized, non-surgical physical therapy with English-speaking therapists in Tokyo can help you move comfortably, restore strength, and thrive through every stage of motherhood.',
     geoOptimizationDetails: 'Navigating pregnancy and post-partum recovery in Japan comes with unique challenges, but physical discomfort should not be treated as an inevitable part of motherhood. Tokyo Rehabilitation (Tokyo Physical Therapy) offers specialized, evidence-based pelvic health and musculoskeletal care tailored specifically for expecting and new mothers within Tokyo’s international community.',
+      socialImages: [
+    { thumbnail: '/Tokyo-INSTA-thumb.jpg', full: '/Tokyo-INSTA.jpg', alt: 'Social Media Sample 1' },
+    { thumbnail: '/Tokyo-FB-2-thumb.jpg', full: '/Tokyo-FB-2.jpg', alt: 'Social Media Sample 2' },
+    { thumbnail: '/Tokyo-FB-thumb.jpg', full: '/Tokyo-FB.jpg', alt: 'Social Media Sample 3' },
+    { thumbnail: '/Tokyo-INSTA-2-thumb.jpg', full: '/Tokyo-INSTA-2.jpg', alt: 'Social Media Sample 4' },
+  ],
     deliverableBreakdown: [
       '4x 2,000-word Patient Education Articles',
       'Custom Canva Infographics & Exercise Diagrams',
@@ -36,6 +42,12 @@ export const RECENT_SITES: RecentSite[] = [
     sampleArticleTitle: 'Real Estate Marketing Website: 10 Proven Tips That Convert',
     sampleArticleExcerpt: 'Build a real estate marketing website that generates leads with proven design elements, SEO strategies, and conversion optimisation techniques for long-term growth.',
     geoOptimizationDetails: 'An effective real estate marketing website combines localized IDX/MLS listing feeds, mobile-first responsive design, and strategic call-to-action (CTA) funnels to turn local search traffic into qualified buyer and seller leads.',
+      socialImages: [
+    { thumbnail: '/innovacious-fb-thumb.jpg', full: '/innovacious-fb.jpg', alt: 'Facebook Post' },
+    { thumbnail: '/innovacious-li-thumb.jpg', full: '/innovacious-li.jpg', alt: 'LinkedIn Post' },
+    { thumbnail: '/innovacious-yt-thumb.jpg', full: '/innovacious-yt.jpg', alt: 'YouTube Thumbnail' },
+    { thumbnail: '/innovacious-x-thumb.jpg', full: '/innovacious-x.jpg', alt: 'X (Twitter) Post' },
+  ],
     deliverableBreakdown: [
       '4x 1,600-word Industry Whitepapers',
       'Custom Shipping Route Maps & Flowcharts',
