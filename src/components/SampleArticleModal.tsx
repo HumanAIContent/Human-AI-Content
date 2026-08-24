@@ -574,7 +574,8 @@ export const SampleArticleModal: React.FC<SampleArticleModalProps> = ({ isOpen, 
 
   const siteName = selectedSite ? selectedSite.name : article.siteName;
   const title = selectedSite ? selectedSite.sampleArticleTitle : article.title;
-  const excerpt = selectedSite ? selectedSite.sampleArticleExcerpt : article.geoAIAnswerSnippet;
+  const excerpt = selectedSite ? selectedSite.geoOptimizationDetails : article.geoAIAnswerSnippet;
+  const customExcerpt = selectedSite ? selectedSite.sampleArticleExcerpt : '';
 
   // Social media images for the new box
   const socialImages = [
@@ -694,12 +695,23 @@ export const SampleArticleModal: React.FC<SampleArticleModalProps> = ({ isOpen, 
                 ))}
               </div>
             </div>
+            
+{/* Custom Excerpt Box */}
+<div className="bg-[#1E293B] p-4 rounded border border-slate-700/50 space-y-2">
+  <div className="flex items-center space-x-2 text-[10px] font-bold text-[#D4AF37] uppercase tracking-wider">
+    <FileText className="w-3.5 h-3.5 text-[#D4AF37]" />
+    <span>Custom SEO Optimized Excerpt</span>
+  </div>
+  <p className="text-xs text-slate-200 leading-relaxed bg-[#0F172A] p-3 rounded border border-slate-800">
+    "{customExcerpt}"
+  </p>
+</div>
 
             {/* GEO AI Engine Citation Box */}
             <div className="bg-[#1E293B] p-4 rounded border border-[#D4AF37]/40 space-y-2">
               <div className="flex items-center space-x-2 text-[10px] font-bold text-[#D4AF37] uppercase tracking-wider">
                 <Cpu className="w-3.5 h-3.5 text-[#D4AF37]" />
-                <span>Generative Engine Citation Snippet (ChatGPT & Gemini Indexing)</span>
+                <span>Generative Engine Optimization (GEO) Snippet</span>
               </div>
               <p className="text-xs text-slate-200 leading-relaxed italic bg-[#0F172A] p-3 rounded border border-slate-800">
                 "{excerpt}"
