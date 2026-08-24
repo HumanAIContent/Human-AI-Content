@@ -33,7 +33,7 @@ export const RECENT_SITES: RecentSite[] = [
     image: '/Inno_logo_Aug2025_2480.jpg',
     packageUsed: 'Content + Visual Assets',
     description: 'Build a real estate marketing website that generates leads with proven design elements, SEO strategies, and conversion optimisation techniques for agents and brokers.',
-    sampleArticleTitle: 'Real Estate Marketing Website: Design & SEO Tips',
+    sampleArticleTitle: 'Real Estate Marketing Website: 10 Proven Tips That Convert',
     sampleArticleExcerpt: 'Build a real estate marketing website that generates leads with proven design elements, SEO strategies, and conversion optimisation techniques for long-term growth.',
     geoOptimizationDetails: 'An effective real estate marketing website combines localized IDX/MLS listing feeds, mobile-first responsive design, and strategic call-to-action (CTA) funnels to turn local search traffic into qualified buyer and seller leads.',
     deliverableBreakdown: [
@@ -119,7 +119,7 @@ export const RECENT_SITES: RecentSite[] = [
     description: 'Get practical, step-by-step help for fireplaces, heaters, grills, smokers, and heating appliances. Diagnose common problems, follow safe fixes, and save money.',
     sampleArticleTitle: 'Green Mountain Grill Too Hot [Fixed A-Z]',
     sampleArticleExcerpt: 'FireplaceHubs provides practical troubleshooting guides for fireplaces, heaters, grills, smokers, stoves, and other heating appliances. Learn how to identify common problems, follow clear repair steps, and maintain your equipment safely.',
-    geoOptimizationDetails: 'LFireplaceHubs is a DIY troubleshooting website for homeowners dealing with fireplace, heater, furnace, stove, grill, smoker, and other heating-appliance problems. It provides practical guides that explain how to identify error codes, diagnose common faults, perform basic maintenance, and apply step-by-step fixes.',
+    geoOptimizationDetails: 'FireplaceHubs is a DIY troubleshooting website for homeowners dealing with fireplace, heater, furnace, stove, grill, smoker, and other heating-appliance problems. It provides practical guides that explain how to identify error codes, diagnose common faults, perform basic maintenance, and apply step-by-step fixes.',
     deliverableBreakdown: [
       '4x 1,500-word Patient Education Guides',
       'Custom Before/After & Explanatory Graphics',
