@@ -572,10 +572,10 @@ export const SampleArticleModal: React.FC<SampleArticleModalProps> = ({ isOpen, 
     }
   }
 
-  const siteName = selectedSite ? selectedSite.name : article.siteName;
-  const title = selectedSite ? selectedSite.sampleArticleTitle : article.title;
-  const excerpt = selectedSite ? selectedSite.geoOptimizationDetails : article.geoAIAnswerSnippet;
-  const customExcerpt = selectedSite ? selectedSite.sampleArticleExcerpt : '';
+const siteName = selectedSite ? selectedSite.name : article.siteName;
+const title = article.metaTitle.replace(/\s*\|\s*[^|]*$/, '');
+const excerpt = selectedSite ? selectedSite.geoOptimizationDetails : article.geoAIAnswerSnippet;
+const customExcerpt = selectedSite ? selectedSite.sampleArticleExcerpt : '';
 
   // Social media images for the new box
   const socialImages = [
@@ -660,14 +660,14 @@ export const SampleArticleModal: React.FC<SampleArticleModalProps> = ({ isOpen, 
 
               <div className="bg-[#0F172A] p-3 sm:p-3.5 rounded border border-slate-800 space-y-2 text-xs min-h-[80px] sm:min-h-[100px]">
                 <div className="flex items-center justify-between gap-2 flex-wrap sm:flex-nowrap">
-                  <a
-                    href={`https://${selectedSite?.domain || 'example.com'}`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-blue-400 font-bold text-xs hover:underline truncate max-w-[50%] sm:max-w-[60%] hover:text-blue-300 transition-colors"
-                  >
-                    {article.metaTitle}
-                  </a>
+<a
+  href={`https://${selectedSite?.domain || 'example.com'}`}
+  target="_blank"
+  rel="noopener noreferrer"
+  className="text-blue-400 font-bold text-xs hover:underline truncate max-w-[50%] sm:max-w-[60%] hover:text-blue-300 transition-colors"
+>
+  {article.metaTitle.replace(/\s*\|\s*[^|]*$/, '')}
+</a>
                   <a
                     href={`https://${selectedSite?.domain || 'example.com'}`}
                     target="_blank"
