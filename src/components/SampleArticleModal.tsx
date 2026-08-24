@@ -759,7 +759,7 @@ export const SampleArticleModal: React.FC<SampleArticleModalProps> = ({ isOpen, 
             {/* Bottom Action Bar */}
             <div className="pt-4 border-t border-slate-700/50 flex flex-col sm:flex-row items-center justify-between gap-3 min-h-[60px]">
               <div className="text-xs text-slate-400 text-center sm:text-left">
-                Deliverable Length: <span className="font-bold text-white">{article.wordCount} Words</span> • Native Australian Human Edit
+                Deliverable Length: <span className="font-bold text-white">{article.wordCount} Words</span> • Dual AI-Assisted, Human-Edited, SEO & GEO Optimized, Article.
               </div>
               <button
                 onClick={onClose}
