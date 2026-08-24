@@ -577,14 +577,15 @@ const title = article.metaTitle.replace(/\s*\|\s*[^|]*$/, '');
 const excerpt = selectedSite ? selectedSite.geoOptimizationDetails : article.geoAIAnswerSnippet;
 const customExcerpt = selectedSite ? selectedSite.sampleArticleExcerpt : '';
 
-  // Social media images for the new box
-  const socialImages = [
-    { thumbnail: '/Tokyo-INSTA-thumb.jpg', full: '/Tokyo-INSTA.jpg', alt: 'Social Media Sample 1' },
-    { thumbnail: '/Tokyo-FB-2-thumb.jpg', full: '/Tokyo-FB-2.jpg', alt: 'Social Media Sample 2' },
-    { thumbnail: '/Tokyo-FB-thumb.jpg', full: '/Tokyo-FB.jpg', alt: 'Social Media Sample 3' },
-    { thumbnail: '/Tokyo-INSTA-2-thumb.jpg', full: '/Tokyo-INSTA-2.jpg', alt: 'Social Media Sample 4' },
-  ];
+// Social media images - use card-specific images if available, otherwise fallback to Tokyo Rehabilitation images
+const defaultSocialImages = [
+  { thumbnail: '/Tokyo-INSTA-thumb.jpg', full: '/Tokyo-INSTA.jpg', alt: 'Social Media Sample 1' },
+  { thumbnail: '/Tokyo-FB-2-thumb.jpg', full: '/Tokyo-FB-2.jpg', alt: 'Social Media Sample 2' },
+  { thumbnail: '/Tokyo-FB-thumb.jpg', full: '/Tokyo-FB.jpg', alt: 'Social Media Sample 3' },
+  { thumbnail: '/Tokyo-INSTA-2-thumb.jpg', full: '/Tokyo-INSTA-2.jpg', alt: 'Social Media Sample 4' },
+];
 
+const socialImages = selectedSite?.socialImages || defaultSocialImages;
   return (
     <>
       <div className="fixed inset-0 z-50 overflow-y-auto bg-black/80 backdrop-blur-sm flex items-center justify-center p-0 sm:p-4 md:p-6">
@@ -624,7 +625,7 @@ const customExcerpt = selectedSite ? selectedSite.sampleArticleExcerpt : '';
             <div className="bg-[#1E293B] p-4 rounded border border-slate-700/50 space-y-3">
               <div className="flex items-center space-x-2 text-[10px] font-bold text-[#D4AF37] uppercase tracking-wider">
                 <Image className="w-3.5 h-3.5 text-[#D4AF37]" />
-                <span>Social Media Samples - Tokyo Rehabilitation</span>
+                <span>Social Media Samples - {selectedSite?.name || article.siteName}</span>
               </div>
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
                 {socialImages.map((img, idx) => (
