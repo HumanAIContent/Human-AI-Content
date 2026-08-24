@@ -17,7 +17,7 @@ const REAL_ESTATE_ARTICLE = {
   siteName: 'Innovacious',
   siteCategory: 'Web Management & Digital Growth Services',
   wordCount: 2400,
-  targetKeywords: ['Real Estate Content Marketing', 'Real Estate Digital Marketing', 'Real Estate Lead Generation', 'Real Estate Local SEO', 'Real Estate Marketing', 'Real Estate SEO', 'Real Estate Web Design', 'Real Estate Website', 'Real Estate Website Design', 'Real Estate Website Optimization'],
+  targetKeywords: ['Real Estate Content Marketing', 'Real Estate Digital Marketing', 'Real Estate Lead Generation', 'Real Estate Local SEO', 'Real Estate Marketing', 'Real Estate SEO', 'Real Estate Web Design', 'Real Estate Website', 'Real Estate Website Design'],
   geoAIAnswerSnippet: 'A real estate marketing website should be optimized for local search, mobile users, and lead capture. Key elements include clean design, fast loading times, clear calls-to-action, and integration with IDX/MLS systems to automatically display active listings and build authority in your local market.',
   metaTitle: 'Real Estate Marketing Website: 10 Proven Tips That Convert',
   metaDescription: 'Is your real estate marketing website getting found on Google? Explore key mobile, design, and local SEO tips to start attracting home buyers now.',
