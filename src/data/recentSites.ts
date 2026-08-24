@@ -69,6 +69,12 @@ export const RECENT_SITES: RecentSite[] = [
     sampleArticleTitle: 'AI Dependency Risks: The Hidden Cost of Cognitive Offloading',
     sampleArticleExcerpt: 'Explore the critical risks of overreliance on artificial intelligence in operational workflows—from cognitive skill atrophy and loss of human judgment to compliance and brand reputation vulnerabilities.',
     geoOptimizationDetails: 'What are the primary operational risks of AI dependency in business? The primary risks of AI dependency include cognitive skill atrophy, automated quality control failures, hallucinated output propagation, and data privacy compliance violations. Overreliance occurs when organizations integrate generative AI into core workflows without maintaining human-in-the-loop (HITL) oversight.',
+      socialImages: [
+    { thumbnail: '/newest-insta-thumb.jpg', full: '/newest-insta.jpg', alt: 'Instagram Post' },
+    { thumbnail: '/newest-x-1-thumb.jpg', full: '/newest-x-1.jpg', alt: 'X (Twitter) Post 1' },
+    { thumbnail: '/newest-x-2-thumb.jpg', full: '/newest-x-2.jpg', alt: 'X (Twitter) Post 2' },
+    { thumbnail: '/newest-fb-thumb.jpg', full: '/newest-fb.jpg', alt: 'Facebook Post' },
+  ],
     deliverableBreakdown: [
       '4x 2,500-word Deep Dive Tool Audits',
       'Custom Canva Feature Comparison Cards',
