@@ -706,43 +706,43 @@ export const SampleArticleModal: React.FC<SampleArticleModalProps> = ({ isOpen, 
               </p>
             </div>
 
-            {/* Article Full Text Body */}
-            <div className="space-y-6 text-slate-200 text-xs sm:text-sm leading-relaxed">
-              {/* Feature Image - Only for Card 2 (Innovacious) */}
-              {selectedSite?.id === 'site-5' && (
-                <div className="rounded overflow-hidden border border-slate-700/50 bg-[#0F172A]">
-                  <img
-                    src="/real-estate-marketing-website-feature.jpg"
-                    alt="Real Estate Marketing Website - Feature Image"
-                    className="w-full h-auto object-cover"
-                  />
-                </div>
-              )}
-              
-              {article.sections.map((sec, idx) => (
-                <div key={idx} className="space-y-2.5">
-                  <h4 className="text-sm sm:text-base font-bold text-white uppercase tracking-wide border-b border-slate-700/50 pb-2">
-                    {sec.heading}
-                  </h4>
-                  <p className="text-slate-300 leading-relaxed whitespace-pre-line text-xs sm:text-sm">
-                    {sec.body}
-                  </p>
-
-                  {sec.visualAssetUrl && (
-                    <div className="my-3 rounded overflow-hidden border border-slate-700/50 bg-[#0F172A]">
-                      <img
-                        src={sec.visualAssetUrl}
-                        alt={sec.visualAssetCaption}
-                        className="w-full max-h-80 object-cover transition-all duration-300"
-                      />
-                      <div className="p-2.5 bg-[#1E293B] text-[10px] text-slate-400 uppercase font-bold italic">
-                        {sec.visualAssetCaption}
-                      </div>
-                    </div>
-                  )}
-                </div>
-              ))}
-            </div>
+{/* Article Full Text Body */}
+<div className="space-y-6 text-slate-200 text-xs sm:text-sm leading-relaxed">
+  {/* Feature Image - Only for Card 2 (Innovacious) */}
+  {selectedSite?.id === 'site-5' && (
+    <div className="rounded overflow-hidden border border-slate-700/50 bg-[#0F172A]">
+      <img
+        src="/real-estate-marketing-website-feature.jpg"
+        alt="Real Estate Marketing Website - Feature Image"
+        className="w-full h-auto object-cover"
+      />
+    </div>
+  )}
+  
+  {article.sections.map((sec, idx) => (
+    <div key={idx} className="space-y-2.5">
+      <h4 className="text-sm sm:text-base font-bold text-white uppercase tracking-wide border-b border-slate-700/50 pb-2">
+        {sec.heading}
+      </h4>
+      <div
+        className="text-slate-300 leading-relaxed text-xs sm:text-sm"
+        dangerouslySetInnerHTML={{ __html: sec.body.replace(/\n/g, '<br />') }}
+      />
+      {sec.visualAssetUrl && (
+        <div className="my-3 rounded overflow-hidden border border-slate-700/50 bg-[#0F172A]">
+          <img
+            src={sec.visualAssetUrl}
+            alt={sec.visualAssetCaption}
+            className="w-full max-h-80 object-cover transition-all duration-300"
+          />
+          <div className="p-2.5 bg-[#1E293B] text-[10px] text-slate-400 uppercase font-bold italic">
+            {sec.visualAssetCaption}
+          </div>
+        </div>
+      )}
+    </div>
+  ))}
+</div>
 
             {/* Bottom Action Bar */}
             <div className="pt-4 border-t border-slate-700/50 flex flex-col sm:flex-row items-center justify-between gap-3 min-h-[60px]">
