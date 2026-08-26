@@ -621,31 +621,33 @@ const socialImages = selectedSite?.socialImages || defaultSocialImages;
           {/* Modal Body - Scrollable */}
           <div className="p-4 sm:p-6 md:p-8 space-y-4 sm:space-y-6 overflow-y-auto flex-1">
             
-            {/* Social Media Samples Box */}
-            <div className="bg-[#1E293B] p-4 rounded border border-slate-700/50 space-y-3">
-              <div className="flex items-center space-x-2 text-[10px] font-bold text-[#D4AF37] uppercase tracking-wider">
-                <Image className="w-3.5 h-3.5 text-[#D4AF37]" />
-                <span>Social Media Samples - {selectedSite?.name || article.siteName}</span>
-              </div>
-              <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
-                {socialImages.map((img, idx) => (
-                  <div
-                    key={idx}
-                    className="relative aspect-square overflow-hidden rounded border border-slate-700/50 cursor-pointer hover:border-[#D4AF37] transition-all duration-200 group"
-                    onClick={() => setLightboxImage(img.full)}
-                  >
-                    <img
-                      src={img.thumbnail}
-                      alt={img.alt}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                    />
-                    <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-200 flex items-center justify-center">
-                      <span className="text-white text-[10px] font-bold opacity-0 group-hover:opacity-100 transition-opacity">Click To View</span>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
+{/* Social Media Samples Box - Hidden for Card 5 (Air Cleansed) and Card 7 (Salted Angler) */}
+{selectedSite?.id !== 'site-2' && selectedSite?.id !== 'site-7' && (
+  <div className="bg-[#1E293B] p-4 rounded border border-slate-700/50 space-y-3">
+    <div className="flex items-center space-x-2 text-[10px] font-bold text-[#D4AF37] uppercase tracking-wider">
+      <Image className="w-3.5 h-3.5 text-[#D4AF37]" />
+      <span>Social Media Samples - {selectedSite?.name || article.siteName}</span>
+    </div>
+    <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+      {socialImages.map((img, idx) => (
+        <div
+          key={idx}
+          className="relative aspect-square overflow-hidden rounded border border-slate-700/50 cursor-pointer hover:border-[#D4AF37] transition-all duration-200 group"
+          onClick={() => setLightboxImage(img.full)}
+        >
+          <img
+            src={img.thumbnail}
+            alt={img.alt}
+            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+          />
+          <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-200 flex items-center justify-center">
+            <span className="text-white text-[10px] font-bold opacity-0 group-hover:opacity-100 transition-opacity">Click To View</span>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+)}
 
             {/* Yoast SEO On-Page Meta Staging Box */}
             <div className="bg-[#1E293B] p-4 sm:p-5 rounded border border-slate-700/50 space-y-2.5">
