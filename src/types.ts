@@ -60,6 +60,7 @@ export interface ContactFormState {
   monthlyContentGoal: string;
   message: string;
   isTrialRequested: boolean;
+  isCustomPlanRequested?: boolean;
 }
 
 export interface SampleArticle {
