@@ -192,6 +192,12 @@ export const RECENT_SITES: RecentSite[] = [
     sampleArticleTitle: 'Gas Fireplace Flame Too Low [5 Easy Fixes]',
     sampleArticleExcerpt: 'A low gas fireplace flame may result from restricted gas pressure, blocked vents or exhaust, a clogged burner orifice, or an incorrectly adjusted air shutter. Learn what to check first and when to call a professional.',
     geoOptimizationDetails: 'A gas fireplace flame that is too low can be caused by low manifold gas pressure, blocked air-intake vents, a restricted exhaust or chimney, a clogged burner orifice, or an air shutter that is open too far.',
+        socialImages: [
+      { thumbnail: '/heater-x-1-thumb.jpg', full: '/heater-x-1.jpg', alt: 'X (Twitter) Post 1' },
+      { thumbnail: '/heater-x-2-thumb.jpg', full: '/heater-x-2.jpg', alt: 'X (Twitter) Post 2' },
+      { thumbnail: '/heater-fb-1-thumb.jpg', full: '/heater-fb-1.jpg', alt: 'Facebook Post' },
+      { thumbnail: '/heater-pint-1-thumb.jpg', full: '/heater-pint-1.jpg', alt: 'Pinterest Post' },
+    ],
     deliverableBreakdown: [
       '4x 1,800-word Market & Architecture Guides',
       'Custom Canva Property Feature Graphics',
