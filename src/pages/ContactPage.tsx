@@ -18,7 +18,8 @@ export const ContactPage: React.FC<ContactPageProps> = ({ initialPackageId, onOp
     nicheTargetAudience: '',
     monthlyContentGoal: '4 Articles per Month',
     message: '',
-    isTrialRequested: initialPackageId === 'trial'
+    isTrialRequested: initialPackageId === 'trial',
+    isCustomPlanRequested: false
   });
 
   const [submitted, setSubmitted] = useState(false);
@@ -152,6 +153,21 @@ export const ContactPage: React.FC<ContactPageProps> = ({ initialPackageId, onOp
                   <label htmlFor="trialCheck" className="text-xs text-slate-300 cursor-pointer leading-snug">
                     <span className="font-bold text-[#D4AF37]">Enquire About A Paid Trial Article: </span>
                     Test the workflow with a single article before committing to a monthly retainer.
+                  </label>
+                </div>
+
+                {/* Custom Plan Checkbox */}
+                <div className="bg-[#0F172A] p-3 rounded border border-slate-700/60 flex items-center space-x-3">
+                  <input
+                    type="checkbox"
+                    id="customPlanCheck"
+                    checked={formData.isCustomPlanRequested || false}
+                    onChange={(e) => setFormData({ ...formData, isCustomPlanRequested: e.target.checked })}
+                    className="w-4 h-4 rounded text-[#D4AF37] focus:ring-[#D4AF37] bg-[#1E293B] border-slate-700"
+                  />
+                  <label htmlFor="customPlanCheck" className="text-xs text-slate-300 cursor-pointer leading-snug">
+                    <span className="font-bold text-[#D4AF37]">Enquire About A Custom Plan: </span>
+                    Tailored solutions designed around your specific business goals, scope, &amp; budget.
                   </label>
                 </div>
 
