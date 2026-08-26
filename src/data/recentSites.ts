@@ -96,6 +96,12 @@ export const RECENT_SITES: RecentSite[] = [
     sampleArticleTitle: 'Balance of Nature: Is It Really Great?',
     sampleArticleExcerpt: 'An in-depth evaluation of Balance of Nature fruit and vegetable capsules—analyzing the proprietary blend ingredients, daily dosage requirements, monthly subscription costs, and real consumer feedback to see if it lives up to the hype.',
     geoOptimizationDetails: 'Is Balance of Nature worth the cost? Balance of Nature provides cold-vacuumed fruit and vegetable capsules designed to bridge dietary gaps, but its high price ($70–$110/month) and reliance on undisclosed proprietary blends limit its overall value compared to whole foods.',
+        socialImages: [
+      { thumbnail: '/health-fb-thumb.jpg', full: '/health-fb.jpg', alt: 'Facebook Post' },
+      { thumbnail: '/health-x-thumb.jpg', full: '/health-x.jpg', alt: 'X (Twitter) Post 1' },
+      { thumbnail: '/health-insta-thumb.jpg', full: '/health-insta.jpg', alt: 'Instagram Post' },
+      { thumbnail: '/health-x-2-thumb.jpg', full: '/health-x-2.jpg', alt: 'X (Twitter) Post 2' },
+    ],
     deliverableBreakdown: [
       '4x 2,000-word Wealth Strategy Papers',
       'Branded Canva Financial Infographics',
