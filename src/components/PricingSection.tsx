@@ -72,7 +72,7 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ onNavigate, onOp
           </h2>
 
           <p className="text-slate-300 text-sm sm:text-base leading-relaxed font-normal">
-            All-inclusive monthly retainers with zero hidden fees, no per-word surprises, and no long-term lock-in contracts. Every plan includes a structured review and approval workflow—content never goes live without your explicit approval.
+            All-inclusive monthly retainers with zero hidden fees, no per-word surprises, and no long-term lock-in contracts. Every plan includes a structured review and approval workflow—content never goes live without your explicit approval.(Custom plans available upon enquiry)
           </p>
         </div>
 
