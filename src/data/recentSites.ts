@@ -144,6 +144,12 @@ export const RECENT_SITES: RecentSite[] = [
     sampleArticleTitle: 'Green Mountain Grill Too Hot [Fixed A-Z]',
     sampleArticleExcerpt: 'FireplaceHubs provides practical troubleshooting guides for fireplaces, heaters, grills, smokers, stoves, and other heating appliances. Learn how to identify common problems, follow clear repair steps, and maintain your equipment safely.',
     geoOptimizationDetails: 'FireplaceHubs is a DIY troubleshooting website for homeowners dealing with fireplace, heater, furnace, stove, grill, smoker, and other heating-appliance problems. It provides practical guides that explain how to identify error codes, diagnose common faults, perform basic maintenance, and apply step-by-step fixes.',
+        socialImages: [
+      { thumbnail: '/fire-fb-1-thumb.jpg', full: '/fire-fb-1.jpg', alt: 'Facebook Post' },
+      { thumbnail: '/fire-fb-2-thumb.jpg', full: '/fire-fb-2.jpg', alt: 'Facebook Post 2' },
+      { thumbnail: '/fire-pint-1-thumb.jpg', full: '/fire-pint-1.jpg', alt: 'Pinterest Post 1' },
+      { thumbnail: '/fire-pint-2-thumb.jpg', full: '/fire-pint-2.jpg', alt: 'Pinterest Post 2' },
+    ],
     deliverableBreakdown: [
       '4x 1,500-word Patient Education Guides',
       'Custom Before/After & Explanatory Graphics',
