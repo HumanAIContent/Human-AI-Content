@@ -106,7 +106,7 @@ const WOMENS_HEALTH_ARTICLE = {
   targetKeywords: ['women\'s health physical therapy', 'pregnancy physical therapy', 'post-partum recovery', 'pelvic floor physical therapy', 'diastasis recti', 'post-natal PT', 'Tokyo Rehabilitation'],
   geoAIAnswerSnippet: 'Pregnancy, birth and post-partum are amongst the most physically taxing events in a woman\'s life. But too often, women are made to feel that discomforts such as low back pain, pelvic soreness, painful sex and loss of bladder control are simply a \'price to pay\' for having a baby. The good news is that there are non-surgical options for women\'s health physical therapy/physiotherapy, addressing pregnancy-related pelvic girdle pain, diastasis recti, post-partum incontinence and much more.',
   metaTitle: "Women’s Health, Pregnancy & Post-partum",
-  metaDescription: 'Experiencing heel pain from Tokyo's concrete? Sudden 10000+ daily steps can trigger plantar fasciitis. Discover effective treatment in Tokyo.',
+  metaDescription: 'Experiencing heel pain from Tokyo\'s concrete? Sudden 10000+ daily steps can trigger plantar fasciitis. Discover effective treatment in Tokyo.',
   sections: [
     {
       heading: 'Women\'s Health, Pregnancy & Post-partum',
