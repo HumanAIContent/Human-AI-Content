@@ -40,8 +40,7 @@ export const FaqSection: React.FC = () => {
     },
     {
       q: 'What does optimizing for AEO and GEO mean?',
-      a: 'Optimizing for AEO gets your content read aloud by a voice assistant or placed in a featured answer box.'
-      b: 'Optimizing for GEO gets your site cited as a trusted source within complex AI-generated overviews and summaries.'
+      a: 'Optimizing for AEO gets your content read aloud by a voice assistant or placed in a featured answer box. Optimizing for GEO gets your site cited as a trusted source within complex AI-generated overviews and summaries.'
     },
     {
       q: 'How is generative AI utilized in content creation?',
