@@ -39,8 +39,9 @@ export const FaqSection: React.FC = () => {
       a: 'The setup covers building your dedicated Google Drive architecture, ingesting brand voice guidelines, and structuring the initial content plan. Plan Dependency: Content Essential focuses solely on content storage setups. Content + Visuals expands to include visual asset organization. Content + Visuals + Social adds CoSchedule social channel integration. Full-Service includes all of the above plus WordPress environment auditing, SEO plugin configuration, author profile setup, and draft staging protocols.'
     },
     {
-      q: 'How are articles optimized for search engines and AI discovery?',
-      a: 'Every article is optimized for both traditional Search Engine Optimization (SEO) and modern Generative Engine Optimization (GEO) to ensure maximum search visibility and AI answer-engine indexing. Plan Dependency: Core tiers focus on on-page keyword density and structure, while Full-Service includes advanced meta-data formatting and schema-ready markup for direct CMS integration.'
+      q: 'What does optimizing for AEO and GEO mean?',
+      a: 'Optimizing for AEO gets your content read aloud by a voice assistant or placed in a featured answer box.'
+      b: 'Optimizing for GEO gets your site cited as a trusted source within complex AI-generated overviews and summaries.'
     },
     {
       q: 'How is generative AI utilized in content creation?',
