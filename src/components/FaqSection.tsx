@@ -8,14 +8,14 @@ export const FaqSection: React.FC = () => {
   const faqs = [
     {
       q: 'Do you require direct password access to my social media accounts?',
-      a: 'No direct password access to client social media accounts! We use CoSchedule authentication. You securely link your social profiles (up to 3 channels) inside the CoSchedule portal. We never handle or store your social platform passwords.'
+      a: 'No direct password access to client social media accounts! You securely link your social profiles inside the CoSchedule portal (Secure OAuth Connection). I will never handle or store your social platform passwords.'
     },
     {
       q: 'How does the client review & approval workflow work?',
-      a: 'For WordPress staging and social media, content is placed in "Draft" mode. You receive an email notification containing preview links. You simply click "Approve" or reply with minor revisions. Content never goes live unapproved.'
+      a: 'For WordPress staging and social media, content is placed in "Draft" mode. You receive an email notification containing preview links. You simply reply with "Approve" or any minor revisions. Content never goes live unapproved.'
     },
     {
-      q: 'How are monthly payments and one-time setup fees billed?',
+      q: 'How are monthly payments billed?',
       a: 'All invoices are issued in USD upfront on a monthly prepaid retainer basis with zero long-term contract lock-ins.'
     },
     {
@@ -24,11 +24,11 @@ export const FaqSection: React.FC = () => {
     },
     {
       q: 'Can I request a paid trial article before signing a retainer?',
-      a: 'Yes! You can request a single paid test article which includes full research, SEO/GEO optimization, and custom Canva visual assets so you can evaluate our workflow risk-free.'
+      a: 'Yes! You can request a single paid test article which includes full research, SEO/GEO optimization, and custom Canva visual assets so you can evaluate my workflow risk-free.'
     },
     {
       q: 'What do I need to complete before content production can officially start?',
-      a: 'Before work begins, you must complete the onboarding questionnaire, provide brand assets (logos, HEX/RGB colors, fonts, formatting rules, style guides), approve the initial content plan, and designate a primary point of contact. Plan Dependency: Basic plans require simple brand guidelines and topic preferences. Advanced plans with direct CMS publishing or social media distribution also require WordPress Editor access credentials and CoSchedule social profile connections during this phase.'
+      a: 'Before work begins, you must complete the online onboarding questionnaire, provide brand assets (logos, HEX/RGB colors, fonts, formatting rules, style guides). Plan Dependency: Basic plans require simple brand guidelines and topic preferences. Advanced plans require WordPress Editor access credentials and CoSchedule social profile setup during this phase.'
     },
     {
       q: 'When does official work commence once onboarding is complete?',
