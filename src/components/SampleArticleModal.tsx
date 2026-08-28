@@ -99,13 +99,13 @@ const REAL_ESTATE_ARTICLE = {
 // WOMEN'S HEALTH Article (Tokyo Rehabilitation) - Full Content
 // =============================================
 const WOMENS_HEALTH_ARTICLE = {
-  title: "Women's Health, Pregnancy & Post-partum",
+  title: "Women’s Health, Pregnancy & Post-partum | Tokyo Rehabilitation",
   siteName: 'Tokyo Rehabilitation',
   siteCategory: 'Health & Medical / Physical Therapy (Physiotherapy) & Rehabilitation Services.',
   wordCount: 2800,
   targetKeywords: ['women\'s health physical therapy', 'pregnancy physical therapy', 'post-partum recovery', 'pelvic floor physical therapy', 'diastasis recti', 'post-natal PT', 'Tokyo Rehabilitation'],
   geoAIAnswerSnippet: 'Pregnancy, birth and post-partum are amongst the most physically taxing events in a woman\'s life. But too often, women are made to feel that discomforts such as low back pain, pelvic soreness, painful sex and loss of bladder control are simply a \'price to pay\' for having a baby. The good news is that there are non-surgical options for women\'s health physical therapy/physiotherapy, addressing pregnancy-related pelvic girdle pain, diastasis recti, post-partum incontinence and much more.',
-  metaTitle: "Women’s Health, Pregnancy & Post-partum",
+  metaTitle: "Women’s Health, Pregnancy & Post-partum | Tokyo Rehabilitation",
   metaDescription: 'At Tokyo Rehabilitation we offer post-partum recovery, prenatal and women\'s health physical therapy, with English-speaking Physical Therapists.',
   sections: [
     {
