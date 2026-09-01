@@ -17,7 +17,7 @@ export const TESTIMONIALS: Testimonial[] = [
     role: 'Founder',
     company: 'Innovacious',
     avatar: '/Robert Millar.webp',
-    content: 'As a native English speaker, the communication is instant, crystal clear, and completely reliable. I used to spend hours fixing awkward phrasing from cheaper freelancers. With this service, the articles arrive fully researched, meticulously fact-checked, and paired with custom Canva graphics that perfectly match our brand guidelines.',
+    content: 'Mikel has been reliably producing quality content for us for over 3 years. He is very professional, always learning, and easy to do business with. The way he edits the AI-assisted content makes the copy a lot more natural and aligned with our brand\'s voice. One thing about Mikel is that he will go above and beyond to get results. Compared to other freelancers we\'ve hired, Mikel is by far the best we have ever worked with, and we highly recommend him and his services.',
     rating: 5,
     results: '+185% Revenue from Inbound Educational Funnel'
   },
