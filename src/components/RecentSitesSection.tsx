@@ -8,6 +8,15 @@ interface RecentSitesSectionProps {
 }
 
 const RecentSitesSection: React.FC<RecentSitesSectionProps> = ({ onSelectSite }) => {
+  // TEMPORARY: Set to true to hide Card 1 (Tokyo Rehabilitation)
+  // Change back to false when ready to restore Card 1
+  const HIDE_CARD_1 = true;
+
+  // Filter out Card 1 if HIDE_CARD_1 is true
+  const visibleSites = HIDE_CARD_1
+    ? RECENT_SITES.filter(site => site.id !== 'site-1')
+    : RECENT_SITES;
+
   return (
     <section id="recent-sites" className="py-16 bg-[#0F172A] relative border-t border-slate-700/50">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -30,7 +39,7 @@ const RecentSitesSection: React.FC<RecentSitesSectionProps> = ({ onSelectSite })
 
         {/* 8 Sites Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {RECENT_SITES.map((site) => (
+          {visibleSites.map((site) => (
             <div
               key={site.id}
               className="group bg-[#1E293B] rounded border border-slate-700/50 hover:border-[#D4AF37]/50 overflow-hidden transition-all duration-300 flex flex-col shadow-lg"
