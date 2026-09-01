@@ -32,8 +32,8 @@ export const TestimonialsSection: React.FC = () => {
           </p>
         </div>
 
-        {/* 3 Testimonials Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        {/* Testimonials Grid - Centered when only one visible */}
+        <div className={`grid grid-cols-1 ${visibleTestimonials.length === 1 ? 'md:grid-cols-1 max-w-md mx-auto' : 'md:grid-cols-3'} gap-6`}>
           {visibleTestimonials.map((t) => (
             <div
               key={t.id}
