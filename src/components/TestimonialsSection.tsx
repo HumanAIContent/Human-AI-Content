@@ -3,6 +3,15 @@ import { TESTIMONIALS } from '../data/testimonials';
 import { Star, Quote } from 'lucide-react';
 
 export const TestimonialsSection: React.FC = () => {
+  // TEMPORARY: Set to true to hide Mari Gish (test-1) and Debbie Todd (test-3)
+  // Change back to false when ready to restore them
+  const HIDE_SELECTED_TESTIMONIALS = true;
+
+  // Filter out the testimonials to hide
+  const visibleTestimonials = HIDE_SELECTED_TESTIMONIALS
+    ? TESTIMONIALS.filter(t => t.id !== 'test-1' && t.id !== 'test-3')
+    : TESTIMONIALS;
+
   return (
     <section className="py-16 bg-[#0F172A] relative border-t border-slate-700/50">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -25,7 +34,7 @@ export const TestimonialsSection: React.FC = () => {
 
         {/* 3 Testimonials Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {TESTIMONIALS.map((t) => (
+          {visibleTestimonials.map((t) => (
             <div
               key={t.id}
               className="bg-[#1E293B] rounded p-6 border border-slate-700/50 hover:border-[#D4AF37]/40 transition-all duration-300 flex flex-col justify-between space-y-5 relative shadow-lg"
