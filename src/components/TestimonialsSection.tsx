@@ -1,81 +1,34 @@
-import React from 'react';
-import { TESTIMONIALS } from '../data/testimonials';
-import { Star, Quote } from 'lucide-react';
+import { Testimonial } from '../types';
 
-export const TestimonialsSection: React.FC = () => {
-  // TEMPORARY: Set to true to hide Mari Gish (test-1) and Debbie Todd (test-3)
-  // Change back to false when ready to restore them
-  const HIDE_SELECTED_TESTIMONIALS = true;
-
-  // Filter out the testimonials to hide
-  const visibleTestimonials = HIDE_SELECTED_TESTIMONIALS
-    ? TESTIMONIALS.filter(t => t.id !== 'test-1' && t.id !== 'test-3')
-    : TESTIMONIALS;
-
-  return (
-    <section className="py-16 bg-[#0F172A] relative border-t border-slate-700/50">
-      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-        
-        {/* Header */}
-        <div className="text-center max-w-2xl mx-auto mb-12 space-y-3">
-          <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#D4AF37] flex items-center justify-center gap-2">
-            <Quote className="w-3.5 h-3.5 text-[#D4AF37]" />
-            Client Testimonials & Real Impact
-          </span>
-
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
-            Chosen by US & Global Businesses
-          </h2>
-
-          <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
-            What happy clients say when high-level content, effortless communication, and exceeding expectations come together.
-          </p>
-        </div>
-
-        {/* 3 Testimonials Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {visibleTestimonials.map((t) => (
-            <div
-              key={t.id}
-              className="bg-[#1E293B] rounded p-6 border border-slate-700/50 hover:border-[#D4AF37]/40 transition-all duration-300 flex flex-col justify-between space-y-5 relative shadow-lg"
-            >
-              <div className="space-y-4">
-                
-                {/* Rating Stars */}
-                <div className="flex items-center">
-                  <div className="flex space-x-1">
-                    {[...Array(t.rating)].map((_, i) => (
-                      <Star key={i} className="w-4 h-4 fill-[#D4AF37] text-[#D4AF37]" />
-                    ))}
-                  </div>
-                </div>
-
-                {/* Author Info with images (grayscale removed) */}
-                <div className="flex items-center space-x-4 pt-1">
-                  <img
-                    src={t.avatar}
-                    alt={t.name}
-                    className="w-[68px] h-[68px] rounded-full object-cover border-2 border-[#D4AF37] shadow-md shrink-0 transition-all"
-                  />
-                  <div>
-                    <h4 className="text-white font-extrabold text-sm uppercase tracking-wide">{t.name}</h4>
-                    <p className="text-xs text-slate-400">{t.role}</p>
-                    <p className="text-xs font-semibold text-[#D4AF37]">{t.company}</p>
-                  </div>
-                </div>
-
-                {/* Testimonial Body Quote */}
-                <p className="text-slate-200 text-xs sm:text-sm leading-relaxed italic">
-                  "{t.content}"
-                </p>
-
-              </div>
-
-            </div>
-          ))}
-        </div>
-
-      </div>
-    </section>
-  );
-};
+export const TESTIMONIALS: Testimonial[] = [
+  {
+    id: 'test-1',
+    name: 'Mari Gish',
+    role: 'Founder',
+    company: 'Tokyo Rehabilitation',
+    avatar: '/Mari-Gish-Tokyo.jpeg',
+    content: 'The GEO optimization was a complete game-changer. Within 60 days of switching to the Full-Service plan, ChatGPT and Perplexity were citing our blog articles as top primary sources. Plus, having everything staged as WordPress draft links with Yoast meta pre-configured saves my marketing team 25+ hours every single month.',
+    rating: 5,
+    results: '+320% Organic Search Traffic & AI Citations'
+  },
+  {
+    id: 'test-2',
+    name: 'Robert Millar',
+    role: 'Founder',
+    company: 'Innovacious',
+    avatar: '/Robert Millar.webp',
+    content: 'Mikel has been reliably producing quality content for us for over 3 years. He is very professional, always learning, and easy to do business with. The way he edits the AI-assisted content makes the copy a lot more natural and aligned with our brand\'s voice. One thing about Mikel is that he will go above and beyond to get results. Compared to other freelancers we\'ve hired, Mikel is by far the best we have ever worked with, and we highly recommend him and his services.',
+    rating: 5,
+    results: '+185% Revenue from Inbound Educational Funnel'
+  },
+  {
+    id: 'test-3',
+    name: 'Debbie Todd',
+    role: 'Founder',
+    company: 'The Woodlands at Hocking Hills',
+    avatar: '/Debbie Todd.jpg',
+    content: 'The managed content workflow is real. I literally click 1-click approval on an email preview link and the article is staged in WordPress while social posts launch automatically via CoSchedule. It is like having a veteran senior content director on staff for a fraction of the cost of a full-time hire.',
+    rating: 5,
+    results: '45,000+ Monthly AI Engine Readers'
+  }
+];
